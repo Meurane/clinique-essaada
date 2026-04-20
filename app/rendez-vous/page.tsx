@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { RdvForm } from "@/components/sections/RdvForm";
 import { site } from "@/lib/site";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Prendre rendez-vous",
@@ -35,6 +36,18 @@ export default async function RdvPage({
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Rendez-vous", url: "/rendez-vous" }]} />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Rendez-vous", url: "/rendez-vous" },
+            ]),
+          ),
+        }}
+      />
 
       <section className="section-padding">
         <div className="container-narrow">

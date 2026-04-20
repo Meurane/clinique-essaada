@@ -1,10 +1,54 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, ClipboardList } from "lucide-react";
-import { PageHero } from "@/components/ui/PageHero";
+import { ArrowRight, CheckCircle2, ClipboardList, Heart } from "lucide-react";
+import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { site } from "@/lib/site";
+import { breadcrumbSchema } from "@/lib/schema";
+
+const timeline = [
+  {
+    time: "T − 1h",
+    title: "Vous arrivez à la clinique",
+    text: "Parking patient à proximité, accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé.",
+  },
+  {
+    time: "T − 45 min",
+    title: "Accueil et constantes",
+    text: "Pesée, tension artérielle, température. L'infirmière note votre état du moment. Un proche peut rester avec vous à cette étape.",
+  },
+  {
+    time: "T − 30 min",
+    title: "Consultation rapide avec le néphrologue",
+    text: "Le médecin vérifie votre dossier, ajuste si besoin les paramètres de séance, répond à vos questions. Vous décidez ensemble.",
+  },
+  {
+    time: "T − 15 min",
+    title: "Installation et pose des aiguilles",
+    text: "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter) — 2 à 3 minutes. L'infirmière vous explique chaque geste.",
+  },
+  {
+    time: "T + 0",
+    title: "Début de la séance",
+    text: "Le générateur se met en route. Vous pouvez lire, dormir, regarder votre téléphone, écouter de la musique. Bluetooth et Wi-Fi disponibles.",
+  },
+  {
+    time: "T + 1h à T + 3h",
+    title: "Surveillance continue",
+    text: "La machine mesure votre tension automatiquement. Une infirmière passe vous voir toutes les 15 minutes. Un néphrologue est dans le service. Collation servie en milieu de séance.",
+  },
+  {
+    time: "T + 4h",
+    title: "Fin de séance",
+    text: "Retrait des aiguilles, compression, pansement. Pesée de sortie, dernière tension, dernier échange avec l'infirmière. Remise du prochain rendez-vous.",
+  },
+  {
+    time: "T + 4h15",
+    title: "Vous repartez",
+    text: "Un peu de repos si besoin dans la salle d'attente. Votre proche peut vous raccompagner. Contact d'urgence fourni pour la nuit.",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Votre 1ʳᵉ séance",
@@ -57,10 +101,13 @@ const etapes = [
 export default function PremiereSeancePage() {
   return (
     <>
-      <PageHero
+      <PhotoHero
         eyebrow="Votre 1ʳᵉ séance"
         title="Un parcours balisé pour préparer votre première séance"
         subtitle="Nous savons que la première fois peut générer de l'inquiétude. Voici tout ce que vous devez savoir avant de venir."
+        photoIcon={ClipboardList}
+        photoLabel="Préparation séance"
+        photoTag="Dossier & accueil"
       />
       <div className="container-custom py-5">
         <Breadcrumb
@@ -71,6 +118,19 @@ export default function PremiereSeancePage() {
           ]}
         />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Services", url: "/services" },
+              { name: "Votre 1ʳᵉ séance", url: "/services/premiere-seance" },
+            ]),
+          ),
+        }}
+      />
 
       <section className="section-padding">
         <div className="container-custom grid md:grid-cols-5 gap-10">
@@ -120,9 +180,41 @@ export default function PremiereSeancePage() {
         </div>
       </section>
 
+      <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Déroulé heure par heure"
+            title="Votre première séance, minute par minute"
+            subtitle="Parce que l'inconnu angoisse plus que le connu, voici exactement ce qui se passe — dans l'ordre, sans surprise."
+          />
+          <ol className="relative max-w-3xl mx-auto border-l-2 border-primary-200 pl-6 md:pl-8 space-y-8">
+            {timeline.map((t) => (
+              <li key={t.time} className="relative">
+                <span
+                  className="absolute -left-[34px] md:-left-[42px] w-9 h-9 rounded-full bg-primary-600 text-white grid place-items-center border-4 border-white shadow-sm"
+                  aria-hidden="true"
+                >
+                  <Heart className="w-4 h-4" />
+                </span>
+                <div className="text-sm font-semibold tracking-wide text-primary-700 mb-1">
+                  {t.time}
+                </div>
+                <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1.5">
+                  {t.title}
+                </h3>
+                <p className="text-neutral-700 leading-relaxed">{t.text}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-10 text-center text-neutral-600 italic max-w-2xl mx-auto">
+            Vous n'êtes jamais seul, à aucun moment. C'est la règle chez nous.
+          </p>
+        </div>
+      </section>
+
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
-          <SectionHeader eyebrow="Déroulé" title="Le jour J, en 3 temps" />
+          <SectionHeader eyebrow="Résumé rapide" title="Le jour J, en 3 temps" />
           <ul className="grid md:grid-cols-3 gap-5">
             {etapes.map((e) => (
               <li

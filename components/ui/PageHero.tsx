@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Eyebrow } from "./Eyebrow";
 
 export function PageHero({
   eyebrow,
@@ -14,16 +15,12 @@ export function PageHero({
   return (
     <section className="bg-primary-700 text-white pt-28 pb-14 md:pt-32 md:pb-20">
       <div className="container-custom">
-        {eyebrow && (
-          <div className="text-primary-200 uppercase tracking-widest text-sm font-semibold mb-3">
-            {eyebrow}
-          </div>
-        )}
+        {eyebrow && <Eyebrow tone="light">{eyebrow}</Eyebrow>}
         <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight max-w-3xl">
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-5 text-lg md:text-xl text-primary-100 max-w-2xl">
+          <p className="mt-5 text-lg md:text-xl text-primary-100 max-w-2xl leading-relaxed">
             {subtitle}
           </p>
         )}

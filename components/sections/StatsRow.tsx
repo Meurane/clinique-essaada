@@ -1,7 +1,7 @@
 import { site } from "@/lib/site";
 
 const stats = [
-  { value: `${site.stats.postes}`, label: "Postes de dialyse" },
+  { value: `${site.stats.lits}`, label: "Lits" },
   { value: site.stats.openDays, label: "Service continu" },
   { value: "24/7", label: "Médecin présent" },
   { value: `${site.stats.equipementsRecents}`, label: "Équipements renouvelés" },

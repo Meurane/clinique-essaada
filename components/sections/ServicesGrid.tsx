@@ -8,7 +8,7 @@ const services = [
     icon: Droplets,
     title: "Hémodialyse",
     description:
-      "Traitement de suppléance rénale. 40 postes, générateurs dernière génération, eau de dialyse ultra-pure, lits 3 positions.",
+      "Traitement de suppléance rénale. 37 lits, générateurs dernière génération, eau de dialyse ultra-pure, lits 3 positions.",
   },
   {
     href: "/services/consultation-nephrologie",

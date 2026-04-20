@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/ui/PageHero";
+import { HeartPulse } from "lucide-react";
+import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { site } from "@/lib/site";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -15,14 +17,29 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <PageHero
+      <PhotoHero
         eyebrow="Services"
         title="Nos services de néphrologie et de dialyse"
         subtitle="Une offre complète pour les patients insuffisants rénaux, à tous les stades de leur parcours."
+        photoIcon={HeartPulse}
+        photoLabel="Parcours de soins"
+        photoTag="Consultation & dialyse"
       />
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Services", url: "/services" }]} />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Services", url: "/services" },
+            ]),
+          ),
+        }}
+      />
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 /**
  * Palette Clinique ESSAADA — dérivée du brand workshop (3 experts)
@@ -166,7 +167,94 @@ export default {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
+      // Typography — Tailwind Prose calibré ESSAADA
+      // Utilisé via className="prose prose-essaada" sur les pages de contenu long
+      // (comprendre-l-insuffisance-renale, glossaire, guides, FAQ réponses…).
+      // Conçu pour lecteur 40-80 ans : body 18px, line-height généreuse, h2/h3
+      // en serif display, liens soulignés, max 70ch. Aucune info critique ne
+      // doit dépendre du distinguo bleu/jaune seul (rétinopathie diabétique).
+      typography: ({ theme }: { theme: (path: string) => string }) => ({
+        essaada: {
+          css: {
+            "--tw-prose-body": theme("colors.neutral.700"),
+            "--tw-prose-headings": theme("colors.neutral.900"),
+            "--tw-prose-lead": theme("colors.neutral.800"),
+            "--tw-prose-links": theme("colors.primary.700"),
+            "--tw-prose-bold": theme("colors.neutral.900"),
+            "--tw-prose-counters": theme("colors.primary.700"),
+            "--tw-prose-bullets": theme("colors.sand.400"),
+            "--tw-prose-hr": theme("colors.sand.200"),
+            "--tw-prose-quotes": theme("colors.ink.700"),
+            "--tw-prose-quote-borders": theme("colors.sand.500"),
+            "--tw-prose-captions": theme("colors.neutral.500"),
+            "--tw-prose-code": theme("colors.ink.700"),
+            "--tw-prose-pre-code": theme("colors.neutral.100"),
+            "--tw-prose-pre-bg": theme("colors.ink.800"),
+            "--tw-prose-th-borders": theme("colors.sand.300"),
+            "--tw-prose-td-borders": theme("colors.sand.200"),
+            fontSize: "1.125rem",
+            lineHeight: "1.75",
+            maxWidth: "70ch",
+            h2: {
+              fontFamily: theme("fontFamily.display").toString(),
+              fontWeight: "700",
+              fontSize: "1.875rem",
+              marginTop: "2.5em",
+              marginBottom: "0.75em",
+              lineHeight: "1.2",
+            },
+            h3: {
+              fontFamily: theme("fontFamily.display").toString(),
+              fontWeight: "600",
+              fontSize: "1.375rem",
+              marginTop: "2em",
+              marginBottom: "0.5em",
+              lineHeight: "1.25",
+            },
+            h4: {
+              fontWeight: "600",
+              fontSize: "1.125rem",
+              marginTop: "1.75em",
+              marginBottom: "0.5em",
+            },
+            p: { marginTop: "1em", marginBottom: "1em" },
+            "p.lead, .lead": {
+              fontSize: "1.3125rem",
+              lineHeight: "1.65",
+              color: theme("colors.neutral.800"),
+              fontWeight: "400",
+              marginTop: "0.25em",
+              marginBottom: "1.25em",
+            },
+            a: {
+              textDecoration: "underline",
+              textUnderlineOffset: "3px",
+              textDecorationThickness: "1.5px",
+              textDecorationColor: theme("colors.sand.400"),
+              fontWeight: "500",
+              "&:hover": {
+                textDecorationColor: theme("colors.primary.600"),
+              },
+            },
+            "ul > li::marker": { color: theme("colors.sand.500") },
+            "ol > li::marker": { color: theme("colors.primary.700"), fontWeight: "600" },
+            blockquote: {
+              fontStyle: "normal",
+              borderLeftWidth: "3px",
+              paddingLeft: "1.25em",
+              fontFamily: theme("fontFamily.display").toString(),
+              fontSize: "1.25rem",
+              lineHeight: "1.5",
+              color: theme("colors.ink.700"),
+            },
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:last-of-type::after": { content: "none" },
+            strong: { fontWeight: "600" },
+            hr: { marginTop: "3em", marginBottom: "3em" },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [typography],
 } satisfies Config;

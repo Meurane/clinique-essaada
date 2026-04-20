@@ -2,7 +2,7 @@ export const site = {
   name: "Clinique ESSAADA",
   tagline: "Centre d'hémodialyse — Sidi Bel Abbès",
   description:
-    "Centre d'hémodialyse à Sidi Bel Abbès. 40 postes, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage. Conventionnée CNAS et CASNOS.",
+    "Centre d'hémodialyse à Sidi Bel Abbès. 37 lits, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage. Conventionnée CNAS et CASNOS.",
   url: "https://cliniquessaada.fr",
   locale: "fr_DZ",
   city: "Sidi Bel Abbès",
@@ -54,10 +54,10 @@ export const site = {
     },
   },
   stats: {
-    postes: 40,
-    ouvertureAnnee: 2008,
+    lits: 37,
+    ouvertureAnnee: 2023,
     equipementsRecents: 2025,
-    openDays: "7j/7",
+    openDays: "sam. → jeu.",
   },
 } as const;
 

@@ -1,46 +1,32 @@
 import Link from "next/link";
-import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Phone, CheckCircle2, ImageIcon } from "lucide-react";
 import { site } from "@/lib/site";
 
 const proofPoints = [
-  "Équipements récents · traçabilité qualité",
-  "Équipe pluridisciplinaire sur place",
-  "Patients résidents et de passage",
-];
-
-const miniStats = [
-  { value: `${site.stats.postes}`, label: "Postes de dialyse" },
-  { value: "3×", label: "Créneaux par jour" },
-  { value: site.stats.equipementsRecents, label: "Équipements renouvelés" },
-  { value: "24/7", label: "Médecin présent" },
+  "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
+  "Dossier CNAS / CASNOS : on s'occupe de la paperasse, vous venez avec votre carte Chifa",
+  "Accompagnant bienvenu · salle d'attente dédiée · café et thé servis",
 ];
 
 export function HomeHero() {
   return (
     <section className="relative bg-primary-700 text-white overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="absolute -top-20 -right-20 w-[520px] h-[520px] rounded-full bg-primary-500/25 blur-3xl pointer-events-none"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -bottom-24 -left-24 w-[420px] h-[420px] rounded-full bg-sand-500/10 blur-3xl pointer-events-none"
-      />
-      <div className="container-custom relative pt-14 pb-16 md:pt-24 md:pb-24 grid md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-7">
+      <div className="container-custom relative pt-16 pb-16 md:pt-24 md:pb-24 grid md:grid-cols-5 gap-10 md:gap-14 items-center">
+        {/* Colonne gauche — contenu prioritaire (3/5) */}
+        <div className="md:col-span-3 space-y-7">
           <div className="inline-flex items-center gap-2 bg-primary-600/40 border border-primary-400/40 px-3 py-1.5 rounded-full text-sm text-primary-100">
             <span className="w-2 h-2 rounded-full bg-accent-500" aria-hidden="true" />
-            Conventionnée CNAS · CASNOS
+            Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
-            Centre d'hémodialyse à
+            Votre vie continue,
             <br />
-            <span className="text-sand-100">Sidi Bel Abbès</span>
+            <span className="text-sand-100">on en prend soin.</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
-            {site.stats.postes} postes de dialyse, équipe pluridisciplinaire,
-            prise en charge personnalisée. Nous accueillons aussi les patients
-            de passage.
+            Hémodialyse à Sidi Bel Abbès — {site.stats.lits} lits,
+            néphrologues présents, équipe formée à l'accompagnement des
+            patients dialysés et de leurs proches.
           </p>
           <ul className="space-y-2.5 text-primary-50">
             {proofPoints.map((p) => (
@@ -50,7 +36,7 @@ export function HomeHero() {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
             <Link
               href="/rendez-vous"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
@@ -58,30 +44,64 @@ export function HomeHero() {
               Prendre rendez-vous
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
-            <a
-              href={site.contact.phoneHref}
-              className="inline-flex items-center gap-2 text-primary-100 hover:text-white underline underline-offset-4 decoration-primary-300/60 decoration-2 min-h-[48px] px-2"
+            <Link
+              href="/la-clinique#visite-decouverte"
+              className="inline-flex items-center justify-center gap-2 border border-primary-300/50 text-white hover:bg-primary-600/40 px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
             >
-              <Phone className="w-5 h-5" aria-hidden="true" />
-              <span className="font-medium">{site.contact.phone}</span>
-            </a>
+              Visiter le centre
+            </Link>
           </div>
+          <a
+            href={site.contact.phoneHref}
+            className="inline-flex items-center gap-2 text-primary-100 hover:text-white text-sm"
+          >
+            <Phone className="w-4 h-4" aria-hidden="true" />
+            <span>
+              ou appelez directement —{" "}
+              <span className="font-medium">{site.contact.phone}</span>
+            </span>
+          </a>
         </div>
 
-        <div className="hidden md:block">
-          <div className="grid grid-cols-2 gap-4">
-            {miniStats.map((s) => (
-              <div
-                key={s.label}
-                className="bg-primary-600/40 border border-primary-400/30 backdrop-blur-sm rounded-2xl p-6"
-              >
-                <div className="font-display text-3xl md:text-4xl font-bold text-white">
-                  {s.value}
-                </div>
-                <div className="mt-1 text-primary-100 text-base">{s.label}</div>
-              </div>
-            ))}
-          </div>
+        {/* Colonne droite — placeholder photo portrait (4/5), prêt pour shooting */}
+        <div className="hidden md:block md:col-span-2">
+          <figure
+            className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand-50 ring-1 ring-white/10 shadow-2xl"
+            aria-label="Emplacement photo équipe médicale — shooting à venir"
+          >
+            {/* Gradient subtil sand → primary léger pour donner de la profondeur */}
+            <div
+              className="absolute inset-0 bg-gradient-to-br from-sand-50 via-sand-100 to-sand-200/60"
+              aria-hidden="true"
+            />
+            {/* Motif rayures concentriques très discret — métaphore purification */}
+            <svg
+              className="absolute inset-0 w-full h-full opacity-[0.06]"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <pattern id="dots-hero" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1" fill="currentColor" className="text-primary-800" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#dots-hero)" />
+            </svg>
+            <figcaption className="absolute inset-0 flex flex-col items-center justify-center text-center gap-3 text-primary-800/60 px-6">
+              <ImageIcon className="w-10 h-10" aria-hidden="true" strokeWidth={1.5} />
+              <span className="font-display text-base font-semibold tracking-wide text-primary-800/70">
+                Équipe médicale
+              </span>
+              <span className="text-xs text-primary-800/40">
+                Shooting photographique à venir
+              </span>
+            </figcaption>
+            {/* Petite pastille discrète en bas-gauche */}
+            <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-primary-800 ring-1 ring-primary-800/10">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-600" aria-hidden="true" />
+              Sidi Bel Abbès
+            </div>
+          </figure>
         </div>
       </div>
     </section>

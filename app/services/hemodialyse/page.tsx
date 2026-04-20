@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { PageHero } from "@/components/ui/PageHero";
+import { ArrowRight, CheckCircle2, Stethoscope } from "lucide-react";
+import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { site } from "@/lib/site";
-import { medicalProcedureSchema } from "@/lib/schema";
+import { medicalProcedureSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Hémodialyse",
   description:
-    "Séances d'hémodialyse à Sidi Bel Abbès : 40 postes, générateurs dernière génération, eau ultra-pure, suivi médical permanent. Conventionné CNAS/CASNOS.",
+    "Séances d'hémodialyse à Sidi Bel Abbès : 37 lits, générateurs dernière génération, eau ultra-pure, suivi médical permanent. Conventionné CNAS/CASNOS.",
   alternates: { canonical: `${site.url}/services/hemodialyse` },
   openGraph: {
     title: "Hémodialyse — Clinique ESSAADA",
@@ -36,13 +36,31 @@ const qualite = [
   "Matériel à usage unique quand indiqué",
 ];
 
+const seanceIncludes = [
+  "Accueil personnalisé par votre infirmier(ère) référent(e)",
+  "Pesée, contrôle tensionnel et évaluation pré-séance",
+  "Séance de 4 heures sur générateur dernière génération",
+  "Surveillance continue par personnel infirmier dédié",
+  "Médecin néphrologue présent sur site pendant toutes les séances",
+  "Traçabilité informatisée de vos paramètres à chaque séance",
+  "Collation adaptée servie en cours de séance",
+  "Couverture, fauteuil inclinable, télévision individuelle",
+  "Accompagnant autorisé en salle d'attente dédiée",
+  "Prise en charge CNAS / CASNOS intégrale — zéro avance de frais",
+  "Compte-rendu transmis à votre néphrologue traitant",
+  "WhatsApp du secrétariat pour vos questions entre séances",
+];
+
 export default function HemodialysePage() {
   return (
     <>
-      <PageHero
+      <PhotoHero
         eyebrow="Service · Hémodialyse"
         title="Hémodialyse à Sidi Bel Abbès"
-        subtitle={`${site.stats.postes} postes. 3 créneaux par jour. Conventionnée CNAS et CASNOS.`}
+        subtitle={`${site.stats.lits} lits. 3 créneaux par jour. Conventionnée CNAS et CASNOS.`}
+        photoIcon={Stethoscope}
+        photoLabel="Salle d'hémodialyse"
+        photoTag="Sidi Bel Abbès"
       />
       <div className="container-custom py-5">
         <Breadcrumb
@@ -61,9 +79,22 @@ export default function HemodialysePage() {
             medicalProcedureSchema({
               name: "Hémodialyse",
               description:
-                "Traitement de suppléance rénale réalisé à la Clinique ESSAADA à Sidi Bel Abbès. 40 postes, générateurs dernière génération, eau ultra-pure, équipe pluridisciplinaire.",
+                "Traitement de suppléance rénale réalisé à la Clinique ESSAADA à Sidi Bel Abbès. 37 lits, générateurs dernière génération, eau ultra-pure, équipe pluridisciplinaire.",
               procedureType: "https://schema.org/TherapeuticProcedure",
             }),
+          ),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Services", url: "/services" },
+              { name: "Hémodialyse", url: "/services/hemodialyse" },
+            ]),
           ),
         }}
       />
@@ -113,6 +144,30 @@ export default function HemodialysePage() {
       </section>
 
       <section className="section-padding bg-sand-50">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Votre séance, en détail"
+            title="Ce que comprend une séance à ESSAADA"
+            subtitle="Concrètement, voici ce que vous recevez à chaque venue — pas en option, pas en supplément."
+          />
+          <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3 max-w-4xl mx-auto">
+            {seanceIncludes.map((item) => (
+              <li key={item} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-neutral-150">
+                <CheckCircle2
+                  className="w-5 h-5 text-accent-600 shrink-0 mt-0.5"
+                  aria-hidden="true"
+                />
+                <span className="text-neutral-800 text-base leading-snug">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-center text-neutral-700 text-base max-w-2xl mx-auto">
+            Séances conventionnées CNAS et CASNOS — <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
             eyebrow="Déroulé"

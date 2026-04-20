@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/ui/PageHero";
+import { Users, UserCircle2 } from "lucide-react";
+import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
+import { PortraitCard } from "@/components/ui/PortraitCard";
+import { Callout } from "@/components/ui/Callout";
 import { team, departments } from "@/content/equipe";
 import { site } from "@/lib/site";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Équipe médicale",
@@ -13,24 +17,52 @@ export const metadata: Metadata = {
   alternates: { canonical: `${site.url}/equipe` },
 };
 
+/**
+ * Aperçu structurel affiché quand `team` est vide — montre aux visiteurs
+ * la forme et la qualité de présentation à venir, sans inventer d'identités.
+ */
+const placeholderRoles = [
+  { role: "Médecin néphrologue", credentials: ["DEMS néphrologie"] },
+  { role: "Médecin néphrologue", credentials: ["Consultation / suivi"] },
+  { role: "Infirmier·ère chef·fe de service", credentials: ["Spécialité dialyse"] },
+  { role: "Infirmier·ère DE", credentials: ["Hémodialyse"] },
+  { role: "Diététicien·ne", credentials: ["Éducation thérapeutique"] },
+  { role: "Responsable accueil", credentials: ["CNAS / CASNOS"] },
+];
+
 export default function EquipePage() {
   return (
     <>
-      <PageHero
+      <PhotoHero
         eyebrow="Notre équipe"
         title="Une équipe pluridisciplinaire à vos côtés"
         subtitle="Médecins néphrologues, infirmiers spécialisés, personnel d'accompagnement. Formés à la prise en charge des patients dialysés."
+        photoIcon={Users}
+        photoLabel="Équipe médicale ESSAADA"
+        photoTag="Sidi Bel Abbès"
       />
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Équipe", url: "/equipe" }]} />
       </div>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Équipe", url: "/equipe" },
+            ]),
+          ),
+        }}
+      />
+
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Nos équipes"
+            eyebrow="Les métiers"
             title="Les professionnels qui vous accompagnent"
-            subtitle="Les profils individuels (noms, parcours, photos) seront publiés dès réception des informations par la clinique."
+            subtitle="Quatre départements, un même engagement : rendre chaque séance aussi sûre et confortable que possible."
           />
           <ul className="grid md:grid-cols-2 gap-5">
             {departments.map((d) => (
@@ -44,26 +76,54 @@ export default function EquipePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
 
-          {team.length > 0 && (
-            <div className="mt-16">
-              <SectionHeader title="Nos praticiens" />
-              <ul className="grid md:grid-cols-3 gap-6">
-                {team.map((m) => (
-                  <li key={m.slug}>
-                    <Card>
-                      <div className="font-display text-lg font-semibold text-neutral-900">
-                        {m.name}
-                      </div>
-                      <div className="text-primary-700 font-medium mt-0.5">{m.role}</div>
-                      {m.specialty && (
-                        <p className="text-neutral-600 text-base mt-2">{m.specialty}</p>
-                      )}
-                    </Card>
+      <section className="section-padding bg-sand-50">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Nos praticiens"
+            title={team.length > 0 ? "Les visages qui vous accueillent" : "Les profils à venir"}
+            subtitle={
+              team.length > 0
+                ? "Médecins et soignants qui composent l'équipe ESSAADA."
+                : "Les portraits et parcours individuels seront publiés dès réception des informations par la clinique. Aperçu de la structure :"
+            }
+          />
+
+          {team.length > 0 ? (
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+              {team.map((m) => (
+                <li key={m.slug}>
+                  <PortraitCard
+                    name={m.name}
+                    role={m.role}
+                    credentials={m.specialty ? [m.specialty] : undefined}
+                    bio={m.bio}
+                  />
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <>
+              <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+                {placeholderRoles.map((p, i) => (
+                  <li key={i}>
+                    <PortraitCard
+                      name="Dr. [Nom à venir]"
+                      role={p.role}
+                      credentials={p.credentials}
+                    />
                   </li>
                 ))}
               </ul>
-            </div>
+              <Callout icon={UserCircle2} className="mt-10 max-w-3xl">
+                Cet aperçu représente la structure de l'équipe. Chaque fiche
+                individuelle (nom, parcours, photographie) sera mise en ligne
+                après validation par la clinique et consentement écrit des
+                personnes concernées.
+              </Callout>
+            </>
           )}
         </div>
       </section>

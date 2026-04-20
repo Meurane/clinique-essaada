@@ -41,6 +41,18 @@
   .container-narrow {
     @apply max-w-3xl mx-auto px-4 sm:px-6;
   }
+
+  /* Lead paragraph — premier paragraphe après un hero ou un H2,
+     donne un palier de lecture plus large avant le body. Public 40-80,
+     éditorial calme. */
+  .lead {
+    @apply text-xl md:text-[1.3125rem] text-neutral-800 leading-relaxed font-normal max-w-prose;
+  }
+
+  /* Section divider discret — filet sand sous eyebrow ou entre blocs. */
+  .section-rule {
+    @apply block h-px w-10 bg-sand-500/70;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

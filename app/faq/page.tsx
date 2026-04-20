@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { faq } from "@/content/faq";
 import { site } from "@/lib/site";
-import { faqPageSchema } from "@/lib/schema";
+import { faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Questions fréquentes",
@@ -30,6 +30,18 @@ export default function FaqPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             faqPageSchema(faq.map((f) => ({ question: f.question, answer: f.answer }))),
+          ),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "FAQ", url: "/faq" },
+            ]),
           ),
         }}
       />

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
-import { PageHero } from "@/components/ui/PageHero";
+import { Phone, Mail, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-react";
+import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { site } from "@/lib/site";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -39,14 +40,29 @@ const channels = [
 export default function ContactPage() {
   return (
     <>
-      <PageHero
+      <PhotoHero
         eyebrow="Contact"
         title="Nous joindre"
         subtitle="Pour nous joindre rapidement : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi."
+        photoIcon={MapPin}
+        photoLabel="Façade & accès"
+        photoTag="Sidi Bel Abbès"
       />
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Contact", url: "/contact" }]} />
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Contact", url: "/contact" },
+            ]),
+          ),
+        }}
+      />
 
       <section className="section-padding">
         <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16">
@@ -115,27 +131,39 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                `${site.name}, ${site.city}, ${site.country}`,
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block aspect-[16/10] rounded-2xl bg-gradient-to-br from-sand-50 to-neutral-100 border border-neutral-200 hover:border-primary-400 transition-colors relative overflow-hidden"
-              aria-label={`Ouvrir l'emplacement de ${site.name} dans Google Maps`}
-            >
-              <div className="absolute inset-0 grid place-items-center">
-                <div className="text-center space-y-2">
-                  <MapPin className="w-10 h-10 text-primary-700 mx-auto" aria-hidden="true" />
-                  <div className="font-display text-lg font-semibold text-neutral-900">
-                    Ouvrir dans Google Maps
-                  </div>
-                  <div className="text-sm text-neutral-600">
-                    {site.city}, {site.country}
-                  </div>
-                </div>
+            <div className="rounded-2xl overflow-hidden border border-neutral-200 bg-white">
+              <div className="relative aspect-[16/10] bg-sand-50">
+                <iframe
+                  title={`Emplacement de ${site.name} sur Google Maps`}
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                    `${site.name}, ${site.city}, ${site.country}`,
+                  )}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0 w-full h-full border-0"
+                />
               </div>
-            </a>
+              <a
+                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                  `${site.name}, ${site.city}, ${site.country}`,
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-3 px-5 py-4 bg-white border-t border-neutral-150 hover:bg-neutral-50 transition-colors group"
+                aria-label={`Ouvrir l'emplacement de ${site.name} dans Google Maps`}
+              >
+                <span className="flex items-center gap-2.5">
+                  <MapPin className="w-5 h-5 text-primary-700" aria-hidden="true" />
+                  <span className="font-medium text-neutral-900">
+                    Ouvrir dans Google Maps
+                  </span>
+                </span>
+                <ExternalLink
+                  className="w-4 h-4 text-neutral-500 group-hover:text-primary-700 transition-colors"
+                  aria-hidden="true"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
