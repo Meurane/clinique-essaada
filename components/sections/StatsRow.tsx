@@ -3,14 +3,14 @@ import { site } from "@/lib/site";
 const stats = [
   { value: `${site.stats.postes}`, label: "Postes de dialyse" },
   { value: site.stats.openDays, label: "Service continu" },
-  { value: `${site.stats.equipementsRecents}`, label: "Équipements récents" },
-  { value: "100%", label: "Équipe qualifiée" },
+  { value: "24/7", label: "Médecin présent" },
+  { value: `${site.stats.equipementsRecents}`, label: "Équipements renouvelés" },
 ];
 
 export function StatsRow() {
   return (
     <section className="bg-white border-y border-neutral-150">
-      <div className="container-custom py-10 md:py-14">
+      <div className="container-custom py-14 md:py-20">
         <ul className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map((s) => (
             <li key={s.label} className="text-center md:text-left">

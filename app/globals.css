@@ -8,8 +8,7 @@
   }
 
   body {
-    @apply text-neutral-700 font-sans antialiased;
-    font-size: 1.125rem;
+    @apply text-neutral-700 font-sans antialiased text-lg;
     line-height: 1.65;
   }
 
@@ -18,7 +17,7 @@
   }
 
   *:focus-visible {
-    @apply outline-none ring-4 ring-primary-200 ring-offset-2 ring-offset-white rounded-sm;
+    @apply outline-none ring-2 ring-primary-700 ring-offset-2 ring-offset-white rounded-sm;
   }
 
   .skip-link {

@@ -26,7 +26,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Nos services"
             title="Une prise en charge complète de l'insuffisance rénale"
-            subtitle="De la consultation à la séance de dialyse, nos équipes vous accompagnent avec rigueur et bienveillance."
+            subtitle="De la consultation à la séance de dialyse, notre équipe vous accompagne avec rigueur et attention."
           />
           <ServicesGrid />
         </div>

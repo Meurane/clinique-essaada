@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Heart, Menu, X, Phone } from "lucide-react";
 import { navRoutes } from "@/lib/routes";
 import { site } from "@/lib/site";
@@ -11,6 +11,8 @@ export function Navigation() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const burgerRef = useRef<HTMLButtonElement>(null);
+  const drawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -30,15 +32,45 @@ export function Navigation() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+
+    const firstLink = drawerRef.current?.querySelector<HTMLElement>("a, button");
+    firstLink?.focus();
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setOpen(false);
+        burgerRef.current?.focus();
+        return;
+      }
+      if (e.key !== "Tab" || !drawerRef.current) return;
+      const focusables = drawerRef.current.querySelectorAll<HTMLElement>(
+        'a, button, [tabindex]:not([tabindex="-1"])',
+      );
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [open]);
+
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <header
       className={`sticky top-0 z-40 transition-all duration-200 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm"
-          : "bg-white"
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
       }`}
     >
       <nav
@@ -76,7 +108,7 @@ export function Navigation() {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href={site.contact.phoneHref}
-            className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-full font-semibold transition-colors min-h-[44px]"
+            className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-full font-semibold transition-colors min-h-[48px]"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             <span>Appeler</span>
@@ -84,11 +116,13 @@ export function Navigation() {
         </div>
 
         <button
+          ref={burgerRef}
           type="button"
           onClick={() => setOpen(!open)}
-          className="lg:hidden p-2 -mr-2 text-neutral-800 min-h-[44px] min-w-[44px]"
+          className="lg:hidden p-2 -mr-2 text-neutral-800 min-h-[48px] min-w-[48px] grid place-items-center"
           aria-expanded={open}
           aria-controls="mobile-menu"
+          aria-haspopup="menu"
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
         >
           {open ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
@@ -98,6 +132,10 @@ export function Navigation() {
       {open && (
         <div
           id="mobile-menu"
+          ref={drawerRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menu principal"
           className="lg:hidden fixed inset-x-0 top-16 bottom-0 bg-white z-40 overflow-y-auto"
         >
           <ul className="flex flex-col p-4 gap-1">

@@ -27,7 +27,7 @@ const equipements = [
   {
     icon: Activity,
     title: "Lits 3 positions",
-    text: "Confort optimal pendant les 4 heures de séance, positionnement adapté.",
+    text: "Positionnement adapté pendant les 4 heures de séance.",
   },
   {
     icon: Shield,
@@ -60,10 +60,11 @@ export default function LaCliniquePage() {
                 environnement serein.
               </p>
               <p>
-                Nos équipes combinent expertise néphrologique, savoir-faire
-                infirmier et accompagnement humain. Chaque patient bénéficie
-                d'un suivi personnalisé&nbsp;: éducation thérapeutique, conseils
-                diététiques, soutien psychologique, accompagnement des proches.
+                Nos équipes combinent compétences néphrologiques, savoir-faire
+                infirmier et accompagnement des patients. Chaque personne bénéficie
+                d'un suivi personnalisé&nbsp;: éducation thérapeutique (apprendre à
+                vivre avec la maladie), conseils diététiques, soutien psychologique,
+                accompagnement des proches.
               </p>
             </div>
           </div>
@@ -72,7 +73,7 @@ export default function LaCliniquePage() {
             {[
               { k: "Postes de dialyse", v: `${site.stats.postes}` },
               { k: "Créneaux par jour", v: "3" },
-              { k: "Équipements récents", v: `${site.stats.equipementsRecents}` },
+              { k: "Équipements renouvelés en", v: `${site.stats.equipementsRecents}` },
               { k: "Conventionnements", v: site.legal.conventions.join(" · ") },
             ].map((row) => (
               <div

@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Card } from "@/components/ui/Card";
 import { site } from "@/lib/site";
 import { medicalProcedureSchema } from "@/lib/schema";
 
@@ -40,8 +41,8 @@ export default function HemodialysePage() {
     <>
       <PageHero
         eyebrow="Service · Hémodialyse"
-        title="Une séance de dialyse réussie commence par un cadre rigoureux"
-        subtitle={`${site.stats.postes} postes de dialyse. Équipes formées. Équipements contrôlés. Soins remboursés par la CNAS et la CASNOS.`}
+        title="Hémodialyse à Sidi Bel Abbès"
+        subtitle={`${site.stats.postes} postes. 3 créneaux par jour. Conventionnée CNAS et CASNOS.`}
       />
       <div className="container-custom py-5">
         <Breadcrumb
@@ -78,15 +79,16 @@ export default function HemodialysePage() {
               <p>
                 Lorsque les reins ne parviennent plus à filtrer les déchets et
                 l'eau en excès, l'hémodialyse prend le relais. Le sang est
-                amené au générateur via une fistule, filtré dans un dialyseur,
-                puis restitué au patient.
+                conduit vers le générateur (la machine de dialyse) par une
+                fistule (accès vasculaire créé au bras), filtré dans un
+                dialyseur (filtre artificiel), puis restitué.
               </p>
               <p>
                 Chaque séance dure environ 4 heures. La plupart des patients
                 viennent 3 fois par semaine selon la prescription du
-                néphrologue. Pendant la séance, vous êtes installé
-                confortablement sur un lit 3 positions, surveillé en continu
-                par nos infirmiers et un médecin présent sur site.
+                néphrologue. Pendant la séance, vous êtes installé·e
+                confortablement sur un lit 3 positions, sous surveillance
+                continue par nos infirmiers et un médecin présent sur site.
               </p>
             </div>
           </div>
@@ -119,39 +121,38 @@ export default function HemodialysePage() {
           />
           <ol className="grid md:grid-cols-4 gap-5">
             {process.map((p) => (
-              <li
-                key={p.step}
-                className="relative bg-white rounded-2xl p-6 border border-neutral-150 shadow-sm"
-              >
-                <div className="w-10 h-10 rounded-lg bg-primary-600 text-white font-display font-bold grid place-items-center mb-4">
-                  {p.step}
-                </div>
-                <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                  {p.title}
-                </h3>
-                <p className="text-neutral-700 text-base">{p.text}</p>
+              <li key={p.step}>
+                <Card>
+                  <div className="w-10 h-10 rounded-lg bg-primary-600 text-white font-display font-bold grid place-items-center mb-4">
+                    {p.step}
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
+                    {p.title}
+                  </h3>
+                  <p className="text-neutral-700 text-base">{p.text}</p>
+                </Card>
               </li>
             ))}
           </ol>
         </div>
       </section>
 
-      <section className="section-padding">
-        <div className="container-custom grid md:grid-cols-3 gap-6 items-start">
-          <div className="md:col-span-2">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
-              Vous n'avez jamais dialysé ?
+      <section className="section-padding bg-primary-700 text-white">
+        <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
+          <div className="md:col-span-3">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
+              Vous n'avez jamais dialysé&nbsp;?
             </h2>
-            <p className="text-neutral-700 text-lg leading-relaxed">
+            <p className="text-primary-100 text-lg leading-relaxed">
               Nous avons conçu un parcours dédié pour votre première séance,
               avec des repères clairs à chaque étape. Nous accompagnons aussi
               les patients de passage, sur réservation.
             </p>
           </div>
-          <div className="flex md:justify-end">
+          <div className="md:col-span-2 flex md:justify-end">
             <Link
               href="/services/premiere-seance"
-              className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-full font-semibold min-h-[56px]"
+              className="inline-flex items-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px]"
             >
               Préparer ma 1ʳᵉ séance
               <ArrowRight className="w-5 h-5" aria-hidden="true" />

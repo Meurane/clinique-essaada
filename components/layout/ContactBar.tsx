@@ -3,7 +3,10 @@ import { site } from "@/lib/site";
 
 export function ContactBar() {
   return (
-    <div className="hidden md:block bg-primary-800 text-primary-50 text-sm">
+    <aside
+      aria-label="Bandeau de contact rapide"
+      className="hidden md:block bg-primary-800 text-primary-50 text-sm"
+    >
       <div className="container-custom flex justify-between items-center py-2 gap-4">
         <div className="flex items-center gap-6">
           <a
@@ -28,6 +31,6 @@ export function ContactBar() {
           <span>{site.hours.opening}</span>
         </div>
       </div>
-    </div>
+    </aside>
   );
 }

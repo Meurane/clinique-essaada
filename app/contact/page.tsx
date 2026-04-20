@@ -42,7 +42,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Nous joindre"
-        subtitle="Le moyen le plus rapide pour nous joindre : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi."
+        subtitle="Pour nous joindre rapidement : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi."
       />
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Contact", url: "/contact" }]} />
@@ -115,9 +115,27 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="aspect-[16/10] rounded-2xl bg-neutral-100 border border-neutral-200 grid place-items-center text-sm text-neutral-500">
-              [Plan d'accès — image statique à ajouter en Phase 2]
-            </div>
+            <a
+              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                `${site.name}, ${site.city}, ${site.country}`,
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block aspect-[16/10] rounded-2xl bg-gradient-to-br from-sand-50 to-neutral-100 border border-neutral-200 hover:border-primary-400 transition-colors relative overflow-hidden"
+              aria-label={`Ouvrir l'emplacement de ${site.name} dans Google Maps`}
+            >
+              <div className="absolute inset-0 grid place-items-center">
+                <div className="text-center space-y-2">
+                  <MapPin className="w-10 h-10 text-primary-700 mx-auto" aria-hidden="true" />
+                  <div className="font-display text-lg font-semibold text-neutral-900">
+                    Ouvrir dans Google Maps
+                  </div>
+                  <div className="text-sm text-neutral-600">
+                    {site.city}, {site.country}
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>

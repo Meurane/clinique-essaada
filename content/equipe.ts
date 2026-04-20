@@ -6,43 +6,31 @@ export type Member = {
   bio?: string;
 };
 
-export const team: Member[] = [
-  {
-    slug: "nephrologue-1",
-    name: "[À COMPLÉTER — Nom Prénom]",
-    role: "Néphrologue",
-    specialty: "Insuffisance rénale chronique",
-  },
-  {
-    slug: "nephrologue-2",
-    name: "[À COMPLÉTER — Nom Prénom]",
-    role: "Néphrologue",
-    specialty: "Hémodialyse et maladies rénales",
-  },
-  {
-    slug: "infirmier-chef",
-    name: "[À COMPLÉTER — Nom Prénom]",
-    role: "Infirmier·e chef",
-    specialty: "Hémodialyse",
-  },
-];
+// Les fiches individuelles seront publiées dès réception des informations
+// (noms et photos) par la clinique. Tant que les données ne sont pas
+// disponibles, la page affiche uniquement les équipes par département —
+// pas de cartes fantômes en production.
+export const team: Member[] = [];
 
 export const departments = [
   {
     title: "Néphrologie",
-    description: "Consultation, diagnostic, suivi des maladies rénales.",
+    description:
+      "Médecins néphrologues pour la consultation, le diagnostic et le suivi des maladies rénales à tous les stades.",
   },
   {
     title: "Hémodialyse",
-    description: "Séances personnalisées, surveillance continue.",
+    description:
+      "Infirmiers spécialisés en hémodialyse, techniciens biomédicaux et médecins présents en permanence pendant les séances.",
   },
   {
     title: "Paramédical & accompagnement",
     description:
-      "Infirmiers spécialisés, diététicien·ne, soutien patients et familles.",
+      "Diététicien·ne, aide-soignant·e·s et personnel de soutien pour l'éducation thérapeutique et l'accompagnement des familles.",
   },
   {
     title: "Administration & accueil",
-    description: "Prise de rendez-vous, accompagnement dossier CNAS/CASNOS.",
+    description:
+      "Prise de rendez-vous, accompagnement dans le dossier CNAS / CASNOS, liaison avec les organismes de transport patient.",
   },
 ];

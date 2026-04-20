@@ -14,7 +14,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
           __html: JSON.stringify(breadcrumbSchema(items)),
         }}
       />
-      <ol className="flex flex-wrap items-center gap-1.5 text-neutral-500">
+      <ol className="flex flex-wrap items-center gap-1.5 text-neutral-600">
         {items.map((it, i) => {
           const isLast = i === items.length - 1;
           return (
@@ -25,7 +25,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
               {isLast ? (
                 <span className="text-neutral-900 font-medium">{it.name}</span>
               ) : (
-                <Link href={it.url} className="hover:text-primary-600 hover:underline">
+                <Link href={it.url} className="underline underline-offset-2 hover:text-primary-700">
                   {it.name}
                 </Link>
               )}

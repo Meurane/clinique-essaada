@@ -118,16 +118,16 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-neutral-500">
+        <div className="mt-8 pt-6 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-neutral-400">
           <p>© {new Date().getFullYear()} {site.name}. Tous droits réservés.</p>
           <ul className="flex flex-wrap gap-x-5 gap-y-1">
             <li>
-              <Link href="/mentions-legales" className="hover:text-neutral-300">
+              <Link href="/mentions-legales" className="underline hover:text-neutral-200">
                 Mentions légales
               </Link>
             </li>
             <li>
-              <Link href="/confidentialite" className="hover:text-neutral-300">
+              <Link href="/confidentialite" className="underline hover:text-neutral-200">
                 Confidentialité
               </Link>
             </li>

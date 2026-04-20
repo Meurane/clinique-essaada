@@ -31,15 +31,19 @@ export function ServicesGrid() {
     <ul className="grid md:grid-cols-3 gap-6">
       {services.map((s) => (
         <li key={s.href}>
-          <Link href={s.href} className="block group h-full">
-            <Card className="h-full flex flex-col">
+          <Link
+            href={s.href}
+            aria-label={s.title}
+            className="block group h-full"
+          >
+            <Card className="h-full flex flex-col transition-transform duration-200 group-hover:-translate-y-0.5">
               <CardIcon>
                 <s.icon className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-xl font-semibold text-neutral-900 mb-2">
                 {s.title}
               </h3>
-              <p className="text-neutral-600 text-base leading-relaxed flex-1">
+              <p className="text-neutral-700 text-base leading-relaxed flex-1">
                 {s.description}
               </p>
               <div className="mt-5 inline-flex items-center gap-1.5 font-semibold text-primary-700 group-hover:gap-2.5 transition-all">

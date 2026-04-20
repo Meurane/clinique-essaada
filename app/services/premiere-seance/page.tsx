@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 };
 
 const avant = [
-  "Votre dernier bilan biologique (moins de 1 mois)",
-  "Vos sérologies à jour (HBs, HCV, HIV)",
+  "Votre dernier bilan biologique (analyses de sang récentes, moins de 1 mois)",
+  "Vos sérologies à jour (hépatites B, C et VIH)",
   "Votre ordonnance de dialyse signée par votre néphrologue",
-  "Votre carte Chifa (CNAS/CASNOS)",
+  "Votre carte Chifa (CNAS ou CASNOS)",
   "Une pièce d'identité",
 ];
 
@@ -59,7 +59,7 @@ export default function PremiereSeancePage() {
     <>
       <PageHero
         eyebrow="Votre 1ʳᵉ séance"
-        title="Un parcours balisé, pour une première séance sereine"
+        title="Un parcours balisé pour préparer votre première séance"
         subtitle="Nous savons que la première fois peut générer de l'inquiétude. Voici tout ce que vous devez savoir avant de venir."
       />
       <div className="container-custom py-5">

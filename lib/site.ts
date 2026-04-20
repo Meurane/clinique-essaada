@@ -2,7 +2,7 @@ export const site = {
   name: "Clinique ESSAADA",
   tagline: "Centre d'hémodialyse — Sidi Bel Abbès",
   description:
-    "Centre d'hémodialyse à Sidi Bel Abbès. 40 postes, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage.",
+    "Centre d'hémodialyse à Sidi Bel Abbès. 40 postes, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage. Conventionnée CNAS et CASNOS.",
   url: "https://cliniquessaada.fr",
   locale: "fr_DZ",
   city: "Sidi Bel Abbès",
@@ -17,6 +17,11 @@ export const site = {
   contact: {
     phone: "+213 00 00 00 00 00",
     phoneHref: "tel:+213000000000",
+    urgence: {
+      phone: "+213 00 00 00 00 00",
+      phoneHref: "tel:+213000000000",
+      note: "Numéro d'urgence disponible 24h/24",
+    },
     whatsapp: "213000000000",
     whatsappUrl: "https://wa.me/213000000000",
     email: "cliniqueessaada22@gmail.com",
@@ -30,13 +35,23 @@ export const site = {
       { label: "Soir", range: "14h00 — 19h00" },
     ],
     note: "Les horaires peuvent être ajustés pour optimiser la prise en charge.",
+    ramadanNote:
+      "Pendant le Ramadan, les créneaux sont adaptés (après f'tour et avant s'hour) en concertation avec votre néphrologue.",
+  },
+  rdv: {
+    rappelDelai: "sous 24 à 48 h (jours ouvrables)",
+    reservationPassageMois: 1,
   },
   legal: {
-    agrement: "[À COMPLÉTER : numéro d'agrément Ministère de la Santé]",
+    agrement: "[À COMPLÉTER : numéro d'agrément DSP Sidi Bel Abbès]",
     rc: "[À COMPLÉTER : numéro RC]",
     nif: "[À COMPLÉTER : NIF]",
     directeurPublication: "[À COMPLÉTER : directeur de la publication]",
     conventions: ["CNAS", "CASNOS"],
+    conventionsLong: {
+      CNAS: "Caisse Nationale des Assurances Sociales des travailleurs salariés",
+      CASNOS: "Caisse Nationale de Sécurité Sociale des Non-Salariés",
+    },
   },
   stats: {
     postes: 40,

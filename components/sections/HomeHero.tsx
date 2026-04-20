@@ -8,6 +8,13 @@ const proofPoints = [
   "Patients résidents et de passage",
 ];
 
+const miniStats = [
+  { value: `${site.stats.postes}`, label: "Postes de dialyse" },
+  { value: "3×", label: "Créneaux par jour" },
+  { value: site.stats.equipementsRecents, label: "Équipements renouvelés" },
+  { value: "24/7", label: "Médecin présent" },
+];
+
 export function HomeHero() {
   return (
     <section className="relative bg-primary-700 text-white overflow-hidden">
@@ -25,15 +32,15 @@ export function HomeHero() {
             <span className="w-2 h-2 rounded-full bg-accent-500" aria-hidden="true" />
             Conventionnée CNAS · CASNOS
           </div>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05]">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
             Centre d'hémodialyse à
             <br />
-            <span className="text-sand-200">Sidi Bel Abbès</span>
+            <span className="text-sand-100">Sidi Bel Abbès</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
             {site.stats.postes} postes de dialyse, équipe pluridisciplinaire,
-            prise en charge personnalisée. Également ouverts aux patients de
-            passage.
+            prise en charge personnalisée. Nous accueillons aussi les patients
+            de passage.
           </p>
           <ul className="space-y-2.5 text-primary-50">
             {proofPoints.map((p) => (
@@ -43,7 +50,7 @@ export function HomeHero() {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-2">
             <Link
               href="/rendez-vous"
               className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
@@ -53,19 +60,27 @@ export function HomeHero() {
             </Link>
             <a
               href={site.contact.phoneHref}
-              className="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:bg-white/10 text-white px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
+              className="inline-flex items-center gap-2 text-primary-100 hover:text-white underline underline-offset-4 decoration-primary-300/60 decoration-2 min-h-[48px] px-2"
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
-              {site.contact.phone}
+              <span className="font-medium">{site.contact.phone}</span>
             </a>
           </div>
         </div>
 
         <div className="hidden md:block">
-          <div className="relative aspect-[4/5] rounded-3xl bg-gradient-to-br from-primary-500/40 to-primary-800/60 border border-primary-400/20 overflow-hidden">
-            <div className="absolute inset-6 rounded-2xl border border-white/10 grid place-items-center text-center text-primary-200 text-sm px-6">
-              [Photo clinique — à fournir : salle de dialyse, lumière naturelle]
-            </div>
+          <div className="grid grid-cols-2 gap-4">
+            {miniStats.map((s) => (
+              <div
+                key={s.label}
+                className="bg-primary-600/40 border border-primary-400/30 backdrop-blur-sm rounded-2xl p-6"
+              >
+                <div className="font-display text-3xl md:text-4xl font-bold text-white">
+                  {s.value}
+                </div>
+                <div className="mt-1 text-primary-100 text-base">{s.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

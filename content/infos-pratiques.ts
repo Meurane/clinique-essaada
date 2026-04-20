@@ -1,4 +1,4 @@
-import { Clock, Car, Wifi, Coffee, UserPlus, Shield } from "lucide-react";
+import { Clock, Car, Wifi, Coffee, UserPlus, Shield, Accessibility, Moon } from "lucide-react";
 import { site } from "@/lib/site";
 
 export const infosBlocks = [
@@ -12,13 +12,33 @@ export const infosBlocks = [
     ],
   },
   {
+    icon: Moon,
+    title: "Horaires Ramadan",
+    items: [
+      "Créneaux adaptés après f'tour et avant s'hour",
+      "Reprogrammation en concertation avec votre néphrologue",
+      "Prise en charge adaptée pour les patients qui jeûnent",
+      "Équipe disponible pour répondre à vos questions",
+    ],
+  },
+  {
     icon: Car,
     title: "Accès & stationnement",
     items: [
       "Parking patients sur place",
       "Places réservées près de l'entrée",
-      "Deux rampes pour fauteuils roulants",
       "Accès direct pour ambulance",
+    ],
+  },
+  {
+    icon: Accessibility,
+    title: "Accessibilité PMR",
+    items: [
+      "Deux rampes d'accès pour fauteuils roulants",
+      "Places de stationnement PMR signalées",
+      "Fauteuil roulant disponible à l'accueil",
+      "Toilettes adaptées",
+      "Aide au brancardage sur demande",
     ],
   },
   {
@@ -43,7 +63,7 @@ export const infosBlocks = [
     icon: UserPlus,
     title: "Accompagnants",
     items: [
-      "Un accompagnant peut rester lors des premières séances",
+      "Un accompagnant peut être présent lors des premières séances",
       "Salle d'attente confortable",
       "Café et thé à disposition",
     ],
@@ -55,7 +75,7 @@ export const infosBlocks = [
       "Équipements certifiés et contrôlés",
       "Protocoles d'hygiène stricts",
       "Médecin présent en permanence",
-      "Numéro d'urgence 24h/24",
+      `Numéro d'urgence 24h/24 : ${site.contact.urgence.phone}`,
     ],
   },
 ];
