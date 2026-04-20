@@ -19,8 +19,8 @@ export default function Error({
   return (
     <section className="min-h-[70vh] flex items-center justify-center bg-neutral-50 px-4 py-20">
       <div className="text-center max-w-lg">
-        <div className="w-16 h-16 rounded-full bg-red-100 grid place-items-center mx-auto mb-6">
-          <AlertTriangle className="w-8 h-8 text-red-600" aria-hidden="true" />
+        <div className="w-16 h-16 rounded-full bg-danger-100 grid place-items-center mx-auto mb-6">
+          <AlertTriangle className="w-8 h-8 text-danger-600" aria-hidden="true" />
         </div>
         <h1 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-4">
           Une erreur est survenue

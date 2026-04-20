@@ -53,7 +53,7 @@ export function RdvForm() {
       <div className="grid md:grid-cols-2 gap-5">
         <div>
           <label htmlFor="nom" className="block font-medium text-neutral-800 mb-2">
-            Nom complet <span className="text-red-700" aria-hidden="true">*</span>
+            Nom complet <span className="text-danger-700" aria-hidden="true">*</span>
           </label>
           <input
             id="nom"
@@ -69,7 +69,7 @@ export function RdvForm() {
         </div>
         <div>
           <label htmlFor="telephone" className="block font-medium text-neutral-800 mb-2">
-            Téléphone <span className="text-red-700" aria-hidden="true">*</span>
+            Téléphone <span className="text-danger-700" aria-hidden="true">*</span>
           </label>
           <input
             id="telephone"
@@ -175,7 +175,7 @@ export function RdvForm() {
           id={errorId}
           role="alert"
           aria-live="assertive"
-          className="flex items-start gap-3 p-4 rounded-xl bg-red-50 border border-red-200 text-red-900"
+          className="flex items-start gap-3 p-4 rounded-xl bg-danger-50 border border-danger-200 text-danger-900"
         >
           <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
           <p>{state.message}</p>
