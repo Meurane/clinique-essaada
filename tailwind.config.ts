@@ -7,10 +7,24 @@ import type { Config } from "tailwindcss";
  * Essence : "Chaque séance, la même attention."
  * Mood visuel : documentaire méditerranéen rigoureux
  *
+ * Audiences prioritaires :
+ *   1. Patients locaux 40-80 ans (Sidi Bel Abbès + région)
+ *   2. Familles décisionnaires (40-55 ans, souvent enfants expatriés)
+ *   3. Diaspora 30-55 ans (France, Canada, Belgique) qui cherche pour ses
+ *      parents OU pour ses propres séances de vacances en Algérie
+ *
+ * Test de confiance (diaspora / 2e gén) :
+ *   La palette doit passer le "test Doctolib / Livi / Elsan". Elle doit se
+ *   lire **premium méditerranéen sobre** — pas "terroir folklorique". Un
+ *   enfant d'immigré qui a l'habitude de Ramsay/Doctolib doit penser "niveau
+ *   européen" en arrivant, avant de s'attacher à la dimension algérienne qui
+ *   vient en seconde lecture (lumière, chaleur tonale).
+ *
  * Stratégie chromatique :
  *   — Primary teal profond méditerranéen (eau qui purifie, métaphore dialyse)
- *   — Sand ocre doré (terre qui accueille, lumière d'Oranie)
- *   — Ink indigo (profondeur structurelle, titres)
+ *   — Sand LIN-CHAMPAGNE désaturé (chaleur sans folklore, registre Aesop/
+ *     Apotheke/Loro Piana — remplace l'ocre franc jaune initial)
+ *   — Ink indigo (profondeur structurelle, titres éditoriaux)
  *   — Neutrals WARM (Stone) — anti-clinique-froide, doux œil presbyte/diabétique
  *   — Accent emerald, warning amber, danger red : strictement sémantiques
  *
@@ -41,18 +55,21 @@ export default {
           900: "#04202D",
         },
 
-        // Sand — Ocre doré (terre d'Oranie, chaleur méditerranéenne)
+        // Sand — Lin-champagne désaturé (chaleur méditerranéenne sans folklore)
+        // Registre visé : Aesop / Apotheke / Loro Piana. Passe le "test Doctolib"
+        // pour l'audience diaspora / enfants d'immigrés qui comparent avec les
+        // standards médicaux européens.
         sand: {
-          50:  "#FDF8EE",  // Surface alternative warm
-          100: "#F6E9C9",  // Cards warm, badges
-          200: "#EBD5A0",
-          300: "#D9B974",
-          400: "#C89F53",
-          500: "#B38739",  // Accent décoratif doré (filets sous eyebrow)
-          600: "#8E6A2D",
-          700: "#6B4E22",  // Texte accent chaud sur sand-50 (6.5:1 AA)
-          800: "#493419",
-          900: "#2B1F0F",
+          50:  "#FBF8F2",  // Surface alternative warm — lin crème neutre
+          100: "#F2ECE0",  // Cards warm — grège subtil
+          200: "#E3D8C3",  // Borders, chips — sable clair
+          300: "#CBB996",
+          400: "#AE9870",
+          500: "#8B7355",  // Accent décoratif — café-au-lait (filets sous eyebrow)
+          600: "#6D5A42",
+          700: "#544434",  // Texte accent chaud sur sand-50 (8.7:1 AAA)
+          800: "#3A2F24",
+          900: "#1F1912",
         },
 
         // Ink — Indigo profond (harmonie analogue au teal, titres éditoriaux)
