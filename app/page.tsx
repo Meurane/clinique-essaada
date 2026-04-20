@@ -78,7 +78,7 @@ function ContactBar() {
         </div>
         <div className="flex items-center gap-2">
           <Clock className="w-4 h-4" />
-          <span>Ouvert 7j/7 - Service continu</span>
+          <span>Ouvert du samedi au jeudi</span>
         </div>
       </div>
     </div>
@@ -272,7 +272,7 @@ function HeroSection() {
           {/* Stats - Données clés */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-white/20">
             <div>
-              <div className="font-display text-3xl md:text-4xl font-bold">20</div>
+              <div className="font-display text-3xl md:text-4xl font-bold">40</div>
               <div className="text-white/80">Postes de dialyse</div>
             </div>
             <div>
@@ -280,7 +280,7 @@ function HeroSection() {
               <div className="text-white/80">Ouvert tous les jours</div>
             </div>
             <div>
-              <div className="font-display text-3xl md:text-4xl font-bold">2023</div>
+              <div className="font-display text-3xl md:text-4xl font-bold">2025</div>
               <div className="text-white/80">Équipements récents</div>
             </div>
             <div>
@@ -308,7 +308,7 @@ function ServicesSection() {
         "Générateurs Fresenius dernière génération",
         "Eau de dialyse ultra-pure",
         "Suivi médical permanent",
-        "Fauteuils confortables inclinables",
+        "Lits 3 positions",
       ],
     },
     {
@@ -524,6 +524,7 @@ function InfosPratiquesSection() {
         "Après-midi : 12h00 - 17h00",
         "Soir : 18h00 - 23h00",
         "3 séances par semaine selon prescription",
+        "NB : les horaires peuvent être modifier pour une meilleure gestion du temps",
       ],
     },
     {
@@ -899,10 +900,10 @@ function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-neutral-800 mb-1">Email</h3>
                   <a
-                    href="mailto:contact@clinique-essaada.dz"
+                    href="mailto:cliniqueessaada22@gmail.com"
                     className="text-primary-600 font-semibold hover:underline"
                   >
-                    contact@clinique-essaada.dz
+                    cliniqueessaada22@gmail.com
                   </a>
                 </div>
               </div>
@@ -1076,8 +1077,8 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary-500" aria-hidden="true" />
-                <a href="mailto:contact@clinique-essaada.dz" className="hover:text-white transition-colors">
-                  contact@clinique-essaada.dz
+                <a href="mailto:cliniqueessaada22@gmail.com" className="hover:text-white transition-colors">
+                  cliniqueessaada22@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
