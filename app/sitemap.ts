@@ -1,38 +1,13 @@
 import { MetadataRoute } from "next";
+import { routes } from "@/lib/routes";
+import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cliniquessaada.fr";
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/#services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#premiere-seance`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#equipe`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-  ];
+  const now = new Date();
+  return routes.map((r) => ({
+    url: `${site.url}${r.href === "/" ? "" : r.href}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: r.priority ?? 0.5,
+  }));
 }

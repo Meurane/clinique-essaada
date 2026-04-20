@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Navigation } from "@/components/layout/Navigation";
+import { Footer } from "@/components/layout/Footer";
+import { ContactBar } from "@/components/layout/ContactBar";
+import { MobileActionBar } from "@/components/layout/MobileActionBar";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { site } from "@/lib/site";
+import { medicalClinicSchema } from "@/lib/schema";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,69 +19,56 @@ const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
-  weight: ["500", "600", "700", "800"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cliniquessaada.fr"),
+  metadataBase: new URL(site.url),
   title: {
-    default: "Clinique ESSAADA | Centre d'Hémodialyse - Sidi Bel Abbès",
-    template: "%s | Clinique ESSAADA",
+    default: `${site.name} | ${site.tagline}`,
+    template: `%s | ${site.name}`,
   },
-  description:
-    "Clinique ESSAADA - Centre d'hémodialyse moderne à Sidi Bel Abbès. Équipements de nouvelle génération, équipe médicale qualifiée. Prise en charge personnalisée de l'insuffisance rénale.",
+  description: site.description,
   keywords: [
     "hémodialyse",
-    "clinique",
-    "Sidi Bel Abbès",
-    "insuffisance rénale",
-    "néphrologie",
     "dialyse",
-    "ESSAADA",
+    "clinique",
+    "néphrologie",
+    "Sidi Bel Abbès",
     "Algérie",
-    "centre dialyse",
+    "ESSAADA",
+    "insuffisance rénale",
+    "patients de passage",
   ],
-  authors: [{ name: "Clinique ESSAADA" }],
-  creator: "Clinique ESSAADA",
-  publisher: "Clinique ESSAADA",
+  authors: [{ name: site.name }],
+  creator: site.name,
+  publisher: site.name,
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
   openGraph: {
     type: "website",
-    locale: "fr_DZ",
-    url: "https://cliniquessaada.fr",
-    siteName: "Clinique ESSAADA",
-    title: "Clinique ESSAADA | Centre d'Hémodialyse",
-    description:
-      "Centre d'hémodialyse moderne à Sidi Bel Abbès. Soins de qualité et accompagnement personnalisé pour les patients atteints d'insuffisance rénale.",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Clinique ESSAADA - Centre d'Hémodialyse",
-      },
-    ],
+    locale: site.locale,
+    url: site.url,
+    siteName: site.name,
+    title: `${site.name} | ${site.tagline}`,
+    description: site.description,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clinique ESSAADA | Centre d'Hémodialyse",
-    description:
-      "Centre d'hémodialyse moderne à Sidi Bel Abbès. Soins de qualité et accompagnement personnalisé.",
+    title: site.name,
+    description: site.description,
     images: ["/og-image.jpg"],
   },
-  alternates: {
-    canonical: "https://cliniquessaada.fr",
-  },
+  alternates: { canonical: site.url },
   category: "health",
 };
 
@@ -88,55 +82,27 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#0078A5" />
+        <meta name="theme-color" content="#0A475D" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalClinic",
-              name: "Clinique ESSAADA",
-              description:
-                "Centre d'hémodialyse moderne à Sidi Bel Abbès, Algérie",
-              medicalSpecialty: "Nephrology",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Sidi Bel Abbès",
-                addressCountry: "DZ",
-              },
-              telephone: "+213000000000",
-              url: "https://cliniquessaada.fr",
-              openingHoursSpecification: {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "06:00",
-                closes: "23:00",
-              },
-              availableService: [
-                {
-                  "@type": "MedicalProcedure",
-                  name: "Hémodialyse",
-                  procedureType: "https://schema.org/TherapeuticProcedure",
-                },
-                {
-                  "@type": "MedicalProcedure",
-                  name: "Consultation Néphrologie",
-                  procedureType: "https://schema.org/DiagnosticProcedure",
-                },
-              ],
-            }),
+            __html: JSON.stringify(medicalClinicSchema()),
           }}
         />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="bg-white text-neutral-700 antialiased">
+        <a href="#main" className="skip-link">
+          Aller au contenu principal
+        </a>
+        <ContactBar />
+        <Navigation />
+        <main id="main" className="pb-24 lg:pb-0">
+          {children}
+        </main>
+        <Footer />
+        <MobileActionBar />
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
