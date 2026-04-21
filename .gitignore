@@ -33,3 +33,7 @@ Thumbs.db
 
 # TypeScript
 *.tsbuildinfo
+
+# PAI / Claude tooling local (root-scoped so it doesn't shadow a future lib)
+/.claude/
+/MEMORY/

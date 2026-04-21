@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import { AlertTriangle, RefreshCw, Home } from "lucide-react";
 import Link from "next/link";
+import { AlertTriangle, RefreshCw, Home } from "lucide-react";
+import { site } from "@/lib/site";
 
 export default function Error({
   error,
@@ -16,49 +17,41 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-neutral-50 px-4">
-      <div className="text-center max-w-md">
-        <div className="w-20 h-20 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-6">
-          <AlertTriangle className="w-10 h-10 text-red-600" />
+    <section className="min-h-[70vh] flex items-center justify-center bg-neutral-50 px-4 py-20">
+      <div className="text-center max-w-lg">
+        <div className="w-16 h-16 rounded-full bg-danger-100 grid place-items-center mx-auto mb-6">
+          <AlertTriangle className="w-8 h-8 text-danger-600" aria-hidden="true" />
         </div>
-
-        <h1 className="font-display text-2xl font-bold text-neutral-800 mb-4">
+        <h1 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-4">
           Une erreur est survenue
         </h1>
-
-        <p className="text-neutral-600 mb-8">
-          Nous nous excusons pour ce désagrément. Veuillez réessayer ou
-          retourner à la page d&apos;accueil.
+        <p className="text-neutral-600 mb-8 text-lg">
+          Nous nous en excusons. Essayez à nouveau ou revenez à l&apos;accueil.
         </p>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
+            type="button"
             onClick={() => reset()}
-            className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3.5 rounded-full font-semibold min-h-[48px]"
           >
-            <RefreshCw className="w-5 h-5" />
+            <RefreshCw className="w-5 h-5" aria-hidden="true" />
             Réessayer
           </button>
-
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 bg-neutral-200 hover:bg-neutral-300 text-neutral-800 px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-white border-2 border-primary-600 text-primary-700 hover:bg-primary-50 px-6 py-3.5 rounded-full font-semibold min-h-[48px]"
           >
-            <Home className="w-5 h-5" />
+            <Home className="w-5 h-5" aria-hidden="true" />
             Accueil
           </Link>
         </div>
-
-        <p className="text-neutral-400 text-sm mt-8">
-          Si le problème persiste, contactez-nous au{" "}
-          <a
-            href="tel:+213000000000"
-            className="text-primary-600 hover:underline"
-          >
-            +213 00 00 00 00 00
+        <p className="text-neutral-500 text-sm mt-8">
+          Si le problème persiste, appelez-nous au{" "}
+          <a href={site.contact.phoneHref} className="text-primary-700 underline">
+            {site.contact.phone}
           </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 }

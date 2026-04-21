@@ -5,84 +5,63 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-size: 18px; /* WCAG: Base 18px pour accessibilité seniors */
   }
 
   body {
-    @apply text-neutral-800;
-    line-height: 1.6;
+    @apply text-neutral-700 font-sans antialiased text-lg;
+    line-height: 1.65;
   }
 
-  /* Focus visible pour navigation clavier */
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-neutral-900;
+  }
+
+  /* Focus-visible par défaut — fonds clairs */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-primary-500;
+    @apply outline-none ring-2 ring-primary-700 ring-offset-2 ring-offset-white rounded-sm;
   }
 
-  /* Skip link pour accessibilité */
+  /* Focus-visible inversé sur fonds sombres (footer, ContactBar, hero teal,
+     CTAs primary-700/800/900). Ring blanc + offset teal pour rester visible. */
+  :is(footer, [class*="bg-primary-7"], [class*="bg-primary-8"], [class*="bg-primary-9"], [class*="bg-neutral-9"]) *:focus-visible {
+    @apply ring-white ring-offset-primary-800;
+  }
+
   .skip-link {
-    @apply absolute -top-10 left-0 bg-primary-600 text-white px-4 py-2 z-50;
-    transition: top 0.3s;
+    @apply absolute -top-12 left-4 bg-primary-700 text-white px-4 py-2 z-[100] rounded-md;
+    transition: top 200ms ease-out;
   }
   .skip-link:focus {
-    @apply top-0;
+    @apply top-3;
   }
 }
 
 @layer components {
-  .gradient-primary {
-    @apply bg-gradient-to-r from-primary-500 to-primary-600;
-  }
-
-  .gradient-hero {
-    @apply bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500;
-  }
-
-  .glass {
-    @apply bg-white/80 backdrop-blur-lg;
-  }
-
   .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
+    @apply py-14 md:py-20 lg:py-24;
   }
 
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-4 sm:px-6;
+  }
+
+  /* Lead paragraph — premier paragraphe après un hero ou un H2,
+     donne un palier de lecture plus large avant le body. Public 40-80,
+     éditorial calme. */
+  .lead {
+    @apply text-xl md:text-[1.3125rem] text-neutral-800 leading-relaxed font-normal max-w-prose;
+  }
+
+  /* Section divider discret — filet sand sous eyebrow ou entre blocs. */
+  .section-rule {
+    @apply block h-px w-10 bg-sand-500/70;
   }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  @apply bg-neutral-100;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-primary-300 rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-400;
-}
-
-/* Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Gradient text */
-.gradient-text {
-  @apply bg-gradient-to-r from-primary-600 to-accent-500 bg-clip-text text-transparent;
-}
-
-/* Respect des préférences utilisateur pour les animations réduites */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -91,9 +70,5 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-
-  .animate-float {
-    animation: none;
   }
 }

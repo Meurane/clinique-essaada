@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { site } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/admin/"],
       },
     ],
-    sitemap: "https://cliniquessaada.fr/sitemap.xml",
+    sitemap: `${site.url}/sitemap.xml`,
   };
 }
