@@ -18,7 +18,7 @@ export function HomeHero() {
             <span className="w-2 h-2 rounded-full bg-accent-500" aria-hidden="true" />
             Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais
           </div>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-white">
             Votre vie continue,
             <br />
             <span className="text-sand-100">on en prend soin.</span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useId } from "react";
+import { useActionState, useEffect, useId, useRef } from "react";
 import { AlertCircle } from "lucide-react";
 import { submitRdv, type RdvFormState } from "@/app/rendez-vous/actions";
 
@@ -25,10 +25,26 @@ const fieldInputClass =
 export function RdvForm() {
   const [state, action, pending] = useActionState(submitRdv, initialState);
   const errorId = useId();
+  const phoneHelpId = useId();
   const hasError = state.status === "error";
+  const alertRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (hasError && alertRef.current) {
+      alertRef.current.focus();
+      alertRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [hasError, state.message]);
 
   return (
     <form action={action} className="space-y-5" noValidate>
+      <p className="text-sm text-neutral-600">
+        Les champs marqués d'un{" "}
+        <span className="text-danger-700 font-semibold" aria-hidden="true">
+          *
+        </span>{" "}
+        sont obligatoires.
+      </p>
       {/* Honeypot — hors-écran, invisible sans display:none */}
       <div
         aria-hidden="true"
@@ -64,6 +80,7 @@ export function RdvForm() {
             aria-invalid={hasError}
             aria-describedby={hasError ? errorId : undefined}
             autoComplete="name"
+            defaultValue={state.values?.nom ?? ""}
             className={fieldInputClass}
           />
         </div>
@@ -78,12 +95,17 @@ export function RdvForm() {
             required
             aria-required="true"
             aria-invalid={hasError}
-            aria-describedby={hasError ? errorId : undefined}
+            aria-describedby={hasError ? `${phoneHelpId} ${errorId}` : phoneHelpId}
             autoComplete="tel"
             inputMode="tel"
-            placeholder="+213 00 00 00 00 00"
+            pattern="^\+?[0-9\s().\-]{9,20}$"
+            placeholder="048 70 25 70"
+            defaultValue={state.values?.telephone ?? ""}
             className={fieldInputClass}
           />
+          <p id={phoneHelpId} className="mt-2 text-sm text-neutral-600">
+            Ex. 048 70 25 70, +213 555 12 34 56 ou +33 6 12 34 56 78.
+          </p>
         </div>
       </div>
 
@@ -94,7 +116,7 @@ export function RdvForm() {
         <select
           id="motif"
           name="motif"
-          defaultValue=""
+          defaultValue={state.values?.motif ?? ""}
           className={fieldInputClass}
         >
           <option value="" disabled>
@@ -122,6 +144,7 @@ export function RdvForm() {
                 type="radio"
                 name="creneau"
                 value={c.value}
+                defaultChecked={state.values?.creneau === c.value}
                 className="sr-only peer"
               />
               <span
@@ -144,6 +167,7 @@ export function RdvForm() {
           id="message"
           name="message"
           rows={4}
+          defaultValue={state.values?.message ?? ""}
           className="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 bg-white text-neutral-900 focus-visible:border-primary-600 focus-visible:ring-4 focus-visible:ring-primary-200 focus-visible:outline-none"
           placeholder="Toute information utile à votre demande."
         />
@@ -173,9 +197,11 @@ export function RdvForm() {
       {hasError && state.message && (
         <div
           id={errorId}
+          ref={alertRef}
           role="alert"
           aria-live="assertive"
-          className="flex items-start gap-3 p-4 rounded-xl bg-danger-50 border border-danger-200 text-danger-900"
+          tabIndex={-1}
+          className="flex items-start gap-3 p-4 rounded-xl bg-danger-50 border border-danger-200 text-danger-900 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-danger-200"
         >
           <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true" />
           <p>{state.message}</p>

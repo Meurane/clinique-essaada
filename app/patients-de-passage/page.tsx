@@ -16,7 +16,7 @@ import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site } from "@/lib/site";
+import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -130,7 +130,7 @@ export default function PatientsDePassagePage() {
                 <div className="text-sm font-semibold tracking-wide text-primary-200 mb-1">
                   Diaspora France
                 </div>
-                <h3 className="font-display text-xl md:text-2xl font-semibold mb-2">
+                <h3 className="font-display text-xl md:text-2xl font-semibold mb-2 text-white">
                   Vous rentrez de France ? Guide CPAM complet
                 </h3>
                 <p className="text-primary-100 leading-relaxed">
@@ -170,7 +170,7 @@ export default function PatientsDePassagePage() {
           </ol>
           <div className="mt-10 text-center">
             <a
-              href={site.contact.whatsappUrl}
+              href={waUrl("Bonjour, je suis patient dialysé et je souhaite venir en séjour à Sidi Bel Abbès. Voici mes dates approximatives : ")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
@@ -268,20 +268,20 @@ export default function PatientsDePassagePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-primary-700 text-white">
+      <section className="section-padding bg-sand-50">
         <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
           <div className="md:col-span-3">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
               Prêt à organiser votre séjour dialyse&nbsp;?
             </h2>
-            <p className="text-primary-100 text-lg leading-relaxed">
+            <p className="text-neutral-700 text-lg leading-relaxed">
               Notre équipe secrétariat est joignable du samedi au jeudi, en
               français et en arabe. WhatsApp privilégié pour la diaspora.
             </p>
           </div>
           <div className="md:col-span-2 flex flex-col sm:flex-row md:justify-end gap-3">
             <a
-              href={site.contact.whatsappUrl}
+              href={waUrl("Bonjour, je suis patient dialysé et je souhaite organiser un séjour à Sidi Bel Abbès.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
@@ -291,7 +291,7 @@ export default function PatientsDePassagePage() {
             </a>
             <a
               href={site.contact.phoneHref}
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-5 py-3 rounded-full font-semibold min-h-[52px]"
+              className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
               Appeler

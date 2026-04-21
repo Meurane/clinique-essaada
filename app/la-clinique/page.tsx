@@ -22,11 +22,11 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site } from "@/lib/site";
+import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "La clinique",
+  title: "Notre centre · 37 lits à Sidi Bel Abbès",
   description:
     "Découvrez la Clinique ESSAADA : 37 lits, équipements récents, eau ultra-pure, équipe pluridisciplinaire à Sidi Bel Abbès.",
   alternates: { canonical: `${site.url}/la-clinique` },
@@ -270,6 +270,7 @@ export default function LaCliniquePage() {
       <section className="section-padding bg-primary-700 text-white">
         <div className="container-custom">
           <SectionHeader
+            tone="light"
             eyebrow="Nos engagements"
             title="Quatre promesses, tenues à chaque séance"
             subtitle="Ce ne sont pas des slogans — ce sont les quatre axes sur lesquels nous sommes évalués et sur lesquels nous nous engageons."
@@ -333,7 +334,7 @@ export default function LaCliniquePage() {
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
               <a
-                href={site.contact.whatsappUrl}
+                href={waUrl("Bonjour, je souhaite visiter la Clinique ESSAADA.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-5 py-3 rounded-full font-semibold min-h-[48px] transition-colors"

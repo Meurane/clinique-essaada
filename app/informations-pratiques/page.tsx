@@ -6,11 +6,12 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card, CardIcon } from "@/components/ui/Card";
 import { infosBlocks, viequotidienneBlocks } from "@/content/infos-pratiques";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Informations pratiques",
+  title: "Vivre avec la dialyse · Horaires, accès, repas",
   description:
     "Horaires, accès, parking, WiFi, repas, sécurité. Tout ce qu'il faut savoir avant de venir à la Clinique ESSAADA.",
   alternates: { canonical: `${site.url}/informations-pratiques` },
@@ -133,6 +134,14 @@ export default function InfosPratiquesPage() {
           </div>
         </div>
       </section>
+
+      <ConversionFooterCTA
+        variant="white"
+        eyebrow="Préparer votre venue"
+        title="Des questions avant votre première visite ?"
+        subtitle="Horaires, accompagnants, documents à prévoir, repas — notre équipe vous explique tout à l'avance."
+        waMessage="Bonjour, j'ai une question pratique pour préparer ma venue à la Clinique ESSAADA."
+      />
     </>
   );
 }

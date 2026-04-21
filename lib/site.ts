@@ -9,21 +9,21 @@ export const site = {
   country: "Algérie",
   countryCode: "DZ",
   address: {
-    street: "[À COMPLÉTER : adresse complète]",
+    street: "Tranche N° 04 Plan Cadastral N° 241 CIV 12",
     postalCode: "22000",
     city: "Sidi Bel Abbès",
     country: "Algérie",
   },
   contact: {
-    phone: "+213 00 00 00 00 00",
-    phoneHref: "tel:+213000000000",
+    phone: "048 70 25 70",
+    phoneHref: "tel:+213487025700",
     urgence: {
-      phone: "+213 00 00 00 00 00",
-      phoneHref: "tel:+213000000000",
+      phone: "048 70 25 70",
+      phoneHref: "tel:+213487025700",
       note: "Numéro d'urgence disponible 24h/24",
     },
-    whatsapp: "213000000000",
-    whatsappUrl: "https://wa.me/213000000000",
+    whatsapp: "213487025700",
+    whatsappUrl: "https://wa.me/213487025700",
     email: "cliniqueessaada22@gmail.com",
     emailHref: "mailto:cliniqueessaada22@gmail.com",
   },
@@ -43,7 +43,7 @@ export const site = {
     reservationPassageMois: 1,
   },
   legal: {
-    agrement: "[À COMPLÉTER : numéro d'agrément DSP Sidi Bel Abbès]",
+    agrement: "N° 473",
     rc: "[À COMPLÉTER : numéro RC]",
     nif: "[À COMPLÉTER : NIF]",
     directeurPublication: "[À COMPLÉTER : directeur de la publication]",
@@ -62,3 +62,9 @@ export const site = {
 } as const;
 
 export type Site = typeof site;
+
+export function waUrl(message?: string): string {
+  const base = site.contact.whatsappUrl;
+  if (!message) return base;
+  return `${base}?text=${encodeURIComponent(message)}`;
+}

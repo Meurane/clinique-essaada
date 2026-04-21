@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   Droplets,
   Cpu,
@@ -8,8 +7,6 @@ import {
   Users,
   BadgeCheck,
   Activity,
-  ArrowRight,
-  MessageCircle,
   FlaskConical,
   Gauge,
   Factory,
@@ -19,6 +16,7 @@ import { PhotoGrid } from "@/components/ui/PhotoGrid";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card, CardIcon } from "@/components/ui/Card";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -410,37 +408,13 @@ export default function EquipementHygienePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-primary-700 text-white">
-        <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
-          <div className="md:col-span-3">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
-              Une question technique précise ?
-            </h2>
-            <p className="text-primary-100 text-lg leading-relaxed">
-              Qualité d'eau, type de dialyseur, résultats de vos dernières analyses —
-              notre équipe médicale répond en consultation ou par téléphone.
-            </p>
-          </div>
-          <div className="md:col-span-2 flex flex-col sm:flex-row md:justify-end gap-3">
-            <Link
-              href="/rendez-vous"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
-            >
-              Prendre rendez-vous
-              <ArrowRight className="w-5 h-5" aria-hidden="true" />
-            </Link>
-            <a
-              href={site.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+      <ConversionFooterCTA
+        variant="sand"
+        eyebrow="Questions techniques"
+        title="Une question technique précise ?"
+        subtitle="Qualité d'eau, type de dialyseur, résultats de vos dernières analyses — notre équipe médicale répond en consultation ou par téléphone."
+        waMessage="Bonjour, j'aimerais plus d'informations sur vos équipements et protocoles d'hygiène."
+      />
     </>
   );
 }

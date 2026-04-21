@@ -4,11 +4,12 @@ import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Services · Hémodialyse & néphrologie",
   description:
     "Hémodialyse, consultation néphrologie, préparation à la 1ʳᵉ séance. Découvrez l'offre de soins de la Clinique ESSAADA.",
   alternates: { canonical: `${site.url}/services` },
@@ -49,6 +50,13 @@ export default function ServicesPage() {
           <ServicesGrid />
         </div>
       </section>
+
+      <ConversionFooterCTA
+        variant="sand"
+        title="Un parcours adapté à votre situation ?"
+        subtitle="Consultation, première dialyse, séjour de passage — notre équipe vous oriente vers le bon service."
+        waMessage="Bonjour, je cherche à comprendre quel service de la Clinique ESSAADA correspond à ma situation."
+      />
     </>
   );
 }

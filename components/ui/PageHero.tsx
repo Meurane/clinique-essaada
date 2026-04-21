@@ -16,7 +16,7 @@ export function PageHero({
     <section className="bg-primary-700 text-white pt-28 pb-14 md:pt-32 md:pb-20">
       <div className="container-custom">
         {eyebrow && <Eyebrow tone="light">{eyebrow}</Eyebrow>}
-        <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight max-w-3xl">
+        <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight max-w-3xl text-white">
           {title}
         </h1>
         {subtitle && (

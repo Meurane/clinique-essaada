@@ -7,11 +7,12 @@ import { Card } from "@/components/ui/Card";
 import { PortraitCard } from "@/components/ui/PortraitCard";
 import { Callout } from "@/components/ui/Callout";
 import { team, departments } from "@/content/equipe";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Équipe médicale",
+  title: "Équipe médicale — néphrologie à Sidi Bel Abbès",
   description:
     "Néphrologues, infirmiers spécialisés, personnel d'accompagnement. Découvrez l'équipe de la Clinique ESSAADA à Sidi Bel Abbès.",
   alternates: { canonical: `${site.url}/equipe` },
@@ -127,6 +128,14 @@ export default function EquipePage() {
           )}
         </div>
       </section>
+
+      <ConversionFooterCTA
+        variant="white"
+        eyebrow="Consultation"
+        title="Rencontrer l'équipe en consultation ?"
+        subtitle="Une consultation néphrologie, un premier contact pour la dialyse, ou une question — nous répondons sous 24-48h ouvrées."
+        waMessage="Bonjour, je souhaite rencontrer l'équipe médicale de la Clinique ESSAADA en consultation."
+      />
     </>
   );
 }

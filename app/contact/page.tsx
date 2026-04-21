@@ -3,11 +3,11 @@ import { Phone, Mail, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { site } from "@/lib/site";
+import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact — téléphone, WhatsApp, adresse",
   description:
     "Contactez la Clinique ESSAADA à Sidi Bel Abbès : téléphone, WhatsApp, email, adresse, horaires.",
   alternates: { canonical: `${site.url}/contact` },
@@ -25,7 +25,7 @@ const channels = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: "Écrivez-nous sur WhatsApp",
-    href: site.contact.whatsappUrl,
+    href: waUrl("Bonjour, j'aimerais des informations sur la Clinique ESSAADA."),
     external: true,
   },
   {

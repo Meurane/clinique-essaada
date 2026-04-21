@@ -42,7 +42,7 @@ const navGroup = [
 
 export function Footer() {
   return (
-    <footer className="bg-primary-700 text-primary-100/90 border-t border-white/5">
+    <footer className="bg-primary-700 text-primary-100 border-t border-white/5">
       <div className="container-custom pt-10 pb-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6">
           <div className="space-y-3">
@@ -86,7 +86,10 @@ export function Footer() {
               <ul className="space-y-1.5 text-sm">
                 {group.links.map((l) => (
                   <li key={l.href}>
-                    <Link href={l.href} className="hover:text-white transition-colors">
+                    <Link
+                      href={l.href}
+                      className="underline decoration-white/20 underline-offset-2 hover:text-white hover:decoration-white transition-colors"
+                    >
                       {l.label}
                     </Link>
                   </li>
@@ -96,9 +99,9 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-xs text-primary-200/80">
+        <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-sm text-primary-100">
           <p>
-            © {new Date().getFullYear()} {site.name} · Agrément {site.legal.agrement} ·{" "}
+            © {new Date().getFullYear()} {site.name} · Agrément Ministère de la Santé {site.legal.agrement} ·{" "}
             {site.legal.conventions.join(" · ")}
           </p>
           <ul className="flex flex-wrap gap-x-5 gap-y-1 shrink-0">

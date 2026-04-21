@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { faq } from "@/content/faq";
 import { site } from "@/lib/site";
 import { faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Questions fréquentes",
+  title: "FAQ · Dialyse & prise en charge",
   description:
     "Toutes les réponses à vos questions sur l'hémodialyse, les séances, les prises en charge et les modalités pratiques à la Clinique ESSAADA.",
   alternates: { canonical: `${site.url}/faq` },
@@ -51,6 +52,14 @@ export default function FaqPage() {
           <FaqAccordion items={faq} />
         </div>
       </section>
+
+      <ConversionFooterCTA
+        variant="sand"
+        eyebrow="Aller plus loin"
+        title="Votre question n'a pas de réponse ici ?"
+        subtitle="Notre équipe répond à vos questions par WhatsApp, téléphone ou en consultation."
+        waMessage="Bonjour, j'ai une question sur la dialyse qui n'est pas dans la FAQ."
+      />
     </>
   );
 }

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { CheckCircle2, Clock, Shield, Handshake } from "lucide-react";
+import { CheckCircle2, Clock, Shield, Handshake, MessageCircle, Phone } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { RdvForm } from "@/components/sections/RdvForm";
-import { site } from "@/lib/site";
+import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Prendre rendez-vous",
+  title: "Prendre rendez-vous dialyse — Sidi Bel Abbès",
   description:
     "Demandez un rendez-vous à la Clinique ESSAADA : consultation néphrologie, première dialyse, patient de passage. Formulaire conforme loi 18-07.",
   alternates: { canonical: `${site.url}/rendez-vous` },
@@ -57,10 +57,28 @@ export default async function RdvPage({
               <h2 className="font-display text-2xl font-bold text-neutral-900 mb-2">
                 Demande bien reçue
               </h2>
-              <p className="text-neutral-700">
+              <p className="text-neutral-700 mb-6">
                 Merci. Notre équipe vous rappelle {site.rdv.rappelDelai}. Pour toute
-                urgence, contactez-nous directement par téléphone ou WhatsApp.
+                urgence ou pour accélérer votre demande, contactez-nous directement.
               </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <a
+                  href={waUrl("Bonjour, je viens de soumettre une demande de rendez-vous sur le site et je souhaite accélérer son traitement.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5" aria-hidden="true" />
+                  Accélérer sur WhatsApp
+                </a>
+                <a
+                  href={site.contact.phoneHref}
+                  className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 border border-primary-200 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
+                >
+                  <Phone className="w-5 h-5" aria-hidden="true" />
+                  Appeler maintenant
+                </a>
+              </div>
             </div>
           ) : (
             <div className="space-y-8">

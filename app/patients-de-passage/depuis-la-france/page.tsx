@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   FileCheck2,
   FileSignature,
   Send,
-  MessageCircle,
   ArrowRight,
   Phone,
   Plane,
@@ -18,6 +16,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Callout } from "@/components/ui/Callout";
 import { Card, CardIcon } from "@/components/ui/Card";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
@@ -344,37 +343,14 @@ export default function DepuisLaFrancePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-primary-700 text-white">
-        <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
-          <div className="md:col-span-3">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
-              Prêt à organiser votre séjour dialyse ?
-            </h2>
-            <p className="text-primary-100 text-lg leading-relaxed">
-              Notre équipe répond en français, de la France comme d'Algérie. WhatsApp
-              privilégié pour la diaspora — pas d'appel international à votre charge.
-            </p>
-          </div>
-          <div className="md:col-span-2 flex flex-col sm:flex-row md:justify-end gap-3">
-            <Link
-              href="/rendez-vous"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
-            >
-              Réserver mon passage
-              <ArrowRight className="w-5 h-5" aria-hidden="true" />
-            </Link>
-            <a
-              href={site.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+      <ConversionFooterCTA
+        variant="sand"
+        eyebrow="Organiser votre venue"
+        title="Prêt à organiser votre séjour dialyse ?"
+        subtitle="Notre équipe répond en français, de la France comme d'Algérie. WhatsApp privilégié pour la diaspora — pas d'appel international à votre charge."
+        primaryCtaLabel="Réserver mon passage"
+        waMessage="Bonjour, je dialyse en France et je souhaite organiser un séjour dialyse avec prise en charge CPAM."
+      />
     </>
   );
 }

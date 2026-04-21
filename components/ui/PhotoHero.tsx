@@ -35,7 +35,7 @@ export function PhotoHero({
       <div className="container-custom grid md:grid-cols-5 gap-10 md:gap-14 items-center">
         <div className="md:col-span-3">
           {eyebrow && <Eyebrow tone="light">{eyebrow}</Eyebrow>}
-          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight max-w-xl">
+          <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight max-w-xl text-white">
             {title}
           </h1>
           {subtitle && (

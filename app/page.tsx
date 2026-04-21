@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   ArrowRight,
   Heart,
@@ -18,7 +19,21 @@ import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site } from "@/lib/site";
+import { site, waUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
+  description:
+    "Centre d'hémodialyse à Sidi Bel Abbès : 37 lits, équipements récents, équipe néphrologue présente. Conventionné CNAS et CASNOS — tiers-payant intégral. Patients résidents et de passage (diaspora France / CPAM).",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
+    description:
+      "37 lits, conventionné CNAS/CASNOS, patients de passage accueillis. L'hémodialyse pensée pour continuer à vivre.",
+    url: "/",
+    type: "website",
+  },
+};
 
 const journeyStages = [
   {
@@ -224,7 +239,7 @@ export default function HomePage() {
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
             <a
-              href={site.contact.whatsappUrl}
+              href={waUrl("Bonjour, j'aimerais prendre rendez-vous à la Clinique ESSAADA.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"

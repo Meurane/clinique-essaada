@@ -192,13 +192,13 @@ export default function HemodialysePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-primary-700 text-white">
+      <section className="section-padding bg-sand-50">
         <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
           <div className="md:col-span-3">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
               Vous n'avez jamais dialysé&nbsp;?
             </h2>
-            <p className="text-primary-100 text-lg leading-relaxed">
+            <p className="text-neutral-700 text-lg leading-relaxed">
               Nous avons conçu un parcours dédié pour votre première séance,
               avec des repères clairs à chaque étape. Nous accompagnons aussi
               les patients de passage, sur réservation.
@@ -207,7 +207,7 @@ export default function HemodialysePage() {
           <div className="md:col-span-2 flex md:justify-end">
             <Link
               href="/services/premiere-seance"
-              className="inline-flex items-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px]"
+              className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
             >
               Préparer ma 1ʳᵉ séance
               <ArrowRight className="w-5 h-5" aria-hidden="true" />

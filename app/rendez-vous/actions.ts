@@ -2,9 +2,18 @@
 
 import { redirect } from "next/navigation";
 
+export type RdvFormValues = {
+  nom?: string;
+  telephone?: string;
+  motif?: string;
+  creneau?: string;
+  message?: string;
+};
+
 export type RdvFormState = {
   status: "idle" | "success" | "error";
   message?: string;
+  values?: RdvFormValues;
 };
 
 function norm(v: FormDataEntryValue | null) {
@@ -23,23 +32,30 @@ export async function submitRdv(
   const consent = formData.get("consent") === "on";
   const honeypot = norm(formData.get("website"));
 
+  const values: RdvFormValues = { nom, telephone, motif, creneau, message };
+
   if (honeypot) {
-    return { status: "success" };
+    console.info("[rdv] honeypot triggered — dropping silently");
+    redirect("/rendez-vous?success=1");
   }
 
   if (!nom || nom.length < 2) {
-    return { status: "error", message: "Merci de renseigner votre nom." };
+    return { status: "error", message: "Merci de renseigner votre nom.", values };
   }
-  if (!telephone || telephone.replace(/\D/g, "").length < 8) {
+  const telDigits = telephone.replace(/\D/g, "");
+  const telShapeValid = /^\+?[0-9\s().-]{9,20}$/.test(telephone);
+  if (!telShapeValid || telDigits.length < 9 || telDigits.length > 15 || /^0+$/.test(telDigits)) {
     return {
       status: "error",
-      message: "Merci de renseigner un numéro de téléphone valide.",
+      message: "Merci de renseigner un numéro valide (ex. 06 12 34 56 78 ou +213 555 12 34 56).",
+      values,
     };
   }
   if (!consent) {
     return {
       status: "error",
       message: "Votre consentement est requis pour traiter votre demande.",
+      values,
     };
   }
 
@@ -75,6 +91,7 @@ export async function submitRdv(
           status: "error",
           message:
             "Nous n'avons pas pu envoyer votre demande. Merci de réessayer ou de nous appeler.",
+          values,
         };
       }
     } catch (err) {
@@ -83,13 +100,17 @@ export async function submitRdv(
         status: "error",
         message:
           "Erreur lors de l'envoi. Merci de nous contacter par téléphone ou WhatsApp.",
+        values,
       };
     }
   } else {
-    console.warn(
-      "RDV submission received but RESEND_API_KEY is not set. Payload:",
-      { nom, telephone, motif, creneau, message },
-    );
+    console.error("[rdv] RESEND_API_KEY not set — submission cannot be processed");
+    return {
+      status: "error",
+      message:
+        "Service indisponible actuellement. Merci de nous appeler ou d'écrire sur WhatsApp.",
+      values,
+    };
   }
 
   redirect("/rendez-vous?success=1");

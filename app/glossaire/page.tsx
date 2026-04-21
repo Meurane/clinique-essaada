@@ -97,13 +97,26 @@ export default function GlossairePage() {
                             className="w-5 h-5 text-primary-700 shrink-0 mt-1"
                             aria-hidden="true"
                           />
-                          <h3 className="font-display text-xl font-semibold text-neutral-900 leading-tight">
-                            {entry.term}
+                          <h3 className="font-display text-xl font-semibold leading-tight">
+                            <Link
+                              href={`/glossaire/${entry.slug}`}
+                              className="text-neutral-900 hover:text-primary-700 transition-colors"
+                            >
+                              {entry.term}
+                            </Link>
                           </h3>
                         </div>
                         <p className="text-neutral-700 leading-relaxed flex-1">
                           {entry.definition}
                         </p>
+                        <Link
+                          href={`/glossaire/${entry.slug}`}
+                          className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:gap-2 transition-all"
+                          aria-label={`Voir la page dédiée : ${entry.term}`}
+                        >
+                          Voir la page dédiée
+                          <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
+                        </Link>
                         {entry.relatedTerms && entry.relatedTerms.length > 0 && (
                           <div className="mt-5 pt-5 border-t border-neutral-150">
                             <div className="text-xs font-semibold tracking-wide text-neutral-500 mb-2">
@@ -115,8 +128,8 @@ export default function GlossairePage() {
                                 if (!rel) return null;
                                 return (
                                   <li key={slug}>
-                                    <a
-                                      href={`#${slug}`}
+                                    <Link
+                                      href={`/glossaire/${slug}`}
                                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-sand-50 text-primary-700 text-sm hover:bg-sand-100 transition-colors"
                                     >
                                       {rel.term}
@@ -124,7 +137,7 @@ export default function GlossairePage() {
                                         className="w-3 h-3"
                                         aria-hidden="true"
                                       />
-                                    </a>
+                                    </Link>
                                   </li>
                                 );
                               })}
@@ -140,7 +153,7 @@ export default function GlossairePage() {
           </div>
 
           <div className="mt-16 p-6 rounded-2xl bg-primary-700 text-white max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-2xl font-semibold mb-3">
+            <h2 className="font-display text-2xl font-semibold mb-3 text-white">
               Un terme vous intrigue encore ?
             </h2>
             <p className="text-primary-100 mb-5 leading-relaxed">

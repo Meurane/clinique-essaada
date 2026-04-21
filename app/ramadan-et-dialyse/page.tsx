@@ -4,7 +4,6 @@ import {
   Moon,
   CheckCircle2,
   AlertTriangle,
-  MessageCircle,
   ArrowRight,
   Clock,
 } from "lucide-react";
@@ -12,7 +11,8 @@ import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site } from "@/lib/site";
+import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
+import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -194,7 +194,7 @@ export default function RamadanDialysePage() {
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
             <p className="mt-5 text-sm text-neutral-600">
-              Ou contactez-nous directement au <a href={site.contact.phoneHref} className="text-primary-700 underline">{site.contact.phone}</a> ou sur <a href={site.contact.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-primary-700 underline">WhatsApp</a>.
+              Ou contactez-nous directement au <a href={site.contact.phoneHref} className="text-primary-700 underline">{site.contact.phone}</a> ou sur <a href={waUrl("Bonjour, je souhaite adapter mes séances pendant le Ramadan.")} target="_blank" rel="noopener noreferrer" className="text-primary-700 underline">WhatsApp</a>.
             </p>
           </div>
         </div>
@@ -227,34 +227,13 @@ export default function RamadanDialysePage() {
         </div>
       </section>
 
-      <section className="section-padding bg-primary-700 text-white">
-        <div className="container-custom text-center max-w-2xl mx-auto">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-3">
-            Vos questions méritent une réponse personnelle
-          </h2>
-          <p className="text-primary-100 text-lg leading-relaxed mb-6">
-            Chaque patient est unique. Parlons-en ensemble — avant, pendant et après le Ramadan.
-          </p>
-          <div className="flex flex-col-reverse sm:flex-row gap-3 justify-center">
-            <Link
-              href="/rendez-vous"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px]"
-            >
-              Prendre rendez-vous
-              <ArrowRight className="w-5 h-5" aria-hidden="true" />
-            </Link>
-            <a
-              href={site.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              Poser une question sur WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+      <ConversionFooterCTA
+        variant="sand"
+        eyebrow="Échangeons"
+        title="Vos questions méritent une réponse personnelle"
+        subtitle="Chaque patient est unique. Parlons-en ensemble — avant, pendant et après le Ramadan."
+        waMessage="Bonjour, j'ai une question sur la dialyse pendant le Ramadan."
+      />
     </>
   );
 }

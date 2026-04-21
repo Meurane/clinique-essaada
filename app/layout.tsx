@@ -60,13 +60,11 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} | ${site.tagline}`,
     description: site.description,
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: site.name,
     description: site.description,
-    images: ["/og-image.jpg"],
   },
   alternates: { canonical: site.url },
   category: "health",
@@ -78,10 +76,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="fr-DZ" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#0A475D" />
         <script
           type="application/ld+json"
@@ -96,7 +92,7 @@ export default function RootLayout({
         </a>
         <ContactBar />
         <Navigation />
-        <main id="main" className="pb-24 lg:pb-0">
+        <main id="main" className="pb-24 min-[1080px]:pb-0">
           {children}
         </main>
         <Footer />
