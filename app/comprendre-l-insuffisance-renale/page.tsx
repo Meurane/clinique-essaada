@@ -14,7 +14,6 @@ import {
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Callout } from "@/components/ui/Callout";
 import { PullQuote } from "@/components/ui/PullQuote";
 import { Card, CardIcon } from "@/components/ui/Card";
