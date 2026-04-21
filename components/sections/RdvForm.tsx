@@ -138,7 +138,7 @@ export function RdvForm() {
           {creneaux.map((c) => (
             <label
               key={c.value}
-              className="flex items-center gap-3 px-4 py-3 rounded-xl border-2 border-neutral-200 hover:border-primary-500 cursor-pointer bg-white has-[:checked]:border-primary-600 has-[:checked]:bg-primary-50 min-h-[48px]"
+              className="flex items-center gap-3 px-4 py-3 rounded-xl border-2 border-neutral-200 hover:border-primary-500 cursor-pointer bg-white has-[:checked]:border-primary-600 has-[:checked]:bg-primary-50 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary-700 has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-offset-white min-h-[48px]"
             >
               <input
                 type="radio"
@@ -177,7 +177,7 @@ export function RdvForm() {
         </p>
       </div>
 
-      <label className="flex items-start gap-3 text-base text-neutral-700">
+      <label className="flex items-start gap-3 text-base text-neutral-700 rounded-md has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-primary-700 has-[:focus-visible]:ring-offset-2 has-[:focus-visible]:ring-offset-white p-1 -m-1">
         <input
           type="checkbox"
           name="consent"

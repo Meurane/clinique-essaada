@@ -69,10 +69,11 @@ export function Footer() {
               <li>
                 <a
                   href={site.contact.phoneHref}
+                  aria-label={`Appeler la clinique au ${site.contact.phone}`}
                   className="inline-flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone className="w-4 h-4 text-primary-400" aria-hidden="true" />
-                  {site.contact.phone}
+                  <span>{site.contact.phone}</span>
                 </a>
               </li>
             </ul>

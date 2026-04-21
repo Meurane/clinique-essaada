@@ -16,8 +16,15 @@
     @apply font-display tracking-tight text-neutral-900;
   }
 
+  /* Focus-visible par défaut — fonds clairs */
   *:focus-visible {
     @apply outline-none ring-2 ring-primary-700 ring-offset-2 ring-offset-white rounded-sm;
+  }
+
+  /* Focus-visible inversé sur fonds sombres (footer, ContactBar, hero teal,
+     CTAs primary-700/800/900). Ring blanc + offset teal pour rester visible. */
+  :is(footer, [class*="bg-primary-7"], [class*="bg-primary-8"], [class*="bg-primary-9"], [class*="bg-neutral-9"]) *:focus-visible {
+    @apply ring-white ring-offset-primary-800;
   }
 
   .skip-link {

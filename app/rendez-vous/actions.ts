@@ -35,7 +35,9 @@ export async function submitRdv(
   const values: RdvFormValues = { nom, telephone, motif, creneau, message };
 
   if (honeypot) {
-    console.info("[rdv] honeypot triggered — dropping silently");
+    if (process.env.NODE_ENV !== "production") {
+      console.info("[rdv] honeypot triggered — dropping silently");
+    }
     redirect("/rendez-vous?success=1");
   }
 

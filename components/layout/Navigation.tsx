@@ -250,6 +250,7 @@ export function Navigation() {
         <div className="hidden min-[1080px]:flex items-center gap-3">
           <a
             href={site.contact.phoneHref}
+            aria-label={`Appeler la clinique au ${site.contact.phone}`}
             className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-full font-semibold transition-colors min-h-[48px]"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
