@@ -11,7 +11,7 @@ const timeline = [
   {
     time: "T − 1h",
     title: "Vous arrivez à la clinique",
-    text: "Parking patient à proximité, accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé.",
+    text: "Accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé.",
   },
   {
     time: "T − 45 min",
@@ -31,7 +31,7 @@ const timeline = [
   {
     time: "T + 0",
     title: "Début de la séance",
-    text: "Le générateur se met en route. Vous pouvez lire, dormir, regarder votre téléphone, écouter de la musique. Bluetooth et Wi-Fi disponibles.",
+    text: "Le générateur se met en route. Vous pouvez lire, dormir, regarder votre téléphone, écouter de la musique.",
   },
   {
     time: "T + 1h à T + 3h",
@@ -46,7 +46,7 @@ const timeline = [
   {
     time: "T + 4h15",
     title: "Vous repartez",
-    text: "Un peu de repos si besoin dans la salle d'attente. Votre proche peut vous raccompagner. Contact d'urgence fourni pour la nuit.",
+    text: "Un peu de repos si besoin dans la salle d'attente. Votre proche peut vous raccompagner.",
   },
 ];
 
@@ -93,7 +93,6 @@ const etapes = [
       "Repos de quelques minutes avant de vous lever",
       "Contrôle du poids et de la tension",
       "Prochain rendez-vous confirmé",
-      "Contact d'urgence fourni",
     ],
   },
 ];

@@ -1,7 +1,6 @@
 import {
   Clock,
   Car,
-  Wifi,
   Coffee,
   UserPlus,
   Shield,
@@ -40,7 +39,6 @@ export const infosBlocks = [
     icon: Car,
     title: "Accès & stationnement",
     items: [
-      "Parking patients sur place",
       "Places réservées près de l'entrée",
       "Accès direct pour ambulance",
     ],
@@ -57,21 +55,11 @@ export const infosBlocks = [
     ],
   },
   {
-    icon: Wifi,
-    title: "WiFi gratuit",
-    items: [
-      "Connexion haut débit disponible",
-      "Code remis à l'accueil",
-      "Apportez votre tablette ou téléphone",
-    ],
-  },
-  {
     icon: Coffee,
-    title: "Repas & collations",
+    title: "Collations",
     items: [
       "Collation offerte pendant la séance",
       "Eau et boissons à disposition",
-      "Repas adaptés sur demande",
     ],
   },
   {
@@ -90,7 +78,6 @@ export const infosBlocks = [
       "Équipements certifiés et contrôlés",
       "Protocoles d'hygiène stricts",
       "Médecin présent en permanence",
-      `Numéro d'urgence 24h/24 : ${site.contact.urgence.phone}`,
     ],
   },
 ];
@@ -152,8 +139,8 @@ export const viequotidienneBlocks = [
     lead: "Bien manger en dialyse, c'est surtout bien s'adapter — il n'existe pas un régime unique qui convient à tous.",
     body: [
       "Les besoins évoluent tout au long du parcours : avant la dialyse, il s'agit souvent de ralentir l'aggravation de la maladie rénale. Une fois les séances commencées, les priorités changent — corriger les excès d'eau, de potassium ou de phosphore, mais aussi prévenir la dénutrition, car manger suffisamment reste essentiel. Un diabète, une hypertension ou d'autres soucis associés modifient encore les équilibres.",
-      "C'est pour cela qu'une consultation avec une diététicienne formée à l'insuffisance rénale est précieuse : elle part de vos habitudes, de votre cuisine, de ce que vous aimez — pas d'une liste théorique d'aliments interdits. Notre accompagnement inclut cette orientation quand elle est utile, et le néphrologue fait le lien avec vos bilans sanguins.",
+      "Le néphrologue fait le lien avec vos bilans sanguins et ajuste les recommandations à votre situation réelle — vos habitudes, votre cuisine, ce que vous aimez — plutôt qu'à une liste théorique d'aliments interdits. L'objectif est un équilibre tenable dans le temps, pas un régime impossible à suivre.",
     ],
-    tip: "Demandez-nous un rendez-vous diététique dès que vous en ressentez le besoin — c'est pensé pour vous, pas contre vous.",
+    tip: "Parlez de votre alimentation en consultation dès que vous en ressentez le besoin — c'est pensé pour vous, pas contre vous.",
   },
 ];

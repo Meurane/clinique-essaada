@@ -74,7 +74,7 @@ En copie `cliniqueessaada22@gmail.com` avec les documents scannés.
 
 **Depuis la gare ferroviaire de Sidi Bel Abbès** — environ 10 minutes en taxi.
 
-**Parking** — parking patient sur place, places PMR signalées près de l'entrée, accès direct ambulance.
+**Accès** — places PMR signalées près de l'entrée, accès direct ambulance.
 
 ### Hébergement
 
@@ -113,8 +113,8 @@ Nous vous communiquons un **devis écrit et signé** avant votre séjour. Beauco
 - Séance de 4 heures (adaptée selon prescription)
 - Surveillance continue par personnel infirmier dédié
 - Médecin néphrologue présent sur site toute la durée des séances
-- Collation adaptée servie en cours de séance
-- WiFi haut débit, télévision individuelle, fauteuil inclinable
+- Collation servie en cours de séance
+- Télévision individuelle, fauteuil inclinable
 - Compte-rendu envoyé à votre néphrologue traitant après chaque séance
 
 ---
@@ -133,7 +133,6 @@ Sidi Bel Abbès, Algérie
 Email : cliniqueessaada22@gmail.com
 WhatsApp : disponible du samedi au jeudi
 Téléphone : disponible du samedi au jeudi
-Numéro d'urgence : 24h/24
 
 Site web : https://cliniquessaada.fr/patients-de-passage
 

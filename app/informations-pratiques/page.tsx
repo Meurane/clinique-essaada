@@ -13,7 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Vivre avec la dialyse · Horaires, accès, repas",
   description:
-    "Horaires, accès, parking, WiFi, repas, sécurité. Tout ce qu'il faut savoir avant de venir à la Clinique ESSAADA.",
+    "Horaires, accès, collations, accessibilité PMR, sécurité. Tout ce qu'il faut savoir avant de venir à la Clinique ESSAADA.",
   alternates: { canonical: `${site.url}/informations-pratiques` },
 };
 

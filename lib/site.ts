@@ -15,13 +15,8 @@ export const site = {
     country: "Algérie",
   },
   contact: {
-    phone: "048 70 25 70",
+    phone: "(+213) 48 70 25 70",
     phoneHref: "tel:+213487025700",
-    urgence: {
-      phone: "048 70 25 70",
-      phoneHref: "tel:+213487025700",
-      note: "Numéro d'urgence disponible 24h/24",
-    },
     whatsapp: "213487025700",
     whatsappUrl: "https://wa.me/213487025700",
     email: "cliniqueessaada22@gmail.com",

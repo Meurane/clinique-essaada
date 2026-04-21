@@ -80,7 +80,7 @@ const logistique = [
   {
     icon: Car,
     title: "Accès clinique",
-    text: "Parking patient sur place, places PMR près de l'entrée, accès direct ambulance. Chauffeur de taxi autorisé à vous attendre.",
+    text: "Places PMR près de l'entrée, accès direct ambulance. Chauffeur de taxi autorisé à vous attendre.",
   },
 ];
 

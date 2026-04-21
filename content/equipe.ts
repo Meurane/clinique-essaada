@@ -26,7 +26,7 @@ export const departments = [
   {
     title: "Paramédical & accompagnement",
     description:
-      "Diététicien·ne, aide-soignant·e·s et personnel de soutien pour l'éducation thérapeutique et l'accompagnement des familles.",
+      "Aide-soignant·e·s et personnel de soutien pour l'éducation thérapeutique et l'accompagnement des familles.",
   },
   {
     title: "Administration & accueil",

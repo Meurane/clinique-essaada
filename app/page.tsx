@@ -141,7 +141,7 @@ export default function HomePage() {
                 {
                   icon: Users,
                   title: "Équipe pluridisciplinaire",
-                  text: "Néphrologues, infirmiers spécialisés, diététicien·ne, personnel d'accueil. Formés à la prise en charge des patients dialysés.",
+                  text: "Néphrologues, infirmiers spécialisés, personnel d'accueil. Formés à la prise en charge des patients dialysés.",
                 },
               ].map((b) => (
                 <li key={b.title} className="flex gap-4">

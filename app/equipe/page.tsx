@@ -27,7 +27,6 @@ const placeholderRoles = [
   { role: "Médecin néphrologue", credentials: ["Consultation / suivi"] },
   { role: "Infirmier·ère chef·fe de service", credentials: ["Spécialité dialyse"] },
   { role: "Infirmier·ère DE", credentials: ["Hémodialyse"] },
-  { role: "Diététicien·ne", credentials: ["Éducation thérapeutique"] },
   { role: "Responsable accueil", credentials: ["CNAS / CASNOS"] },
 ];
 
