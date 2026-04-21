@@ -86,13 +86,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-white text-neutral-700 antialiased">
+      <body className="bg-white text-neutral-700 antialiased pb-24 min-[1080px]:pb-0">
         <a href="#main" className="skip-link">
           Aller au contenu principal
         </a>
         <ContactBar />
         <Navigation />
-        <main id="main" className="pb-24 min-[1080px]:pb-0">
+        <main id="main">
           {children}
         </main>
         <Footer />
