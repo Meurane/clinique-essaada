@@ -7,7 +7,7 @@ const csp = [
   "font-src 'self' data:",
   "img-src 'self' data: https:",
   "connect-src 'self' https://api.resend.com",
-  "frame-src https://www.google.com https://maps.google.com",
+  "frame-src https://www.openstreetmap.org https://www.google.com https://maps.google.com",
   "form-action 'self'",
   "frame-ancestors 'self'",
   "base-uri 'self'",

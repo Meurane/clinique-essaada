@@ -134,10 +134,8 @@ export default function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <div className="relative aspect-[16/10] bg-sand-50">
                 <iframe
-                  title={`Emplacement de ${site.name} sur Google Maps`}
-                  src={`https://maps.google.com/maps?q=${encodeURIComponent(
-                    `${site.name}, ${site.city}, ${site.country}`,
-                  )}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                  title={`Emplacement de ${site.name} sur OpenStreetMap`}
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.6506%2C35.1728%2C-0.6106%2C35.2128&layer=mapnik&marker=35.1928%2C-0.6306"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="absolute inset-0 w-full h-full border-0"
