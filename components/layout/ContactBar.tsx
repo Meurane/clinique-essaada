@@ -31,7 +31,9 @@ export function ContactBar() {
           <span aria-hidden="true" className="h-4 w-px bg-white/15" />
           <span className="inline-flex items-center gap-2 whitespace-nowrap">
             <Clock className="w-4 h-4 text-primary-300" aria-hidden="true" />
-            <span className="text-primary-100">{site.hours.opening} · 05h–19h</span>
+            <span className="text-primary-100">
+              <span className="hidden lg:inline">{site.hours.opening} · </span>05h–19h
+            </span>
           </span>
         </div>
         <Link

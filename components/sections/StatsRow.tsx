@@ -16,11 +16,11 @@ export function StatsRow() {
   return (
     <section className="bg-white border-y border-neutral-150">
       <div className="container-custom py-14 md:py-20">
-        <ul className="grid grid-cols-2 md:grid-cols-4 gap-y-12 md:gap-y-0 md:divide-x md:divide-sand-200/70">
+        <ul className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 lg:gap-y-0 lg:divide-x lg:divide-sand-200/70">
           {stats.map((s) => (
             <li
               key={s.label}
-              className="flex flex-col items-center text-center md:px-6 group"
+              className="flex flex-col items-center text-center lg:px-6 group"
             >
               <span
                 aria-hidden="true"
