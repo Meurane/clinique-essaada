@@ -53,7 +53,7 @@ const etapes = [
 ];
 
 const docsRequis = [
-  "Dernier bilan biologique (analyses de sang de moins d'1 mois)",
+  "Dernier bilan biologique — FNS + Biochimie (moins d'1 mois)",
   "Sérologies à jour : hépatites B, C et VIH de moins de 6 mois",
   "Ordonnance de dialyse signée par votre néphrologue traitant",
   "Coordonnées de votre néphrologue traitant (pour liaison)",

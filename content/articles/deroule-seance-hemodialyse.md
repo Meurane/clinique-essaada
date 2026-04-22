@@ -64,9 +64,9 @@ Un·e infirmier·ère **passe toutes les 15 minutes** pour vérifier :
 
 Si à un moment vous ressentez un malaise, une crampe, une baisse d'énergie, des frissons ou un inconfort quelconque, **sonnez**. L'équipe intervient immédiatement : ralentir la machine, ajuster l'ultrafiltration, réchauffer, proposer à boire. Ces incidents sont gérables et gérés.
 
-### Une collation vous est servie
+### Un café vous est servi
 
-Environ à mi-séance, **une collation légère** est proposée : pain, un peu de fromage, parfois un fruit ou une compote. Les quantités sont adaptées au régime dialytique (peu de potassium, peu de sel, peu de phosphore). Si vous avez des restrictions alimentaires particulières, dites-le à l'équipe au début de la séance.
+Environ à mi-séance, **un café** est proposé. Eau et boissons restent à disposition tout au long de la séance. Si vous avez des restrictions alimentaires particulières, dites-le à l'équipe au début de la séance.
 
 ## Étape 5 — Fin de séance (15 minutes)
 

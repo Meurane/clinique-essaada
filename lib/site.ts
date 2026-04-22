@@ -31,7 +31,7 @@ export const site = {
     ],
     note: "Les horaires peuvent être ajustés pour optimiser la prise en charge.",
     ramadanNote:
-      "Pendant le Ramadan, les créneaux sont adaptés (après f'tour et avant s'hour) en concertation avec votre néphrologue.",
+      "Pendant le Ramadan, première séance à 4h du matin. Pas de séance après f'tour, pas de créneau nocturne. En concertation avec votre néphrologue.",
   },
   rdv: {
     rappelDelai: "sous 24 à 48 h (jours ouvrables)",

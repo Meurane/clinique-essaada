@@ -24,7 +24,7 @@ const process = [
   { step: 1, title: "Accueil", text: "Vérification du dossier, contrôle des constantes (poids, tension)." },
   { step: 2, title: "Installation", text: "Poste attribué, ponction de la fistule, branchement au générateur." },
   { step: 3, title: "Séance", text: "Environ 4 heures de dialyse sous surveillance continue. Lecture, télé, repos autorisés." },
-  { step: 4, title: "Sortie", text: "Contrôle poids et tension, programmation du prochain rendez-vous, collation." },
+  { step: 4, title: "Sortie", text: "Contrôle poids et tension, programmation du prochain rendez-vous, café." },
 ];
 
 const qualite = [
@@ -37,14 +37,14 @@ const qualite = [
 ];
 
 const seanceIncludes = [
-  "Accueil personnalisé par votre infirmier(ère) référent(e)",
+  "Accueil par médecin dialyseur",
   "Pesée, contrôle tensionnel et évaluation pré-séance",
-  "Séance de 4 heures sur générateur dernière génération",
+  "Séance de 4h sur générateur neuf",
   "Surveillance continue par personnel infirmier dédié",
   "Médecin néphrologue présent sur site pendant toutes les séances",
   "Traçabilité informatisée de vos paramètres à chaque séance",
-  "Collation adaptée servie en cours de séance",
-  "Couverture, fauteuil inclinable, télévision individuelle",
+  "Café servi en cours de séance",
+  "Couverture, fauteuil inclinable, télévision",
   "Accompagnant autorisé en salle d'attente dédiée",
   "Prise en charge CNAS / CASNOS intégrale — zéro avance de frais",
   "Compte-rendu transmis à votre néphrologue traitant",

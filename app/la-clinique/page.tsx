@@ -130,7 +130,7 @@ export default function LaCliniquePage() {
             {[
               { k: "Capacité d'accueil", v: `${site.stats.lits} lits` },
               { k: "Créneaux par jour", v: "3" },
-              { k: "Équipements renouvelés en", v: `${site.stats.equipementsRecents}` },
+              { k: "Équipements", v: "Neufs" },
               { k: "Conventionnements", v: site.legal.conventions.join(" · ") },
             ].map((row) => (
               <div

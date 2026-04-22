@@ -39,7 +39,7 @@ export const faq: FaqItem[] = [
   {
     question: "Puis-je manger pendant la dialyse ?",
     answer:
-      "Oui. Nous recommandons un repas léger 2 heures avant la venue, et une collation adaptée est servie pendant la séance.",
+      "Oui. Nous recommandons un repas léger 2 heures avant la venue, et un café est servi pendant la séance.",
   },
   {
     question: "Comment prendre un premier rendez-vous ?",
@@ -49,7 +49,7 @@ export const faq: FaqItem[] = [
   {
     question: "Je dialyse déjà ailleurs — comment transférer mon suivi ?",
     answer:
-      "Contactez-nous avec votre dernier bilan biologique, vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Notre néphrologue prend contact avec votre médecin traitant pour assurer la continuité du suivi, sans rupture.",
+      "Contactez-nous avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Notre néphrologue prend contact avec votre médecin traitant pour assurer la continuité du suivi, sans rupture.",
   },
   {
     question: "Êtes-vous conventionnés CNAS et CASNOS ?",
@@ -59,12 +59,12 @@ export const faq: FaqItem[] = [
   {
     question: "Je suis en vacances dans la région, puis-je dialyser chez vous ?",
     answer:
-      "Oui. Nous accueillons les patients de passage (résidents en Algérie comme diaspora). Confirmation de votre créneau sous 72h ouvrées. Contactez-nous au moins 1 mois avant votre séjour avec votre dernier bilan biologique, vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Voir la page dédiée « Patients de passage ».",
+      "Oui. Nous accueillons les patients de passage (résidents en Algérie comme diaspora). Confirmation de votre créneau sous 72h ouvrées. Contactez-nous au moins 1 mois avant votre séjour avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Voir la page dédiée « Patients de passage ».",
   },
   {
     question: "Les horaires sont-ils adaptés pendant le Ramadan ?",
     answer:
-      "Oui. Pendant le Ramadan, les créneaux sont reprogrammés en concertation avec votre néphrologue pour être compatibles avec le jeûne quand c'est médicalement possible (typiquement après f'tour et avant s'hour). Voir la page « Ramadan & dialyse ».",
+      "Oui. Pendant le Ramadan, nous ouvrons une seule série de créneaux avec une première séance à 4h du matin. Pas de séance après f'tour, pas de créneau nocturne. Reprogrammation en concertation avec votre néphrologue. Voir la page « Ramadan & dialyse ».",
   },
   {
     question: "La clinique est-elle accessible aux personnes à mobilité réduite ?",
@@ -74,7 +74,7 @@ export const faq: FaqItem[] = [
   {
     question: "Ma toute première séance ici, j'ai très peur. Comment ça se passe concrètement ?",
     answer:
-      "C'est tout à fait normal d'appréhender, presque tous nos patients le ressentent la première fois. Voici ce qui vous attend : à votre arrivée, l'infirmière vous accueille, vérifie votre poids et votre tension, puis vous installe confortablement dans un fauteuil inclinable avec une couverture. La pose des aiguilles prend 2 à 3 minutes, on vous explique chaque geste. Ensuite, vous êtes branché au générateur pour 4 heures environ. Pendant toute la séance, une infirmière passe toutes les 15 minutes, et un néphrologue est présent dans le service. Vous pouvez lire, dormir, regarder votre téléphone. Une collation légère vous est servie. En fin de séance, on retire les aiguilles, on vérifie que tout va bien, et vous repartez. Vous n'êtes jamais seul.",
+      "C'est tout à fait normal d'appréhender, presque tous nos patients le ressentent la première fois. Voici ce qui vous attend : à votre arrivée, l'infirmière vous accueille, vérifie votre poids et votre tension, puis vous installe confortablement dans un fauteuil inclinable avec une couverture. La pose des aiguilles prend 2 à 3 minutes, on vous explique chaque geste. Ensuite, vous êtes branché au générateur pour 4 heures environ. Pendant toute la séance, une infirmière passe toutes les 15 minutes, et un néphrologue est présent dans le service. Vous pouvez lire, dormir, regarder votre téléphone. Un café vous est servi. En fin de séance, on retire les aiguilles, on vérifie que tout va bien, et vous repartez. Vous n'êtes jamais seul.",
   },
   {
     question: "Est-ce que les aiguilles font mal ?",

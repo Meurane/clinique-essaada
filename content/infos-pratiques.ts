@@ -29,10 +29,10 @@ export const infosBlocks = [
     icon: Moon,
     title: "Horaires Ramadan",
     items: [
-      "Créneaux adaptés après f'tour et avant s'hour",
+      "Première séance à 4h du matin",
+      "Pas de séance après f'tour, pas de créneau nocturne",
       "Reprogrammation en concertation avec votre néphrologue",
       "Prise en charge adaptée pour les patients qui jeûnent",
-      "Équipe disponible pour répondre à vos questions",
     ],
   },
   {
@@ -56,9 +56,9 @@ export const infosBlocks = [
   },
   {
     icon: Coffee,
-    title: "Collations",
+    title: "Café",
     items: [
-      "Collation offerte pendant la séance",
+      "Café offert pendant la séance",
       "Eau et boissons à disposition",
     ],
   },

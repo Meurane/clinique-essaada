@@ -7,8 +7,8 @@ const stats = [
   { icon: Stethoscope, value: "05h–19h", label: "Médecin présent" },
   {
     icon: Sparkles,
-    value: `${site.stats.equipementsRecents}`,
-    label: "Équipements renouvelés",
+    value: "Neufs",
+    label: "Équipements",
   },
 ];
 

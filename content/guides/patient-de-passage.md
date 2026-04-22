@@ -86,7 +86,7 @@ Plusieurs pharmacies de garde à courte distance. Nous vous conseillons néanmoi
 
 ### Ramadan
 
-Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » — créneaux adaptés après f'tour et avant s'hour en concertation avec nos néphrologues.
+Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » — première séance à 4h du matin, pas de séance après f'tour ni de créneau nocturne, en concertation avec nos néphrologues.
 
 ---
 
@@ -108,13 +108,13 @@ Nous vous communiquons un **devis écrit et signé** avant votre séjour. Beauco
 
 ## Pendant la séance — ce qui vous attend
 
-- Accueil personnalisé par l'infirmier(ère) référent(e)
+- Accueil par médecin dialyseur
 - Pesée, contrôle tensionnel, évaluation pré-séance
-- Séance de 4 heures (adaptée selon prescription)
+- Séance de 4h sur générateur neuf (adaptée selon prescription)
 - Surveillance continue par personnel infirmier dédié
 - Médecin néphrologue présent sur site toute la durée des séances
-- Collation servie en cours de séance
-- Télévision individuelle, fauteuil inclinable
+- Café servi en cours de séance
+- Télévision, fauteuil inclinable
 - Compte-rendu envoyé à votre néphrologue traitant après chaque séance
 
 ---

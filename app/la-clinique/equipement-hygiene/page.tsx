@@ -84,7 +84,7 @@ const controles = [
   {
     icon: Droplets,
     title: "Analyses d'eau",
-    text: "Bactériologie et recherche d'endotoxines mensuelles. Analyse chimique complète trimestrielle.",
+    text: "Prélèvements trimestriels — bactériologiques et biochimiques.",
   },
   {
     icon: Activity,
@@ -147,7 +147,7 @@ export default function EquipementHygienePage() {
                 Marque et modèle
               </h3>
               <p className="text-neutral-700 text-base">
-                Générateurs renouvelés en {site.stats.equipementsRecents}.
+                Générateurs neufs.
                 <span className="block mt-2 text-neutral-500 text-sm italic">
                   [Marque et modèle : informations techniques détaillées communiquées sur demande.]
                 </span>
@@ -209,9 +209,8 @@ export default function EquipementHygienePage() {
               <Droplets className="w-5 h-5 text-primary-700 shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-neutral-700">
                 <strong className="text-neutral-900">Contrôles réguliers :</strong>{" "}
-                bactériologie et recherche d'endotoxines mensuelles, analyse chimique
-                complète trimestrielle. Résultats disponibles sur demande au
-                secrétariat médical.
+                prélèvements trimestriels — bactériologiques et biochimiques.
+                Résultats disponibles sur demande au secrétariat médical.
               </p>
             </div>
           </div>
@@ -260,7 +259,7 @@ export default function EquipementHygienePage() {
                 icon: FlaskConical,
                 label: "Analyses d'eau",
                 aspectRatio: "1/1",
-                caption: "Prélèvements mensuels — bactériologie & endotoxines.",
+                caption: "Prélèvements trimestriels — bactériologiques & biochimiques.",
                 tag: "Qualité",
               },
               {

@@ -18,7 +18,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Ramadan & dialyse · Créneaux adaptés",
   description:
-    "Créneaux d'hémodialyse adaptés au Ramadan à Sidi Bel Abbès : séances après f'tour et avant s'hour, concertation avec votre néphrologue, prise en charge des patients qui jeûnent.",
+    "Créneaux d'hémodialyse adaptés au Ramadan à Sidi Bel Abbès : première séance à 4h du matin (pas de séance après f'tour, pas de créneau nocturne), en concertation avec votre néphrologue.",
   alternates: { canonical: `${site.url}/ramadan-et-dialyse` },
   openGraph: {
     title: "Ramadan & dialyse — Clinique ESSAADA",
@@ -33,8 +33,8 @@ const principes = [
     text: "Le jeûne pendant le Ramadan est une décision qui appartient à vous — en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi.",
   },
   {
-    title: "Créneaux nocturnes disponibles",
-    text: "Pour les patients qui choisissent de jeûner, nous ouvrons des créneaux après le f'tour (rupture du jeûne) et avant le s'hour (dernier repas avant l'aube), quand c'est médicalement envisageable.",
+    title: "Première séance à 4h du matin",
+    text: "Pendant le Ramadan, nous ouvrons une seule série de créneaux avec une première séance à 4h du matin, avant s'hour. Pas de séance après f'tour, pas de créneau nocturne. Le planning est ajusté en concertation avec votre néphrologue.",
   },
   {
     title: "Vigilance renforcée",
@@ -60,8 +60,8 @@ const faqRamadan = [
     a: "Rompez le jeûne immédiatement — la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche.",
   },
   {
-    q: "La collation en séance est-elle servie pendant le Ramadan ?",
-    a: "Pour les créneaux de jour (patients qui ne jeûnent pas), oui. Pour les créneaux soir après f'tour, une collation adaptée est proposée en début ou en fin de séance.",
+    q: "Le café en séance est-il servi pendant le Ramadan ?",
+    a: "La séance unique de 4h du matin a lieu avant s'hour, donc avant le jeûne. Le café peut être servi au moment du s'hour en fin de séance, selon votre souhait et votre état clinique.",
   },
 ];
 
@@ -145,29 +145,22 @@ export default function RamadanDialysePage() {
             <div className="space-y-4 text-neutral-700 leading-relaxed">
               <p>
                 Le planning précis est communiqué environ 3 semaines avant le
-                début du Ramadan. En général :
+                début du Ramadan.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
                   <span>
-                    <strong className="text-neutral-900">Créneau matin (tôt)</strong> — avant s'hour
-                    pour les patients qui ne jeûnent pas ou dont la dialyse peut précéder la journée.
+                    <strong className="text-neutral-900">Première séance à 4h du matin</strong> —
+                    avant s'hour, pour l'ensemble des patients (jeûneurs ou non).
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
                   <span>
-                    <strong className="text-neutral-900">Créneau journée</strong> — pour les
-                    patients qui ne jeûnent pas (recommandé si contre-indication au jeûne).
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
-                  <span>
-                    <strong className="text-neutral-900">Créneau après f'tour</strong> — séance
-                    démarrée après la rupture du jeûne, pour les patients qui jeûnent avec
-                    accord médical.
+                    <strong className="text-neutral-900">Pas de séance après f'tour</strong> —
+                    ni de créneau nocturne. Les créneaux suivants de la journée restent alignés sur
+                    la cadence habituelle.
                   </span>
                 </li>
               </ul>

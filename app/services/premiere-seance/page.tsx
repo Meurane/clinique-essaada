@@ -36,7 +36,7 @@ const timeline = [
   {
     time: "T + 1h à T + 3h",
     title: "Surveillance continue",
-    text: "La machine mesure votre tension automatiquement. Une infirmière passe vous voir toutes les 15 minutes. Un néphrologue est dans le service. Collation servie en milieu de séance.",
+    text: "La machine mesure votre tension automatiquement. Une infirmière passe vous voir toutes les 15 minutes. Un néphrologue est dans le service. Café servi en milieu de séance.",
   },
   {
     time: "T + 4h",
@@ -83,7 +83,7 @@ const etapes = [
       "Durée : 4 heures en moyenne",
       "Vous pouvez lire, regarder la TV, dormir",
       "Surveillance continue par l'équipe",
-      "Collation disponible pendant la séance",
+      "Café disponible pendant la séance",
     ],
   },
   {
