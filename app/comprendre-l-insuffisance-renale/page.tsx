@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Info,
@@ -120,9 +121,8 @@ export default function ComprendreIrcPage() {
         eyebrow="Guide pédagogique"
         title="Comprendre l'insuffisance rénale"
         subtitle="L'insuffisance rénale chronique est une maladie silencieuse. Repérée tôt, elle se ralentit, parfois considérablement. Voici, simplement, ce qu'il faut en savoir."
-        photoIcon={Activity}
-        photoLabel="Schéma anatomique rein"
-        photoTag="Illustration médicale"
+        photoSrc="/images/schema-rein-coupe.webp"
+        photoAlt="Coupe anatomique d'un rein humain montrant le cortex en périphérie, la médulla avec les pyramides de Malpighi, les calices et le bassinet qui collectent l'urine, ainsi que l'artère et la veine rénales pénétrant au niveau du hile et l'uretère."
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -205,6 +205,59 @@ export default function ComprendreIrcPage() {
               </p>
             </div>
           </Card>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+          <figure className="m-0 md:order-1">
+            <div className="rounded-2xl overflow-hidden bg-sand-50 border border-sand-200 p-3 md:p-5">
+              <Image
+                src="/images/schema-nephron.webp"
+                alt="Schéma détaillé d'un néphron : à gauche le glomérule avec ses artérioles afférente et efférente entourées par la capsule de Bowman ; au centre les tubules — tube contourné proximal, anse de Henlé descendante puis ascendante, tube contourné distal ; à droite les canaux collecteurs cortical et médullaire."
+                width={1214}
+                height={864}
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <figcaption className="mt-3 text-sm text-neutral-600 text-center italic">
+              Le néphron — l'unité microscopique de filtration. Chaque rein en contient environ un million.
+            </figcaption>
+          </figure>
+
+          <div className="md:order-2">
+            <SectionHeader
+              eyebrow="Zoom sur le néphron"
+              title="Un million de filtres microscopiques par rein"
+            />
+            <div className="space-y-4 text-neutral-700 text-lg leading-relaxed">
+              <p>
+                Chaque rein contient environ <strong>un million de néphrons</strong>,
+                ces unités microscopiques qui filtrent votre sang en continu. Sur
+                le schéma, on voit le <strong>glomérule</strong> — le filtre proprement
+                dit, où le sang passe à travers une fine membrane — puis tout le
+                système de tubules qui ajuste la composition de l'urine en
+                récupérant ce qui doit l'être (eau, sels, glucose) et en laissant
+                filer les déchets vers le canal collecteur.
+              </p>
+              <p>
+                Cette mécanique miniaturisée se répète <strong>un million de fois
+                par rein</strong>. Tant qu'un nombre suffisant de néphrons fonctionne,
+                le rein <strong>compense</strong> — c'est pour cela qu'on peut perdre
+                une partie de sa fonction rénale sans rien sentir. Le piège : quand
+                les premiers symptômes apparaissent, il reste souvent moins de
+                30 % de néphrons fonctionnels.
+              </p>
+              <p>
+                Comprendre le néphron, c'est comprendre pourquoi un{" "}
+                <strong>simple bilan sanguin</strong> est si précieux : il mesure la
+                créatinine, un déchet que les néphrons sains éliminent. Sa montée
+                silencieuse dans le sang est le premier signal — bien avant que le
+                corps ne se manifeste.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
