@@ -6,6 +6,9 @@ import {
   AlertTriangle,
   ArrowRight,
   Clock,
+  UtensilsCrossed,
+  Droplets,
+  Apple,
 } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -39,6 +42,29 @@ const principes = [
   {
     title: "Vigilance renforcée",
     text: "Le personnel est sensibilisé : surveillance accrue de la tension, de l'hydratation, du bilan entrée-sortie. Tout signe d'alerte = rupture du jeûne recommandée par le médecin.",
+  },
+];
+
+const alimentation = [
+  {
+    icon: UtensilsCrossed,
+    title: "Trois repas structurés",
+    text: "F'tour, dîner léger en soirée, s'hour consistant. Évitez le grignotage continu : c'est ce qui protège votre glycémie et votre prise de poids interdialytique.",
+  },
+  {
+    icon: Droplets,
+    title: "Hydratation maîtrisée",
+    text: "Votre quota hydrique reste le même qu'en dehors du Ramadan. Répartissez-le entre f'tour et s'hour. Pas de sodas, peu d'aliments très salés.",
+  },
+  {
+    icon: Apple,
+    title: "Dattes et douceurs dosées",
+    text: "Deux dattes au f'tour, une chorba équilibrée, une demi-portion de pâtisserie plutôt qu'un défilé. Attention au potassium des dattes et au phosphore des douceurs.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Rompre sans hésiter",
+    text: "Fatigue inhabituelle, malaise, signe d'hypo ou d'hyperglycémie : rompez immédiatement. La loi religieuse l'autorise pour raisons médicales.",
   },
 ];
 
@@ -194,6 +220,57 @@ export default function RamadanDialysePage() {
       </section>
 
       <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Alimentation"
+            title="Bien s'alimenter pendant le Ramadan"
+          />
+          <div className="max-w-3xl mx-auto mb-10">
+            <p className="text-neutral-700 text-lg leading-relaxed text-center">
+              Si votre néphrologue vous autorise à jeûner, l'organisation de vos repas
+              devient déterminante. La règle d'or : trois repas structurés plutôt que
+              du grignotage continu, une vigilance particulière sur l'hydratation et
+              le sel, et des choix mesurés sur les douceurs orientales.
+            </p>
+          </div>
+
+          <ul className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+            {alimentation.map((a) => (
+              <li key={a.title}>
+                <Card className="h-full">
+                  <CardIcon>
+                    <a.icon className="w-6 h-6" aria-hidden="true" />
+                  </CardIcon>
+                  <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
+                    {a.title}
+                  </h3>
+                  <p className="text-neutral-700 text-base">{a.text}</p>
+                </Card>
+              </li>
+            ))}
+          </ul>
+
+          <div className="max-w-2xl mx-auto p-6 md:p-8 bg-sand-50 border border-sand-200 rounded-2xl text-center">
+            <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
+              Le guide complet
+            </h3>
+            <p className="text-neutral-700 mb-5">
+              F'tour, s'hour, dattes, chorba, pâtisseries, hydratation, surveillance
+              de la glycémie : retrouvez tous les conseils pratiques dans notre
+              guide dédié.
+            </p>
+            <Link
+              href="/blog/ramadan-alimentation-dialyse-sidi-bel-abbes"
+              className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-3 rounded-full font-semibold min-h-[48px] transition-colors"
+            >
+              Lire le guide complet
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-sand-50">
         <div className="container-narrow">
           <SectionHeader
             eyebrow="FAQ Ramadan"
