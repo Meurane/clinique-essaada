@@ -1,25 +1,32 @@
 import { ImageResponse } from "next/og";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
 export default function AppleIcon() {
+  const logoSvg = readFileSync(
+    join(process.cwd(), "public/logo.svg"),
+    "utf-8",
+  );
+  const logoDataUri = `data:image/svg+xml;base64,${Buffer.from(logoSvg).toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
         style={{
           width: "100%",
           height: "100%",
-          background: "#0A475D",
+          background: "#ffffff",
           borderRadius: 32,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          padding: 18,
         }}
       >
-        <svg width="110" height="110" viewBox="0 0 24 24" fill="#ffffff">
-          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-        </svg>
+        <img src={logoDataUri} alt="" width={144} height={144} />
       </div>
     ),
     { ...size },

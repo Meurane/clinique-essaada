@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Heart, Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import {
   primaryNav,
   isNavGroup,
@@ -134,9 +135,14 @@ export function Navigation() {
           className="flex items-center gap-2.5 font-display font-bold text-lg xl:text-xl text-primary-700 shrink-0"
           aria-label="Clinique ESSAADA — Accueil"
         >
-          <span className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-primary-600 text-white grid place-items-center shrink-0">
-            <Heart className="w-5 h-5" aria-hidden="true" />
-          </span>
+          <Image
+            src="/logo.svg"
+            alt=""
+            width={44}
+            height={44}
+            priority
+            className="w-10 h-10 md:w-11 md:h-11 shrink-0 object-contain"
+          />
           <span className="whitespace-nowrap">Clinique ESSAADA</span>
         </Link>
 

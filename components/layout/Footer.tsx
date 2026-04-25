@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Heart, Phone, MapPin, Clock } from "lucide-react";
+import Image from "next/image";
+import { Phone, MapPin, Clock } from "lucide-react";
 import { site } from "@/lib/site";
 
 const navGroup = [
@@ -50,8 +51,14 @@ export function Footer() {
               href="/"
               className="flex items-center gap-2.5 font-display font-bold text-lg text-white"
             >
-              <span className="w-8 h-8 rounded-lg bg-primary-600 grid place-items-center">
-                <Heart className="w-4 h-4" aria-hidden="true" />
+              <span className="w-9 h-9 rounded-lg bg-white grid place-items-center p-1 shrink-0">
+                <Image
+                  src="/logo.svg"
+                  alt=""
+                  width={28}
+                  height={28}
+                  className="w-full h-full object-contain"
+                />
               </span>
               <span>Clinique ESSAADA</span>
             </Link>
