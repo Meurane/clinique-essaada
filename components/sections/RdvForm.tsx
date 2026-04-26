@@ -99,12 +99,12 @@ export function RdvForm() {
             autoComplete="tel"
             inputMode="tel"
             pattern="^\+?[0-9\s().\-]{9,20}$"
-            placeholder="048 70 25 70"
+            placeholder="048 72 25 70"
             defaultValue={state.values?.telephone ?? ""}
             className={fieldInputClass}
           />
           <p id={phoneHelpId} className="mt-2 text-sm text-neutral-600">
-            Ex. 048 70 25 70, +213 555 12 34 56 ou +33 6 12 34 56 78.
+            Ex. 048 72 25 70, +213 555 12 34 56 ou +33 6 12 34 56 78.
           </p>
         </div>
       </div>
