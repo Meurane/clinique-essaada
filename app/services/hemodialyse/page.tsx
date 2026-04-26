@@ -59,6 +59,8 @@ export default function HemodialysePage() {
         title="Hémodialyse à Sidi Bel Abbès"
         subtitle={`${site.stats.lits} lits. 3 créneaux par jour. Conventionnée CNAS et CASNOS.`}
         photoIcon={Stethoscope}
+        photoSrc="/images/salle-dialyse.webp"
+        photoAlt="Salle d'hémodialyse de la Clinique ESSAADA, vue d'ensemble des postes équipés de générateurs et lits inclinables"
         photoLabel="Salle d'hémodialyse"
         photoTag="Sidi Bel Abbès"
       />

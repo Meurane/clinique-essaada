@@ -86,6 +86,8 @@ export default function LaCliniquePage() {
         title="Un centre dédié à la dialyse, pensé pour vous"
         subtitle={`${site.stats.lits} lits, une équipe pluridisciplinaire, un plateau technique récent. À ${site.city}, ${site.country}.`}
         photoIcon={Building2}
+        photoSrc="/images/clinique-facade.webp"
+        photoAlt="Façade extérieure de la Clinique ESSAADA, bâtiment de deux étages avec rampe d'accès, à Sidi Bel Abbès"
         photoLabel="Façade & accueil"
         photoTag="Sidi Bel Abbès"
       />
@@ -186,12 +188,14 @@ export default function LaCliniquePage() {
           <SectionHeader
             eyebrow="En images"
             title="Le centre, en quelques vues"
-            subtitle="Photographies à venir — un reportage sur place est prévu. D'ici là, voici la structure des vues qui seront publiées."
+            subtitle="Quelques aperçus du centre. Reportage complet sur place à venir."
           />
           <PhotoGrid
             columns={3}
             items={[
               {
+                src: "/images/salle-dialyse.webp",
+                alt: "Salle d'hémodialyse de la Clinique ESSAADA, postes alignés équipés de générateurs et lits inclinables",
                 icon: Armchair,
                 label: "Salle d'hémodialyse",
                 aspectRatio: "4/5",
@@ -199,6 +203,8 @@ export default function LaCliniquePage() {
                 tag: "Vue intérieure",
               },
               {
+                src: "/images/clinique-reception.webp",
+                alt: "Hall d'accueil de la Clinique ESSAADA avec comptoir de réception, escaliers en marbre et lustre",
                 icon: Building2,
                 label: "Accueil & réception",
                 aspectRatio: "4/5",

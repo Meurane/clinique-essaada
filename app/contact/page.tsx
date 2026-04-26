@@ -45,6 +45,8 @@ export default function ContactPage() {
         title="Nous joindre"
         subtitle="Pour nous joindre rapidement : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi."
         photoIcon={MapPin}
+        photoSrc="/images/clinique-entree.webp"
+        photoAlt="Entrée principale de la Clinique ESSAADA, auvent bleu avec inscription en arabe « عيادة السعادة »"
         photoLabel="Façade & accès"
         photoTag="Sidi Bel Abbès"
       />

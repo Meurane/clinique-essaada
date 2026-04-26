@@ -117,8 +117,10 @@ export default function EquipementHygienePage() {
         title="La qualité de votre dialyse commence par l'eau et le matériel"
         subtitle="Une séance d'hémodialyse met votre sang en contact avec environ 120 litres d'eau traitée. À ce volume, chaque détail compte. Voici ce que nous mettons en œuvre, sans simplification."
         photoIcon={Factory}
+        photoSrc="/images/generateur-dialyse.webp"
+        photoAlt="Générateur de dialyse SWS-4000A en fonctionnement à la Clinique ESSAADA, écran affichant les paramètres de séance"
         photoLabel="Plateau technique"
-        photoTag="Traitement d'eau"
+        photoTag="Générateur en séance"
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -222,12 +224,14 @@ export default function EquipementHygienePage() {
           <SectionHeader
             eyebrow="Galerie technique"
             title="Ce que voit notre équipe biomédicale"
-            subtitle="Photographies à venir — shooting technique prévu avec notre prestataire maintenance. Aperçu de la taxonomie des vues qui seront publiées."
+            subtitle="Quelques vues du plateau technique. Reportage complet à venir."
           />
           <PhotoGrid
             columns={3}
             items={[
               {
+                src: "/images/generateur-dialyse.webp",
+                alt: "Générateur de dialyse SWS-4000A en séance — écran affichant les paramètres en temps réel",
                 icon: Cpu,
                 label: "Générateur — panneau",
                 aspectRatio: "1/1",
@@ -263,6 +267,8 @@ export default function EquipementHygienePage() {
                 tag: "Qualité",
               },
               {
+                src: "/images/poste-dialyse.webp",
+                alt: "Postes de dialyse propres prêts pour les patients — lits préparés et générateurs en attente",
                 icon: Shield,
                 label: "Postes dialyse",
                 aspectRatio: "1/1",
