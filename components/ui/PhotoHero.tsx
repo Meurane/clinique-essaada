@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import type { StaticImageData } from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { Eyebrow } from "./Eyebrow";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
@@ -24,7 +25,7 @@ export function PhotoHero({
   title: string;
   subtitle?: string;
   children?: ReactNode;
-  photoSrc?: string;
+  photoSrc?: string | StaticImageData;
   photoAlt?: string;
   photoIcon?: LucideIcon;
   photoLabel?: string;

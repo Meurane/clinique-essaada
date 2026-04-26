@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import schemaReinCoupe from "@/public/images/schema-rein-coupe.webp";
+import schemaNephron from "@/public/images/schema-nephron.webp";
 import {
   Info,
   Droplets,
@@ -121,7 +123,7 @@ export default function ComprendreIrcPage() {
         eyebrow="Guide pédagogique"
         title="Comprendre l'insuffisance rénale"
         subtitle="L'insuffisance rénale chronique est une maladie silencieuse. Repérée tôt, elle se ralentit, parfois considérablement. Voici, simplement, ce qu'il faut en savoir."
-        photoSrc="/images/schema-rein-coupe.webp"
+        photoSrc={schemaReinCoupe}
         photoAlt="Coupe anatomique d'un rein humain montrant le cortex en périphérie, la médulla avec les pyramides de Malpighi, les calices et le bassinet qui collectent l'urine, ainsi que l'artère et la veine rénales pénétrant au niveau du hile et l'uretère."
       />
       <div className="container-custom py-5">
@@ -213,10 +215,9 @@ export default function ComprendreIrcPage() {
           <figure className="m-0 md:order-1">
             <div className="rounded-2xl overflow-hidden bg-sand-50 border border-sand-200 p-3 md:p-5">
               <Image
-                src="/images/schema-nephron.webp"
+                src={schemaNephron}
                 alt="Schéma détaillé d'un néphron : à gauche le glomérule avec ses artérioles afférente et efférente entourées par la capsule de Bowman ; au centre les tubules — tube contourné proximal, anse de Henlé descendante puis ascendante, tube contourné distal ; à droite les canaux collecteurs cortical et médullaire."
-                width={1214}
-                height={864}
+                placeholder="blur"
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="w-full h-auto rounded-lg"
               />

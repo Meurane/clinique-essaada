@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import type { LucideIcon } from "lucide-react";
 import { ImageIcon } from "lucide-react";
 
@@ -37,7 +38,7 @@ export function PhotoPlaceholder({
   sizes,
   className = "",
 }: {
-  src?: string;
+  src?: string | StaticImageData;
   alt?: string;
   aspectRatio?: AspectRatio;
   icon?: LucideIcon;
@@ -63,6 +64,7 @@ export function PhotoPlaceholder({
 
   // Image réelle
   if (src) {
+    const isStatic = typeof src !== "string";
     return (
       <figure
         className={`relative ${aspect} ${roundClass} overflow-hidden bg-sand-50 ${className}`}
@@ -74,6 +76,7 @@ export function PhotoPlaceholder({
           priority={priority}
           sizes={sizes ?? "(max-width: 768px) 100vw, 50vw"}
           className="object-cover"
+          {...(isStatic ? { placeholder: "blur" as const } : {})}
         />
         {tag && (
           <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 bg-white/85 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-primary-800 ring-1 ring-primary-800/10">
