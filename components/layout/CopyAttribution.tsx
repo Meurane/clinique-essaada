@@ -20,9 +20,9 @@ export function CopyAttribution() {
       const selection = window.getSelection()?.toString() ?? "";
       if (selection.length < MIN_LENGTH) return;
 
-      const { origin, pathname } = window.location;
-      const sourceUrl = `${origin}${pathname}`;
-      const enriched = `${selection}\n\n---\nSource : ${site.name} — ${sourceUrl}`;
+      const { pathname } = window.location;
+      const sourceUrl = `${site.url}${pathname}`;
+      const enriched = `${selection}\n\n—\n${site.name} · ${sourceUrl}\n${site.contact.phone}`;
 
       event.clipboardData?.setData("text/plain", enriched);
       event.preventDefault();
