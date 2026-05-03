@@ -5,9 +5,9 @@ export type FaqItem = { question: string; answer: string };
 export function FaqAccordion({ items }: { items: FaqItem[] }) {
   return (
     <div className="space-y-3">
-      {items.map((item, i) => (
+      {items.map((item) => (
         <details
-          key={i}
+          key={item.question}
           className="group bg-white border border-neutral-150 rounded-xl overflow-hidden open:shadow-sm transition-shadow"
         >
           <summary className="flex items-start justify-between gap-4 cursor-pointer list-none p-5 md:p-6 font-display font-semibold text-lg text-neutral-900 hover:bg-neutral-50">

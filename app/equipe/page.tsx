@@ -104,8 +104,8 @@ export default function EquipePage() {
           ) : (
             <>
               <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
-                {placeholderRoles.map((p, i) => (
-                  <li key={i}>
+                {placeholderRoles.map((p) => (
+                  <li key={`${p.role}-${p.credentials[0]}`}>
                     <PortraitCard
                       name="Dr. [Nom à venir]"
                       role={p.role}

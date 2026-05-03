@@ -34,7 +34,7 @@ export function Callout({
   const v = styles[variant];
   return (
     <div
-      role={variant === "warning" ? "note" : undefined}
+      role={variant === "warning" ? "status" : undefined}
       className={`flex items-start gap-3 p-4 md:p-5 rounded-xl border ${v.wrap} ${className}`}
     >
       {Icon && (
