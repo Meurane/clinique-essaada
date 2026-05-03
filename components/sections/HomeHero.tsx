@@ -1,7 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/site";
+import { Button } from "@/components/ui/Button";
 
 const proofPoints = [
   "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
@@ -20,9 +20,8 @@ export function HomeHero() {
             Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-white">
-            Votre vie continue,
-            <br />
-            <span className="text-sand-100">on en prend soin.</span>
+            <span className="block">Votre vie continue,</span>
+            <span className="block text-sand-100">on en prend soin.</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
             Hémodialyse à Sidi Bel Abbès — {site.stats.lits} lits,
@@ -38,19 +37,13 @@ export function HomeHero() {
             ))}
           </ul>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
-            <Link
-              href="/rendez-vous"
-              className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
-            >
+            <Button href="/rendez-vous" variant="light">
               Prendre rendez-vous
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
-            </Link>
-            <Link
-              href="/la-clinique#visite-decouverte"
-              className="inline-flex items-center justify-center gap-2 border border-primary-300/50 text-white hover:bg-primary-600/40 px-6 py-4 rounded-full font-semibold transition-colors min-h-[56px]"
-            >
+            </Button>
+            <Button href="/la-clinique#visite-decouverte" variant="outline">
               Visiter le centre
-            </Link>
+            </Button>
           </div>
           <a
             href={site.contact.phoneHref}

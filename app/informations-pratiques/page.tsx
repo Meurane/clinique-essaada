@@ -102,8 +102,8 @@ export default function InfosPratiquesPage() {
                         {b.lead}
                       </p>
                       <div className="space-y-3 text-neutral-700 leading-relaxed">
-                        {b.body.map((p, i) => (
-                          <p key={i}>{p}</p>
+                        {b.body.map((p) => (
+                          <p key={p}>{p}</p>
                         ))}
                       </div>
                       {b.tip && (

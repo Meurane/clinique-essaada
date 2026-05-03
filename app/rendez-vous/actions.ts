@@ -1,6 +1,23 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RDV_RATE_LIMIT = 5;
+const RDV_RATE_WINDOW_MS = 60 * 60 * 1000;
+const RESEND_TIMEOUT_MS = 5_000;
+
+const IP_FORMAT = /^[0-9a-fA-F:.]+$/;
+
+function resolveClientIp(headerList: Headers): string {
+  const fwd = headerList.get("x-forwarded-for") ?? "";
+  const candidate =
+    fwd.split(",")[0]?.trim() ||
+    headerList.get("x-real-ip")?.trim() ||
+    "";
+  return candidate && IP_FORMAT.test(candidate) ? candidate : "unknown";
+}
 
 export type RdvFormValues = {
   nom?: string;
@@ -41,6 +58,18 @@ export async function submitRdv(
     redirect("/rendez-vous?success=1");
   }
 
+  const headerList = await headers();
+  const ip = resolveClientIp(headerList);
+  const rate = checkRateLimit(`rdv:${ip}`, RDV_RATE_LIMIT, RDV_RATE_WINDOW_MS);
+  if (!rate.ok) {
+    const minutes = Math.max(1, Math.ceil(rate.retryAfterSec / 60));
+    return {
+      status: "error",
+      message: `Trop de demandes. Merci de réessayer dans ${minutes} min ou de nous appeler directement.`,
+      values,
+    };
+  }
+
   if (!nom || nom.length < 2) {
     return { status: "error", message: "Merci de renseigner votre nom.", values };
   }
@@ -68,6 +97,7 @@ export async function submitRdv(
     try {
       const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
+        signal: AbortSignal.timeout(RESEND_TIMEOUT_MS),
         headers: {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",

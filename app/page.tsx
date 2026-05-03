@@ -19,6 +19,7 @@ import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card, CardIcon } from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
 import { site, waUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -231,22 +232,17 @@ export default function HomePage() {
             Notre équipe est joignable par WhatsApp et téléphone, du samedi au jeudi.
           </p>
           <div className="flex flex-col-reverse sm:flex-row gap-3 justify-center">
-            <Link
-              href="/rendez-vous"
-              className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
-            >
+            <Button href="/rendez-vous" variant="primary">
               Prendre rendez-vous
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
-            </Link>
-            <a
+            </Button>
+            <Button
               href={waUrl("Bonjour, j'aimerais prendre rendez-vous à la Clinique ESSAADA.")}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
+              variant="whatsapp"
             >
               <MessageCircle className="w-5 h-5" aria-hidden="true" />
               Écrire sur WhatsApp
-            </a>
+            </Button>
           </div>
         </div>
       </section>
