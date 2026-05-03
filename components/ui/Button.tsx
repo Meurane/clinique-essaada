@@ -20,6 +20,20 @@ const sizeClass: Record<Size, string> = {
   lg: "px-6 py-4 min-h-[56px]",
 };
 
+const PROTOCOL_LINK = /^(tel:|mailto:|sms:)/i;
+const DANGEROUS_PROTOCOL = /^(javascript:|data:|vbscript:|file:)/i;
+const HTTP_PROTOCOL = /^https?:\/\//i;
+
+type LinkClass = "internal" | "protocol" | "external" | "unsafe";
+
+function classifyHref(href: string): LinkClass {
+  if (DANGEROUS_PROTOCOL.test(href)) return "unsafe";
+  if (PROTOCOL_LINK.test(href)) return "protocol";
+  if (href.startsWith("/") || href.startsWith("#")) return "internal";
+  if (HTTP_PROTOCOL.test(href) || href.startsWith("//")) return "external";
+  return "unsafe";
+}
+
 type ButtonProps = {
   href: string;
   children: ReactNode;
@@ -39,11 +53,23 @@ export function Button({
   ...rest
 }: ButtonProps) {
   const classes = `${baseClass} ${variantClass[variant]} ${sizeClass[size]} ${className}`;
-  const isProtocolLink = /^(tel:|mailto:|sms:)/i.test(href);
-  const isExternal = external ?? (!href.startsWith("/") && !href.startsWith("#") && !isProtocolLink);
+  const kind = classifyHref(href);
 
-  if (isExternal || isProtocolLink) {
-    const externalProps = isExternal
+  if (kind === "unsafe") {
+    if (process.env.NODE_ENV !== "production") {
+      console.error(`[Button] refused unsafe href: ${href}`);
+    }
+    return (
+      <span className={classes} role="link" aria-disabled="true">
+        {children}
+      </span>
+    );
+  }
+
+  const treatAsExternal = external ?? kind === "external";
+
+  if (treatAsExternal || kind === "protocol") {
+    const externalProps = treatAsExternal
       ? { target: rest.target ?? "_blank", rel: rest.rel ?? "noopener noreferrer" }
       : {};
     return (

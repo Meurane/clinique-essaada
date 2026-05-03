@@ -5,6 +5,12 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import DOMPurify from "isomorphic-dompurify";
 
+DOMPurify.addHook("afterSanitizeAttributes", (node) => {
+  if ("tagName" in node && node.tagName === "A" && node.getAttribute?.("target") === "_blank") {
+    node.setAttribute("rel", "noopener noreferrer");
+  }
+});
+
 export type ArticleFrontmatter = {
   title: string;
   excerpt: string;

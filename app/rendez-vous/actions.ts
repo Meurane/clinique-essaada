@@ -6,6 +6,18 @@ import { checkRateLimit } from "@/lib/rate-limit";
 
 const RDV_RATE_LIMIT = 5;
 const RDV_RATE_WINDOW_MS = 60 * 60 * 1000;
+const RESEND_TIMEOUT_MS = 5_000;
+
+const IP_FORMAT = /^[0-9a-fA-F:.]+$/;
+
+function resolveClientIp(headerList: Headers): string {
+  const fwd = headerList.get("x-forwarded-for") ?? "";
+  const candidate =
+    fwd.split(",")[0]?.trim() ||
+    headerList.get("x-real-ip")?.trim() ||
+    "";
+  return candidate && IP_FORMAT.test(candidate) ? candidate : "unknown";
+}
 
 export type RdvFormValues = {
   nom?: string;
@@ -39,9 +51,15 @@ export async function submitRdv(
 
   const values: RdvFormValues = { nom, telephone, motif, creneau, message };
 
+  if (honeypot) {
+    if (process.env.NODE_ENV !== "production") {
+      console.info("[rdv] honeypot triggered — dropping silently");
+    }
+    redirect("/rendez-vous?success=1");
+  }
+
   const headerList = await headers();
-  const fwd = headerList.get("x-forwarded-for") ?? "";
-  const ip = fwd.split(",")[0]?.trim() || headerList.get("x-real-ip") || "unknown";
+  const ip = resolveClientIp(headerList);
   const rate = checkRateLimit(`rdv:${ip}`, RDV_RATE_LIMIT, RDV_RATE_WINDOW_MS);
   if (!rate.ok) {
     const minutes = Math.max(1, Math.ceil(rate.retryAfterSec / 60));
@@ -50,13 +68,6 @@ export async function submitRdv(
       message: `Trop de demandes. Merci de réessayer dans ${minutes} min ou de nous appeler directement.`,
       values,
     };
-  }
-
-  if (honeypot) {
-    if (process.env.NODE_ENV !== "production") {
-      console.info("[rdv] honeypot triggered — dropping silently");
-    }
-    redirect("/rendez-vous?success=1");
   }
 
   if (!nom || nom.length < 2) {
@@ -86,6 +97,7 @@ export async function submitRdv(
     try {
       const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
+        signal: AbortSignal.timeout(RESEND_TIMEOUT_MS),
         headers: {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
