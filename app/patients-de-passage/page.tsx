@@ -92,6 +92,8 @@ export default function PatientsDePassagePage() {
         title="Dialysez en toute sérénité pendant votre séjour à Sidi Bel Abbès"
         subtitle="Diaspora algérienne en vacances, résident en voyage, patient en transfert : nous accueillons les patients dialysés de passage. Confirmation de votre créneau sous 72h ouvrées."
         photoIcon={Plane}
+        photoSrc="/images/clinique-facade-enseigne.webp"
+        photoAlt="Façade extérieure de la Clinique ESSAADA à Sidi Bel Abbès — enseigne « CLINIQUE ESSAADA », rampe d'accès patients et entrée principale"
         photoLabel="Accueil patients de passage"
         photoTag="Diaspora & voyageurs"
       />

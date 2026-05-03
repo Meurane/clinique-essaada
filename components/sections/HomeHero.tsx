@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, Phone, CheckCircle2, ImageIcon } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/site";
 
 const proofPoints = [
@@ -63,44 +64,21 @@ export function HomeHero() {
           </a>
         </div>
 
-        {/* Colonne droite — placeholder photo portrait (4/5), prêt pour shooting */}
+        {/* Colonne droite — photo hall d'accueil portrait (4/5) */}
         <div className="hidden md:block md:col-span-2">
-          <figure
-            className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand-50 ring-1 ring-white/10 shadow-2xl"
-            aria-label="Emplacement photo équipe médicale — shooting à venir"
-          >
-            {/* Gradient subtil sand → primary léger pour donner de la profondeur */}
-            <div
-              className="absolute inset-0 bg-gradient-to-br from-sand-50 via-sand-100 to-sand-200/60"
-              aria-hidden="true"
+          <figure className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand-50 ring-1 ring-white/10 shadow-2xl">
+            <Image
+              src="/images/clinique-hall-accueil.webp"
+              alt="Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
+              className="object-cover"
             />
-            {/* Motif rayures concentriques très discret — métaphore purification */}
-            <svg
-              className="absolute inset-0 w-full h-full opacity-[0.06]"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <pattern id="dots-hero" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <circle cx="2" cy="2" r="1" fill="currentColor" className="text-primary-800" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#dots-hero)" />
-            </svg>
-            <figcaption className="absolute inset-0 flex flex-col items-center justify-center text-center gap-3 text-primary-800/60 px-6">
-              <ImageIcon className="w-10 h-10" aria-hidden="true" strokeWidth={1.5} />
-              <span className="font-display text-base font-semibold tracking-wide text-primary-800/70">
-                Équipe médicale
-              </span>
-              <span className="text-xs text-primary-800/40">
-                Shooting photographique à venir
-              </span>
-            </figcaption>
-            {/* Petite pastille discrète en bas-gauche */}
-            <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-primary-800 ring-1 ring-primary-800/10">
+            <figcaption className="absolute bottom-4 left-4 flex items-center gap-2 bg-white/85 backdrop-blur-sm rounded-full px-3 py-1.5 text-xs font-medium text-primary-800 ring-1 ring-primary-800/10">
               <span className="w-1.5 h-1.5 rounded-full bg-accent-600" aria-hidden="true" />
               Sidi Bel Abbès
-            </div>
+            </figcaption>
           </figure>
         </div>
       </div>

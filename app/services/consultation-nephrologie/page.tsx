@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, GraduationCap, Users, BookOpen, Stethoscope } from "lucide-react";
-import { PhotoHero } from "@/components/ui/PhotoHero";
+import { ArrowRight, CheckCircle2, GraduationCap, Users, BookOpen } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { PullQuote } from "@/components/ui/PullQuote";
@@ -45,13 +45,10 @@ const etpPiliers = [
 export default function ConsultationPage() {
   return (
     <>
-      <PhotoHero
+      <PageHero
         eyebrow="Service · Consultation"
         title="Consultation néphrologie"
         subtitle="Pour le diagnostic, le suivi et la prévention des maladies rénales à tous les stades."
-        photoIcon={Stethoscope}
-        photoLabel="Consultation néphrologique"
-        photoTag="Diagnostic & suivi"
       />
       <div className="container-custom py-5">
         <Breadcrumb

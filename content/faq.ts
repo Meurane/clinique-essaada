@@ -59,7 +59,7 @@ export const faq: FaqItem[] = [
   {
     question: "Je suis en vacances dans la région, puis-je dialyser chez vous ?",
     answer:
-      "Oui. Nous accueillons les patients de passage (résidents en Algérie comme diaspora). Confirmation de votre créneau sous 72h ouvrées. Contactez-nous au moins 1 mois avant votre séjour avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Voir la page dédiée « Patients de passage ».",
+      "Oui. Nous accueillons les patients de passage (résidents en Algérie comme diaspora). Confirmation de votre créneau sous 72h ouvrées. Contactez-nous le plus rapidement possible avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Voir la page dédiée « Patients de passage ».",
   },
   {
     question: "Les horaires sont-ils adaptés pendant le Ramadan ?",

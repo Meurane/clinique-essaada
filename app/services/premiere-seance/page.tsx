@@ -105,6 +105,8 @@ export default function PremiereSeancePage() {
         title="Un parcours balisé pour préparer votre première séance"
         subtitle="Nous savons que la première fois peut générer de l'inquiétude. Voici tout ce que vous devez savoir avant de venir."
         photoIcon={ClipboardList}
+        photoSrc="/images/clinique-reception-logo.webp"
+        photoAlt="Comptoir de réception de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — logo (rein stylisé) et signalétique bilingue français-arabe pour l'accueil des patients"
         photoLabel="Préparation séance"
         photoTag="Dossier & accueil"
       />

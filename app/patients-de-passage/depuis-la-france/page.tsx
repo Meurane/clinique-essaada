@@ -131,6 +131,8 @@ export default function DepuisLaFrancePage() {
         title="Dialyser en vacances à Sidi Bel Abbès, l'esprit tranquille"
         subtitle="Vous rentrez revoir la famille, profiter du soleil, retrouver vos racines. Votre traitement ne doit pas vous en empêcher. Nous accompagnons chaque année des patients de la diaspora — avec le même sérieux qu'en France, et un accompagnement complet des démarches CPAM."
         photoIcon={Plane}
+        photoSrc="/images/clinique-entree-marbre.webp"
+        photoAlt="Entrée principale de la Clinique ESSAADA — escalier en marbre, palmiers en pots, portes vitrées et garde-corps en fer forgé"
         photoLabel="Diaspora — vacances dialyse"
         photoTag="France → Sidi Bel Abbès"
       />

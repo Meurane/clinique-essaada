@@ -7,8 +7,6 @@ import {
   Users,
   BadgeCheck,
   Activity,
-  FlaskConical,
-  Gauge,
   Factory,
 } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
@@ -98,8 +96,8 @@ const controles = [
   },
   {
     icon: BadgeCheck,
-    title: "Agréments",
-    text: "Agrément DSP Sidi Bel Abbès, conventions CNAS et CASNOS.",
+    title: "Agrément Ministère de la Santé",
+    text: "Agrément Ministère de la Santé, conventions CNAS et CASNOS.",
   },
 ];
 
@@ -239,32 +237,13 @@ export default function EquipementHygienePage() {
                 tag: "Détail",
               },
               {
+                src: "/images/osmose-traitement-eau.webp",
+                alt: "Système d'osmose double passage Molecular Σ-H₂O à la Clinique ESSAADA — réservoirs inox, filtres et contrôle Siemens pour l'eau ultrapure de dialyse",
                 icon: Factory,
                 label: "Osmose double passage",
                 aspectRatio: "1/1",
                 caption: "Cuves inox, pression contrôlée, production d'eau ultrapure.",
                 tag: "Traitement eau",
-              },
-              {
-                icon: Gauge,
-                label: "Tableau de contrôle",
-                aspectRatio: "1/1",
-                caption: "Manomètres, conductivité, traçabilité chaque séance.",
-                tag: "Monitoring",
-              },
-              {
-                icon: Activity,
-                label: "Dialyseur (filtre)",
-                aspectRatio: "1/1",
-                caption: "Membrane synthétique haute perméabilité — à usage unique strict.",
-                tag: "Consommable",
-              },
-              {
-                icon: FlaskConical,
-                label: "Analyses d'eau",
-                aspectRatio: "1/1",
-                caption: "Prélèvements trimestriels — bactériologiques & biochimiques.",
-                tag: "Qualité",
               },
               {
                 src: "/images/poste-dialyse.webp",

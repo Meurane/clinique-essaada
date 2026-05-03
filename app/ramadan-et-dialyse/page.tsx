@@ -99,6 +99,8 @@ export default function RamadanDialysePage() {
         title="Vivre le Ramadan en dialyse, avec sérénité"
         subtitle="Pendant le Ramadan, nos créneaux sont adaptés en concertation avec votre néphrologue. Que vous jeûniez ou non, nous organisons votre suivi pour respecter votre choix et votre santé."
         photoIcon={Moon}
+        photoSrc="/images/salle-dialyse-vue-large.webp"
+        photoAlt="Salle d'hémodialyse de la Clinique ESSAADA à Sidi Bel Abbès — vue large des postes alignés équipés de générateurs et lits inclinables, prête pour les séances Ramadan adaptées"
         photoLabel="Séances Ramadan"
         photoTag="Créneaux adaptés"
       />

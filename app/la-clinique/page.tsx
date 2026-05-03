@@ -14,7 +14,6 @@ import {
   Stethoscope,
   Building2,
   Armchair,
-  Sofa,
 } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { PhotoGrid } from "@/components/ui/PhotoGrid";
@@ -191,7 +190,7 @@ export default function LaCliniquePage() {
             subtitle="Quelques aperçus du centre. Reportage complet sur place à venir."
           />
           <PhotoGrid
-            columns={3}
+            columns={2}
             items={[
               {
                 src: "/images/salle-dialyse.webp",
@@ -210,13 +209,6 @@ export default function LaCliniquePage() {
                 aspectRatio: "4/5",
                 caption: "Espace d'accueil, circuit d'admission, signalétique.",
                 tag: "Entrée",
-              },
-              {
-                icon: Sofa,
-                label: "Salle d'attente dédiée",
-                aspectRatio: "4/5",
-                caption: "Assises confortables pour accompagnants, coin thé & lecture.",
-                tag: "Attente",
               },
             ]}
           />

@@ -23,6 +23,8 @@ export default function ServicesPage() {
         title="Nos services de néphrologie et de dialyse"
         subtitle="Une offre complète pour les patients insuffisants rénaux, à tous les stades de leur parcours."
         photoIcon={HeartPulse}
+        photoSrc="/images/clinique-hall-accueil.webp"
+        photoAlt="Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
         photoLabel="Parcours de soins"
         photoTag="Consultation & dialyse"
       />

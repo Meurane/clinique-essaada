@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Users, UserCircle2 } from "lucide-react";
-import { PhotoHero } from "@/components/ui/PhotoHero";
+import { UserCircle2 } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
@@ -33,13 +33,10 @@ const placeholderRoles = [
 export default function EquipePage() {
   return (
     <>
-      <PhotoHero
+      <PageHero
         eyebrow="Notre équipe"
         title="Une équipe pluridisciplinaire à vos côtés"
         subtitle="Médecins néphrologues, infirmiers spécialisés, personnel d'accompagnement. Formés à la prise en charge des patients dialysés."
-        photoIcon={Users}
-        photoLabel="Équipe médicale ESSAADA"
-        photoTag="Sidi Bel Abbès"
       />
       <div className="container-custom py-5">
         <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Équipe", url: "/equipe" }]} />

@@ -25,6 +25,8 @@ export default function InfosPratiquesPage() {
         title="Tout ce qu'il faut savoir avant de venir"
         subtitle="Horaires, accès, services sur place : nous avons pensé aux détails qui comptent."
         photoIcon={BookOpenCheck}
+        photoSrc="/images/clinique-hall-orientation.webp"
+        photoAlt="Hall principal de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès, escalier en marbre et panneau d'orientation des services"
         photoLabel="Vie pratique"
         photoTag="Accès & services"
       />
