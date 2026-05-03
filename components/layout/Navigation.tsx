@@ -120,6 +120,7 @@ export function Navigation() {
     group.items.some((item) => pathname === item.href || pathname.startsWith(item.href + "/"));
 
   return (
+    <>
     <header
       className={`sticky top-0 z-40 transition-all duration-200 ${
         scrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-white"
@@ -277,6 +278,7 @@ export function Navigation() {
           {open ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
       </nav>
+    </header>
 
       {open && (
         <div
@@ -285,7 +287,7 @@ export function Navigation() {
           role="dialog"
           aria-modal="true"
           aria-label="Menu principal"
-          className="min-[1080px]:hidden fixed inset-x-0 top-16 md:top-20 bottom-0 bg-white z-40 overflow-y-auto"
+          className="min-[1080px]:hidden fixed inset-x-0 top-16 md:top-20 bottom-0 bg-white z-50 overflow-y-auto"
         >
           <ul className="flex flex-col p-4 gap-1">
             {primaryNav.map((entry) => {
@@ -372,6 +374,6 @@ export function Navigation() {
           </ul>
         </div>
       )}
-    </header>
+    </>
   );
 }
