@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ContactBar } from "@/components/layout/ContactBar";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { CopyAttribution } from "@/components/layout/CopyAttribution";
 import { site } from "@/lib/site";
 import { medicalClinicSchema } from "@/lib/schema";
 
@@ -98,6 +99,7 @@ export default function RootLayout({
         <Footer />
         <MobileActionBar />
         <WhatsAppButton />
+        <CopyAttribution />
       </body>
     </html>
   );
