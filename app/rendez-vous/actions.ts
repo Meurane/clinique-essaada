@@ -1,6 +1,11 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { headers } from "next/headers";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+const RDV_RATE_LIMIT = 5;
+const RDV_RATE_WINDOW_MS = 60 * 60 * 1000;
 
 export type RdvFormValues = {
   nom?: string;
@@ -33,6 +38,19 @@ export async function submitRdv(
   const honeypot = norm(formData.get("website"));
 
   const values: RdvFormValues = { nom, telephone, motif, creneau, message };
+
+  const headerList = await headers();
+  const fwd = headerList.get("x-forwarded-for") ?? "";
+  const ip = fwd.split(",")[0]?.trim() || headerList.get("x-real-ip") || "unknown";
+  const rate = checkRateLimit(`rdv:${ip}`, RDV_RATE_LIMIT, RDV_RATE_WINDOW_MS);
+  if (!rate.ok) {
+    const minutes = Math.max(1, Math.ceil(rate.retryAfterSec / 60));
+    return {
+      status: "error",
+      message: `Trop de demandes. Merci de réessayer dans ${minutes} min ou de nous appeler directement.`,
+      values,
+    };
+  }
 
   if (honeypot) {
     if (process.env.NODE_ENV !== "production") {

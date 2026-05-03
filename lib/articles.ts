@@ -3,6 +3,7 @@ import path from "node:path";
 import { cache } from "react";
 import matter from "gray-matter";
 import { marked } from "marked";
+import DOMPurify from "isomorphic-dompurify";
 
 export type ArticleFrontmatter = {
   title: string;
@@ -18,7 +19,6 @@ export type ArticleFrontmatter = {
 export type Article = ArticleFrontmatter & {
   slug: string;
   html: string;
-  raw: string;
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
@@ -40,11 +40,16 @@ function readArticleFile(filename: string): Article {
     cover: data.cover ? String(data.cover) : undefined,
   };
 
+  const rawHtml = marked.parse(content, { async: false }) as string;
+  const html = DOMPurify.sanitize(rawHtml, {
+    USE_PROFILES: { html: true },
+    ADD_ATTR: ["target", "rel"],
+  });
+
   return {
     ...fm,
     slug,
-    raw: content,
-    html: marked.parse(content, { async: false }) as string,
+    html,
   };
 }
 
