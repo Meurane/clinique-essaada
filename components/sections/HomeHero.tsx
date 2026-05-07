@@ -25,7 +25,7 @@ export function HomeHero() {
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
             Hémodialyse à Sidi Bel Abbès — {site.stats.lits} lits,
-            néphrologues présents, équipe formée à l'accompagnement des
+            néphrologue présent, équipe formée à l'accompagnement des
             patients dialysés et de leurs proches.
           </p>
           <ul className="space-y-2.5 text-primary-50">

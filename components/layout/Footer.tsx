@@ -9,6 +9,7 @@ const navGroup = [
     links: [
       { href: "/la-clinique", label: "Notre centre" },
       { href: "/la-clinique/equipement-hygiene", label: "Équipement & hygiène" },
+      { href: "/la-clinique/composition-corporelle", label: "Mesure poids sec & hydratation" },
       { href: "/equipe", label: "Notre équipe" },
       { href: "/informations-pratiques", label: "Vivre avec la dialyse" },
     ],

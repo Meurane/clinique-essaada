@@ -35,7 +35,7 @@ const engagements = [
   {
     icon: Stethoscope,
     title: "Des professionnels de santé à votre service",
-    text: "Néphrologues, infirmiers spécialisés, personnel d'accompagnement — une équipe pluridisciplinaire formée à la prise en charge des patients dialysés.",
+    text: "Néphrologue, infirmiers spécialisés, personnel d'accompagnement — une équipe pluridisciplinaire formée à la prise en charge des patients dialysés.",
   },
   {
     icon: Shield,

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Stethoscope } from "lucide-react";
+import { ArrowRight, CheckCircle2, Stethoscope, Activity } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -191,6 +191,40 @@ export default function HemodialysePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Suivi médical de précision"
+            title="Mesurer plutôt qu'estimer votre poids sec"
+            subtitle="La clinique dispose d'un dispositif de bio-impédance multi-fréquence pour objectiver votre hydratation et votre composition corporelle. Un outil de précision intégré au protocole de dialyse, pas un examen séparé."
+          />
+          <div className="max-w-3xl mx-auto bg-sand-50 rounded-2xl p-6 md:p-8 border border-sand-200">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-primary-600 text-white grid place-items-center shrink-0">
+                <Activity className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
+                  Bio-impédance multi-fréquence
+                </h3>
+                <p className="text-neutral-700 leading-relaxed mb-4">
+                  Aide votre néphrologue à ajuster votre poids sec, suivre votre
+                  masse maigre et masse grasse, détecter précocement une fonte
+                  musculaire. Mesure non invasive, deux minutes, indolore.
+                </p>
+                <Link
+                  href="/la-clinique/composition-corporelle"
+                  className="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all"
+                >
+                  Comprendre cette mesure
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

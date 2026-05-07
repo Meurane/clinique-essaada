@@ -86,7 +86,7 @@ Plusieurs pharmacies de garde à courte distance. Nous vous conseillons néanmoi
 
 ### Ramadan
 
-Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » — première séance à 4h du matin, pas de séance après f'tour ni de créneau nocturne, en concertation avec nos néphrologues.
+Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » — première séance à 4h du matin, pas de séance après f'tour ni de créneau nocturne, en concertation avec notre néphrologue.
 
 ---
 

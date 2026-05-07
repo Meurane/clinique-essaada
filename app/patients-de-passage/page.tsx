@@ -11,6 +11,7 @@ import {
   Pill,
   Hotel,
   Car,
+  Activity,
 } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -241,6 +242,41 @@ export default function PatientsDePassagePage() {
               Demander un devis personnalisé
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Suivi médical pendant votre séjour"
+            title="Le même standard de précision qu'en centre européen"
+            subtitle="Nous accueillons régulièrement la diaspora habituée aux protocoles français. Voici ce qui ne change pas — et ce qui peut s'ajouter à votre suivi pendant les 2 à 4 semaines de séjour."
+          />
+          <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary-50 via-white to-sand-50 rounded-2xl p-6 md:p-8 border border-primary-100">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-primary-600 text-white grid place-items-center shrink-0">
+                <Activity className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
+                  Mesure du poids sec & hydratation par bio-impédance
+                </h3>
+                <p className="text-neutral-700 leading-relaxed mb-4">
+                  Pour les séjours de deux semaines ou plus, une mesure de bio-impédance
+                  multi-fréquence peut être proposée pour personnaliser votre prescription
+                  pendant votre séjour. Mesure non invasive, deux minutes, intégrée à votre
+                  venue.
+                </p>
+                <Link
+                  href="/la-clinique/composition-corporelle"
+                  className="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all"
+                >
+                  Comprendre cette mesure
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

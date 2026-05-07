@@ -73,6 +73,7 @@ const etapes = [
       "L'accueil vous guide vers votre poste",
       "Contrôle des constantes (poids, tension)",
       "Le médecin néphrologue vous examine",
+      "Bilan initial de composition corporelle (bio-impédance, à votre 1ʳᵉ séance)",
       "Installation confortable sur votre lit",
     ],
   },
@@ -158,25 +159,44 @@ export default function PremiereSeancePage() {
             </p>
           </div>
 
-          <div className="md:col-span-2 bg-sand-50 rounded-2xl p-6">
-            <div className="flex items-start gap-3 mb-3">
-              <ClipboardList className="w-6 h-6 text-primary-700 shrink-0" aria-hidden="true" />
-              <h3 className="font-display text-lg font-semibold text-neutral-900">
-                Patients de passage
-              </h3>
+          <div className="md:col-span-2 space-y-5">
+            <div className="bg-sand-50 rounded-2xl p-6">
+              <div className="flex items-start gap-3 mb-3">
+                <ClipboardList className="w-6 h-6 text-primary-700 shrink-0" aria-hidden="true" />
+                <h3 className="font-display text-lg font-semibold text-neutral-900">
+                  Patients de passage
+                </h3>
+              </div>
+              <p className="text-neutral-700">
+                Vous venez en vacances à {site.city} ou sur la côte oranaise ?
+                Contactez-nous au moins 1 mois à l'avance avec les mêmes
+                documents. Nous confirmons la disponibilité d'un poste.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-5 inline-flex items-center gap-2 font-semibold text-primary-700 hover:gap-2.5 transition-all"
+              >
+                Nous contacter
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
             </div>
-            <p className="text-neutral-700">
-              Vous venez en vacances à {site.city} ou sur la côte oranaise ?
-              Contactez-nous au moins 1 mois à l'avance avec les mêmes
-              documents. Nous confirmons la disponibilité d'un poste.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-5 inline-flex items-center gap-2 font-semibold text-primary-700 hover:gap-2.5 transition-all"
-            >
-              Nous contacter
-              <ArrowRight className="w-4 h-4" aria-hidden="true" />
-            </Link>
+            <div className="bg-white rounded-2xl p-6 border border-sand-200">
+              <h3 className="font-display text-base font-semibold text-neutral-900 mb-2">
+                Bilan composition corporelle
+              </h3>
+              <p className="text-neutral-700 text-sm leading-relaxed">
+                Le jour de votre 1ʳᵉ séance, mesure objective de votre poids sec et
+                de votre hydratation par bio-impédance — pour personnaliser dès le
+                départ votre prescription.
+              </p>
+              <Link
+                href="/la-clinique/composition-corporelle"
+                className="mt-4 inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all text-sm"
+              >
+                En savoir plus
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

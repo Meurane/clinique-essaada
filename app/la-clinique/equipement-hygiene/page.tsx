@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   Droplets,
   Cpu,
@@ -8,6 +9,7 @@ import {
   BadgeCheck,
   Activity,
   Factory,
+  ArrowRight,
 } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { PhotoGrid } from "@/components/ui/PhotoGrid";
@@ -389,6 +391,40 @@ export default function EquipementHygienePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <section className="section-padding bg-sand-50">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Aller plus loin"
+            title="Mesure de précision du poids sec et de l'hydratation"
+            subtitle="Au-delà du dialyseur et du générateur, nous disposons d'un dispositif de bio-impédance multi-fréquence pour objectiver votre composition corporelle — un outil de niveau supérieur, courant dans certains centres européens."
+          />
+          <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-8 border border-sand-200">
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-primary-600 text-white grid place-items-center shrink-0">
+                <Activity className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
+                  Bodystat Multiscan 5000
+                </h3>
+                <p className="text-neutral-700 leading-relaxed mb-4">
+                  Bio-impédance médicale à 6 fréquences. Aide à l'ajustement du poids sec,
+                  suivi de la masse maigre / masse grasse, mesure de l'angle de phase.
+                  Mesure non invasive, deux minutes, intégrée à votre suivi.
+                </p>
+                <Link
+                  href="/la-clinique/composition-corporelle"
+                  className="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all"
+                >
+                  Découvrir cette mesure
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

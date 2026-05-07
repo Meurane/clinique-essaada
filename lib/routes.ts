@@ -8,6 +8,7 @@ export const routes: RouteEntry[] = [
   { href: "/", label: "Accueil", priority: 1 },
   { href: "/la-clinique", label: "Le centre", priority: 0.9 },
   { href: "/la-clinique/equipement-hygiene", label: "Équipement & hygiène", priority: 0.8 },
+  { href: "/la-clinique/composition-corporelle", label: "Mesure du poids sec & hydratation", priority: 0.8 },
   { href: "/services", label: "Votre traitement", priority: 0.9 },
   { href: "/services/hemodialyse", label: "Hémodialyse", priority: 0.95 },
   { href: "/services/consultation-nephrologie", label: "Consultation néphrologie", priority: 0.8 },
@@ -63,9 +64,14 @@ export const primaryNav: NavEntry[] = [
         description: "Générateurs, eau ultra-pure, protocoles stricts",
       },
       {
+        href: "/la-clinique/composition-corporelle",
+        label: "Mesure poids sec & hydratation",
+        description: "Bio-impédance multi-fréquence, ajustement personnalisé",
+      },
+      {
         href: "/equipe",
         label: "Équipe médicale",
-        description: "Néphrologues et infirmiers spécialisés",
+        description: "Néphrologue et infirmiers spécialisés",
       },
       {
         href: "/informations-pratiques",
