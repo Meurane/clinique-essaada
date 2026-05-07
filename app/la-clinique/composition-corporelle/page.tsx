@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Activity,
@@ -230,6 +231,47 @@ export default function CompositionCorporellePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="section-padding bg-primary-50/40">
+        <div className="container-custom">
+          <SectionHeader
+            eyebrow="Aperçu d'un rapport"
+            title="À quoi ressemble le rapport remis à votre néphrologue"
+            subtitle="Chaque indicateur est positionné sur une échelle visuelle (rouge / orange / vert) qui montre où vous vous situez par rapport aux normes. Le néphrologue commente chaque zone avec vous."
+          />
+          <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)]">
+              <Image
+                src="/images/composition-corporelle-rapport-1.webp"
+                alt="Rapport Bodystat — résultats de l'analyse de l'eau corporelle (TBW, ICW, ECW, OHY) et de la composition (poids, masse grasse, masse maigre, masse musculaire), avec barres colorées rouge / orange / vert positionnant chaque valeur par rapport aux normes."
+                width={1239}
+                height={1280}
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className="w-full h-auto rounded-xl"
+              />
+              <figcaption className="text-center text-xs text-neutral-600 mt-3 font-medium tracking-wide">
+                Page 1 — Hydratation & composition corporelle
+              </figcaption>
+            </figure>
+            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)]">
+              <Image
+                src="/images/composition-corporelle-rapport-2.webp"
+                alt="Rapport Bodystat — santé cellulaire (angle de phase, capacitance membranaire), métabolisme de base, mesures d'impédance multi-fréquence et conclusion synthétique du rapport."
+                width={962}
+                height={1280}
+                sizes="(max-width: 768px) 100vw, 45vw"
+                className="w-full h-auto rounded-xl"
+              />
+              <figcaption className="text-center text-xs text-neutral-600 mt-3 font-medium tracking-wide">
+                Page 2 — Santé cellulaire & conclusion
+              </figcaption>
+            </figure>
+          </div>
+          <p className="mt-6 text-center text-sm text-neutral-600 italic max-w-2xl mx-auto leading-relaxed">
+            Exemple de rapport — données anonymisées. Votre rapport est toujours commenté par votre néphrologue, jamais remis brut sans interprétation.
+          </p>
         </div>
       </section>
 
