@@ -104,7 +104,8 @@ export default function CompositionCorporellePage() {
         title="Mesurer précisément votre poids sec et votre hydratation"
         subtitle="Bio-impédance multi-fréquence — la même technologie de mesure qu'en centre néphrologique européen, intégrée à votre suivi de dialyse."
         photoIcon={Activity}
-        photoLabel="Bodystat Multiscan 5000"
+        photoSrc="/images/bodystat-multiscan-5000.webp"
+        photoAlt="Bodystat Multiscan 5000 — analyseur médical de composition corporelle par bio-impédance multi-fréquence, écran tactile montrant le menu New Test / Recall Data / Options / Information"
         photoTag="Bio-impédance multi-fréquence"
       />
       <div className="container-custom py-5">
@@ -242,7 +243,7 @@ export default function CompositionCorporellePage() {
             subtitle="Chaque indicateur est positionné sur une échelle visuelle (rouge / orange / vert) qui montre où vous vous situez par rapport aux normes. Le néphrologue commente chaque zone avec vous."
           />
           <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
-            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)]">
+            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)] flex flex-col">
               <Image
                 src="/images/composition-corporelle-rapport-1.webp"
                 alt="Rapport Bodystat — résultats de l'analyse de l'eau corporelle (TBW, ICW, ECW, OHY) et de la composition (poids, masse grasse, masse maigre, masse musculaire), avec barres colorées rouge / orange / vert positionnant chaque valeur par rapport aux normes."
@@ -251,11 +252,11 @@ export default function CompositionCorporellePage() {
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="w-full h-auto rounded-xl"
               />
-              <figcaption className="text-center text-xs text-neutral-600 mt-3 font-medium tracking-wide">
+              <figcaption className="text-center text-xs text-neutral-600 mt-auto pt-3 font-medium tracking-wide">
                 Page 1 — Hydratation & composition corporelle
               </figcaption>
             </figure>
-            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)]">
+            <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)] flex flex-col">
               <Image
                 src="/images/composition-corporelle-rapport-2.webp"
                 alt="Rapport Bodystat — santé cellulaire (angle de phase, capacitance membranaire), métabolisme de base, mesures d'impédance multi-fréquence et conclusion synthétique du rapport."
@@ -264,7 +265,7 @@ export default function CompositionCorporellePage() {
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="w-full h-auto rounded-xl"
               />
-              <figcaption className="text-center text-xs text-neutral-600 mt-3 font-medium tracking-wide">
+              <figcaption className="text-center text-xs text-neutral-600 mt-auto pt-3 font-medium tracking-wide">
                 Page 2 — Santé cellulaire & conclusion
               </figcaption>
             </figure>
