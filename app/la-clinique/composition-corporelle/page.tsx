@@ -247,7 +247,7 @@ export default function CompositionCorporellePage() {
               <Image
                 src="/images/composition-corporelle-rapport-1.webp"
                 alt="Rapport Bodystat — résultats de l'analyse de l'eau corporelle (TBW, ICW, ECW, OHY) et de la composition (poids, masse grasse, masse maigre, masse musculaire), avec barres colorées rouge / orange / vert positionnant chaque valeur par rapport aux normes."
-                width={1239}
+                width={961}
                 height={1280}
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="w-full h-auto rounded-xl"
