@@ -25,8 +25,6 @@ export default function MentionsLegalesPage() {
             <p>
               Site édité et exploité par LumAI Consulting pour le compte de la{" "}
               {site.name}.
-              <br />
-              https://lumai-consulting.com
             </p>
             <p>
               {site.name}
@@ -35,24 +33,41 @@ export default function MentionsLegalesPage() {
               <br />
               {site.address.postalCode} {site.address.city}, {site.address.country}
               <br />
-              Téléphone : {site.contact.phone}
+              Téléphone&nbsp;: {site.contact.phone}
               <br />
-              Email : {site.contact.email}
+              Email&nbsp;:{" "}
+              <a href={site.contact.emailHref} className="text-primary-700 underline">
+                {site.contact.email}
+              </a>
             </p>
+            <p>Responsable éditorial des contenus&nbsp;: {site.name}.</p>
           </div>
 
           <div>
-            <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Identifiants légaux</h2>
-            <ul className="list-disc pl-6 space-y-1">
-              <li>Agrément Ministère de la Santé : {site.legal.agrement}</li>
-            </ul>
+            <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Agrément</h2>
+            <p>Délivré par le Ministère de la Santé&nbsp;: {site.legal.agrement}</p>
           </div>
 
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Hébergeur</h2>
             <p>
-              Site auto-hébergé sur un serveur dédié à l'aide de Coolify
-              (https://coolify.io), administré par LumAI Consulting.
+              Hébergeur&nbsp;: LumAI Consulting.
+              <br />
+              Site auto-hébergé sur un serveur dédié, administré via Coolify (
+              <a
+                href="https://coolify.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-700 underline"
+              >
+                coolify.io
+              </a>
+              ).
+              <br />
+              Contact&nbsp;:{" "}
+              <a href={site.contact.emailHref} className="text-primary-700 underline">
+                {site.contact.email}
+              </a>
             </p>
           </div>
 
