@@ -39,9 +39,6 @@ export const site = {
   },
   legal: {
     agrement: "N° 473",
-    rc: "[À COMPLÉTER : numéro RC]",
-    nif: "[À COMPLÉTER : NIF]",
-    directeurPublication: "[À COMPLÉTER : directeur de la publication]",
     conventions: ["CNAS", "CASNOS"],
     conventionsLong: {
       CNAS: "Caisse Nationale des Assurances Sociales des travailleurs salariés",
