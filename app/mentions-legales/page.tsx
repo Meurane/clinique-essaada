@@ -23,8 +23,16 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Éditeur du site</h2>
             <p>
-              Site édité et exploité par LumAI Consulting pour le compte de la{" "}
-              {site.name}.
+              Site édité et exploité par LumAI Consulting (
+              <a
+                href="https://lumai-consulting.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-700 underline"
+              >
+                lumai-consulting.com
+              </a>
+              ) pour le compte de la {site.name}.
             </p>
             <p>
               {site.name}
@@ -51,23 +59,17 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Hébergeur</h2>
             <p>
-              Hébergeur&nbsp;: LumAI Consulting.
-              <br />
-              Site auto-hébergé sur un serveur dédié, administré via Coolify (
+              Hébergeur&nbsp;: LumAI Consulting —{" "}
               <a
-                href="https://coolify.io"
+                href="https://lumai-consulting.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-700 underline"
               >
-                coolify.io
+                lumai-consulting.com
               </a>
-              ).
               <br />
-              Contact&nbsp;:{" "}
-              <a href={site.contact.emailHref} className="text-primary-700 underline">
-                {site.contact.email}
-              </a>
+              Site hébergé sur un serveur dédié.
             </p>
           </div>
 
