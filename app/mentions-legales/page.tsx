@@ -23,6 +23,12 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Éditeur du site</h2>
             <p>
+              Site édité et exploité par LumAI Consulting pour le compte de la{" "}
+              {site.name}.
+              <br />
+              https://lumai-consulting.com
+            </p>
+            <p>
               {site.name}
               <br />
               {site.address.street}
@@ -39,20 +45,14 @@ export default function MentionsLegalesPage() {
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Identifiants légaux</h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>Agrément Ministère de la Santé : {site.legal.agrement}</li>
-              <li>Numéro RC : {site.legal.rc}</li>
-              <li>NIF : {site.legal.nif}</li>
-              <li>Directeur de la publication : {site.legal.directeurPublication}</li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Hébergeur</h2>
             <p>
-              Vercel Inc.
-              <br />
-              340 S Lemon Ave #4133, Walnut, CA 91789, United States
-              <br />
-              https://vercel.com
+              Site auto-hébergé sur un serveur dédié à l'aide de Coolify
+              (https://coolify.io), administré par LumAI Consulting.
             </p>
           </div>
 
