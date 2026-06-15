@@ -17,8 +17,8 @@ export const site = {
   contact: {
     phone: "(+213) 48 72 25 70",
     phoneHref: "tel:+21348722570",
-    whatsapp: "21348722570",
-    whatsappUrl: "https://wa.me/21348722570",
+    whatsapp: "213557807913",
+    whatsappUrl: "https://wa.me/213557807913",
     email: "cliniqueessaada22@gmail.com",
     emailHref: "mailto:cliniqueessaada22@gmail.com",
   },
