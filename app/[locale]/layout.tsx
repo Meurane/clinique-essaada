@@ -11,6 +11,7 @@ import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
 import { CopyAttribution } from "@/components/layout/CopyAttribution";
 import { site } from "@/lib/site";
+import { localePath } from "@/lib/i18n-meta";
 import { medicalClinicSchema } from "@/lib/schema";
 import { routing, localeConfig, type Locale } from "@/i18n/routing";
 
@@ -72,7 +73,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: localeConfig[locale as Locale]?.htmlLang.replace("-", "_"),
-      url: site.url,
+      url: `${site.url}${localePath(locale, "/")}`,
       siteName: site.name,
       title: `${site.name} | ${tagline}`,
       description,

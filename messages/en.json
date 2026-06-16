@@ -77,7 +77,7 @@
       },
       "team": {
         "label": "Medical team",
-        "desc": "Nephrologist and specialised nurses"
+        "desc": "Nephrologist and specialist nurses"
       },
       "practical": {
         "label": "Practical info",
@@ -271,7 +271,7 @@
       "eyebrow": "Services",
       "title": "Our nephrology and dialysis services",
       "subtitle": "A complete range of care for patients with kidney failure, at every stage of their journey.",
-      "photoAlt": "Reception hall of Clinique d'Hémodialyse ESSAADA in Sidi Bel Abbès — marble pillars, reception desk and grand staircase",
+      "photoAlt": "Reception hall of the ESSAADA Haemodialysis Clinic in Sidi Bel Abbès — marble pillars, reception desk and grand staircase",
       "photoLabel": "Care pathway",
       "photoTag": "Consultation & dialysis"
     },
@@ -1172,7 +1172,7 @@
       "items": {
         "professionals": {
           "title": "Healthcare professionals at your service",
-          "text": "A nephrologist, specialised nurses and support staff — a multidisciplinary team trained in the care of dialysis patients."
+          "text": "A nephrologist, specialist nurses and support staff — a multidisciplinary team trained in the care of dialysis patients."
         },
         "equipmentManaged": {
           "title": "Equipment managed to quality & safety standards",
@@ -2028,7 +2028,7 @@
     "success": {
       "title": "Request received",
       "body": "Thank you. Our team will call you back {delai}. For any emergency or to speed up your request, please contact us directly.",
-      "whatsappMessage": "Bonjour, je viens de soumettre une demande de rendez-vous sur le site et je souhaite accélérer son traitement.",
+      "whatsappMessage": "Hello, I have just submitted an appointment request on the website and I would like to speed up its processing.",
       "whatsappCta": "Speed up on WhatsApp",
       "callCta": "Call now"
     },

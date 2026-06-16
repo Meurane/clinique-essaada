@@ -46,7 +46,7 @@ The nurse then prepares the **vascular access**. There are two scenarios:
 
 ## Step 3 — Starting up and stabilising (the first 10-15 minutes)
 
-Once you are connected to the machine, **it starts up gradually**. It begins with a low blood flow (around 150 ml/minute), then rises gently up to a therapeutic flow (300 to 400 ml/minute). This gradual build-up prevents drops in blood pressure or feelings of dizziness.
+Once you are connected to the generator, **the machine starts up gradually**. It begins with a low blood flow (around 150 ml/minute), then rises gently up to a therapeutic flow (300 to 400 ml/minute). This gradual build-up prevents drops in blood pressure or feelings of dizziness.
 
 During the first 15 minutes, your nurse stays close by, monitoring your blood pressure, your heart rate and your comfort. At ESSAADA, **a nephrologist is present on site throughout the entire duration of the sessions** — no on-call phone arrangement, a genuine physical presence just a few metres from your station.
 
