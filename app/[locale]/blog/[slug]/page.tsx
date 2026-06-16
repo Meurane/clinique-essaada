@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -29,7 +30,7 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   const { slug, locale } = await params;
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, locale);
   if (!article) {
     const t = await getTranslations({ locale, namespace: "blog" });
     return { title: t("meta.notFound") };
@@ -45,7 +46,7 @@ export async function generateMetadata({
   return {
     title: article.title,
     description,
-    alternates: { canonical },
+    alternates: localizedAlternates(locale, `/blog/${article.slug}`),
     openGraph: {
       type: "article",
       url: canonical,
@@ -64,12 +65,12 @@ export default async function BlogArticlePage({
   params: PageParams;
 }) {
   const { slug, locale } = await params;
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, locale);
   if (!article) notFound();
 
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  const related = getAllArticles()
+  const related = getAllArticles(locale)
     .filter((a) => a.slug !== article.slug && a.category === article.category)
     .slice(0, 2);
 
@@ -121,7 +122,7 @@ export default async function BlogArticlePage({
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Calendar className="w-4 h-4 text-primary-700" aria-hidden="true" />
-              <time dateTime={article.date}>{formatArticleDate(article.date)}</time>
+              <time dateTime={article.date}>{formatArticleDate(article.date, locale)}</time>
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-primary-700" aria-hidden="true" />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ArrowUpRight, Clock } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
@@ -33,7 +33,8 @@ export async function generateMetadata({
 
 export default function BlogIndexPage() {
   const t = useTranslations("blog");
-  const articles = getAllArticles();
+  const locale = useLocale();
+  const articles = getAllArticles(locale);
   const crumbs = [
     { name: t("breadcrumb.home"), url: "/" },
     { name: t("breadcrumb.blog"), url: "/blog" },
@@ -90,7 +91,7 @@ export default function BlogIndexPage() {
                           {a.category}
                         </span>
                         <span className="text-neutral-500 normal-case font-normal tracking-normal">
-                          {formatArticleDate(a.date)}
+                          {formatArticleDate(a.date, locale)}
                         </span>
                       </div>
                       <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2 leading-snug group-hover:text-primary-700 transition-colors">
