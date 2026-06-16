@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   Droplets,
   Cpu,
@@ -20,107 +22,66 @@ import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Équipement & hygiène · Transparence technique",
-  description:
-    "Générateurs, traitement d'eau en 5 étapes, osmose double passage, dialyseurs à usage unique, protocoles d'hygiène. La preuve technique derrière votre séance de dialyse à Sidi Bel Abbès.",
-  alternates: { canonical: `${site.url}/la-clinique/equipement-hygiene` },
-  openGraph: {
-    title: "Équipement & hygiène — Clinique ESSAADA",
-    description:
-      "La qualité de votre dialyse commence par l'eau et le matériel. Schéma traitement d'eau, marque des générateurs, protocoles d'hygiène — toute la transparence technique.",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "equipementHygiene" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/la-clinique/equipement-hygiene` },
+    openGraph: {
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 const etapesEau = [
-  {
-    n: "1",
-    title: "Filtre à sable",
-    text: "Retient les particules en suspension (sable, boues, résidus).",
-  },
-  {
-    n: "2",
-    title: "Adoucisseur",
-    text: "Élimine le calcium et le magnésium qui entartreraient les membranes.",
-  },
-  {
-    n: "3",
-    title: "Filtre à charbon actif",
-    text: "Capte le chlore et ses dérivés, toxiques pour le sang.",
-  },
-  {
-    n: "4",
-    title: "Microfiltration 0,2 μm",
-    text: "Barrière physique contre les bactéries résiduelles.",
-  },
-  {
-    n: "5",
-    title: "Osmose inverse double passage",
-    text: "Étape finale qui produit une eau ultrapure aux normes de la dialyse.",
-  },
+  { id: "step1", n: "1" },
+  { id: "step2", n: "2" },
+  { id: "step3", n: "3" },
+  { id: "step4", n: "4" },
+  { id: "step5", n: "5" },
 ];
 
 const usageUnique = [
-  {
-    icon: Activity,
-    title: "Dialyseur (le filtre)",
-    text: "Biocompatible, membrane synthétique haute perméabilité, à usage unique strict.",
-  },
-  {
-    icon: Syringe,
-    title: "Lignes de sang & aiguilles",
-    text: "Tubulures et aiguilles de fistule à usage unique. Aucune réutilisation, conformément aux standards internationaux.",
-  },
+  { id: "dialyzer", icon: Activity },
+  { id: "bloodLines", icon: Syringe },
 ];
 
-const securite = [
-  "Dépistage à l'admission : sérologies HVB, HVC, VIH systématiques",
-  "Isolation stricte des patients porteurs (salle ou poste dédié, circuit de soins fermé)",
-  "Revaccination HVB proposée si sérologie protectrice insuffisante",
-  "Traçabilité complète : chaque séance, chaque dialyseur, chaque paramètre enregistré par patient",
-];
+const securite = ["screening", "isolation", "revaccination", "traceability"];
 
 const controles = [
-  {
-    icon: Droplets,
-    title: "Analyses d'eau",
-    text: "Prélèvements trimestriels — bactériologiques et biochimiques.",
-  },
-  {
-    icon: Activity,
-    title: "Efficacité de dialyse (Kt/V)",
-    text: "Mesurée régulièrement et discutée avec vous lors de la consultation de suivi.",
-  },
-  {
-    icon: Users,
-    title: "Revue de morbidité",
-    text: "Staff médical hebdomadaire — revue des incidents, des paramètres, des cas délicats.",
-  },
-  {
-    icon: BadgeCheck,
-    title: "Agrément Ministère de la Santé",
-    text: "Agrément Ministère de la Santé, conventions CNAS et CASNOS.",
-  },
+  { id: "water", icon: Droplets },
+  { id: "ktv", icon: Activity },
+  { id: "morbidity", icon: Users },
+  { id: "accreditation", icon: BadgeCheck },
 ];
 
 export default function EquipementHygienePage() {
+  const t = useTranslations("equipementHygiene");
+
   const crumbs = [
-    { name: "Accueil", url: "/" },
-    { name: "Le centre", url: "/la-clinique" },
-    { name: "Équipement & hygiène", url: "/la-clinique/equipement-hygiene" },
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.center"), url: "/la-clinique" },
+    { name: t("breadcrumb.equipment"), url: "/la-clinique/equipement-hygiene" },
   ];
 
   return (
     <>
       <PhotoHero
-        eyebrow="Transparence technique"
-        title="La qualité de votre dialyse commence par l'eau et le matériel"
-        subtitle="Une séance d'hémodialyse met votre sang en contact avec environ 120 litres d'eau traitée. À ce volume, chaque détail compte. Voici ce que nous mettons en œuvre, sans simplification."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={Factory}
         photoSrc="/images/generateur-dialyse.webp"
-        photoAlt="Générateur de dialyse SWS-4000A en fonctionnement à la Clinique ESSAADA, écran affichant les paramètres de séance"
-        photoLabel="Plateau technique"
-        photoTag="Générateur en séance"
+        photoAlt={t("hero.photoAlt")}
+        photoLabel={t("hero.photoLabel")}
+        photoTag={t("hero.photoTag")}
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -129,16 +90,22 @@ export default function EquipementHygienePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema(crumbs)),
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: "Accueil", url: "/" },
+              { name: "Le centre", url: "/la-clinique" },
+              { name: "Équipement & hygiène", url: "/la-clinique/equipement-hygiene" },
+            ]),
+          ),
         }}
       />
 
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Générateurs de dialyse"
-            title={`${site.stats.lits} lits, un générateur par poste`}
-            subtitle="Chaque poste de dialyse dispose de son propre générateur, avec traçabilité des paramètres de séance."
+            eyebrow={t("generators.eyebrow")}
+            title={t("generators.title", { lits: site.stats.lits })}
+            subtitle={t("generators.subtitle")}
           />
           <div className="grid md:grid-cols-3 gap-5">
             <Card>
@@ -146,12 +113,12 @@ export default function EquipementHygienePage() {
                 <Cpu className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                Marque et modèle
+                {t("generators.brand.title")}
               </h3>
               <p className="text-neutral-700 text-base">
-                Générateurs neufs.
+                {t("generators.brand.text")}
                 <span className="block mt-2 text-neutral-500 text-sm italic">
-                  [Marque et modèle : informations techniques détaillées communiquées sur demande.]
+                  {t("generators.brand.note")}
                 </span>
               </p>
             </Card>
@@ -160,12 +127,10 @@ export default function EquipementHygienePage() {
                 <Shield className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                Maintenance
+                {t("generators.maintenance.title")}
               </h3>
               <p className="text-neutral-700 text-base">
-                Contrôle technique préventif régulier par prestataire agréé, avec
-                traçabilité des interventions poste par poste. Un technicien
-                biomédical est présent pendant les séances.
+                {t("generators.maintenance.text")}
               </p>
             </Card>
             <Card>
@@ -173,11 +138,10 @@ export default function EquipementHygienePage() {
                 <Activity className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                Traçabilité
+                {t("generators.traceability.title")}
               </h3>
               <p className="text-neutral-700 text-base">
-                Paramètres de chaque séance enregistrés — pression, débits,
-                conductivité, durée effective de dialyse.
+                {t("generators.traceability.text")}
               </p>
             </Card>
           </div>
@@ -187,9 +151,9 @@ export default function EquipementHygienePage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Traitement de l'eau"
-            title="Cinq étapes, une eau ultrapure"
-            subtitle="L'eau du réseau passe par une chaîne de traitement avant d'entrer dans le générateur. Réseau de distribution bouclé, stérilisable, sans bras morts."
+            eyebrow={t("water.eyebrow")}
+            title={t("water.title")}
+            subtitle={t("water.subtitle")}
           />
           <ol className="grid md:grid-cols-5 gap-4">
             {etapesEau.map((e) => (
@@ -199,9 +163,11 @@ export default function EquipementHygienePage() {
                     {e.n}
                   </div>
                   <h3 className="font-display text-base font-semibold text-neutral-900 mb-1.5">
-                    {e.title}
+                    {t(`water.steps.${e.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-sm leading-relaxed">{e.text}</p>
+                  <p className="text-neutral-700 text-sm leading-relaxed">
+                    {t(`water.steps.${e.id}.text`)}
+                  </p>
                 </Card>
               </li>
             ))}
@@ -210,9 +176,8 @@ export default function EquipementHygienePage() {
             <div className="flex items-start gap-3">
               <Droplets className="w-5 h-5 text-primary-700 shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-neutral-700">
-                <strong className="text-neutral-900">Contrôles réguliers :</strong>{" "}
-                prélèvements trimestriels — bactériologiques et biochimiques.
-                Résultats disponibles sur demande au secrétariat médical.
+                <strong className="text-neutral-900">{t("water.controls.label")}</strong>{" "}
+                {t("water.controls.text")}
               </p>
             </div>
           </div>
@@ -222,39 +187,39 @@ export default function EquipementHygienePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Galerie technique"
-            title="Ce que voit notre équipe biomédicale"
-            subtitle="Quelques vues du plateau technique. Reportage complet à venir."
+            eyebrow={t("gallery.eyebrow")}
+            title={t("gallery.title")}
+            subtitle={t("gallery.subtitle")}
           />
           <PhotoGrid
             columns={3}
             items={[
               {
                 src: "/images/generateur-dialyse.webp",
-                alt: "Générateur de dialyse SWS-4000A en séance — écran affichant les paramètres en temps réel",
+                alt: t("gallery.generator.alt"),
                 icon: Cpu,
-                label: "Générateur — panneau",
+                label: t("gallery.generator.label"),
                 aspectRatio: "1/1",
-                caption: "Interface de contrôle — paramètres de séance affichés en temps réel.",
-                tag: "Détail",
+                caption: t("gallery.generator.caption"),
+                tag: t("gallery.generator.tag"),
               },
               {
                 src: "/images/osmose-traitement-eau.webp",
-                alt: "Système d'osmose double passage Molecular Σ-H₂O à la Clinique ESSAADA — réservoirs inox, filtres et contrôle Siemens pour l'eau ultrapure de dialyse",
+                alt: t("gallery.osmosis.alt"),
                 icon: Factory,
-                label: "Osmose double passage",
+                label: t("gallery.osmosis.label"),
                 aspectRatio: "1/1",
-                caption: "Cuves inox, pression contrôlée, production d'eau ultrapure.",
-                tag: "Traitement eau",
+                caption: t("gallery.osmosis.caption"),
+                tag: t("gallery.osmosis.tag"),
               },
               {
                 src: "/images/poste-dialyse.webp",
-                alt: "Postes de dialyse propres prêts pour les patients — lits préparés et générateurs en attente",
+                alt: t("gallery.station.alt"),
                 icon: Shield,
-                label: "Postes dialyse",
+                label: t("gallery.station.label"),
                 aspectRatio: "1/1",
-                caption: "Bionettoyage entre chaque patient, matériel à usage unique systématique.",
-                tag: "Hygiène",
+                caption: t("gallery.station.caption"),
+                tag: t("gallery.station.tag"),
               },
             ]}
           />
@@ -265,35 +230,34 @@ export default function EquipementHygienePage() {
         <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16">
           <div>
             <SectionHeader
-              eyebrow="Dialyseurs & circuits"
-              title="Usage unique strict"
-              subtitle="Aucune réutilisation de matériel, conformément aux standards internationaux actuels."
+              eyebrow={t("singleUse.eyebrow")}
+              title={t("singleUse.title")}
+              subtitle={t("singleUse.subtitle")}
             />
             <ul className="space-y-4">
               {usageUnique.map((u) => (
-                <li key={u.title}>
+                <li key={u.id}>
                   <Card>
                     <CardIcon>
                       <u.icon className="w-6 h-6" aria-hidden="true" />
                     </CardIcon>
                     <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                      {u.title}
+                      {t(`singleUse.items.${u.id}.title`)}
                     </h3>
-                    <p className="text-neutral-700">{u.text}</p>
+                    <p className="text-neutral-700">{t(`singleUse.items.${u.id}.text`)}</p>
                   </Card>
                 </li>
               ))}
             </ul>
             <p className="mt-5 text-sm text-neutral-600 italic">
-              C'est un point important pour nos patients de la diaspora, habitués
-              à ce standard en Europe et en Amérique du Nord.
+              {t("singleUse.diasporaNote")}
             </p>
           </div>
 
           <div>
             <SectionHeader
-              eyebrow="Protocoles de sécurité"
-              title="Protéger chaque patient à chaque séance"
+              eyebrow={t("safety.eyebrow")}
+              title={t("safety.title")}
             />
             <ul className="space-y-3">
               {securite.map((s) => (
@@ -305,7 +269,7 @@ export default function EquipementHygienePage() {
                     className="w-5 h-5 text-primary-700 shrink-0 mt-0.5"
                     aria-hidden="true"
                   />
-                  <span className="text-neutral-800">{s}</span>
+                  <span className="text-neutral-800">{t(`safety.items.${s}`)}</span>
                 </li>
               ))}
             </ul>
@@ -316,8 +280,8 @@ export default function EquipementHygienePage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Ratio soignants"
-            title="Une équipe dense et présente pendant toute la séance"
+            eyebrow={t("staff.eyebrow")}
+            title={t("staff.title")}
           />
           <div className="grid md:grid-cols-4 gap-5">
             <Card>
@@ -325,10 +289,10 @@ export default function EquipementHygienePage() {
                 <Users className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-1">
-                Infirmiers
+                {t("staff.nurses.title")}
               </h3>
               <p className="text-neutral-700 text-sm">
-                Présents en continu, formés à la dialyse et aux protocoles d'urgence.
+                {t("staff.nurses.text")}
               </p>
             </Card>
             <Card>
@@ -336,11 +300,10 @@ export default function EquipementHygienePage() {
                 <BadgeCheck className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-1">
-                Néphrologue
+                {t("staff.nephrologist.title")}
               </h3>
               <p className="text-neutral-700 text-sm">
-                Présence continue pendant toute la durée des séances — pas une
-                astreinte téléphonique.
+                {t("staff.nephrologist.text")}
               </p>
             </Card>
             <Card>
@@ -348,10 +311,10 @@ export default function EquipementHygienePage() {
                 <Cpu className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-1">
-                Technicien biomédical
+                {t("staff.biomedical.title")}
               </h3>
               <p className="text-neutral-700 text-sm">
-                Présent sur site pour intervention immédiate en cas d'alarme générateur.
+                {t("staff.biomedical.text")}
               </p>
             </Card>
             <Card>
@@ -359,11 +322,10 @@ export default function EquipementHygienePage() {
                 <Shield className="w-6 h-6" aria-hidden="true" />
               </CardIcon>
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-1">
-                Hygiène
+                {t("staff.hygiene.title")}
               </h3>
               <p className="text-neutral-700 text-sm">
-                Aides-soignants et agent d'hygiène dédiés à chaque salle, bionettoyage
-                entre chaque patient.
+                {t("staff.hygiene.text")}
               </p>
             </Card>
           </div>
@@ -373,20 +335,20 @@ export default function EquipementHygienePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Contrôle qualité"
-            title="Vérifier, mesurer, améliorer — en continu"
+            eyebrow={t("quality.eyebrow")}
+            title={t("quality.title")}
           />
           <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {controles.map((c) => (
-              <li key={c.title}>
+              <li key={c.id}>
                 <Card className="h-full">
                   <CardIcon>
                     <c.icon className="w-6 h-6" aria-hidden="true" />
                   </CardIcon>
                   <h3 className="font-display text-base font-semibold text-neutral-900 mb-1">
-                    {c.title}
+                    {t(`quality.items.${c.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-sm">{c.text}</p>
+                  <p className="text-neutral-700 text-sm">{t(`quality.items.${c.id}.text`)}</p>
                 </Card>
               </li>
             ))}
@@ -397,9 +359,9 @@ export default function EquipementHygienePage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Aller plus loin"
-            title="Mesure de précision du poids sec et de l'hydratation"
-            subtitle="Au-delà du dialyseur et du générateur, nous disposons d'un dispositif de bio-impédance multi-fréquence pour objectiver votre composition corporelle — un outil de niveau supérieur, courant dans certains centres européens."
+            eyebrow={t("bioimpedance.eyebrow")}
+            title={t("bioimpedance.title")}
+            subtitle={t("bioimpedance.subtitle")}
           />
           <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-8 border border-sand-200">
             <div className="flex items-start gap-4">
@@ -411,15 +373,13 @@ export default function EquipementHygienePage() {
                   Bodystat Multiscan 5000
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-4">
-                  Bio-impédance médicale à 6 fréquences. Aide à l'ajustement du poids sec,
-                  suivi de la masse maigre / masse grasse, mesure de l'angle de phase.
-                  Mesure non invasive, deux minutes, intégrée à votre suivi.
+                  {t("bioimpedance.deviceText")}
                 </p>
                 <Link
                   href="/la-clinique/composition-corporelle"
                   className="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all"
                 >
-                  Découvrir cette mesure
+                  {t("bioimpedance.cta")}
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </Link>
               </div>
@@ -430,10 +390,10 @@ export default function EquipementHygienePage() {
 
       <ConversionFooterCTA
         variant="sand"
-        eyebrow="Questions techniques"
-        title="Une question technique précise ?"
-        subtitle="Qualité d'eau, type de dialyseur, résultats de vos dernières analyses — notre équipe médicale répond en consultation ou par téléphone."
-        waMessage="Bonjour, j'aimerais plus d'informations sur vos équipements et protocoles d'hygiène."
+        eyebrow={t("footerCta.eyebrow")}
+        title={t("footerCta.title")}
+        subtitle={t("footerCta.subtitle")}
+        waMessage={t("footerCta.waMessage")}
       />
     </>
   );

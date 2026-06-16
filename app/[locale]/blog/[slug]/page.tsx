@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, User, Calendar } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
@@ -20,16 +21,19 @@ export function generateStaticParams() {
   return getArticleSlugs().map((slug) => ({ slug }));
 }
 
-type PageParams = Promise<{ slug: string }>;
+type PageParams = Promise<{ slug: string; locale: string }>;
 
 export async function generateMetadata({
   params,
 }: {
   params: PageParams;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const article = getArticleBySlug(slug);
-  if (!article) return { title: "Article introuvable" };
+  if (!article) {
+    const t = await getTranslations({ locale, namespace: "blog" });
+    return { title: t("meta.notFound") };
+  }
 
   const description =
     article.excerpt.length > 160
@@ -59,17 +63,19 @@ export default async function BlogArticlePage({
 }: {
   params: PageParams;
 }) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const article = getArticleBySlug(slug);
   if (!article) notFound();
+
+  const t = await getTranslations({ locale, namespace: "blog" });
 
   const related = getAllArticles()
     .filter((a) => a.slug !== article.slug && a.category === article.category)
     .slice(0, 2);
 
   const crumbs = [
-    { name: "Accueil", url: "/" },
-    { name: "Blog", url: "/blog" },
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.blog"), url: "/blog" },
     { name: article.title, url: `/blog/${article.slug}` },
   ];
 
@@ -119,7 +125,7 @@ export default async function BlogArticlePage({
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-primary-700" aria-hidden="true" />
-              {article.readingTime} min de lecture
+              {t("readingTimeLong", { minutes: article.readingTime })}
             </span>
           </div>
 
@@ -131,7 +137,7 @@ export default async function BlogArticlePage({
           {related.length > 0 && (
             <aside className="mt-16 pt-10 border-t border-neutral-150">
               <h2 className="font-display text-xl font-semibold text-neutral-900 mb-5">
-                À lire également
+                {t("alsoRead")}
               </h2>
               <ul className="grid sm:grid-cols-2 gap-4">
                 {related.map((r) => (
@@ -162,7 +168,7 @@ export default async function BlogArticlePage({
               className="inline-flex items-center gap-2 text-primary-700 hover:text-primary-800 font-semibold"
             >
               <ArrowLeft className="w-4 h-4" aria-hidden="true" />
-              Retour aux articles
+              {t("backToArticles")}
             </Link>
           </div>
         </div>
@@ -170,10 +176,10 @@ export default async function BlogArticlePage({
 
       <ConversionFooterCTA
         variant="sand"
-        eyebrow="Aller plus loin"
-        title="Une question après cette lecture ?"
-        subtitle="Notre équipe médicale répond à vos questions en consultation ou par WhatsApp."
-        waMessage={`Bonjour, j'ai lu l'article "${article.title}" et j'ai une question.`}
+        eyebrow={t("cta.eyebrow")}
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        waMessage={t("cta.waMessage", { title: article.title })}
       />
     </>
   );

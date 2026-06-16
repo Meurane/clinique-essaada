@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
@@ -7,58 +9,74 @@ import { faq } from "@/content/faq";
 import { site } from "@/lib/site";
 import { faqPageSchema, breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "FAQ · Dialyse & prise en charge",
-  description:
-    "Toutes les réponses à vos questions sur l'hémodialyse, les séances, les prises en charge et les modalités pratiques à la Clinique ESSAADA.",
-  alternates: { canonical: `${site.url}/faq` },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "faq" });
+
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/faq` },
+    openGraph: {
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 export default function FaqPage() {
+  const t = useTranslations("faq");
+  const crumbs = [
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.faq"), url: "/faq" },
+  ];
+
+  const items = faq.map((f) => ({
+    question: t(`${f.id}.question`),
+    answer: t(`${f.id}.answer`),
+  }));
+
   return (
     <>
       <PageHero
-        eyebrow="FAQ"
-        title="Vos questions, nos réponses"
-        subtitle="Les informations essentielles pour comprendre l'hémodialyse et votre parcours."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <div className="container-custom py-5">
-        <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "FAQ", url: "/faq" }]} />
+        <Breadcrumb items={crumbs} />
       </div>
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            faqPageSchema(faq.map((f) => ({ question: f.question, answer: f.answer }))),
-          ),
+          __html: JSON.stringify(faqPageSchema(items)),
         }}
       />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbSchema([
-              { name: "Accueil", url: "/" },
-              { name: "FAQ", url: "/faq" },
-            ]),
-          ),
+          __html: JSON.stringify(breadcrumbSchema(crumbs)),
         }}
       />
 
       <section className="section-padding">
         <div className="container-narrow">
-          <FaqAccordion items={faq} />
+          <FaqAccordion items={items} />
         </div>
       </section>
 
       <ConversionFooterCTA
         variant="sand"
-        eyebrow="Aller plus loin"
-        title="Votre question n'a pas de réponse ici ?"
-        subtitle="Notre équipe répond à vos questions par WhatsApp, téléphone ou en consultation."
-        waMessage="Bonjour, j'ai une question sur la dialyse qui n'est pas dans la FAQ."
+        eyebrow={t("cta.eyebrow")}
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        waMessage={t("cta.waMessage")}
       />
     </>
   );

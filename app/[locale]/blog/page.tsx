@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ArrowUpRight, Clock } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -8,33 +10,40 @@ import { getAllArticles, formatArticleDate } from "@/lib/articles";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Blog · Conseils & ressources dialyse",
-  description:
-    "Articles, guides et conseils sur la dialyse, la néphrologie et la vie quotidienne des patients. Par l'équipe de la Clinique ESSAADA à Sidi Bel Abbès.",
-  alternates: { canonical: `${site.url}/blog` },
-  openGraph: {
-    type: "website",
-    url: `${site.url}/blog`,
-    title: "Blog — Clinique ESSAADA",
-    description:
-      "Conseils médicaux, vie quotidienne et guides pratiques pour les patients dialysés et leurs proches.",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "blog" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/blog` },
+    openGraph: {
+      type: "website",
+      url: `${site.url}/blog`,
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 export default function BlogIndexPage() {
+  const t = useTranslations("blog");
   const articles = getAllArticles();
   const crumbs = [
-    { name: "Accueil", url: "/" },
-    { name: "Blog", url: "/blog" },
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.blog"), url: "/blog" },
   ];
 
   return (
     <>
       <PageHero
-        eyebrow="Blog"
-        title="Conseils & ressources pour les patients dialysés"
-        subtitle="Guides pratiques, explications médicales et vie quotidienne — rédigés et relus par l'équipe médicale de la Clinique ESSAADA."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -52,18 +61,21 @@ export default function BlogIndexPage() {
           {articles.length === 0 ? (
             <div className="max-w-xl mx-auto text-center py-20">
               <p className="text-lg text-neutral-700">
-                Les premiers articles arrivent bientôt.
+                {t("empty.title")}
               </p>
               <p className="mt-2 text-sm text-neutral-500">
-                En attendant, consultez notre{" "}
-                <Link href="/faq" className="underline text-primary-700">
-                  FAQ
-                </Link>{" "}
-                et notre{" "}
-                <Link href="/glossaire" className="underline text-primary-700">
-                  glossaire
-                </Link>
-                .
+                {t.rich("empty.body", {
+                  faq: (chunks) => (
+                    <Link href="/faq" className="underline text-primary-700">
+                      {chunks}
+                    </Link>
+                  ),
+                  glossary: (chunks) => (
+                    <Link href="/glossaire" className="underline text-primary-700">
+                      {chunks}
+                    </Link>
+                  ),
+                })}
               </p>
             </div>
           ) : (
@@ -89,10 +101,10 @@ export default function BlogIndexPage() {
                       <div className="mt-5 pt-4 border-t border-neutral-150 flex items-center justify-between text-sm text-neutral-600">
                         <span className="inline-flex items-center gap-1.5">
                           <Clock className="w-3.5 h-3.5" aria-hidden="true" />
-                          {a.readingTime} min
+                          {t("readingTime", { minutes: a.readingTime })}
                         </span>
                         <span className="inline-flex items-center gap-1.5 text-primary-700 font-semibold group-hover:gap-2.5 transition-all">
-                          Lire
+                          {t("read")}
                           <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
                         </span>
                       </div>

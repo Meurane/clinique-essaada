@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import {
   Activity,
   Droplets,
@@ -19,94 +21,62 @@ import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Mesure du poids sec & hydratation · Bio-impédance",
-  description:
-    "Bio-impédance multi-fréquence (BIS) : mesure objective du poids sec, de l'hydratation et de la composition corporelle. Un outil de précision pour personnaliser chaque séance d'hémodialyse à la Clinique ESSAADA, Sidi Bel Abbès.",
-  alternates: { canonical: `${site.url}/la-clinique/composition-corporelle` },
-  openGraph: {
-    title: "Mesure précise du poids sec & hydratation — Clinique ESSAADA",
-    description:
-      "Bio-impédance multi-fréquence : un outil de précision pour ajuster votre poids sec et suivre votre composition corporelle, intégré au protocole de dialyse.",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "compositionCorporelle" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/la-clinique/composition-corporelle` },
+    openGraph: {
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 const piliers = [
-  {
-    icon: Droplets,
-    title: "Ajuster le poids sec",
-    text: "La mesure objective de l'eau corporelle (totale, intracellulaire, extracellulaire) aide votre néphrologue à affiner votre poids sec, au-delà de la seule évaluation clinique. Objectif : limiter les hypotensions per-dialyse et la surcharge entre deux séances.",
-  },
-  {
-    icon: Activity,
-    title: "Suivre la composition corporelle",
-    text: "Masse maigre, masse musculaire squelettique, masse grasse — suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale.",
-  },
-  {
-    icon: HeartPulse,
-    title: "Lire l'angle de phase",
-    text: "L'angle de phase reflète l'intégrité de vos cellules. Marqueur reconnu dans la littérature néphrologique, il enrichit l'évaluation nutritionnelle et l'état général du patient dialysé.",
-  },
+  { id: "drySetting", icon: Droplets },
+  { id: "bodyComposition", icon: Activity },
+  { id: "phaseAngle", icon: HeartPulse },
 ];
 
 const deroule = [
-  {
-    n: "1",
-    title: "Installation",
-    text: "Vous êtes allongé·e confortablement, habillé·e. Pas besoin de jeûne, pas d'injection.",
-  },
-  {
-    n: "2",
-    title: "Pose des électrodes",
-    text: "Quatre électrodes adhésives (deux à la main, deux au pied), comme un ECG. Indolore.",
-  },
-  {
-    n: "3",
-    title: "Mesure",
-    text: "Le dispositif envoie un courant imperceptible à plusieurs fréquences (5 à 1000 kHz). Durée : environ deux minutes.",
-  },
-  {
-    n: "4",
-    title: "Lecture & décision",
-    text: "Le néphrologue interprète les résultats avec vous, et ajuste si besoin votre prescription de dialyse.",
-  },
+  { n: "1", id: "setup" },
+  { n: "2", id: "electrodes" },
+  { n: "3", id: "measurement" },
+  { n: "4", id: "reading" },
 ];
 
 const quand = [
-  {
-    icon: CheckCircle2,
-    title: "À votre première séance",
-    text: "Pour établir un point de départ clair : poids sec initial, état d'hydratation, composition corporelle de référence.",
-  },
-  {
-    icon: Clock3,
-    title: "En suivi régulier",
-    text: "Mesures périodiques pour réajuster votre poids sec et détecter précocement une dénutrition ou une fonte musculaire.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Patients de passage",
-    text: "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge — sans surcoût pour les affiliés CNAS / CASNOS.",
-  },
+  { id: "firstSession", icon: CheckCircle2 },
+  { id: "regularFollowUp", icon: Clock3 },
+  { id: "visitingPatients", icon: ShieldCheck },
 ];
 
 export default function CompositionCorporellePage() {
+  const t = useTranslations("compositionCorporelle");
+
   const crumbs = [
-    { name: "Accueil", url: "/" },
-    { name: "Le centre", url: "/la-clinique" },
-    { name: "Mesure du poids sec & hydratation", url: "/la-clinique/composition-corporelle" },
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.center"), url: "/la-clinique" },
+    { name: t("breadcrumb.current"), url: "/la-clinique/composition-corporelle" },
   ];
 
   return (
     <>
       <PhotoHero
-        eyebrow="Plateau technique"
-        title="Mesurer précisément votre poids sec et votre hydratation"
-        subtitle="Bio-impédance multi-fréquence — la même technologie de mesure qu'en centre néphrologique européen, intégrée à votre suivi de dialyse."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={Activity}
         photoSrc="/images/bodystat-multiscan-5000.webp"
-        photoAlt="Bodystat Multiscan 5000 — analyseur médical de composition corporelle par bio-impédance multi-fréquence, écran tactile montrant le menu New Test / Recall Data / Options / Information"
-        photoTag="Bio-impédance multi-fréquence"
+        photoAlt={t("hero.photoAlt")}
+        photoTag={t("hero.photoTag")}
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -123,29 +93,13 @@ export default function CompositionCorporellePage() {
         <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16">
           <div>
             <SectionHeader
-              eyebrow="Pourquoi cette mesure"
-              title="Aller au-delà du simple pèse-personne"
+              eyebrow={t("why.eyebrow")}
+              title={t("why.title")}
             />
             <div className="space-y-4 text-neutral-700 leading-relaxed">
-              <p>
-                En hémodialyse, le poids n'est qu'une partie de l'histoire. Ce qui
-                compte vraiment, c'est la <strong>répartition</strong> entre l'eau, la
-                masse maigre et la masse grasse. Une balance ordinaire ne fait pas
-                cette différence.
-              </p>
-              <p>
-                La <strong>bio-impédance multi-fréquence (BIS)</strong> envoie un
-                courant électrique imperceptible à plusieurs fréquences à travers
-                votre corps. Selon la fréquence, ce courant traverse plus ou moins
-                les membranes cellulaires — ce qui permet de séparer l'eau totale,
-                l'eau intracellulaire, l'eau extracellulaire, la masse maigre et la
-                masse grasse.
-              </p>
-              <p>
-                C'est un outil <strong>complémentaire</strong> de l'évaluation
-                clinique du néphrologue. Il ne remplace pas son jugement — il
-                l'enrichit avec des données objectives, suivies dans le temps.
-              </p>
+              <p>{t.rich("why.p1", { strong: (chunks) => <strong>{chunks}</strong> })}</p>
+              <p>{t.rich("why.p2", { strong: (chunks) => <strong>{chunks}</strong> })}</p>
+              <p>{t.rich("why.p3", { strong: (chunks) => <strong>{chunks}</strong> })}</p>
             </div>
           </div>
 
@@ -154,32 +108,30 @@ export default function CompositionCorporellePage() {
               <Microscope className="w-6 h-6" aria-hidden="true" />
             </CardIcon>
             <h3 className="font-display text-lg font-semibold text-neutral-900 mb-3">
-              L'appareil utilisé
+              {t("device.title")}
             </h3>
             <ul className="space-y-2.5 text-neutral-700 text-base">
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Bodystat Multiscan 5000</strong> — dispositif médical CE
+                  {t.rich("device.item1", { strong: (chunks) => <strong>{chunks}</strong> })}
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 shrink-0" aria-hidden="true" />
-                <span>Bio-impédance à 6 fréquences (5 à 1000 kHz)</span>
+                <span>{t("device.item2")}</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 shrink-0" aria-hidden="true" />
-                <span>Mesure non invasive, indolore, deux minutes</span>
+                <span>{t("device.item3")}</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 shrink-0" aria-hidden="true" />
-                <span>Lecture par votre néphrologue</span>
+                <span>{t("device.item4")}</span>
               </li>
             </ul>
             <p className="mt-5 text-sm text-neutral-600 italic leading-relaxed">
-              La bio-impédance multi-fréquence est utilisée en routine dans
-              certains centres néphrologiques européens. Elle reste un équipement
-              de niveau supérieur, encore peu répandu en Algérie.
+              {t("device.note")}
             </p>
           </Card>
         </div>
@@ -188,21 +140,23 @@ export default function CompositionCorporellePage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="À quoi ça sert pour vous"
-            title="Trois apports concrets pour votre suivi"
-            subtitle="Ce que cet outil permet à votre néphrologue de faire mieux — et ce qu'il ne prétend pas faire."
+            eyebrow={t("pillars.eyebrow")}
+            title={t("pillars.title")}
+            subtitle={t("pillars.subtitle")}
           />
           <ul className="grid md:grid-cols-3 gap-5">
             {piliers.map((p) => (
-              <li key={p.title}>
+              <li key={p.id}>
                 <Card className="h-full">
                   <CardIcon>
                     <p.icon className="w-6 h-6" aria-hidden="true" />
                   </CardIcon>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                    {p.title}
+                    {t(`pillars.${p.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-base leading-relaxed">{p.text}</p>
+                  <p className="text-neutral-700 text-base leading-relaxed">
+                    {t(`pillars.${p.id}.text`)}
+                  </p>
                 </Card>
               </li>
             ))}
@@ -213,9 +167,9 @@ export default function CompositionCorporellePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Comment ça se passe"
-            title="Une mesure intégrée à votre venue, en quatre temps"
-            subtitle="Pas de rendez-vous séparé : la mesure s'effectue avant ou après une séance, dans le service."
+            eyebrow={t("steps.eyebrow")}
+            title={t("steps.title")}
+            subtitle={t("steps.subtitle")}
           />
           <ol className="grid md:grid-cols-4 gap-5">
             {deroule.map((d) => (
@@ -225,9 +179,11 @@ export default function CompositionCorporellePage() {
                     {d.n}
                   </div>
                   <h3 className="font-display text-base font-semibold text-neutral-900 mb-1.5">
-                    {d.title}
+                    {t(`steps.${d.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-sm leading-relaxed">{d.text}</p>
+                  <p className="text-neutral-700 text-sm leading-relaxed">
+                    {t(`steps.${d.id}.text`)}
+                  </p>
                 </Card>
               </li>
             ))}
@@ -238,40 +194,40 @@ export default function CompositionCorporellePage() {
       <section className="section-padding bg-primary-50/40">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Aperçu d'un rapport"
-            title="À quoi ressemble le rapport remis à votre néphrologue"
-            subtitle="Chaque indicateur est positionné sur une échelle visuelle (rouge / orange / vert) qui montre où vous vous situez par rapport aux normes. Le néphrologue commente chaque zone avec vous."
+            eyebrow={t("report.eyebrow")}
+            title={t("report.title")}
+            subtitle={t("report.subtitle")}
           />
           <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
             <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)] flex flex-col">
               <Image
                 src="/images/composition-corporelle-rapport-1.webp"
-                alt="Rapport Bodystat — résultats de l'analyse de l'eau corporelle (TBW, ICW, ECW, OHY) et de la composition (poids, masse grasse, masse maigre, masse musculaire), avec barres colorées rouge / orange / vert positionnant chaque valeur par rapport aux normes."
+                alt={t("report.alt1")}
                 width={961}
                 height={1280}
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="w-full h-auto rounded-xl"
               />
               <figcaption className="text-center text-xs text-neutral-600 mt-auto pt-3 font-medium tracking-wide">
-                Page 1 — Hydratation & composition corporelle
+                {t("report.caption1")}
               </figcaption>
             </figure>
             <figure className="bg-white rounded-2xl p-3 md:p-4 ring-1 ring-sand-200/80 shadow-[0_2px_8px_-2px_rgb(10_71_93_/_0.08),0_12px_32px_-12px_rgb(10_71_93_/_0.12)] flex flex-col">
               <Image
                 src="/images/composition-corporelle-rapport-2.webp"
-                alt="Rapport Bodystat — santé cellulaire (angle de phase, capacitance membranaire), métabolisme de base, mesures d'impédance multi-fréquence et conclusion synthétique du rapport."
+                alt={t("report.alt2")}
                 width={962}
                 height={1280}
                 sizes="(max-width: 768px) 100vw, 45vw"
                 className="w-full h-auto rounded-xl"
               />
               <figcaption className="text-center text-xs text-neutral-600 mt-auto pt-3 font-medium tracking-wide">
-                Page 2 — Santé cellulaire & conclusion
+                {t("report.caption2")}
               </figcaption>
             </figure>
           </div>
           <p className="mt-6 text-center text-sm text-neutral-600 italic max-w-2xl mx-auto leading-relaxed">
-            Exemple de rapport — données anonymisées. Votre rapport est toujours commenté par votre néphrologue, jamais remis brut sans interprétation.
+            {t("report.disclaimer")}
           </p>
         </div>
       </section>
@@ -279,20 +235,22 @@ export default function CompositionCorporellePage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Pour qui, et quand"
-            title="Trois moments où cette mesure prend tout son sens"
+            eyebrow={t("when.eyebrow")}
+            title={t("when.title")}
           />
           <ul className="grid md:grid-cols-3 gap-5">
             {quand.map((q) => (
-              <li key={q.title}>
+              <li key={q.id}>
                 <Card className="h-full">
                   <CardIcon>
                     <q.icon className="w-6 h-6" aria-hidden="true" />
                   </CardIcon>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                    {q.title}
+                    {t(`when.${q.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-base leading-relaxed">{q.text}</p>
+                  <p className="text-neutral-700 text-base leading-relaxed">
+                    {t(`when.${q.id}.text`)}
+                  </p>
                 </Card>
               </li>
             ))}
@@ -303,37 +261,36 @@ export default function CompositionCorporellePage() {
       <section className="section-padding">
         <div className="container-custom max-w-3xl mx-auto">
           <SectionHeader
-            eyebrow="Honnêteté médicale"
-            title="Ce que cet outil fait — et ne fait pas"
+            eyebrow={t("honesty.eyebrow")}
+            title={t("honesty.title")}
           />
           <div className="grid md:grid-cols-2 gap-5">
             <Card className="bg-white border-sand-200">
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-3 flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-accent-600" aria-hidden="true" />
-                Ce qu'il fait
+                {t("honesty.doesTitle")}
               </h3>
               <ul className="space-y-2.5 text-neutral-700 text-base">
-                <li>Aide à <strong>ajuster</strong> le poids sec, en complément du jugement clinique</li>
-                <li>Suit la <strong>composition corporelle</strong> dans le temps</li>
-                <li>Repère précocement une <strong>fonte musculaire</strong> ou une dénutrition</li>
-                <li>Fournit l'<strong>angle de phase</strong>, marqueur d'intégrité cellulaire</li>
+                <li>{t.rich("honesty.does1", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t.rich("honesty.does2", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t.rich("honesty.does3", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t.rich("honesty.does4", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
               </ul>
             </Card>
             <Card className="bg-sand-50 border-sand-300">
               <h3 className="font-display text-base font-semibold text-neutral-900 mb-3">
-                Ce qu'il ne fait pas
+                {t("honesty.doesNotTitle")}
               </h3>
               <ul className="space-y-2.5 text-neutral-700 text-base">
-                <li>Il ne <strong>détermine pas</strong> seul votre poids sec — il aide votre médecin à le faire</li>
-                <li>Il ne <strong>diagnostique pas</strong> à lui seul une dénutrition</li>
-                <li>Il ne <strong>remplace pas</strong> les bilans biologiques ni l'examen clinique</li>
-                <li>Il ne mesure ni cancer, ni maladie cardiaque — il n'est pas un dépistage</li>
+                <li>{t.rich("honesty.doesNot1", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t.rich("honesty.doesNot2", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t.rich("honesty.doesNot3", { strong: (chunks) => <strong>{chunks}</strong> })}</li>
+                <li>{t("honesty.doesNot4")}</li>
               </ul>
             </Card>
           </div>
           <p className="mt-6 text-sm text-neutral-600 italic text-center leading-relaxed">
-            La bio-impédance est un outil d'aide à la décision médicale. L'interprétation
-            relève du néphrologue, qui l'intègre à votre dossier clinique.
+            {t("honesty.note")}
           </p>
         </div>
       </section>
@@ -342,13 +299,10 @@ export default function CompositionCorporellePage() {
         <div className="container-custom grid md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-3">
             <h2 className="font-display text-2xl md:text-3xl font-bold mb-3">
-              Cette mesure fait-elle partie de mon suivi&nbsp;?
+              {t("partOf.title")}
             </h2>
             <p className="text-primary-100 text-lg leading-relaxed">
-              Si vous êtes patient·e à la Clinique ESSAADA ou si vous préparez un
-              séjour de dialyse, parlez-en à votre néphrologue lors de la prochaine
-              consultation. Nous vous expliquerons quand et comment l'utiliser dans
-              votre cas.
+              {t("partOf.text")}
             </p>
           </div>
           <div className="md:col-span-2 flex md:justify-end">
@@ -356,7 +310,7 @@ export default function CompositionCorporellePage() {
               href="/services/hemodialyse"
               className="inline-flex items-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
             >
-              Voir le service hémodialyse
+              {t("partOf.cta")}
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
           </div>
@@ -365,10 +319,10 @@ export default function CompositionCorporellePage() {
 
       <ConversionFooterCTA
         variant="sand"
-        eyebrow="Une question médicale"
-        title="Une question sur votre suivi ou cette mesure&nbsp;?"
-        subtitle="Notre équipe néphrologique répond en consultation, par téléphone ou via WhatsApp — du samedi au jeudi."
-        waMessage="Bonjour, j'aimerais en savoir plus sur la mesure de la composition corporelle à la Clinique ESSAADA."
+        eyebrow={t("footerCta.eyebrow")}
+        title={t("footerCta.title")}
+        subtitle={t("footerCta.subtitle")}
+        waMessage={t("footerCta.waMessage")}
       />
     </>
   );

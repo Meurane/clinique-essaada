@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   Phone,
   MessageCircle,
@@ -20,89 +22,59 @@ import { Card, CardIcon } from "@/components/ui/Card";
 import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Patients de passage · Dialyse vacances à Sidi Bel Abbès",
-  description:
-    "Diaspora algérienne ou résident en voyage : dialysez en toute sérénité pendant votre séjour à Sidi Bel Abbès. Confirmation sous 72h ouvrées, tiers-payant CNAS/CASNOS, accompagnement personnalisé.",
-  alternates: { canonical: `${site.url}/patients-de-passage` },
-  openGraph: {
-    title: "Patients de passage — Clinique ESSAADA",
-    description:
-      "Dialyse vacances à Sidi Bel Abbès. Confirmation sous 72h ouvrées. Conventionnée CNAS et CASNOS.",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "patientsDePassage" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/patients-de-passage` },
+    openGraph: {
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 const etapes = [
-  {
-    num: "1",
-    icon: MessageCircle,
-    title: "Nous contacter",
-    text: "Envoyez-nous un message WhatsApp ou un email avec vos dates de séjour, votre destination en Algérie et les coordonnées de votre néphrologue traitant.",
-  },
-  {
-    num: "2",
-    icon: FileText,
-    title: "Transmission médicale",
-    text: "Vous nous transmettez votre dossier (dernier bilan, sérologies, ordonnance). Notre néphrologue l'étudie et prépare votre séjour dialyse.",
-  },
-  {
-    num: "3",
-    icon: CheckCircle2,
-    title: "Confirmation sous 72h",
-    text: "Réponse sous 72h ouvrées avec votre créneau confirmé, les infos pratiques pour l'arrivée et le contact WhatsApp direct de l'équipe.",
-  },
+  { id: "step1", num: "1", icon: MessageCircle },
+  { id: "step2", num: "2", icon: FileText },
+  { id: "step3", num: "3", icon: CheckCircle2 },
 ];
 
-const docsRequis = [
-  "Dernier bilan biologique — FNS + Biochimie (moins d'1 mois)",
-  "Sérologies à jour : hépatites B, C et VIH de moins de 6 mois",
-  "Ordonnance de dialyse signée par votre néphrologue traitant",
-  "Coordonnées de votre néphrologue traitant (pour liaison)",
-  "Pièce d'identité (passeport ou CIN)",
-  "Attestation CNAS, CASNOS ou mutuelle complémentaire",
-];
+const docsRequis = ["doc1", "doc2", "doc3", "doc4", "doc5", "doc6"];
 
 const logistique = [
-  {
-    icon: Plane,
-    title: "Depuis l'aéroport",
-    text: "Aéroport Oran Es-Senia à environ 1h de la clinique. Service de taxi ou location de voiture sur place. Nous pouvons vous recommander des partenaires.",
-  },
-  {
-    icon: Hotel,
-    title: "Hébergement",
-    text: "Sidi Bel Abbès dispose d'hôtels à courte distance de la clinique. Liste fournie à la confirmation de votre créneau.",
-  },
-  {
-    icon: Pill,
-    title: "Pharmacies",
-    text: "Plusieurs pharmacies de garde à proximité immédiate. Apportez votre traitement pour la durée du séjour, avec ordonnance lisible.",
-  },
-  {
-    icon: Car,
-    title: "Accès clinique",
-    text: "Places PMR près de l'entrée, accès direct ambulance. Chauffeur de taxi autorisé à vous attendre.",
-  },
+  { id: "airport", icon: Plane },
+  { id: "lodging", icon: Hotel },
+  { id: "pharmacy", icon: Pill },
+  { id: "access", icon: Car },
 ];
 
 export default function PatientsDePassagePage() {
+  const t = useTranslations("patientsDePassage");
+  const tc = useTranslations("common");
   return (
     <>
       <PhotoHero
-        eyebrow="Patients de passage"
-        title="Dialysez en toute sérénité pendant votre séjour à Sidi Bel Abbès"
-        subtitle="Diaspora algérienne en vacances, résident en voyage, patient en transfert : nous accueillons les patients dialysés de passage. Confirmation de votre créneau sous 72h ouvrées."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={Plane}
         photoSrc="/images/clinique-facade-enseigne.webp"
-        photoAlt="Façade extérieure de la Clinique ESSAADA à Sidi Bel Abbès — enseigne « CLINIQUE ESSAADA », rampe d'accès patients et entrée principale"
-        photoLabel="Accueil patients de passage"
-        photoTag="Diaspora & voyageurs"
+        photoAlt={t("hero.photoAlt")}
+        photoLabel={t("hero.photoLabel")}
+        photoTag={t("hero.photoTag")}
       />
       <div className="container-custom py-5">
         <Breadcrumb
           items={[
-            { name: "Accueil", url: "/" },
-            { name: "Patients de passage", url: "/patients-de-passage" },
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.current"), url: "/patients-de-passage" },
           ]}
         />
       </div>
@@ -131,14 +103,13 @@ export default function PatientsDePassagePage() {
               </div>
               <div className="flex-1">
                 <div className="text-sm font-semibold tracking-wide text-primary-200 mb-1">
-                  Diaspora France
+                  {t("franceCard.eyebrow")}
                 </div>
                 <h3 className="font-display text-xl md:text-2xl font-semibold mb-2 text-white">
-                  Vous rentrez de France ? Guide CPAM complet
+                  {t("franceCard.title")}
                 </h3>
                 <p className="text-primary-100 leading-relaxed">
-                  Accord préalable, formulaires SE 352-05, plafond 86,95 €/séance,
-                  factures acquittées — toutes les démarches, étape par étape.
+                  {t("franceCard.text")}
                 </p>
               </div>
               <ArrowRight
@@ -149,9 +120,9 @@ export default function PatientsDePassagePage() {
           </Link>
 
           <SectionHeader
-            eyebrow="Comment ça marche"
-            title="Trois étapes, une confirmation sous 72h"
-            subtitle="Nous avons conçu un parcours sans friction pour que votre séjour commence détendu."
+            eyebrow={t("steps.eyebrow")}
+            title={t("steps.title")}
+            subtitle={t("steps.subtitle")}
           />
           <ol className="grid md:grid-cols-3 gap-5">
             {etapes.map((e) => (
@@ -164,22 +135,22 @@ export default function PatientsDePassagePage() {
                     <e.icon className="w-6 h-6 text-primary-700" aria-hidden="true" />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                    {e.title}
+                    {t(`steps.${e.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-base leading-relaxed">{e.text}</p>
+                  <p className="text-neutral-700 text-base leading-relaxed">{t(`steps.${e.id}.text`)}</p>
                 </Card>
               </li>
             ))}
           </ol>
           <div className="mt-10 text-center">
             <a
-              href={waUrl("Bonjour, je suis patient dialysé et je souhaite venir en séjour à Sidi Bel Abbès. Voici mes dates approximatives : ")}
+              href={waUrl(t("steps.whatsappMessage"))}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
             >
               <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              Démarrer sur WhatsApp
+              {t("steps.whatsappCta")}
             </a>
           </div>
         </div>
@@ -189,8 +160,8 @@ export default function PatientsDePassagePage() {
         <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16">
           <div>
             <SectionHeader
-              eyebrow="Documents à préparer"
-              title="Ce dont nous avons besoin pour valider votre créneau"
+              eyebrow={t("docs.eyebrow")}
+              title={t("docs.title")}
             />
             <ul className="space-y-3">
               {docsRequis.map((d) => (
@@ -199,47 +170,36 @@ export default function PatientsDePassagePage() {
                     className="w-5 h-5 text-accent-600 shrink-0 mt-0.5"
                     aria-hidden="true"
                   />
-                  <span className="text-neutral-800">{d}</span>
+                  <span className="text-neutral-800">{t(`docs.items.${d}`)}</span>
                 </li>
               ))}
             </ul>
             <div className="mt-6 flex items-start gap-3 p-4 rounded-xl bg-white border border-sand-200">
               <Clock className="w-5 h-5 text-primary-700 shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-neutral-700 text-base">
-                <strong>Délai conseillé :</strong> contactez-nous au minimum
-                1 mois avant votre séjour. Les réservations de dernière minute
-                restent possibles mais ne sont pas conseillées — elles dépendent
-                de la disponibilité d'un poste.
+                <strong>{t("docs.deadlineLabel")}</strong> {t("docs.deadlineText")}
               </p>
             </div>
           </div>
 
           <div>
-            <SectionHeader eyebrow="Combien ça coûte" title="Prise en charge transparente" />
+            <SectionHeader eyebrow={t("cost.eyebrow")} title={t("cost.title")} />
             <div className="space-y-4 text-neutral-700 leading-relaxed">
               <p>
-                <strong className="text-neutral-900">Si vous êtes affilié CNAS ou CASNOS</strong> —
-                vos séances sont prises en charge intégralement en tiers-payant.
-                Aucune avance de frais. Apportez simplement votre carte Chifa et
-                votre attestation.
+                <strong className="text-neutral-900">{t("cost.affiliatedLabel")}</strong> {t("cost.affiliatedText")}
               </p>
               <p>
-                <strong className="text-neutral-900">Si vous êtes de la diaspora avec une mutuelle européenne</strong> —
-                nous vous communiquons un devis clair avant votre séjour. Beaucoup
-                de mutuelles françaises, belges ou canadiennes remboursent la
-                dialyse à l'étranger sur justificatif.
+                <strong className="text-neutral-900">{t("cost.diasporaLabel")}</strong> {t("cost.diasporaText")}
               </p>
               <p>
-                <strong className="text-neutral-900">Si vous êtes non affilié</strong> —
-                tarif transparent communiqué par écrit avant votre arrivée.
-                Pas de surprise à la sortie.
+                <strong className="text-neutral-900">{t("cost.unaffiliatedLabel")}</strong> {t("cost.unaffiliatedText")}
               </p>
             </div>
             <Link
               href="/rendez-vous"
               className="mt-6 inline-flex items-center gap-2 font-semibold text-primary-700 hover:gap-2.5 transition-all"
             >
-              Demander un devis personnalisé
+              {t("cost.quoteCta")}
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
@@ -249,9 +209,9 @@ export default function PatientsDePassagePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Suivi médical pendant votre séjour"
-            title="Le même standard de précision qu'en centre européen"
-            subtitle="Nous accueillons régulièrement la diaspora habituée aux protocoles français. Voici ce qui ne change pas — et ce qui peut s'ajouter à votre suivi pendant les 2 à 4 semaines de séjour."
+            eyebrow={t("medical.eyebrow")}
+            title={t("medical.title")}
+            subtitle={t("medical.subtitle")}
           />
           <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary-50 via-white to-sand-50 rounded-2xl p-6 md:p-8 border border-primary-100">
             <div className="flex items-start gap-4">
@@ -260,19 +220,16 @@ export default function PatientsDePassagePage() {
               </div>
               <div className="flex-1">
                 <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                  Mesure du poids sec & hydratation par bio-impédance
+                  {t("medical.cardTitle")}
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-4">
-                  Pour les séjours de deux semaines ou plus, une mesure de bio-impédance
-                  multi-fréquence peut être proposée pour personnaliser votre prescription
-                  pendant votre séjour. Mesure non invasive, deux minutes, intégrée à votre
-                  venue.
+                  {t("medical.cardText")}
                 </p>
                 <Link
                   href="/la-clinique/composition-corporelle"
                   className="inline-flex items-center gap-1.5 font-semibold text-primary-700 hover:gap-2.5 transition-all"
                 >
-                  Comprendre cette mesure
+                  {t("medical.cardCta")}
                   <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </Link>
               </div>
@@ -284,21 +241,21 @@ export default function PatientsDePassagePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Sur place"
-            title="Tout ce qu'il faut savoir pour votre séjour"
-            subtitle="Logistique, accès, hébergement, pharmacies — nous vous communiquons la liste détaillée à la confirmation."
+            eyebrow={t("onsite.eyebrow")}
+            title={t("onsite.title")}
+            subtitle={t("onsite.subtitle")}
           />
           <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {logistique.map((l) => (
-              <li key={l.title}>
+              <li key={l.id}>
                 <Card className="h-full">
                   <CardIcon>
                     <l.icon className="w-6 h-6" aria-hidden="true" />
                   </CardIcon>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-1">
-                    {l.title}
+                    {t(`onsite.${l.id}.title`)}
                   </h3>
-                  <p className="text-neutral-700 text-base">{l.text}</p>
+                  <p className="text-neutral-700 text-base">{t(`onsite.${l.id}.text`)}</p>
                 </Card>
               </li>
             ))}
@@ -310,29 +267,28 @@ export default function PatientsDePassagePage() {
         <div className="container-custom grid md:grid-cols-5 gap-6 items-center">
           <div className="md:col-span-3">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
-              Prêt à organiser votre séjour dialyse&nbsp;?
+              {t("finalCta.title")}
             </h2>
             <p className="text-neutral-700 text-lg leading-relaxed">
-              Notre équipe secrétariat est joignable du samedi au jeudi, en
-              français et en arabe. WhatsApp privilégié pour la diaspora.
+              {t("finalCta.text")}
             </p>
           </div>
           <div className="md:col-span-2 flex flex-col sm:flex-row md:justify-end gap-3">
             <a
-              href={waUrl("Bonjour, je suis patient dialysé et je souhaite organiser un séjour à Sidi Bel Abbès.")}
+              href={waUrl(t("finalCta.whatsappMessage"))}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
             >
               <MessageCircle className="w-5 h-5" aria-hidden="true" />
-              WhatsApp
+              {t("finalCta.whatsapp")}
             </a>
             <a
               href={site.contact.phoneHref}
               className="inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-3 rounded-full font-semibold min-h-[52px] transition-colors"
             >
               <Phone className="w-5 h-5" aria-hidden="true" />
-              Appeler
+              {tc("call")}
             </a>
           </div>
         </div>

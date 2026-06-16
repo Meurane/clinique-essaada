@@ -748,5 +748,1444 @@
         "tip": "Parlez de votre alimentation en consultation dès que vous en ressentez le besoin — c'est pensé pour vous, pas contre vous."
       }
     }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ · Dialyse & prise en charge",
+      "description": "Toutes les réponses à vos questions sur l'hémodialyse, les séances, les prises en charge et les modalités pratiques à la Clinique ESSAADA.",
+      "ogTitle": "FAQ · Dialyse & prise en charge",
+      "ogDescription": "Toutes les réponses à vos questions sur l'hémodialyse, les séances, les prises en charge et les modalités pratiques à la Clinique ESSAADA."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Vos questions, nos réponses",
+      "subtitle": "Les informations essentielles pour comprendre l'hémodialyse et votre parcours."
+    },
+    "cta": {
+      "eyebrow": "Aller plus loin",
+      "title": "Votre question n'a pas de réponse ici ?",
+      "subtitle": "Notre équipe répond à vos questions par WhatsApp, téléphone ou en consultation.",
+      "waMessage": "Bonjour, j'ai une question sur la dialyse qui n'est pas dans la FAQ."
+    },
+    "cost": {
+      "question": "Combien coûte une séance ? Ai-je quelque chose à payer ?",
+      "answer": "Rien si vous êtes affilié à la CNAS ou à la CASNOS. La clinique est conventionnée : vos séances d'hémodialyse sont prises en charge intégralement en tiers-payant — vous n'avancez aucun frais. Notre service administratif monte votre dossier avec vous (carte Chifa + attestation CNAS ou CASNOS). Si un point bloque, nous vous le disons tout de suite et nous vous accompagnons dans la démarche."
+    },
+    "companion": {
+      "question": "Mon accompagnant peut-il rester avec moi ?",
+      "answer": "Oui. Nous accueillons volontiers un accompagnant, en particulier pour les premières séances. Une salle d'attente dédiée est à sa disposition (café et thé servis)."
+    },
+    "sessionDuration": {
+      "question": "Combien de temps dure une séance de dialyse ?",
+      "answer": "Une séance d'hémodialyse dure environ 4 heures. La durée exacte est déterminée par votre néphrologue en fonction de vos besoins. Vous pouvez lire, regarder la télévision ou vous reposer pendant la séance."
+    },
+    "frequency": {
+      "question": "À quelle fréquence viendrai-je ?",
+      "answer": "La plupart des patients viennent 3 fois par semaine. Votre médecin adapte la fréquence à votre situation clinique."
+    },
+    "painGeneral": {
+      "question": "Est-ce que la dialyse fait mal ?",
+      "answer": "La ponction de la fistule (accès vasculaire créé au bras) peut occasionner une gêne comparable à une prise de sang. Nos infirmiers sont formés pour la minimiser. Une fois la séance commencée, elle est indolore."
+    },
+    "emergency": {
+      "question": "Que se passe-t-il si je fais un malaise pendant la séance ?",
+      "answer": "Un médecin néphrologue est présent sur le site pendant toute la durée des séances — ce n'est pas une astreinte téléphonique, c'est une présence effective. Notre équipe infirmière est formée aux protocoles d'urgence et intervient immédiatement en cas de baisse de tension ou de malaise."
+    },
+    "work": {
+      "question": "Puis-je continuer à travailler avec la dialyse ?",
+      "answer": "Oui, dans la majorité des cas. Nous organisons vos créneaux (matin, journée ou soir) pour qu'ils s'intègrent à votre emploi du temps. Beaucoup de nos patients continuent leur activité professionnelle ou familiale."
+    },
+    "eating": {
+      "question": "Puis-je manger pendant la dialyse ?",
+      "answer": "Oui. Nous recommandons un repas léger 2 heures avant la venue, et un café est servi pendant la séance."
+    },
+    "firstAppointment": {
+      "question": "Comment prendre un premier rendez-vous ?",
+      "answer": "Appelez-nous ou envoyez un message WhatsApp. Notre équipe vous propose un rendez-vous avec un néphrologue sous 24 à 48 h (jours ouvrables). Nous pouvons aussi organiser une visite découverte du centre, sans engagement."
+    },
+    "transfer": {
+      "question": "Je dialyse déjà ailleurs — comment transférer mon suivi ?",
+      "answer": "Contactez-nous avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Notre néphrologue prend contact avec votre médecin traitant pour assurer la continuité du suivi, sans rupture."
+    },
+    "cnasCasnos": {
+      "question": "Êtes-vous conventionnés CNAS et CASNOS ?",
+      "answer": "Oui. La clinique est conventionnée avec la CNAS (Caisse Nationale des Assurances Sociales des travailleurs salariés) et la CASNOS (Caisse Nationale de Sécurité Sociale des Non-Salariés). Apportez votre carte Chifa et votre dossier médical lors de votre premier rendez-vous."
+    },
+    "visiting": {
+      "question": "Je suis en vacances dans la région, puis-je dialyser chez vous ?",
+      "answer": "Oui. Nous accueillons les patients de passage (résidents en Algérie comme diaspora). Confirmation de votre créneau sous 72h ouvrées. Contactez-nous le plus rapidement possible avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Voir la page dédiée « Patients de passage »."
+    },
+    "ramadan": {
+      "question": "Les horaires sont-ils adaptés pendant le Ramadan ?",
+      "answer": "Oui. Pendant le Ramadan, nous ouvrons une seule série de créneaux avec une première séance à 4h du matin. Pas de séance après f'tour, pas de créneau nocturne. Reprogrammation en concertation avec votre néphrologue. Voir la page « Ramadan & dialyse »."
+    },
+    "accessibility": {
+      "question": "La clinique est-elle accessible aux personnes à mobilité réduite ?",
+      "answer": "Oui. La clinique dispose de rampes d'accès pour fauteuils roulants, de places de stationnement réservées près de l'entrée, et d'un accès direct pour ambulance. Notre personnel peut vous accompagner si besoin."
+    },
+    "firstSessionFear": {
+      "question": "Ma toute première séance ici, j'ai très peur. Comment ça se passe concrètement ?",
+      "answer": "C'est tout à fait normal d'appréhender, presque tous nos patients le ressentent la première fois. Voici ce qui vous attend : à votre arrivée, l'infirmière vous accueille, vérifie votre poids et votre tension, puis vous installe confortablement dans un fauteuil inclinable avec une couverture. La pose des aiguilles prend 2 à 3 minutes, on vous explique chaque geste. Ensuite, vous êtes branché au générateur pour 4 heures environ. Pendant toute la séance, une infirmière passe toutes les 15 minutes, et un néphrologue est présent dans le service. Vous pouvez lire, dormir, regarder votre téléphone. Un café vous est servi. En fin de séance, on retire les aiguilles, on vérifie que tout va bien, et vous repartez. Vous n'êtes jamais seul."
+    },
+    "needlesPain": {
+      "question": "Est-ce que les aiguilles font mal ?",
+      "answer": "Nous préférons la franchise : la piqûre est désagréable, mais elle dure à peine 10 secondes. Ce n'est pas une douleur vive, plutôt une sensation forte qui passe vite. Si vous avez une fistule (FAV), une crème anesthésiante peut être appliquée une heure avant la séance pour rendre la piqûre quasi indolore. Si vous avez un cathéter central, il n'y a pas de piqûre du tout, juste une connexion. La plupart de nos patients nous disent qu'après 3 ou 4 séances, l'appréhension disparaît et le geste devient une routine. Nos infirmières sont formées à la ponction douce — si une aiguille vous fait mal, dites-le immédiatement, on adapte."
+    },
+    "emergencyVacation": {
+      "question": "Je suis en vacances en Algérie mais je n'ai pas prévenu. Pouvez-vous me prendre en urgence ?",
+      "answer": "Oui, c'est possible selon nos disponibilités, et nous faisons tout pour ne laisser personne sans séance. Contactez-nous immédiatement par WhatsApp au numéro du centre, même le soir ou le week-end. Préparez si possible : votre dernier compte-rendu de dialyse (poids sec, temps de séance, traitement), vos sérologies récentes (hépatites B/C, VIH), votre ordonnance en cours, et une pièce d'identité. Si nous sommes complets à l'horaire souhaité, nous vous proposons un autre créneau dans la semaine ou nous vous orientons vers un centre partenaire. Ne sautez jamais une séance — appelez-nous, on trouvera une solution."
+    },
+    "serologyAge": {
+      "question": "Mes sérologies datent de 4 mois, c'est toujours bon ?",
+      "answer": "La norme est que les sérologies (hépatites B, C et VIH) doivent dater de moins de 3 mois pour être dialysé dans un centre. À 4 mois, elles ne sont plus acceptées, c'est une règle sanitaire stricte pour protéger tous les patients du service. Pas d'inquiétude : nous travaillons avec un laboratoire partenaire à Sidi Bel Abbès qui peut refaire le bilan rapidement. Le prélèvement se fait en 10 minutes, les résultats arrivent sous 24 à 48 heures. Nous vous conseillons de faire la prise de sang dès votre arrivée en Algérie, avant même votre première séance prévue."
+    },
+    "companionDuringSession": {
+      "question": "Mon proche peut-il rester avec moi pendant les 4h de séance ?",
+      "answer": "Nous comprenons à quel point la présence d'un proche est rassurante, surtout les premières fois. Il ne peut pas rester en continu dans la salle de dialyse pour des raisons d'hygiène et de confidentialité des autres patients, mais il dispose d'une salle d'attente dédiée avec sièges confortables et point d'eau. Il peut venir vous voir brièvement pendant la séance, généralement 2 à 3 fois, selon l'accord de l'infirmière. Vous gardez votre téléphone à portée de main, donc vous pouvez lui envoyer un message à tout moment. Pour votre toute première séance, nous sommes plus souples et autorisons une visite un peu plus longue à l'installation."
+    },
+    "dataProtection": {
+      "question": "Mes données médicales sont-elles protégées ?",
+      "answer": "Oui. Nous appliquons strictement la loi algérienne 18-07 relative à la protection des données personnelles. Votre dossier médical est conservé de manière sécurisée, accessible uniquement à l'équipe soignante qui vous prend en charge : néphrologue, infirmières, et personnel administratif habilité. Aucune donnée n'est transmise à un tiers (employeur, assurance privée, famille élargie) sans votre accord écrit. Vous pouvez à tout moment demander une copie de votre dossier, rectifier une information erronée, ou demander la suppression de données non médicalement nécessaires. Pour les patients de la diaspora, nous transmettons votre compte-rendu de séjour à votre néphrologue en France par email sécurisé, sur votre demande uniquement."
+    }
+  },
+  "glossary": {
+    "meta": {
+      "title": "Glossaire — Comprendre les termes de la dialyse",
+      "description": "29 termes clés de la néphrologie et de la dialyse expliqués simplement : accès vasculaire, créatinine, DFG, fistule, hémodialyse, greffe, urée. Par la Clinique ESSAADA.",
+      "ogTitle": "Glossaire néphrologie — Clinique ESSAADA",
+      "ogDescription": "Le vocabulaire de la dialyse et de l'insuffisance rénale, défini simplement. 29 entrées, des plus techniques aux plus familières.",
+      "ogTitleTerm": "{title} — Glossaire ESSAADA"
+    },
+    "hero": {
+      "eyebrow": "Comprendre",
+      "title": "Glossaire — les mots de la dialyse, expliqués simplement",
+      "subtitle": "29 termes que vous rencontrerez en consultation, sur votre carnet de dialyse, ou dans les échanges avec l'équipe. Pas de jargon : des définitions accessibles, vérifiables, sans alarmisme."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "glossary": "Glossaire"
+    },
+    "index": {
+      "navAria": "Index alphabétique",
+      "goTo": "Aller à :",
+      "letterAria": "Termes commençant par {letter}",
+      "entriesCount": "{count} entrées"
+    },
+    "card": {
+      "dedicatedPage": "Voir la page dédiée",
+      "dedicatedPageAria": "Voir la page dédiée : {term}"
+    },
+    "relatedTerms": "Termes liés",
+    "ctaBlock": {
+      "title": "Un terme vous intrigue encore ?",
+      "body": "Ce glossaire ne remplace pas l'échange avec votre néphrologue. En consultation, posez toutes vos questions — aucune n'est déplacée, aucune n'est trop simple."
+    },
+    "term": {
+      "eyebrow": "Glossaire · Définition",
+      "subtitle": "Définition claire, sans jargon, vérifiée par l'équipe médicale de la Clinique ESSAADA.",
+      "backToGlossary": "Retour au glossaire complet",
+      "furtherEyebrow": "Aller plus loin",
+      "furtherTitle": "Une question sur votre parcours&nbsp;?",
+      "furtherSubtitle": "Notre équipe néphrologie répond à vos questions en consultation.",
+      "viewConsultation": "Voir la consultation néphrologie"
+    },
+    "terms": {
+      "acces-vasculaire": {
+        "term": "Accès vasculaire",
+        "question": "Qu'est-ce qu'un accès vasculaire ?",
+        "definition": "Voie d'entrée chirurgicale ou médicale qui permet de connecter la circulation sanguine au générateur de dialyse. En hémodialyse, les deux formes principales sont la fistule artério-veineuse (solution durable) et le cathéter (utilisé en urgence ou en attente de fistule). La qualité de l'accès vasculaire conditionne directement l'efficacité des séances et la sécurité du patient sur le long terme."
+      },
+      "ase": {
+        "term": "ASE",
+        "question": "Qu'est-ce qu'un ASE en dialyse ?",
+        "definition": "Abréviation d'« Agent stimulant de l'érythropoïèse ». Ce sont des médicaments injectables qui imitent l'action de l'érythropoïétine, l'hormone normalement produite par les reins. Ils sont prescrits aux patients insuffisants rénaux dont les reins ne fabriquent plus assez de cette hormone, afin de corriger l'anémie rénale et de réduire la fatigue liée au manque de globules rouges."
+      },
+      "catheter": {
+        "term": "Cathéter",
+        "question": "Qu'est-ce qu'un cathéter de dialyse ?",
+        "definition": "Tuyau souple et fin en matière plastique, introduit dans un vaisseau sanguin (souvent au niveau du cou ou de l'aine) pour accéder à la circulation. En hémodialyse, il sert d'accès vasculaire temporaire, notamment en urgence ou pendant la maturation d'une fistule. Il peut aussi être posé dans l'abdomen pour la dialyse péritonéale. Sa manipulation exige une hygiène rigoureuse."
+      },
+      "centre-hemodialyse": {
+        "term": "Centre d'Hémodialyse",
+        "question": "Qu'est-ce qu'un centre d'hémodialyse ?",
+        "definition": "Structure de soins dédiée aux patients atteints d'insuffisance rénale sévère qui nécessitent une prise en charge complète. Un néphrologue est présent en permanence pendant les séances, accompagné d'une équipe infirmière. Ce cadre convient aux patients dont l'état médical demande une surveillance rapprochée, par opposition à l'auto-dialyse ou à la dialyse à domicile."
+      },
+      "creatinine": {
+        "term": "Créatinine",
+        "question": "Qu'est-ce que la créatinine ?",
+        "definition": "Déchet produit en continu par le fonctionnement normal des muscles, à partir de la créatine. Elle est éliminée par les reins dans l'urine. Son dosage dans le sang et le calcul de sa clairance permettent d'évaluer la fonction rénale : plus la créatinine s'accumule dans le sang, moins les reins filtrent correctement. C'est l'un des marqueurs de référence du suivi néphrologique."
+      },
+      "diabete": {
+        "term": "Diabète",
+        "question": "Qu'est-ce que le diabète ?",
+        "definition": "Maladie chronique caractérisée par un taux de glucose (sucre) trop élevé dans le sang, lié à un défaut de production ou d'action de l'insuline. Mal équilibré sur le long terme, il abîme les petits vaisseaux sanguins, notamment ceux des reins. Environ un patient diabétique sur cinq développe une insuffisance rénale ; c'est l'une des premières causes de dialyse dans le monde."
+      },
+      "dialyse": {
+        "term": "Dialyse",
+        "question": "Qu'est-ce que la dialyse ?",
+        "definition": "Traitement qui remplace partiellement le travail de reins défaillants en épurant le sang de ses déchets et de l'excès d'eau. Deux techniques existent : l'hémodialyse, qui filtre le sang à travers un rein artificiel, et la dialyse péritonéale, qui utilise la membrane naturelle de l'abdomen. Le choix dépend de l'état médical, du mode de vie et des préférences du patient."
+      },
+      "dialyse-a-domicile": {
+        "term": "Dialyse à domicile",
+        "question": "Qu'est-ce que la dialyse à domicile ?",
+        "definition": "Modalité de traitement où le patient réalise lui-même sa dialyse chez lui, après une formation encadrée. Elle offre une grande autonomie, un meilleur respect des rythmes personnels et un suivi médical régulier mais espacé. Elle concerne surtout la dialyse péritonéale, et plus rarement l'hémodialyse à domicile. Elle suppose un environnement adapté et un proche disponible en soutien."
+      },
+      "dialyse-peritoneale": {
+        "term": "Dialyse péritonéale",
+        "question": "Qu'est-ce que la dialyse péritonéale ?",
+        "definition": "Technique qui utilise le péritoine, la fine membrane tapissant la cavité abdominale, comme filtre naturel. Une solution de dialyse est introduite dans l'abdomen par un cathéter, laissée en place quelques heures, puis évacuée et remplacée. Le traitement fonctionne en continu, 24h/24, imitant davantage le rein naturel. Il est pratiqué presque exclusivement à domicile, après formation du patient."
+      },
+      "dialyseur": {
+        "term": "Dialyseur",
+        "question": "Qu'est-ce qu'un dialyseur ?",
+        "definition": "Filtre central du générateur d'hémodialyse, parfois appelé « rein artificiel ». Il est composé de milliers de fibres creuses semi-perméables à travers lesquelles le sang circule. Les déchets et l'excès d'eau passent du sang vers la solution de dialyse, tandis que les cellules sanguines et les protéines restent dans la circulation. C'est lui qui réalise concrètement l'épuration."
+      },
+      "dpa": {
+        "term": "DPA",
+        "question": "Qu'est-ce que la DPA ?",
+        "definition": "Abréviation de « Dialyse péritonéale automatisée ». Le patient branche un petit appareil, le cycleur, qui réalise automatiquement les échanges de solution de dialyse dans l'abdomen pendant la nuit, sur environ 8 à 10 heures. La journée est ainsi libre de manipulations. Cette technique convient aux personnes actives ou gênées par les échanges manuels de la DPCA."
+      },
+      "dpca": {
+        "term": "DPCA",
+        "question": "Qu'est-ce que la DPCA ?",
+        "definition": "Abréviation de « Dialyse péritonéale continue ambulatoire ». Le patient effectue lui-même, manuellement, quatre à cinq échanges de solution de dialyse dans la journée, à intervalles réguliers. Chaque échange dure environ 30 minutes. Entre deux échanges, il peut mener une vie normale. Cette méthode ne nécessite aucun appareil électrique et se pratique n'importe où si l'hygiène est respectée."
+      },
+      "epo": {
+        "term": "EPO",
+        "question": "Qu'est-ce que l'EPO ?",
+        "definition": "Abréviation courante d'« érythropoïétine », hormone produite par les reins sains qui stimule la moelle osseuse pour fabriquer les globules rouges. Chez les patients insuffisants rénaux, la production d'EPO chute, ce qui provoque une anémie. Des formes synthétiques sont alors prescrites en injection pour restaurer un taux d'hémoglobine satisfaisant et réduire la fatigue."
+      },
+      "erythropoietine": {
+        "term": "Érythropoïétine",
+        "question": "Qu'est-ce que l'érythropoïétine ?",
+        "definition": "Hormone naturellement produite par des reins en bonne santé. Elle agit sur la moelle osseuse en la stimulant pour produire les globules rouges, responsables du transport de l'oxygène. Quand les reins sont malades, cette production diminue et une anémie rénale s'installe, provoquant fatigue et essoufflement. Des versions synthétiques (EPO, ASE) permettent de compenser cette carence."
+      },
+      "fistule-arterio-veineuse": {
+        "term": "Fistule artério-veineuse (FAV)",
+        "question": "Qu'est-ce qu'une fistule artério-veineuse ?",
+        "definition": "Accès vasculaire de référence pour l'hémodialyse, créé chirurgicalement, le plus souvent à l'avant-bras. Le chirurgien relie une artère à une veine voisine : la veine s'épaissit progressivement sous la pression artérielle et devient facile à piquer. Elle fournit le débit sanguin élevé nécessaire aux séances. Sa maturation demande plusieurs semaines avant la première utilisation."
+      },
+      "greffe-de-rein": {
+        "term": "Greffe de rein",
+        "question": "Qu'est-ce que la greffe de rein ?",
+        "definition": "Intervention chirurgicale qui consiste à remplacer la fonction des reins malades par un rein sain provenant d'un donneur. Le donneur peut être vivant, souvent un proche compatible, ou décédé. La greffe, quand elle est possible, offre une qualité de vie proche de la normale et libère le patient des séances de dialyse. Elle impose un traitement immunosuppresseur à vie."
+      },
+      "hemodialyse": {
+        "term": "Hémodialyse",
+        "question": "Qu'est-ce que l'hémodialyse ?",
+        "definition": "Technique de dialyse où le sang du patient circule hors du corps à travers un rein artificiel, le dialyseur. Déchets et excès d'eau passent dans la solution de dialyse à travers une membrane semi-perméable, puis le sang épuré retourne au patient. Les séances ont lieu généralement trois fois par semaine et durent quatre à six heures."
+      },
+      "hemoglobine": {
+        "term": "Hémoglobine",
+        "question": "Qu'est-ce que l'hémoglobine ?",
+        "definition": "Protéine contenue dans les globules rouges, responsable du transport de l'oxygène des poumons vers les tissus. Elle doit sa couleur rouge au fer qu'elle contient. Lorsqu'elle baisse sous un certain seuil, on parle d'anémie, qui se manifeste par de la fatigue, un essoufflement et une pâleur. L'anémie est fréquente chez les patients dialysés et se corrige par traitement."
+      },
+      "insuffisance-renale-aigue": {
+        "term": "Insuffisance rénale aiguë",
+        "question": "Qu'est-ce que l'insuffisance rénale aiguë ?",
+        "definition": "Perte brutale, en quelques heures ou quelques jours, de la capacité des reins à filtrer le sang. Elle est souvent temporaire et réversible si elle est prise en charge rapidement. Les causes fréquentes sont une baisse de l'irrigation des reins, une obstruction des voies urinaires ou une lésion après une opération, un accident ou une infection grave. Le traitement se fait souvent en réanimation."
+      },
+      "insuffisance-renale-chronique-terminale": {
+        "term": "Insuffisance rénale chronique terminale",
+        "question": "Qu'est-ce que l'insuffisance rénale terminale ?",
+        "definition": "Stade le plus avancé de la maladie rénale chronique, où la fonction des reins est inférieure à environ 10 % de la normale (évaluée par le DFG, ou débit de filtration glomérulaire). À ce stade, les reins ne parviennent plus à assurer seuls l'épuration du sang. Un traitement de suppléance devient nécessaire : dialyse ou greffe de rein."
+      },
+      "maladie-renale-chronique": {
+        "term": "Maladie rénale chronique",
+        "question": "Qu'est-ce que la maladie rénale chronique ?",
+        "definition": "Dégradation lente et progressive de la fonction rénale, qui s'installe sur plusieurs années. Elle est souvent silencieuse au début et découverte par des analyses de sang ou d'urine. Sans prise en charge, elle peut évoluer vers l'insuffisance rénale terminale, nécessitant alors la dialyse ou la greffe. Ses principales causes sont le diabète, l'hypertension artérielle et certaines maladies héréditaires."
+      },
+      "medicaments-immunosuppresseurs": {
+        "term": "Médicaments immunosuppresseurs",
+        "question": "Qu'est-ce qu'un médicament immunosuppresseur ?",
+        "definition": "Médicaments qui atténuent l'activité du système immunitaire. Ils sont prescrits à vie après une greffe de rein pour empêcher l'organisme de reconnaître le greffon comme étranger et de le rejeter. Leur équilibre est délicat : trop peu et le rejet menace, trop et le patient devient vulnérable aux infections. Ils nécessitent un suivi médical rapproché et régulier."
+      },
+      "pression-arterielle": {
+        "term": "Pression artérielle",
+        "question": "Qu'est-ce que la pression artérielle ?",
+        "definition": "Pression exercée par le sang sur la paroi des artères lors de chaque battement du cœur. Lorsqu'elle reste durablement trop élevée, on parle d'hypertension, qui fatigue le cœur, les vaisseaux et les reins. Elle augmente le risque d'infarctus et d'AVC, et figure parmi les principales causes de maladie rénale chronique. Elle se traite par hygiène de vie et médicaments."
+      },
+      "solution-de-dialyse": {
+        "term": "Solution de dialyse",
+        "question": "Qu'est-ce que la solution de dialyse ?",
+        "definition": "Liquide stérile composé d'eau ultra-purifiée, de glucose et d'électrolytes (sodium, potassium, calcium, magnésium, chlorures). Dans le dialyseur, il circule de l'autre côté de la membrane par rapport au sang : les déchets et l'excès d'eau y passent par différence de concentration, tandis que les éléments utiles sont préservés. Sa composition est ajustée à chaque patient."
+      },
+      "temps-de-stase": {
+        "term": "Temps de stase",
+        "question": "Qu'est-ce que le temps de stase ?",
+        "definition": "En dialyse péritonéale, période pendant laquelle la solution de dialyse fraîche reste dans l'abdomen pour effectuer l'épuration. Sa durée varie selon la technique, de quelques heures en journée à une nuit complète. À la fin de ce temps, le dialysat chargé en déchets est évacué puis remplacé par une solution neuve, soit manuellement par le patient, soit automatiquement par un cycleur."
+      },
+      "ultrafiltration": {
+        "term": "Ultrafiltration",
+        "question": "Qu'est-ce que l'ultrafiltration ?",
+        "definition": "Mécanisme par lequel l'excès d'eau accumulé dans le sang est retiré pendant la dialyse. La quantité à enlever est calculée avant chaque séance à partir du poids du patient et de son « poids sec » cible. Une ultrafiltration bien dosée soulage l'essoufflement et l'œdème ; trop rapide, elle peut entraîner crampes ou baisse de tension. L'équipe ajuste les réglages en conséquence."
+      },
+      "unite-auto-dialyse": {
+        "term": "Unité d'Auto-dialyse (UAD)",
+        "question": "Qu'est-ce qu'une unité d'auto-dialyse (UAD) ?",
+        "definition": "Structure où les patients, formés et autonomes en tout ou partie, réalisent eux-mêmes leur séance d'hémodialyse sous la supervision légère d'un infirmier. Les séances se déroulent en petits groupes, souvent autour de cinq patients pour un soignant, dans un cadre convivial. Cette formule convient aux personnes stables médicalement qui souhaitent conserver autonomie et vie sociale."
+      },
+      "unite-dialyse-medicalisee": {
+        "term": "Unité de Dialyse Médicalisée (UDM)",
+        "question": "Qu'est-ce qu'une unité de dialyse médicalisée ?",
+        "definition": "Structure intermédiaire entre le centre lourd d'hémodialyse et l'auto-dialyse. Elle accueille des patients dont les séances se déroulent habituellement sans incident, mais qui ne peuvent pas se prendre en charge seuls. Une équipe infirmière est présente en permanence, et un néphrologue intervient ponctuellement, sans surveillance médicale continue pendant la séance elle-même."
+      },
+      "uree": {
+        "term": "Urée",
+        "question": "Qu'est-ce que l'urée ?",
+        "definition": "Déchet issu de la dégradation normale des protéines par le foie, transporté par le sang et éliminé par les reins dans l'urine. Chez l'insuffisant rénal, elle s'accumule dans le sang et son taux sert d'indicateur du niveau de fonction rénale restante. Un taux trop élevé peut provoquer fatigue, perte d'appétit et nausées ; la dialyse vise notamment à la faire redescendre."
+      }
+    }
+  },
+  "team": {
+    "meta": {
+      "title": "Équipe médicale — néphrologie à Sidi Bel Abbès",
+      "description": "Néphrologue, infirmiers spécialisés, personnel d'accompagnement. Découvrez l'équipe de la Clinique ESSAADA à Sidi Bel Abbès."
+    },
+    "hero": {
+      "eyebrow": "Notre équipe",
+      "title": "Une équipe pluridisciplinaire à vos côtés",
+      "subtitle": "Médecin néphrologue, infirmiers spécialisés, personnel d'accompagnement. Formés à la prise en charge des patients dialysés."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "team": "Équipe"
+    },
+    "section": {
+      "eyebrow": "Les métiers",
+      "title": "Les professionnels qui vous accompagnent",
+      "subtitle": "Quatre départements, un même engagement : rendre chaque séance aussi sûre et confortable que possible."
+    },
+    "departments": {
+      "0": {
+        "title": "Néphrologie",
+        "description": "Médecin néphrologue pour la consultation, le diagnostic et le suivi des maladies rénales à tous les stades."
+      },
+      "1": {
+        "title": "Hémodialyse",
+        "description": "Infirmiers spécialisés en hémodialyse, techniciens biomédicaux et médecin présent en permanence pendant les séances."
+      },
+      "2": {
+        "title": "Paramédical & accompagnement",
+        "description": "Aide-soignant·e·s et personnel de soutien pour l'éducation thérapeutique et l'accompagnement des familles."
+      },
+      "3": {
+        "title": "Administration & accueil",
+        "description": "Prise de rendez-vous, accompagnement dans le dossier CNAS / CASNOS, liaison avec les organismes de transport patient."
+      }
+    },
+    "cta": {
+      "eyebrow": "Consultation",
+      "title": "Rencontrer l'équipe en consultation ?",
+      "subtitle": "Une consultation néphrologie, un premier contact pour la dialyse, ou une question — nous répondons sous 24-48h ouvrées.",
+      "waMessage": "Bonjour, je souhaite rencontrer l'équipe médicale de la Clinique ESSAADA en consultation."
+    }
+  },
+  "laClinique": {
+    "meta": {
+      "title": "Notre centre · 37 lits à Sidi Bel Abbès",
+      "description": "Découvrez la Clinique ESSAADA : 37 lits, équipements récents, eau ultra-pure, équipe pluridisciplinaire à Sidi Bel Abbès."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "center": "Le centre"
+    },
+    "hero": {
+      "eyebrow": "La clinique",
+      "title": "Un centre dédié à la dialyse, pensé pour vous",
+      "subtitle": "{lits} lits, une équipe pluridisciplinaire, un plateau technique récent. À {city}, {country}.",
+      "photoAlt": "Façade extérieure de la Clinique ESSAADA, bâtiment de deux étages avec rampe d'accès, à Sidi Bel Abbès",
+      "photoLabel": "Façade & accueil"
+    },
+    "mission": {
+      "eyebrow": "Notre mission",
+      "title": "Soigner, rassurer, accompagner",
+      "p1": "La Clinique ESSAADA est un centre d'hémodialyse privé à {city}. Elle accueille patients résidents et patients de passage avec la même exigence : une prise en charge médicale rigoureuse dans un environnement serein.",
+      "p2": "Nos équipes combinent compétences néphrologiques, savoir-faire infirmier et accompagnement des patients. Chaque personne bénéficie d'un suivi personnalisé : éducation thérapeutique (apprendre à vivre avec la maladie), conseils diététiques, soutien psychologique, accompagnement des proches."
+    },
+    "stats": {
+      "capacity": "Capacité d'accueil",
+      "capacityValue": "{lits} lits",
+      "slotsPerDay": "Créneaux par jour",
+      "equipment": "Équipements",
+      "equipmentValue": "Neufs",
+      "conventions": "Conventionnements"
+    },
+    "equipment": {
+      "eyebrow": "Équipements",
+      "title": "Un plateau technique pensé pour la qualité de soin",
+      "subtitle": "Traitement d'eau par osmose double passage, générateurs récents, dialyseurs à usage unique strict.",
+      "detailLink": "Voir le détail équipement & hygiène",
+      "items": {
+        "generators": {
+          "title": "Générateurs dernière génération",
+          "text": "Traçabilité des paramètres, contrôle continu de la qualité de la séance."
+        },
+        "ultraPureWater": {
+          "title": "Eau de dialyse ultra-pure",
+          "text": "Traitement de l'eau conforme aux standards internationaux, contrôles réguliers."
+        },
+        "beds": {
+          "title": "Lits 3 positions",
+          "text": "Positionnement adapté pendant les 4 heures de séance."
+        },
+        "qualityProtocols": {
+          "title": "Protocoles qualité",
+          "text": "Hygiène stricte, équipements certifiés, médecin présent en permanence."
+        }
+      }
+    },
+    "gallery": {
+      "eyebrow": "En images",
+      "title": "Le centre, en quelques vues",
+      "subtitle": "Quelques aperçus du centre. Reportage complet sur place à venir.",
+      "dialysisRoom": {
+        "alt": "Salle d'hémodialyse de la Clinique ESSAADA, postes alignés équipés de générateurs et lits inclinables",
+        "label": "Salle d'hémodialyse",
+        "caption": "Vue large des postes de dialyse, lits 3 positions et générateurs.",
+        "tag": "Vue intérieure"
+      },
+      "reception": {
+        "alt": "Hall d'accueil de la Clinique ESSAADA avec comptoir de réception, escaliers en marbre et lustre",
+        "label": "Accueil & réception",
+        "caption": "Espace d'accueil, circuit d'admission, signalétique.",
+        "tag": "Entrée"
+      }
+    },
+    "welcome": {
+      "eyebrow": "Mot d'accueil",
+      "title": "Un établissement de proximité",
+      "intro": "Créée pour accueillir les patients atteints d'insuffisance rénale à tous les stades de la maladie, la Clinique ESSAADA place l'écoute et la rigueur au cœur de chaque séance.",
+      "q1": "Nous vous souhaitons la bienvenue et vous remercions de la confiance que vous nous accordez.",
+      "q2": "Notre équipe médicale et l'ensemble du personnel mettent tout en œuvre pour vous apporter les meilleurs soins et rendre chacune de vos venues aussi confortable que possible.",
+      "q3": "Sur ce site, vous trouverez les renseignements qui vous permettront de vous familiariser avec la vie de la clinique. Et si vous avez la moindre question, un avis à partager, un conseil à demander — n'hésitez pas. Vos suggestions nous aident à mieux vous accompagner.",
+      "signature": "La Direction et les équipes de la Clinique ESSAADA"
+    },
+    "commitments": {
+      "eyebrow": "Nos engagements",
+      "title": "Quatre promesses, tenues à chaque séance",
+      "subtitle": "Ce ne sont pas des slogans — ce sont les quatre axes sur lesquels nous sommes évalués et sur lesquels nous nous engageons.",
+      "items": {
+        "professionals": {
+          "title": "Des professionnels de santé à votre service",
+          "text": "Néphrologue, infirmiers spécialisés, personnel d'accompagnement — une équipe pluridisciplinaire formée à la prise en charge des patients dialysés."
+        },
+        "equipmentManaged": {
+          "title": "Matériel géré selon normes qualité & sécurité",
+          "text": "Installation, maintenance, traçabilité complète. Récupération du matériel et des déchets d'activité de soins (DASRI) selon les protocoles."
+        },
+        "globalApproach": {
+          "title": "Approche globale et personnalisée",
+          "text": "Formation, dossier de soins personnalisé, prise en charge des formalités administratives. Chaque patient est suivi comme un dossier unique, pas comme un numéro."
+        },
+        "prescribers": {
+          "title": "Engagement envers les médecins prescripteurs",
+          "text": "Retour d'information régulier au médecin traitant, collaboration permanente avec les professionnels de santé référents. La continuité des soins est un engagement."
+        }
+      }
+    },
+    "visit": {
+      "eyebrow": "Sans engagement",
+      "title": "Venez visiter le centre avant votre première séance",
+      "p1": "Avant d'engager votre parcours chez nous, nous vous invitons — vous et un proche — à découvrir le centre. Rencontre avec un néphrologue, visite de la salle de dialyse, explication du déroulé d'une séance, questions libres.",
+      "p2": "<strong>Sans engagement, sans frais.</strong> Une trentaine de minutes qui changent beaucoup — surtout si c'est votre proche qui s'inquiète.",
+      "cardTitle": "Organiser votre visite",
+      "cardText": "Appelez-nous ou envoyez un message WhatsApp — nous vous proposons un créneau sous 48h ouvrées.",
+      "requestCta": "Demander une visite",
+      "whatsappMessage": "Bonjour, je souhaite visiter la Clinique ESSAADA."
+    }
+  },
+  "compositionCorporelle": {
+    "meta": {
+      "title": "Mesure du poids sec & hydratation · Bio-impédance",
+      "description": "Bio-impédance multi-fréquence (BIS) : mesure objective du poids sec, de l'hydratation et de la composition corporelle. Un outil de précision pour personnaliser chaque séance d'hémodialyse à la Clinique ESSAADA, Sidi Bel Abbès.",
+      "ogTitle": "Mesure précise du poids sec & hydratation — Clinique ESSAADA",
+      "ogDescription": "Bio-impédance multi-fréquence : un outil de précision pour ajuster votre poids sec et suivre votre composition corporelle, intégré au protocole de dialyse."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "center": "Le centre",
+      "current": "Mesure du poids sec & hydratation"
+    },
+    "hero": {
+      "eyebrow": "Plateau technique",
+      "title": "Mesurer précisément votre poids sec et votre hydratation",
+      "subtitle": "Bio-impédance multi-fréquence — la même technologie de mesure qu'en centre néphrologique européen, intégrée à votre suivi de dialyse.",
+      "photoAlt": "Bodystat Multiscan 5000 — analyseur médical de composition corporelle par bio-impédance multi-fréquence, écran tactile montrant le menu New Test / Recall Data / Options / Information",
+      "photoTag": "Bio-impédance multi-fréquence"
+    },
+    "why": {
+      "eyebrow": "Pourquoi cette mesure",
+      "title": "Aller au-delà du simple pèse-personne",
+      "p1": "En hémodialyse, le poids n'est qu'une partie de l'histoire. Ce qui compte vraiment, c'est la <strong>répartition</strong> entre l'eau, la masse maigre et la masse grasse. Une balance ordinaire ne fait pas cette différence.",
+      "p2": "La <strong>bio-impédance multi-fréquence (BIS)</strong> envoie un courant électrique imperceptible à plusieurs fréquences à travers votre corps. Selon la fréquence, ce courant traverse plus ou moins les membranes cellulaires — ce qui permet de séparer l'eau totale, l'eau intracellulaire, l'eau extracellulaire, la masse maigre et la masse grasse.",
+      "p3": "C'est un outil <strong>complémentaire</strong> de l'évaluation clinique du néphrologue. Il ne remplace pas son jugement — il l'enrichit avec des données objectives, suivies dans le temps."
+    },
+    "device": {
+      "title": "L'appareil utilisé",
+      "item1": "<strong>Bodystat Multiscan 5000</strong> — dispositif médical CE",
+      "item2": "Bio-impédance à 6 fréquences (5 à 1000 kHz)",
+      "item3": "Mesure non invasive, indolore, deux minutes",
+      "item4": "Lecture par votre néphrologue",
+      "note": "La bio-impédance multi-fréquence est utilisée en routine dans certains centres néphrologiques européens. Elle reste un équipement de niveau supérieur, encore peu répandu en Algérie."
+    },
+    "pillars": {
+      "eyebrow": "À quoi ça sert pour vous",
+      "title": "Trois apports concrets pour votre suivi",
+      "subtitle": "Ce que cet outil permet à votre néphrologue de faire mieux — et ce qu'il ne prétend pas faire.",
+      "drySetting": {
+        "title": "Ajuster le poids sec",
+        "text": "La mesure objective de l'eau corporelle (totale, intracellulaire, extracellulaire) aide votre néphrologue à affiner votre poids sec, au-delà de la seule évaluation clinique. Objectif : limiter les hypotensions per-dialyse et la surcharge entre deux séances."
+      },
+      "bodyComposition": {
+        "title": "Suivre la composition corporelle",
+        "text": "Masse maigre, masse musculaire squelettique, masse grasse — suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale."
+      },
+      "phaseAngle": {
+        "title": "Lire l'angle de phase",
+        "text": "L'angle de phase reflète l'intégrité de vos cellules. Marqueur reconnu dans la littérature néphrologique, il enrichit l'évaluation nutritionnelle et l'état général du patient dialysé."
+      }
+    },
+    "steps": {
+      "eyebrow": "Comment ça se passe",
+      "title": "Une mesure intégrée à votre venue, en quatre temps",
+      "subtitle": "Pas de rendez-vous séparé : la mesure s'effectue avant ou après une séance, dans le service.",
+      "setup": {
+        "title": "Installation",
+        "text": "Vous êtes allongé·e confortablement, habillé·e. Pas besoin de jeûne, pas d'injection."
+      },
+      "electrodes": {
+        "title": "Pose des électrodes",
+        "text": "Quatre électrodes adhésives (deux à la main, deux au pied), comme un ECG. Indolore."
+      },
+      "measurement": {
+        "title": "Mesure",
+        "text": "Le dispositif envoie un courant imperceptible à plusieurs fréquences (5 à 1000 kHz). Durée : environ deux minutes."
+      },
+      "reading": {
+        "title": "Lecture & décision",
+        "text": "Le néphrologue interprète les résultats avec vous, et ajuste si besoin votre prescription de dialyse."
+      }
+    },
+    "report": {
+      "eyebrow": "Aperçu d'un rapport",
+      "title": "À quoi ressemble le rapport remis à votre néphrologue",
+      "subtitle": "Chaque indicateur est positionné sur une échelle visuelle (rouge / orange / vert) qui montre où vous vous situez par rapport aux normes. Le néphrologue commente chaque zone avec vous.",
+      "alt1": "Rapport Bodystat — résultats de l'analyse de l'eau corporelle (TBW, ICW, ECW, OHY) et de la composition (poids, masse grasse, masse maigre, masse musculaire), avec barres colorées rouge / orange / vert positionnant chaque valeur par rapport aux normes.",
+      "caption1": "Page 1 — Hydratation & composition corporelle",
+      "alt2": "Rapport Bodystat — santé cellulaire (angle de phase, capacitance membranaire), métabolisme de base, mesures d'impédance multi-fréquence et conclusion synthétique du rapport.",
+      "caption2": "Page 2 — Santé cellulaire & conclusion",
+      "disclaimer": "Exemple de rapport — données anonymisées. Votre rapport est toujours commenté par votre néphrologue, jamais remis brut sans interprétation."
+    },
+    "when": {
+      "eyebrow": "Pour qui, et quand",
+      "title": "Trois moments où cette mesure prend tout son sens",
+      "firstSession": {
+        "title": "À votre première séance",
+        "text": "Pour établir un point de départ clair : poids sec initial, état d'hydratation, composition corporelle de référence."
+      },
+      "regularFollowUp": {
+        "title": "En suivi régulier",
+        "text": "Mesures périodiques pour réajuster votre poids sec et détecter précocement une dénutrition ou une fonte musculaire."
+      },
+      "visitingPatients": {
+        "title": "Patients de passage",
+        "text": "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge — sans surcoût pour les affiliés CNAS / CASNOS."
+      }
+    },
+    "honesty": {
+      "eyebrow": "Honnêteté médicale",
+      "title": "Ce que cet outil fait — et ne fait pas",
+      "doesTitle": "Ce qu'il fait",
+      "does1": "Aide à <strong>ajuster</strong> le poids sec, en complément du jugement clinique",
+      "does2": "Suit la <strong>composition corporelle</strong> dans le temps",
+      "does3": "Repère précocement une <strong>fonte musculaire</strong> ou une dénutrition",
+      "does4": "Fournit l'<strong>angle de phase</strong>, marqueur d'intégrité cellulaire",
+      "doesNotTitle": "Ce qu'il ne fait pas",
+      "doesNot1": "Il ne <strong>détermine pas</strong> seul votre poids sec — il aide votre médecin à le faire",
+      "doesNot2": "Il ne <strong>diagnostique pas</strong> à lui seul une dénutrition",
+      "doesNot3": "Il ne <strong>remplace pas</strong> les bilans biologiques ni l'examen clinique",
+      "doesNot4": "Il ne mesure ni cancer, ni maladie cardiaque — il n'est pas un dépistage",
+      "note": "La bio-impédance est un outil d'aide à la décision médicale. L'interprétation relève du néphrologue, qui l'intègre à votre dossier clinique."
+    },
+    "partOf": {
+      "title": "Cette mesure fait-elle partie de mon suivi ?",
+      "text": "Si vous êtes patient·e à la Clinique ESSAADA ou si vous préparez un séjour de dialyse, parlez-en à votre néphrologue lors de la prochaine consultation. Nous vous expliquerons quand et comment l'utiliser dans votre cas.",
+      "cta": "Voir le service hémodialyse"
+    },
+    "footerCta": {
+      "eyebrow": "Une question médicale",
+      "title": "Une question sur votre suivi ou cette mesure ?",
+      "subtitle": "Notre équipe néphrologique répond en consultation, par téléphone ou via WhatsApp — du samedi au jeudi.",
+      "waMessage": "Bonjour, j'aimerais en savoir plus sur la mesure de la composition corporelle à la Clinique ESSAADA."
+    }
+  },
+  "equipementHygiene": {
+    "meta": {
+      "title": "Équipement & hygiène · Transparence technique",
+      "description": "Générateurs, traitement d'eau en 5 étapes, osmose double passage, dialyseurs à usage unique, protocoles d'hygiène. La preuve technique derrière votre séance de dialyse à Sidi Bel Abbès.",
+      "ogTitle": "Équipement & hygiène — Clinique ESSAADA",
+      "ogDescription": "La qualité de votre dialyse commence par l'eau et le matériel. Schéma traitement d'eau, marque des générateurs, protocoles d'hygiène — toute la transparence technique."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "center": "Le centre",
+      "equipment": "Équipement & hygiène"
+    },
+    "hero": {
+      "eyebrow": "Transparence technique",
+      "title": "La qualité de votre dialyse commence par l'eau et le matériel",
+      "subtitle": "Une séance d'hémodialyse met votre sang en contact avec environ 120 litres d'eau traitée. À ce volume, chaque détail compte. Voici ce que nous mettons en œuvre, sans simplification.",
+      "photoAlt": "Générateur de dialyse SWS-4000A en fonctionnement à la Clinique ESSAADA, écran affichant les paramètres de séance",
+      "photoLabel": "Plateau technique",
+      "photoTag": "Générateur en séance"
+    },
+    "generators": {
+      "eyebrow": "Générateurs de dialyse",
+      "title": "{lits} lits, un générateur par poste",
+      "subtitle": "Chaque poste de dialyse dispose de son propre générateur, avec traçabilité des paramètres de séance.",
+      "brand": {
+        "title": "Marque et modèle",
+        "text": "Générateurs neufs.",
+        "note": "[Marque et modèle : informations techniques détaillées communiquées sur demande.]"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "text": "Contrôle technique préventif régulier par prestataire agréé, avec traçabilité des interventions poste par poste. Un technicien biomédical est présent pendant les séances."
+      },
+      "traceability": {
+        "title": "Traçabilité",
+        "text": "Paramètres de chaque séance enregistrés — pression, débits, conductivité, durée effective de dialyse."
+      }
+    },
+    "water": {
+      "eyebrow": "Traitement de l'eau",
+      "title": "Cinq étapes, une eau ultrapure",
+      "subtitle": "L'eau du réseau passe par une chaîne de traitement avant d'entrer dans le générateur. Réseau de distribution bouclé, stérilisable, sans bras morts.",
+      "steps": {
+        "step1": {
+          "title": "Filtre à sable",
+          "text": "Retient les particules en suspension (sable, boues, résidus)."
+        },
+        "step2": {
+          "title": "Adoucisseur",
+          "text": "Élimine le calcium et le magnésium qui entartreraient les membranes."
+        },
+        "step3": {
+          "title": "Filtre à charbon actif",
+          "text": "Capte le chlore et ses dérivés, toxiques pour le sang."
+        },
+        "step4": {
+          "title": "Microfiltration 0,2 μm",
+          "text": "Barrière physique contre les bactéries résiduelles."
+        },
+        "step5": {
+          "title": "Osmose inverse double passage",
+          "text": "Étape finale qui produit une eau ultrapure aux normes de la dialyse."
+        }
+      },
+      "controls": {
+        "label": "Contrôles réguliers :",
+        "text": "prélèvements trimestriels — bactériologiques et biochimiques. Résultats disponibles sur demande au secrétariat médical."
+      }
+    },
+    "gallery": {
+      "eyebrow": "Galerie technique",
+      "title": "Ce que voit notre équipe biomédicale",
+      "subtitle": "Quelques vues du plateau technique. Reportage complet à venir.",
+      "generator": {
+        "alt": "Générateur de dialyse SWS-4000A en séance — écran affichant les paramètres en temps réel",
+        "label": "Générateur — panneau",
+        "caption": "Interface de contrôle — paramètres de séance affichés en temps réel.",
+        "tag": "Détail"
+      },
+      "osmosis": {
+        "alt": "Système d'osmose double passage Molecular Σ-H₂O à la Clinique ESSAADA — réservoirs inox, filtres et contrôle Siemens pour l'eau ultrapure de dialyse",
+        "label": "Osmose double passage",
+        "caption": "Cuves inox, pression contrôlée, production d'eau ultrapure.",
+        "tag": "Traitement eau"
+      },
+      "station": {
+        "alt": "Postes de dialyse propres prêts pour les patients — lits préparés et générateurs en attente",
+        "label": "Postes dialyse",
+        "caption": "Bionettoyage entre chaque patient, matériel à usage unique systématique.",
+        "tag": "Hygiène"
+      }
+    },
+    "singleUse": {
+      "eyebrow": "Dialyseurs & circuits",
+      "title": "Usage unique strict",
+      "subtitle": "Aucune réutilisation de matériel, conformément aux standards internationaux actuels.",
+      "items": {
+        "dialyzer": {
+          "title": "Dialyseur (le filtre)",
+          "text": "Biocompatible, membrane synthétique haute perméabilité, à usage unique strict."
+        },
+        "bloodLines": {
+          "title": "Lignes de sang & aiguilles",
+          "text": "Tubulures et aiguilles de fistule à usage unique. Aucune réutilisation, conformément aux standards internationaux."
+        }
+      },
+      "diasporaNote": "C'est un point important pour nos patients de la diaspora, habitués à ce standard en Europe et en Amérique du Nord."
+    },
+    "safety": {
+      "eyebrow": "Protocoles de sécurité",
+      "title": "Protéger chaque patient à chaque séance",
+      "items": {
+        "screening": "Dépistage à l'admission : sérologies HVB, HVC, VIH systématiques",
+        "isolation": "Isolation stricte des patients porteurs (salle ou poste dédié, circuit de soins fermé)",
+        "revaccination": "Revaccination HVB proposée si sérologie protectrice insuffisante",
+        "traceability": "Traçabilité complète : chaque séance, chaque dialyseur, chaque paramètre enregistré par patient"
+      }
+    },
+    "staff": {
+      "eyebrow": "Ratio soignants",
+      "title": "Une équipe dense et présente pendant toute la séance",
+      "nurses": {
+        "title": "Infirmiers",
+        "text": "Présents en continu, formés à la dialyse et aux protocoles d'urgence."
+      },
+      "nephrologist": {
+        "title": "Néphrologue",
+        "text": "Présence continue pendant toute la durée des séances — pas une astreinte téléphonique."
+      },
+      "biomedical": {
+        "title": "Technicien biomédical",
+        "text": "Présent sur site pour intervention immédiate en cas d'alarme générateur."
+      },
+      "hygiene": {
+        "title": "Hygiène",
+        "text": "Aides-soignants et agent d'hygiène dédiés à chaque salle, bionettoyage entre chaque patient."
+      }
+    },
+    "quality": {
+      "eyebrow": "Contrôle qualité",
+      "title": "Vérifier, mesurer, améliorer — en continu",
+      "items": {
+        "water": {
+          "title": "Analyses d'eau",
+          "text": "Prélèvements trimestriels — bactériologiques et biochimiques."
+        },
+        "ktv": {
+          "title": "Efficacité de dialyse (Kt/V)",
+          "text": "Mesurée régulièrement et discutée avec vous lors de la consultation de suivi."
+        },
+        "morbidity": {
+          "title": "Revue de morbidité",
+          "text": "Staff médical hebdomadaire — revue des incidents, des paramètres, des cas délicats."
+        },
+        "accreditation": {
+          "title": "Agrément Ministère de la Santé",
+          "text": "Agrément Ministère de la Santé, conventions CNAS et CASNOS."
+        }
+      }
+    },
+    "bioimpedance": {
+      "eyebrow": "Aller plus loin",
+      "title": "Mesure de précision du poids sec et de l'hydratation",
+      "subtitle": "Au-delà du dialyseur et du générateur, nous disposons d'un dispositif de bio-impédance multi-fréquence pour objectiver votre composition corporelle — un outil de niveau supérieur, courant dans certains centres européens.",
+      "deviceText": "Bio-impédance médicale à 6 fréquences. Aide à l'ajustement du poids sec, suivi de la masse maigre / masse grasse, mesure de l'angle de phase. Mesure non invasive, deux minutes, intégrée à votre suivi.",
+      "cta": "Découvrir cette mesure"
+    },
+    "footerCta": {
+      "eyebrow": "Questions techniques",
+      "title": "Une question technique précise ?",
+      "subtitle": "Qualité d'eau, type de dialyseur, résultats de vos dernières analyses — notre équipe médicale répond en consultation ou par téléphone.",
+      "waMessage": "Bonjour, j'aimerais plus d'informations sur vos équipements et protocoles d'hygiène."
+    }
+  },
+  "patientsDePassage": {
+    "meta": {
+      "title": "Patients de passage · Dialyse vacances à Sidi Bel Abbès",
+      "description": "Diaspora algérienne ou résident en voyage : dialysez en toute sérénité pendant votre séjour à Sidi Bel Abbès. Confirmation sous 72h ouvrées, tiers-payant CNAS/CASNOS, accompagnement personnalisé.",
+      "ogTitle": "Patients de passage — Clinique ESSAADA",
+      "ogDescription": "Dialyse vacances à Sidi Bel Abbès. Confirmation sous 72h ouvrées. Conventionnée CNAS et CASNOS."
+    },
+    "hero": {
+      "eyebrow": "Patients de passage",
+      "title": "Dialysez en toute sérénité pendant votre séjour à Sidi Bel Abbès",
+      "subtitle": "Diaspora algérienne en vacances, résident en voyage, patient en transfert : nous accueillons les patients dialysés de passage. Confirmation de votre créneau sous 72h ouvrées.",
+      "photoAlt": "Façade extérieure de la Clinique ESSAADA à Sidi Bel Abbès — enseigne « CLINIQUE ESSAADA », rampe d'accès patients et entrée principale",
+      "photoLabel": "Accueil patients de passage",
+      "photoTag": "Diaspora & voyageurs"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Patients de passage"
+    },
+    "franceCard": {
+      "eyebrow": "Diaspora France",
+      "title": "Vous rentrez de France ? Guide CPAM complet",
+      "text": "Accord préalable, formulaires SE 352-05, plafond 86,95 €/séance, factures acquittées — toutes les démarches, étape par étape."
+    },
+    "steps": {
+      "eyebrow": "Comment ça marche",
+      "title": "Trois étapes, une confirmation sous 72h",
+      "subtitle": "Nous avons conçu un parcours sans friction pour que votre séjour commence détendu.",
+      "step1": {
+        "title": "Nous contacter",
+        "text": "Envoyez-nous un message WhatsApp ou un email avec vos dates de séjour, votre destination en Algérie et les coordonnées de votre néphrologue traitant."
+      },
+      "step2": {
+        "title": "Transmission médicale",
+        "text": "Vous nous transmettez votre dossier (dernier bilan, sérologies, ordonnance). Notre néphrologue l'étudie et prépare votre séjour dialyse."
+      },
+      "step3": {
+        "title": "Confirmation sous 72h",
+        "text": "Réponse sous 72h ouvrées avec votre créneau confirmé, les infos pratiques pour l'arrivée et le contact WhatsApp direct de l'équipe."
+      },
+      "whatsappCta": "Démarrer sur WhatsApp",
+      "whatsappMessage": "Bonjour, je suis patient dialysé et je souhaite venir en séjour à Sidi Bel Abbès. Voici mes dates approximatives : "
+    },
+    "docs": {
+      "eyebrow": "Documents à préparer",
+      "title": "Ce dont nous avons besoin pour valider votre créneau",
+      "items": {
+        "doc1": "Dernier bilan biologique — FNS + Biochimie (moins d'1 mois)",
+        "doc2": "Sérologies à jour : hépatites B, C et VIH de moins de 6 mois",
+        "doc3": "Ordonnance de dialyse signée par votre néphrologue traitant",
+        "doc4": "Coordonnées de votre néphrologue traitant (pour liaison)",
+        "doc5": "Pièce d'identité (passeport ou CIN)",
+        "doc6": "Attestation CNAS, CASNOS ou mutuelle complémentaire"
+      },
+      "deadlineLabel": "Délai conseillé :",
+      "deadlineText": "contactez-nous au minimum 1 mois avant votre séjour. Les réservations de dernière minute restent possibles mais ne sont pas conseillées — elles dépendent de la disponibilité d'un poste."
+    },
+    "cost": {
+      "eyebrow": "Combien ça coûte",
+      "title": "Prise en charge transparente",
+      "affiliatedLabel": "Si vous êtes affilié CNAS ou CASNOS",
+      "affiliatedText": "— vos séances sont prises en charge intégralement en tiers-payant. Aucune avance de frais. Apportez simplement votre carte Chifa et votre attestation.",
+      "diasporaLabel": "Si vous êtes de la diaspora avec une mutuelle européenne",
+      "diasporaText": "— nous vous communiquons un devis clair avant votre séjour. Beaucoup de mutuelles françaises, belges ou canadiennes remboursent la dialyse à l'étranger sur justificatif.",
+      "unaffiliatedLabel": "Si vous êtes non affilié",
+      "unaffiliatedText": "— tarif transparent communiqué par écrit avant votre arrivée. Pas de surprise à la sortie.",
+      "quoteCta": "Demander un devis personnalisé"
+    },
+    "medical": {
+      "eyebrow": "Suivi médical pendant votre séjour",
+      "title": "Le même standard de précision qu'en centre européen",
+      "subtitle": "Nous accueillons régulièrement la diaspora habituée aux protocoles français. Voici ce qui ne change pas — et ce qui peut s'ajouter à votre suivi pendant les 2 à 4 semaines de séjour.",
+      "cardTitle": "Mesure du poids sec & hydratation par bio-impédance",
+      "cardText": "Pour les séjours de deux semaines ou plus, une mesure de bio-impédance multi-fréquence peut être proposée pour personnaliser votre prescription pendant votre séjour. Mesure non invasive, deux minutes, intégrée à votre venue.",
+      "cardCta": "Comprendre cette mesure"
+    },
+    "onsite": {
+      "eyebrow": "Sur place",
+      "title": "Tout ce qu'il faut savoir pour votre séjour",
+      "subtitle": "Logistique, accès, hébergement, pharmacies — nous vous communiquons la liste détaillée à la confirmation.",
+      "airport": {
+        "title": "Depuis l'aéroport",
+        "text": "Aéroport Oran Es-Senia à environ 1h de la clinique. Service de taxi ou location de voiture sur place. Nous pouvons vous recommander des partenaires."
+      },
+      "lodging": {
+        "title": "Hébergement",
+        "text": "Sidi Bel Abbès dispose d'hôtels à courte distance de la clinique. Liste fournie à la confirmation de votre créneau."
+      },
+      "pharmacy": {
+        "title": "Pharmacies",
+        "text": "Plusieurs pharmacies de garde à proximité immédiate. Apportez votre traitement pour la durée du séjour, avec ordonnance lisible."
+      },
+      "access": {
+        "title": "Accès clinique",
+        "text": "Places PMR près de l'entrée, accès direct ambulance. Chauffeur de taxi autorisé à vous attendre."
+      }
+    },
+    "finalCta": {
+      "title": "Prêt à organiser votre séjour dialyse ?",
+      "text": "Notre équipe secrétariat est joignable du samedi au jeudi, en français et en arabe. WhatsApp privilégié pour la diaspora.",
+      "whatsapp": "WhatsApp",
+      "whatsappMessage": "Bonjour, je suis patient dialysé et je souhaite organiser un séjour à Sidi Bel Abbès."
+    }
+  },
+  "depuisLaFrance": {
+    "meta": {
+      "title": "Je viens de France — prise en charge CPAM",
+      "description": "Dialysez en vacances à Sidi Bel Abbès, remboursement CPAM assuré. Étapes accord préalable, formulaires SE 352-05 I et II, plafond 86,95 €/séance. Accompagnement complet de la diaspora.",
+      "ogTitle": "Diaspora : dialyse en vacances à Sidi Bel Abbès, CPAM comprise",
+      "ogDescription": "Les 3 étapes pour faire rembourser votre dialyse par la CPAM : accord préalable, formulaires SE 352-05, factures acquittées. Clinique ESSAADA vous accompagne."
+    },
+    "hero": {
+      "eyebrow": "Diaspora France",
+      "title": "Dialyser en vacances à Sidi Bel Abbès, l'esprit tranquille",
+      "subtitle": "Vous rentrez revoir la famille, profiter du soleil, retrouver vos racines. Votre traitement ne doit pas vous en empêcher. Nous accompagnons chaque année des patients de la diaspora — avec le même sérieux qu'en France, et un accompagnement complet des démarches CPAM.",
+      "photoAlt": "Entrée principale de la Clinique ESSAADA — escalier en marbre, palmiers en pots, portes vitrées et garde-corps en fer forgé",
+      "photoLabel": "Diaspora — vacances dialyse",
+      "photoTag": "France → Sidi Bel Abbès"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "parent": "Patients de passage",
+      "current": "Je viens de France"
+    },
+    "anticipate": "<strong>Anticipez 6 à 8 semaines</strong> entre le début de vos démarches et votre départ. La CPAM ne traite pas les dossiers dans l'urgence, et aucune séance hors UE n'est remboursée sans accord préalable obtenu avant le départ.",
+    "steps": {
+      "eyebrow": "Avant votre départ",
+      "title": "Les 3 étapes CPAM",
+      "subtitle": "Un calendrier clair, des interlocuteurs connus. Nous vous accompagnons à chacune.",
+      "step1": {
+        "semaine": "Semaines 1 à 2",
+        "title": "Accord préalable CPAM",
+        "text": "Connectez-vous à votre compte ameli ou prenez rendez-vous avec votre caisse. Demandez un accord administratif de prise en charge pour dialyse hors UE. Sans cet accord obtenu avant le départ, aucun remboursement ne sera possible."
+      },
+      "step2": {
+        "semaine": "Semaines 2 à 4",
+        "title": "Formulaires SE 352-05 I et II",
+        "text": "Prévus par la convention bilatérale France-Algérie, à compléter avec votre néphrologue traitant (volet médical) et votre CPAM (volet administratif). Le I atteste de vos droits, le II formalise la demande de soins programmés."
+      },
+      "step3": {
+        "semaine": "Semaines 4 à 6",
+        "title": "Nous transmettre votre dossier",
+        "text": "Par email ou WhatsApp, au plus tard 3 semaines avant votre arrivée. Notre équipe médicale valide votre dossier sous 48h ouvrées et confirme vos créneaux."
+      }
+    },
+    "docs": {
+      "eyebrow": "Étape 3 détaillée",
+      "title": "Ce que nous attendons de votre néphrologue traitant",
+      "doc1": "Ordonnance de dialyse à jour (fréquence, durée, dialyseur, anticoagulation)",
+      "doc2": "Sérologies HBV, HCV, HIV datées de moins de 3 mois",
+      "doc3": "Dernier bilan sanguin complet",
+      "doc4": "Carnet de dialyse des 3 derniers mois",
+      "doc5": "Dernier Kt/V et poids sec de référence",
+      "doc6": "Copie de votre accord CPAM et des formulaires SE 352-05"
+    },
+    "onsite": {
+      "eyebrow": "Sur place à Sidi Bel Abbès",
+      "title": "Notre accompagnement, séance après séance",
+      "item1": "Accueil bilingue français / arabe / kabyle à chaque séance",
+      "item2": "Créneaux réservés aux patients de passage, adaptés à votre programme familial",
+      "item3": "Poste de dialyse individualisé, eau ultrapure conforme aux normes internationales",
+      "item4": "Transmission du compte-rendu à votre néphrologue en France à votre retour",
+      "item5": "Facture acquittée originale remise en main propre, conforme CPAM",
+      "item6": "Suivi téléphonique possible entre deux séances si besoin",
+      "disclaimer": "Toute adaptation du protocole reste sur validation de votre néphrologue référent."
+    },
+    "reimbursement": {
+      "eyebrow": "Au retour en France",
+      "title": "Le remboursement CPAM, mode d'emploi",
+      "capLabel": "Plafond CPAM 2026",
+      "item1": "Factures originales acquittées (pas de copies)",
+      "item2": "Preuve de paiement (reçu, relevé bancaire)",
+      "item3": "Médicaments et transport : non remboursés par la CPAM",
+      "item4": "Dépôt sur ameli.fr : Démarches → Frais de santé → Soins à l'étranger",
+      "mutuelle": "Votre mutuelle peut compléter le forfait — vérifiez avec elle avant le départ, avec notre devis nominatif."
+    },
+    "arrival": {
+      "eyebrow": "Arrivée en Algérie",
+      "title": "D'Oran à Sidi Bel Abbès — 80 km, environ 1 heure",
+      "subtitle": "L'aéroport d'arrivée principal est Oran Es-Senia (code ORN). L'autoroute A1 vous mène directement à Sidi Bel Abbès.",
+      "taxi": {
+        "title": "Taxi aéroport",
+        "text": "Ordre de grandeur 4 000 — 5 000 DZD. À négocier au forfait avant le départ."
+      },
+      "shuttle": {
+        "title": "Navette sur demande",
+        "text": "Organisation possible si vous nous prévenez au moins 48h à l'avance. Tarif communiqué avec le devis."
+      },
+      "car": {
+        "title": "Location de voiture",
+        "text": "Disponible à l'aéroport d'Oran si vous préférez l'autonomie pendant votre séjour."
+      }
+    },
+    "faq": {
+      "eyebrow": "FAQ diaspora",
+      "title": "Les questions concrètes qu'on se pose avant de venir",
+      "q1": {
+        "question": "Puis-je dialyser chez vous si je n'ai pas encore l'accord CPAM ?",
+        "answer": "Oui, vous pouvez être pris en charge, mais aucun remboursement ne sera possible au retour sans l'accord préalable obtenu avant le départ. Nous vous recommandons vivement d'attendre la réponse de la CPAM avant de finaliser votre voyage."
+      },
+      "q2": {
+        "question": "Ma mutuelle prend-elle en charge le dépassement de 86,95 € ?",
+        "answer": "Cela dépend de votre contrat. Beaucoup de mutuelles complètent le forfait CPAM pour les soins à l'étranger. Contactez-les avant le départ avec votre devis — nous en fournissons un nominatif après étude du dossier."
+      },
+      "q3": {
+        "question": "Les sérologies et documents doivent-ils être traduits ?",
+        "answer": "Non. Les documents en français sont acceptés sans traduction. Les comptes rendus en anglais le sont également."
+      },
+      "q4": {
+        "question": "Vos créneaux sont-ils flexibles si mon vol est retardé ?",
+        "answer": "Oui. Prévenez-nous dès que possible par WhatsApp : nous décalons votre séance sur le créneau disponible le plus proche, sans avance de frais supplémentaire."
+      },
+      "q5": {
+        "question": "Comment régler la facture sur place ?",
+        "answer": "Une facture acquittée originale vous est systématiquement remise, au format exigé par la CPAM (détaillée, avec cachet, en français). Les moyens de paiement acceptés vous sont communiqués dans votre devis nominatif."
+      },
+      "q6": {
+        "question": "Puis-je venir en urgence sans préavis ?",
+        "answer": "Nous privilégions les dossiers préparés en amont pour votre sécurité et pour l'organisation du service. En cas d'urgence vitale pendant votre séjour, contactez le 14 (SAMU Algérie). Nous faisons notre possible pour vous accueillir dès que votre état est stabilisé."
+      },
+      "q7": {
+        "question": "Puis-je dialyser à domicile pendant mon séjour ?",
+        "answer": "La dialyse à domicile n'est pas proposée. Nous assurons l'hémodialyse en centre, dans des conditions sécurisées et encadrées, sur validation de votre néphrologue référent."
+      }
+    },
+    "cta": {
+      "eyebrow": "Organiser votre venue",
+      "title": "Prêt à organiser votre séjour dialyse ?",
+      "subtitle": "Notre équipe répond en français, de la France comme d'Algérie. WhatsApp privilégié pour la diaspora — pas d'appel international à votre charge.",
+      "primaryCtaLabel": "Réserver mon passage",
+      "waMessage": "Bonjour, je dialyse en France et je souhaite organiser un séjour dialyse avec prise en charge CPAM."
+    }
+  },
+  "ramadan": {
+    "meta": {
+      "title": "Ramadan & dialyse · Créneaux adaptés",
+      "description": "Créneaux d'hémodialyse adaptés au Ramadan à Sidi Bel Abbès : première séance à 4h du matin (pas de séance après f'tour, pas de créneau nocturne), en concertation avec votre néphrologue.",
+      "ogTitle": "Ramadan & dialyse — Clinique ESSAADA",
+      "ogDescription": "Pendant le Ramadan, nos créneaux sont adaptés en concertation avec votre néphrologue."
+    },
+    "hero": {
+      "eyebrow": "Ramadan & dialyse",
+      "title": "Vivre le Ramadan en dialyse, avec sérénité",
+      "subtitle": "Pendant le Ramadan, nos créneaux sont adaptés en concertation avec votre néphrologue. Que vous jeûniez ou non, nous organisons votre suivi pour respecter votre choix et votre santé.",
+      "photoAlt": "Salle d'hémodialyse de la Clinique ESSAADA à Sidi Bel Abbès — vue large des postes alignés équipés de générateurs et lits inclinables, prête pour les séances Ramadan adaptées",
+      "photoLabel": "Séances Ramadan",
+      "photoTag": "Créneaux adaptés"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Ramadan & dialyse"
+    },
+    "warning": {
+      "title": "Important — décision médicale individualisée",
+      "body": "Le jeûne du Ramadan en dialyse <strong>n'est pas recommandé pour tous les patients</strong>. Prenez rendez-vous avec votre néphrologue <strong>avant</strong> le début du Ramadan pour une évaluation personnalisée. Aucune information sur cette page ne remplace un avis médical."
+    },
+    "principles": {
+      "eyebrow": "Nos principes",
+      "title": "Trois engagements pendant le Ramadan",
+      "items": {
+        "decision": {
+          "title": "Décision médicale individualisée",
+          "text": "Le jeûne pendant le Ramadan est une décision qui appartient à vous — en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi."
+        },
+        "premiere-seance": {
+          "title": "Première séance à 4h du matin",
+          "text": "Pendant le Ramadan, nous ouvrons une seule série de créneaux avec une première séance à 4h du matin, avant s'hour. Pas de séance après f'tour, pas de créneau nocturne. Le planning est ajusté en concertation avec votre néphrologue."
+        },
+        "vigilance": {
+          "title": "Vigilance renforcée",
+          "text": "Le personnel est sensibilisé : surveillance accrue de la tension, de l'hydratation, du bilan entrée-sortie. Tout signe d'alerte = rupture du jeûne recommandée par le médecin."
+        }
+      }
+    },
+    "schedule": {
+      "eyebrow": "Planning type",
+      "title": "Créneaux pendant le Ramadan",
+      "intro": "Le planning précis est communiqué environ 3 semaines avant le début du Ramadan.",
+      "point1": "<strong>Première séance à 4h du matin</strong> — avant s'hour, pour l'ensemble des patients (jeûneurs ou non).",
+      "point2": "<strong>Pas de séance après f'tour</strong> — ni de créneau nocturne. Les créneaux suivants de la journée restent alignés sur la cadence habituelle.",
+      "ctaTitle": "Prendre rendez-vous avant le Ramadan",
+      "ctaBody": "Nous recommandons de consulter votre néphrologue <strong>au moins 2 semaines avant</strong> le début du Ramadan pour évaluer votre aptitude au jeûne, ajuster vos médicaments et programmer vos créneaux adaptés.",
+      "contact": "Ou contactez-nous directement au <phone></phone> ou sur <whatsapp></whatsapp>.",
+      "whatsappMessage": "Bonjour, je souhaite adapter mes séances pendant le Ramadan."
+    },
+    "nutrition": {
+      "eyebrow": "Alimentation",
+      "title": "Bien s'alimenter pendant le Ramadan",
+      "intro": "Si votre néphrologue vous autorise à jeûner, l'organisation de vos repas devient déterminante. La règle d'or : trois repas structurés plutôt que du grignotage continu, une vigilance particulière sur l'hydratation et le sel, et des choix mesurés sur les douceurs orientales.",
+      "items": {
+        "repas": {
+          "title": "Trois repas structurés",
+          "text": "F'tour, dîner léger en soirée, s'hour consistant. Évitez le grignotage continu : c'est ce qui protège votre glycémie et votre prise de poids interdialytique."
+        },
+        "hydratation": {
+          "title": "Hydratation maîtrisée",
+          "text": "Votre quota hydrique reste le même qu'en dehors du Ramadan. Répartissez-le entre f'tour et s'hour. Pas de sodas, peu d'aliments très salés."
+        },
+        "dattes": {
+          "title": "Dattes et douceurs dosées",
+          "text": "Deux dattes au f'tour, une chorba équilibrée, une demi-portion de pâtisserie plutôt qu'un défilé. Attention au potassium des dattes et au phosphore des douceurs."
+        },
+        "rompre": {
+          "title": "Rompre sans hésiter",
+          "text": "Fatigue inhabituelle, malaise, signe d'hypo ou d'hyperglycémie : rompez immédiatement. La loi religieuse l'autorise pour raisons médicales."
+        }
+      }
+    },
+    "guide": {
+      "title": "Le guide complet",
+      "body": "F'tour, s'hour, dattes, chorba, pâtisseries, hydratation, surveillance de la glycémie : retrouvez tous les conseils pratiques dans notre guide dédié.",
+      "cta": "Lire le guide complet"
+    },
+    "faq": {
+      "eyebrow": "FAQ Ramadan",
+      "title": "Questions fréquentes",
+      "items": {
+        "jeuner": {
+          "q": "Puis-je jeûner pendant la dialyse ?",
+          "a": "Cette décision appartient à votre néphrologue. Pour beaucoup de patients dialysés, le jeûne reste possible à condition d'un suivi rapproché. D'autres ne peuvent pas jeûner pour des raisons médicales. Venez en consulter avant le Ramadan pour faire le point."
+        },
+        "medicaments": {
+          "q": "Que faire pour mes médicaments ?",
+          "a": "Votre néphrologue adapte la prise (avant f'tour, entre f'tour et s'hour, ou après s'hour selon le médicament). Ne modifiez jamais une prescription de votre propre initiative. Listez tous vos traitements et parlons-en ensemble."
+        },
+        "hydratation": {
+          "q": "Comment gérer l'hydratation et la prise de poids ?",
+          "a": "C'est le point critique. Entre f'tour et s'hour, respecter strictement votre volume de boisson autorisé (généralement 500 ml + diurèse résiduelle). Évitez les aliments très salés à la rupture. La prise de poids interdialytique reste la limite à ne pas dépasser."
+        },
+        "malaise": {
+          "q": "Que faire en cas de malaise ou de baisse de tension ?",
+          "a": "Rompez le jeûne immédiatement — la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche."
+        },
+        "cafe": {
+          "q": "Le café en séance est-il servi pendant le Ramadan ?",
+          "a": "La séance unique de 4h du matin a lieu avant s'hour, donc avant le jeûne. Le café peut être servi au moment du s'hour en fin de séance, selon votre souhait et votre état clinique."
+        }
+      }
+    },
+    "footerCta": {
+      "eyebrow": "Échangeons",
+      "title": "Vos questions méritent une réponse personnelle",
+      "subtitle": "Chaque patient est unique. Parlons-en ensemble — avant, pendant et après le Ramadan.",
+      "waMessage": "Bonjour, j'ai une question sur la dialyse pendant le Ramadan."
+    }
+  },
+  "comprendre": {
+    "meta": {
+      "title": "Comprendre l'insuffisance rénale — guide pédagogique",
+      "description": "Le rôle des reins, les signes à repérer, les 5 stades, qui se faire dépister, comment ralentir l'évolution. 10% des insuffisances rénales peuvent être évitées, 30% retardées de plusieurs années.",
+      "ogTitle": "Comprendre l'insuffisance rénale — Clinique ESSAADA",
+      "ogDescription": "Guide pédagogique sur la maladie rénale chronique : rôle des reins, signes, stades, dépistage, prévention."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Comprendre l'insuffisance rénale"
+    },
+    "hero": {
+      "eyebrow": "Guide pédagogique",
+      "title": "Comprendre l'insuffisance rénale",
+      "subtitle": "L'insuffisance rénale chronique est une maladie silencieuse. Repérée tôt, elle se ralentit, parfois considérablement. Voici, simplement, ce qu'il faut en savoir.",
+      "photoAlt": "Coupe anatomique d'un rein humain montrant le cortex en périphérie, la médulla avec les pyramides de Malpighi, les calices et le bassinet qui collectent l'urine, ainsi que l'artère et la veine rénales pénétrant au niveau du hile et l'uretère."
+    },
+    "intro": {
+      "disclaimer": "Cette page a une vocation informative. Elle ne remplace pas l'avis de votre médecin traitant ou de votre néphrologue, qui reste votre meilleur interlocuteur pour évaluer votre situation.",
+      "eyebrow": "En deux mots",
+      "title": "Pourquoi cette page",
+      "lead": "L'insuffisance rénale chronique s'installe doucement, souvent sans bruit, et beaucoup de personnes l'ignorent pendant des années. La bonne nouvelle, c'est qu'avec un <strong>simple bilan sanguin</strong> on peut la repérer tôt, et qu'il existe aujourd'hui de vrais leviers pour protéger ses reins, ralentir la maladie, et continuer à vivre pleinement."
+    },
+    "anatomie": {
+      "eyebrow": "Anatomie",
+      "title": "Le rôle de vos reins",
+      "p1": "Vous avez deux reins, situés dans le bas du dos, de chaque côté de la colonne vertébrale. Chacun pèse à peine <strong>160 grammes</strong> — à peu près la taille d'un gros haricot.",
+      "p2": "Imaginez-les comme <strong>deux filtres très fins</strong>. Jour et nuit, tout votre sang passe à travers eux pour y être nettoyé : ils retiennent ce qui est utile (protéines, globules), et laissent partir dans les urines ce dont le corps n'a plus besoin (eau en excès, sel, déchets comme l'urée et la créatinine).",
+      "p3": "Les reins font aussi autre chose : ils aident à <strong>réguler la tension</strong>, à <strong>garder des os solides</strong> et à <strong>fabriquer les globules rouges</strong>. Quand ils fonctionnent bien, on ne les sent pas — et c'est justement pour ça qu'il faut parfois penser à vérifier qu'ils vont bien."
+    },
+    "definition": {
+      "title": "L'insuffisance rénale chronique, qu'est-ce que c'est ?",
+      "p1": "Les reins sont composés de petits filtres microscopiques appelés <strong>néphrons</strong>. Quand certains sont abîmés durablement — par le diabète, l'hypertension, ou d'autres causes — ils ne se régénèrent pas. Le rein continue de fonctionner, mais un peu moins bien.",
+      "p2": "On parle d'insuffisance rénale chronique lorsque cette perte de fonction s'installe dans la durée (plus de trois mois). Elle est souvent <strong>indolore et progressive</strong>, ce qui explique qu'on la découvre fréquemment à l'occasion d'un bilan de routine. <strong>Plus elle est repérée tôt, plus on peut agir.</strong>"
+    },
+    "nephron": {
+      "imageAlt": "Schéma détaillé d'un néphron : à gauche le glomérule avec ses artérioles afférente et efférente entourées par la capsule de Bowman ; au centre les tubules — tube contourné proximal, anse de Henlé descendante puis ascendante, tube contourné distal ; à droite les canaux collecteurs cortical et médullaire.",
+      "caption": "Le néphron — l'unité microscopique de filtration. Chaque rein en contient environ un million.",
+      "eyebrow": "Zoom sur le néphron",
+      "title": "Un million de filtres microscopiques par rein",
+      "p1": "Chaque rein contient environ <strong>un million de néphrons</strong>, ces unités microscopiques qui filtrent votre sang en continu. Sur le schéma, on voit le <strong>glomérule</strong> — le filtre proprement dit, où le sang passe à travers une fine membrane — puis tout le système de tubules qui ajuste la composition de l'urine en récupérant ce qui doit l'être (eau, sels, glucose) et en laissant filer les déchets vers le canal collecteur.",
+      "p2": "Cette mécanique miniaturisée se répète <strong>un million de fois par rein</strong>. Tant qu'un nombre suffisant de néphrons fonctionne, le rein <strong>compense</strong> — c'est pour cela qu'on peut perdre une partie de sa fonction rénale sans rien sentir. Le piège : quand les premiers symptômes apparaissent, il reste souvent moins de 30 % de néphrons fonctionnels.",
+      "p3": "Comprendre le néphron, c'est comprendre pourquoi un <strong>simple bilan sanguin</strong> est si précieux : il mesure la créatinine, un déchet que les néphrons sains éliminent. Sa montée silencieuse dans le sang est le premier signal — bien avant que le corps ne se manifeste."
+    },
+    "signes": {
+      "eyebrow": "Les signes à repérer",
+      "title": "Quels symptômes doivent alerter ?",
+      "subtitle": "L'insuffisance rénale avance discrètement. Mais certains signaux peuvent mettre la puce à l'oreille.",
+      "debutTitle": "Au début, on peut remarquer",
+      "evolutionTitle": "Plus tard, peuvent s'ajouter",
+      "calloutTitle": "Bon à savoir",
+      "calloutBody": "Même à un stade avancé, avant la dialyse, on continue à uriner normalement. <em>L'absence d'urines n'est donc pas un critère.</em> Si plusieurs de ces signes vous concernent, parlez-en à votre médecin — ce n'est pas forcément les reins, mais ça vaut la peine de vérifier."
+    },
+    "signesDebut": [
+      "Une fatigue inhabituelle, qui apparaît dès un effort léger",
+      "Une perte d'appétit",
+      "Le besoin de se lever plusieurs fois la nuit pour uriner",
+      "Une tension qui monte, ou des gonflements (chevilles, visage)"
+    ],
+    "signesEvolution": [
+      "Troubles digestifs : dégoût pour la viande, nausées, vomissements",
+      "Un amincissement, une fatigue plus marquée",
+      "Des crampes ou des jambes agitées, surtout la nuit",
+      "Des démangeaisons, parfois intenses",
+      "Un sommeil perturbé"
+    ],
+    "stades": {
+      "eyebrow": "Les 5 stades",
+      "title": "Où se situe-t-on sur la carte ?",
+      "subtitle": "Les médecins évaluent le fonctionnement des reins grâce au débit de filtration glomérulaire (DFG), calculé à partir d'une simple prise de sang.",
+      "colStage": "Stade",
+      "colDescription": "Description",
+      "colDfg": "DFG (ml/min/1,73 m²)",
+      "stade1": "Fonction rénale normale",
+      "stade2": "Insuffisance rénale légère",
+      "stade3": "Insuffisance rénale modérée",
+      "stade4": "Insuffisance rénale sévère",
+      "stade5": "Insuffisance rénale terminale",
+      "note": "Au <strong>stade 5</strong>, un traitement de suppléance devient nécessaire : dialyse ou greffe. Ce tableau n'est pas une fatalité : c'est surtout une <strong>carte pour se situer</strong>. Détecter la maladie aux stades 1, 2 ou 3, c'est se donner des années pour freiner son évolution, parfois très efficacement. C'est tout l'intérêt du dépistage."
+    },
+    "depistage": {
+      "whoEyebrow": "Qui dépister ?",
+      "whoTitle": "Faut-il se faire dépister ?",
+      "whoSubtitle": "Une vérification au moins une fois par an est une bonne habitude si vous êtes dans l'une de ces situations.",
+      "howEyebrow": "Comment dépister",
+      "howTitle": "Simple, rapide, sans rien d'invasif",
+      "step1Title": "Prise de sang",
+      "step1Body": "Mesure de la créatinine (un déchet que les reins éliminent normalement).",
+      "step2Title": "Un petit calcul",
+      "step2Body": "À partir de la créatinine, de votre âge et de votre poids (formules Cockcroft-Gault, MDRD, CKD-EPI). Le laboratoire ou le médecin s'en charge.",
+      "step3Title": "Parfois, une analyse d'urines",
+      "step3Body": "Pour repérer la présence d'albumine, un autre marqueur utile.",
+      "note": "En cas de doute ou de résultat anormal, votre médecin vous orientera vers un néphrologue pour un avis spécialisé."
+    },
+    "facteursRisque": [
+      "Vous êtes hypertendu ou diabétique",
+      "Vous avez des antécédents cardiovasculaires (artères, cœur)",
+      "Vous avez plus de 60 ans",
+      "Vous avez des antécédents familiaux de maladie rénale ou génétique",
+      "Vous avez eu plusieurs infections urinaires hautes ou calculs rénaux à répétition",
+      "Vous prenez régulièrement certains médicaments agressifs pour les reins (anti-inflammatoires au long cours, lithium, certaines chimiothérapies…)"
+    ],
+    "piliers": {
+      "quoteEyebrow": "Le message le plus important",
+      "quote": "« 10 % des insuffisances rénales peuvent être évitées, et 30 % peuvent être retardées de plusieurs années — parfois plus d'une décennie. »",
+      "quoteCaption": "Agir tôt change la trajectoire. Les recommandations reposent sur quatre piliers.",
+      "label": "Pilier {num}"
+    },
+    "pilier1": {
+      "title": "Adopter quelques bonnes habitudes",
+      "items": [
+        "Arrêter le tabac",
+        "Réduire l'alcool",
+        "Bouger régulièrement (30 min de marche par jour)",
+        "Garder ses vaccinations à jour",
+        "Éviter l'automédication",
+        "Voir son néphrologue au moins une fois par an si à risque"
+      ]
+    },
+    "pilier2": {
+      "title": "Bien contrôler sa tension",
+      "items": [
+        "Mesurer sa tension à la maison quand c'est possible",
+        "Réduire le sel",
+        "Surveiller son poids",
+        "Prendre son traitement régulièrement, sans sauter de prises"
+      ]
+    },
+    "pilier3": {
+      "title": "Protéger ses reins",
+      "items": [
+        "Éviter les médicaments qui fatiguent les reins (AINS sans avis)",
+        "Modérer les apports en protéines animales selon conseils du néphrologue",
+        "Bien équilibrer cholestérol, triglycérides et diabète"
+      ]
+    },
+    "pilier4": {
+      "title": "Comprendre son traitement et y participer",
+      "items": [
+        "Connaître ses médicaments et leur rôle",
+        "Suivre l'évolution de ses bilans",
+        "Échanger en consultation, sans retenue",
+        "Un patient informé est un patient mieux soigné"
+      ]
+    },
+    "cta": {
+      "eyebrow": "Consultation néphrologie",
+      "title": "Un doute ? Une question ? Parlons-en.",
+      "subtitle": "La Clinique ESSAADA propose des consultations de néphrologie à {city}, pour faire le point sur votre fonction rénale, interpréter vos examens, et construire avec vous un plan pour protéger vos reins dans la durée.",
+      "consultationLink": "Consultation néphrologie",
+      "glossaireLink": "Voir le glossaire"
+    }
+  },
+  "rendezVous": {
+    "meta": {
+      "title": "Prendre rendez-vous dialyse — Sidi Bel Abbès",
+      "description": "Demandez un rendez-vous à la Clinique ESSAADA : consultation néphrologie, première dialyse, patient de passage. Formulaire conforme loi 18-07."
+    },
+    "hero": {
+      "eyebrow": "Rendez-vous",
+      "title": "Demander un rendez-vous",
+      "subtitle": "Remplissez ce court formulaire. Nous vous rappelons {delai} pour confirmer votre créneau."
+    },
+    "breadcrumb": {
+      "accueil": "Accueil",
+      "rendezVous": "Rendez-vous"
+    },
+    "reassurance": {
+      "rappel": {
+        "title": "Rappel {delai}",
+        "text": "Notre équipe vous recontacte rapidement."
+      },
+      "donneesProtegees": {
+        "title": "Données protégées",
+        "text": "Conforme loi 18-07. Aucun partage avec des tiers."
+      },
+      "sansEngagement": {
+        "title": "Sans engagement",
+        "text": "Demande d'information ou prise de contact simple."
+      }
+    },
+    "success": {
+      "title": "Demande bien reçue",
+      "body": "Merci. Notre équipe vous rappelle {delai}. Pour toute urgence ou pour accélérer votre demande, contactez-nous directement.",
+      "whatsappMessage": "Bonjour, je viens de soumettre une demande de rendez-vous sur le site et je souhaite accélérer son traitement.",
+      "whatsappCta": "Accélérer sur WhatsApp",
+      "callCta": "Appeler maintenant"
+    },
+    "form": {
+      "requiredIntro": {
+        "before": "Les champs marqués d'un",
+        "after": "sont obligatoires."
+      },
+      "optional": "(facultatif)",
+      "honeypotLabel": "Ne pas remplir",
+      "nom": {
+        "label": "Nom complet"
+      },
+      "telephone": {
+        "label": "Téléphone",
+        "help": "Ex. 048 72 25 70, +213 555 12 34 56 ou +33 6 12 34 56 78."
+      },
+      "motif": {
+        "label": "Motif",
+        "placeholder": "— Sélectionner —",
+        "options": {
+          "consultationNephrologie": "1ère consultation néphrologie",
+          "dialysePassage": "Dialyse de passage (vacances)",
+          "suiviRenouvellement": "Suivi / renouvellement",
+          "autre": "Autre"
+        }
+      },
+      "creneau": {
+        "legend": "Créneau souhaité",
+        "options": {
+          "matin": "Matin (05h — 09h)",
+          "journee": "Journée (09h30 — 13h30)",
+          "soir": "Soir (14h — 19h)"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Toute information utile à votre demande.",
+        "notice": "Merci de ne pas transmettre d'informations médicales sensibles dans ce formulaire. Elles seront recueillies en consultation."
+      },
+      "consent": "J'autorise la Clinique ESSAADA à utiliser les informations ci-dessus pour me recontacter au sujet de ma demande de rendez-vous (loi 18-07 relative à la protection des données personnelles).",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours…"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog · Conseils & ressources dialyse",
+      "description": "Articles, guides et conseils sur la dialyse, la néphrologie et la vie quotidienne des patients. Par l'équipe de la Clinique ESSAADA à Sidi Bel Abbès.",
+      "ogTitle": "Blog — Clinique ESSAADA",
+      "ogDescription": "Conseils médicaux, vie quotidienne et guides pratiques pour les patients dialysés et leurs proches.",
+      "notFound": "Article introuvable"
+    },
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Conseils & ressources pour les patients dialysés",
+      "subtitle": "Guides pratiques, explications médicales et vie quotidienne — rédigés et relus par l'équipe médicale de la Clinique ESSAADA."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "blog": "Blog"
+    },
+    "empty": {
+      "title": "Les premiers articles arrivent bientôt.",
+      "body": "En attendant, consultez notre <faq>FAQ</faq> et notre <glossary>glossaire</glossary>."
+    },
+    "readingTime": "{minutes} min",
+    "readingTimeLong": "{minutes} min de lecture",
+    "read": "Lire",
+    "alsoRead": "À lire également",
+    "backToArticles": "Retour aux articles",
+    "cta": {
+      "eyebrow": "Aller plus loin",
+      "title": "Une question après cette lecture ?",
+      "subtitle": "Notre équipe médicale répond à vos questions en consultation ou par WhatsApp.",
+      "waMessage": "Bonjour, j'ai lu l'article « {title} » et j'ai une question."
+    }
+  },
+  "legal": {
+    "eyebrow": "Informations",
+    "breadcrumb": {
+      "home": "Accueil"
+    },
+    "meta": {
+      "mentions": {
+        "title": "Mentions légales",
+        "description": "Mentions légales du site de la Clinique ESSAADA."
+      },
+      "privacy": {
+        "title": "Politique de confidentialité",
+        "description": "Politique de confidentialité de la Clinique ESSAADA, conforme à la loi 18-07 relative à la protection des données personnelles."
+      }
+    },
+    "mentions": {
+      "heroTitle": "Mentions légales",
+      "breadcrumb": "Mentions légales",
+      "editor": {
+        "title": "Éditeur du site",
+        "publishedByPrefix": "Site édité et exploité par LumAI Consulting",
+        "publishedBySuffix": "pour le compte de la {name}.",
+        "phoneLabel": "Téléphone",
+        "emailLabel": "Email",
+        "editorialResponsible": "Responsable éditorial des contenus : {name}."
+      },
+      "agrement": {
+        "title": "Agrément",
+        "text": "Délivré par le Ministère de la Santé"
+      },
+      "host": {
+        "title": "Hébergeur",
+        "label": "Hébergeur",
+        "text": "Site hébergé sur un serveur dédié."
+      },
+      "ip": {
+        "title": "Propriété intellectuelle",
+        "text": "L'ensemble des contenus de ce site (textes, images, logos, structure) est la propriété exclusive de {name}, sauf mention contraire. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable, est interdite."
+      },
+      "liability": {
+        "title": "Responsabilité",
+        "text": "Les informations publiées sur ce site sont fournies à titre informatif et ne constituent en aucun cas un avis médical. Elles ne remplacent pas une consultation avec un professionnel de santé."
+      }
+    },
+    "privacy": {
+      "heroTitle": "Politique de confidentialité",
+      "breadcrumb": "Confidentialité",
+      "collected": {
+        "title": "Données collectées",
+        "intro": "Le formulaire de demande de rendez-vous collecte uniquement les informations nécessaires pour vous recontacter :",
+        "items": {
+          "name": "Nom",
+          "phone": "Numéro de téléphone",
+          "reason": "Motif de la demande (facultatif)",
+          "slot": "Créneau souhaité (facultatif)",
+          "message": "Message libre (facultatif)"
+        },
+        "note": "Aucune donnée médicale sensible n'est collectée via ce site."
+      },
+      "purpose": {
+        "title": "Finalité du traitement",
+        "text": "Les données sont utilisées exclusivement pour vous recontacter au sujet de votre demande de rendez-vous. Elles ne sont ni vendues, ni louées, ni transmises à des tiers à des fins commerciales."
+      },
+      "legalBasis": {
+        "title": "Base légale",
+        "text": "Votre consentement explicite, recueilli via la case à cocher du formulaire, au sens de la loi n° 18-07 du 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel."
+      },
+      "retention": {
+        "title": "Durée de conservation",
+        "text": "Les demandes reçues par email sont conservées pour une durée maximale de 6 mois après la dernière interaction avec vous, puis supprimées."
+      },
+      "rights": {
+        "title": "Vos droits",
+        "text": "Conformément à la loi 18-07, vous disposez d'un droit d'accès, de rectification et de suppression des données qui vous concernent. Pour exercer ces droits, contactez-nous à :"
+      },
+      "cookies": {
+        "title": "Cookies et traceurs",
+        "text": "Ce site ne dépose aucun cookie de suivi publicitaire. Des statistiques de consultation agrégées et anonymes peuvent être collectées pour améliorer le service. Aucune donnée identifiante n'est transmise à des tiers."
+      }
+    }
   }
 }

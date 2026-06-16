@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { BookOpen, ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -13,30 +15,39 @@ import {
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Glossaire — Comprendre les termes de la dialyse",
-  description:
-    "29 termes clés de la néphrologie et de la dialyse expliqués simplement : accès vasculaire, créatinine, DFG, fistule, hémodialyse, greffe, urée. Par la Clinique ESSAADA.",
-  alternates: { canonical: `${site.url}/glossaire` },
-  openGraph: {
-    title: "Glossaire néphrologie — Clinique ESSAADA",
-    description:
-      "Le vocabulaire de la dialyse et de l'insuffisance rénale, défini simplement. 29 entrées, des plus techniques aux plus familières.",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "glossary" });
+
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/glossaire` },
+    openGraph: {
+      title: t("meta.ogTitle"),
+      description: t("meta.ogDescription"),
+    },
+  };
+}
 
 export default function GlossairePage() {
+  const t = useTranslations("glossary");
+  const tc = useTranslations("common");
   const crumbs = [
-    { name: "Accueil", url: "/" },
-    { name: "Glossaire", url: "/glossaire" },
+    { name: t("breadcrumb.home"), url: "/" },
+    { name: t("breadcrumb.glossary"), url: "/glossaire" },
   ];
 
   return (
     <>
       <PageHero
-        eyebrow="Comprendre"
-        title="Glossaire — les mots de la dialyse, expliqués simplement"
-        subtitle="29 termes que vous rencontrerez en consultation, sur votre carnet de dialyse, ou dans les échanges avec l'équipe. Pas de jargon : des définitions accessibles, vérifiables, sans alarmisme."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />
@@ -52,24 +63,24 @@ export default function GlossairePage() {
       <section className="section-padding">
         <div className="container-custom">
           <nav
-            aria-label="Index alphabétique"
+            aria-label={t("index.navAria")}
             className="mb-10 flex flex-wrap gap-2 items-center p-4 rounded-2xl bg-sand-50 border border-sand-200"
           >
             <span className="text-sm font-semibold text-neutral-700 mr-2">
-              Aller à :
+              {t("index.goTo")}
             </span>
             {glossaireLetters.map((letter) => (
               <a
                 key={letter}
                 href={`#lettre-${letter}`}
                 className="w-9 h-9 grid place-items-center rounded-lg bg-white border border-neutral-200 text-primary-700 font-display font-semibold hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-colors"
-                aria-label={`Termes commençant par ${letter}`}
+                aria-label={t("index.letterAria", { letter })}
               >
                 {letter}
               </a>
             ))}
             <span className="ml-auto text-sm text-neutral-600 hidden sm:inline">
-              {glossaire.length} entrées
+              {t("index.entriesCount", { count: glossaire.length })}
             </span>
           </nav>
 
@@ -102,25 +113,27 @@ export default function GlossairePage() {
                               href={`/glossaire/${entry.slug}`}
                               className="text-neutral-900 hover:text-primary-700 transition-colors"
                             >
-                              {entry.term}
+                              {t(`terms.${entry.slug}.term`)}
                             </Link>
                           </h3>
                         </div>
                         <p className="text-neutral-700 leading-relaxed flex-1">
-                          {entry.definition}
+                          {t(`terms.${entry.slug}.definition`)}
                         </p>
                         <Link
                           href={`/glossaire/${entry.slug}`}
                           className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary-700 hover:gap-2 transition-all"
-                          aria-label={`Voir la page dédiée : ${entry.term}`}
+                          aria-label={t("card.dedicatedPageAria", {
+                            term: t(`terms.${entry.slug}.term`),
+                          })}
                         >
-                          Voir la page dédiée
+                          {t("card.dedicatedPage")}
                           <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
                         </Link>
                         {entry.relatedTerms && entry.relatedTerms.length > 0 && (
                           <div className="mt-5 pt-5 border-t border-neutral-150">
                             <div className="text-xs font-semibold tracking-wide text-neutral-500 mb-2">
-                              Termes liés
+                              {t("relatedTerms")}
                             </div>
                             <ul className="flex flex-wrap gap-2">
                               {entry.relatedTerms.map((slug) => {
@@ -132,7 +145,7 @@ export default function GlossairePage() {
                                       href={`/glossaire/${slug}`}
                                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-sand-50 text-primary-700 text-sm hover:bg-sand-100 transition-colors"
                                     >
-                                      {rel.term}
+                                      {t(`terms.${rel.slug}.term`)}
                                       <ArrowUpRight
                                         className="w-3 h-3"
                                         aria-hidden="true"
@@ -154,18 +167,16 @@ export default function GlossairePage() {
 
           <div className="mt-16 p-6 rounded-2xl bg-primary-700 text-white max-w-3xl mx-auto text-center">
             <h2 className="font-display text-2xl font-semibold mb-3 text-white">
-              Un terme vous intrigue encore ?
+              {t("ctaBlock.title")}
             </h2>
             <p className="text-primary-100 mb-5 leading-relaxed">
-              Ce glossaire ne remplace pas l'échange avec votre néphrologue. En
-              consultation, posez toutes vos questions — aucune n'est déplacée,
-              aucune n'est trop simple.
+              {t("ctaBlock.body")}
             </p>
             <Link
               href="/rendez-vous"
               className="inline-flex items-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-5 py-3 rounded-full font-semibold min-h-[48px] transition-colors"
             >
-              Prendre rendez-vous
+              {tc("bookAppointment")}
             </Link>
           </div>
         </div>

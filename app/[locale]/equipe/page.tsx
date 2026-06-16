@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -8,23 +10,37 @@ import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Équipe médicale — néphrologie à Sidi Bel Abbès",
-  description:
-    "Néphrologue, infirmiers spécialisés, personnel d'accompagnement. Découvrez l'équipe de la Clinique ESSAADA à Sidi Bel Abbès.",
-  alternates: { canonical: `${site.url}/equipe` },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "team" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/equipe` },
+  };
+}
 
 export default function EquipePage() {
+  const t = useTranslations("team");
+
   return (
     <>
       <PageHero
-        eyebrow="Notre équipe"
-        title="Une équipe pluridisciplinaire à vos côtés"
-        subtitle="Médecin néphrologue, infirmiers spécialisés, personnel d'accompagnement. Formés à la prise en charge des patients dialysés."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <div className="container-custom py-5">
-        <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Équipe", url: "/equipe" }]} />
+        <Breadcrumb
+          items={[
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.team"), url: "/equipe" },
+          ]}
+        />
       </div>
 
       <script
@@ -42,18 +58,18 @@ export default function EquipePage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Les métiers"
-            title="Les professionnels qui vous accompagnent"
-            subtitle="Quatre départements, un même engagement : rendre chaque séance aussi sûre et confortable que possible."
+            eyebrow={t("section.eyebrow")}
+            title={t("section.title")}
+            subtitle={t("section.subtitle")}
           />
           <ul className="grid md:grid-cols-2 gap-5">
-            {departments.map((d) => (
-              <li key={d.title}>
+            {departments.map((_, i) => (
+              <li key={i}>
                 <Card>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                    {d.title}
+                    {t(`departments.${i}.title`)}
                   </h3>
-                  <p className="text-neutral-700">{d.description}</p>
+                  <p className="text-neutral-700">{t(`departments.${i}.description`)}</p>
                 </Card>
               </li>
             ))}
@@ -63,10 +79,10 @@ export default function EquipePage() {
 
       <ConversionFooterCTA
         variant="white"
-        eyebrow="Consultation"
-        title="Rencontrer l'équipe en consultation ?"
-        subtitle="Une consultation néphrologie, un premier contact pour la dialyse, ou une question — nous répondons sous 24-48h ouvrées."
-        waMessage="Bonjour, je souhaite rencontrer l'équipe médicale de la Clinique ESSAADA en consultation."
+        eyebrow={t("cta.eyebrow")}
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        waMessage={t("cta.waMessage")}
       />
     </>
   );
