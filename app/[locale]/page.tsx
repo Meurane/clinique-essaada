@@ -32,14 +32,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
+  const alternates = localizedAlternates(locale, "/");
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: localizedAlternates(locale, "/"),
+    alternates,
     openGraph: {
       title: t("meta.ogTitle"),
       description: t("meta.ogDescription"),
-      url: "/",
+      url: alternates.canonical,
       type: "website",
     },
   };

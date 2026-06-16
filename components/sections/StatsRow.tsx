@@ -1,10 +1,24 @@
-import { BedDouble, CalendarDays, Stethoscope, Sparkles } from "lucide-react";
+import {
+  BedDouble,
+  CalendarDays,
+  Stethoscope,
+  Sparkles,
+  type LucideIcon,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 import { site } from "@/lib/site";
 
+type Stat = {
+  icon: LucideIcon;
+  value: string;
+  label: string;
+  /** Classe de taille optionnelle pour les valeurs textuelles longues. */
+  valueClass?: string;
+};
+
 export function StatsRow() {
   const t = useTranslations("home");
-  const stats = [
+  const stats: Stat[] = [
     {
       icon: BedDouble,
       value: `${site.stats.lits}`,
@@ -14,6 +28,10 @@ export function StatsRow() {
       icon: CalendarDays,
       value: t("stats.daysValue"),
       label: t("stats.continuousService"),
+      // Valeur textuelle (plage de jours) : plus longue que les chiffres,
+      // surtout en arabe (« السبت–الخميس »). Taille réduite pour tenir sur
+      // une ligne dans toutes les langues sans déborder la colonne.
+      valueClass: "text-2xl",
     },
     {
       icon: Stethoscope,
@@ -41,8 +59,14 @@ export function StatsRow() {
               >
                 <s.icon className="w-5 h-5" strokeWidth={1.75} />
               </span>
-              <span className="font-display text-4xl md:text-5xl font-bold text-primary-700 leading-none tabular-nums whitespace-nowrap">
-                {s.value}
+              <span className="flex items-center justify-center min-h-[2.25rem] md:min-h-[3rem]">
+                <span
+                  className={`font-display font-bold text-primary-700 leading-none tabular-nums whitespace-nowrap ${
+                    s.valueClass ?? "text-4xl md:text-5xl"
+                  }`}
+                >
+                  {s.value}
+                </span>
               </span>
               <span
                 aria-hidden="true"

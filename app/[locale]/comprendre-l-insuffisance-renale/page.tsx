@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { localizedAlternates } from "@/lib/i18n-meta";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import schemaReinCoupe from "@/public/images/schema-rein-coupe.webp";
 import schemaNephron from "@/public/images/schema-nephron.webp";
@@ -23,7 +23,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Callout } from "@/components/ui/Callout";
 import { PullQuote } from "@/components/ui/PullQuote";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site } from "@/lib/site";
+import { localizedCity } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export async function generateMetadata({
@@ -58,6 +58,7 @@ const pilierItemCounts = [6, 4, 3, 4];
 
 export default function ComprendreIrcPage() {
   const t = useTranslations("comprendre");
+  const locale = useLocale();
   const signesDebut = [0, 1, 2, 3].map((i) => t(`signesDebut.${i}`));
   const signesEvolution = [0, 1, 2, 3, 4].map((i) => t(`signesEvolution.${i}`));
   const facteursRisque = [0, 1, 2, 3, 4, 5].map((i) => t(`facteursRisque.${i}`));
@@ -427,7 +428,7 @@ export default function ComprendreIrcPage() {
           <SectionHeader
             eyebrow={t("cta.eyebrow")}
             title={t("cta.title")}
-            subtitle={t("cta.subtitle", { city: site.city })}
+            subtitle={t("cta.subtitle", { city: localizedCity(locale) })}
             align="center"
           />
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

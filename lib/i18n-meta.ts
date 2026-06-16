@@ -5,7 +5,7 @@ import { routing } from "@/i18n/routing";
  * Construit le chemin public d'une page pour une langue donnée, en respectant
  * `localePrefix: "as-needed"` (le français n'a pas de préfixe).
  */
-function localePath(locale: string, pathname: string): string {
+export function localePath(locale: string, pathname: string): string {
   const clean = pathname === "/" ? "" : pathname;
   return locale === routing.defaultLocale ? clean : `/${locale}${clean}`;
 }

@@ -55,6 +55,21 @@ export const site = {
 
 export type Site = typeof site;
 
+/**
+ * Ville localisée par langue, pour interpoler le placeholder `{city}`.
+ * En arabe on rend la graphie « سيدي بلعباس » pour rester cohérent avec le
+ * reste du contenu AR ; FR/EN gardent la graphie latine « Sidi Bel Abbès ».
+ */
+export const cityByLocale: Record<string, string> = {
+  fr: site.city,
+  en: site.city,
+  ar: "سيدي بلعباس",
+};
+
+export function localizedCity(locale: string): string {
+  return cityByLocale[locale] ?? site.city;
+}
+
 export function waUrl(message?: string): string {
   const base = site.contact.whatsappUrl;
   if (!message) return base;

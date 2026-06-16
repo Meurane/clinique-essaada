@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, CheckCircle2, ClipboardList, Heart } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { site } from "@/lib/site";
+import { localizedCity } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 const timelineKeys = [
@@ -45,6 +45,7 @@ const etapesData = [
 
 export default function PremiereSeancePage() {
   const t = useTranslations("firstSession");
+  const locale = useLocale();
   return (
     <>
       <PhotoHero
@@ -112,7 +113,7 @@ export default function PremiereSeancePage() {
                 </h3>
               </div>
               <p className="text-neutral-700">
-                {t("passage.text", { city: site.city })}
+                {t("passage.text", { city: localizedCity(locale) })}
               </p>
               <Link
                 href="/contact"

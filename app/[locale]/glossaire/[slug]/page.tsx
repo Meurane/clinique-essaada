@@ -86,8 +86,8 @@ export default async function GlossaireTermPage({ params }: { params: PageParams
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             definedTermSchema({
-              name: term.term,
-              description: term.definition,
+              name: t(`terms.${term.slug}.term`),
+              description: t(`terms.${term.slug}.definition`),
               slug: term.slug,
             }),
           ),

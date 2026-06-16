@@ -23,7 +23,7 @@ This guide was written precisely for that: to demystify, step by step, the most 
 
 ## What exactly is the Chifa card?
 
-The Chifa card is a personal smart card issued by the Algerian social security system — the **CNAS** for employees and their dependants, the **CASNOS** for the self-employed (tradespeople, shopkeepers, the professions, farmers). It stores your health insurance entitlements and allows accredited healthcare professionals to apply **third-party payment (tiers-payant)**: you pay nothing (or very little) directly, and the fund reimburses the provider.
+The Chifa card is a personal smart card issued by the Algerian social security system — the **CNAS** for employees and their dependants, the **CASNOS** for the self-employed (tradespeople, shopkeepers, the liberal professions, farmers). It stores your health insurance entitlements and allows accredited healthcare professionals to apply **third-party payment (tiers-payant)**: you pay nothing (or very little) directly, and the fund reimburses the provider.
 
 For a patient with end-stage renal failure, the Chifa card is linked to an **ALD** recognition (Affection de Longue Durée — long-term condition). This recognition changes everything: it opens the right to **100% cover for dialysis in Algeria**, including associated medicines within the agreed framework. In practical terms, it is this ALD combined with an up-to-date Chifa card that makes full third-party payment possible at an accredited centre, session after session.
 

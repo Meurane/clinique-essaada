@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
   Activity,
@@ -24,7 +24,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { site, waUrl } from "@/lib/site";
+import { site, waUrl, localizedCity } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
 export async function generateMetadata({
@@ -57,6 +57,7 @@ const equipements = [
 
 export default function LaCliniquePage() {
   const t = useTranslations("laClinique");
+  const locale = useLocale();
   return (
     <>
       <PhotoHero
@@ -64,7 +65,7 @@ export default function LaCliniquePage() {
         title={t("hero.title")}
         subtitle={t("hero.subtitle", {
           lits: site.stats.lits,
-          city: site.city,
+          city: localizedCity(locale),
           country: site.country,
         })}
         photoIcon={Building2}
@@ -94,7 +95,7 @@ export default function LaCliniquePage() {
           <div>
             <SectionHeader eyebrow={t("mission.eyebrow")} title={t("mission.title")} />
             <div className="space-y-4 text-neutral-700 leading-relaxed">
-              <p>{t("mission.p1", { city: site.city })}</p>
+              <p>{t("mission.p1", { city: localizedCity(locale) })}</p>
               <p>{t("mission.p2")}</p>
             </div>
           </div>
