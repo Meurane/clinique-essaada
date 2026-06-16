@@ -59,7 +59,7 @@ export default function MentionsLegalesPage() {
           <div>
             <h2 className="font-display text-xl font-semibold text-neutral-900 mb-2">Hébergeur</h2>
             <p>
-              Hébergeur&nbsp;: LumAI Consulting —{" "}
+              Hébergeur&nbsp;: LumAI Consulting,{" "}
               <a
                 href="https://lumai-consulting.com"
                 target="_blank"

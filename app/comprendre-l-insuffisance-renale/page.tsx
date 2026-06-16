@@ -164,7 +164,7 @@ export default function ComprendreIrcPage() {
             <div className="space-y-4 text-neutral-700 text-lg leading-relaxed">
               <p>
                 Vous avez deux reins, situés dans le bas du dos, de chaque côté
-                de la colonne vertébrale. Chacun pèse à peine <strong>160 grammes</strong> —
+                de la colonne vertébrale. Chacun pèse à peine <strong>160 grammes</strong>,
                 à peu près la taille d'un gros haricot.
               </p>
               <p>
@@ -178,7 +178,7 @@ export default function ComprendreIrcPage() {
                 Les reins font aussi autre chose : ils aident à <strong>réguler la
                 tension</strong>, à <strong>garder des os solides</strong> et à{" "}
                 <strong>fabriquer les globules rouges</strong>. Quand ils fonctionnent
-                bien, on ne les sent pas — et c'est justement pour ça qu'il faut
+                bien, on ne les sent pas, et c'est justement pour ça qu'il faut
                 parfois penser à vérifier qu'ils vont bien.
               </p>
             </div>
@@ -194,8 +194,8 @@ export default function ComprendreIrcPage() {
             <div className="space-y-3 text-neutral-700 leading-relaxed">
               <p>
                 Les reins sont composés de petits filtres microscopiques appelés{" "}
-                <strong>néphrons</strong>. Quand certains sont abîmés durablement — par
-                le diabète, l'hypertension, ou d'autres causes — ils ne se régénèrent pas.
+                <strong>néphrons</strong>. Quand certains sont abîmés durablement (par
+                le diabète, l'hypertension, ou d'autres causes), ils ne se régénèrent pas.
                 Le rein continue de fonctionner, mais un peu moins bien.
               </p>
               <p>
@@ -236,8 +236,8 @@ export default function ComprendreIrcPage() {
               <p>
                 Chaque rein contient environ <strong>un million de néphrons</strong>,
                 ces unités microscopiques qui filtrent votre sang en continu. Sur
-                le schéma, on voit le <strong>glomérule</strong> — le filtre proprement
-                dit, où le sang passe à travers une fine membrane — puis tout le
+                le schéma, on voit le <strong>glomérule</strong> (le filtre proprement
+                dit, où le sang passe à travers une fine membrane) puis tout le
                 système de tubules qui ajuste la composition de l'urine en
                 récupérant ce qui doit l'être (eau, sels, glucose) et en laissant
                 filer les déchets vers le canal collecteur.
@@ -245,7 +245,7 @@ export default function ComprendreIrcPage() {
               <p>
                 Cette mécanique miniaturisée se répète <strong>un million de fois
                 par rein</strong>. Tant qu'un nombre suffisant de néphrons fonctionne,
-                le rein <strong>compense</strong> — c'est pour cela qu'on peut perdre
+                le rein <strong>compense</strong>, c'est pour cela qu'on peut perdre
                 une partie de sa fonction rénale sans rien sentir. Le piège : quand
                 les premiers symptômes apparaissent, il reste souvent moins de
                 30 % de néphrons fonctionnels.
@@ -254,7 +254,7 @@ export default function ComprendreIrcPage() {
                 Comprendre le néphron, c'est comprendre pourquoi un{" "}
                 <strong>simple bilan sanguin</strong> est si précieux : il mesure la
                 créatinine, un déchet que les néphrons sains éliminent. Sa montée
-                silencieuse dans le sang est le premier signal — bien avant que le
+                silencieuse dans le sang est le premier signal, bien avant que le
                 corps ne se manifeste.
               </p>
             </div>
@@ -307,7 +307,7 @@ export default function ComprendreIrcPage() {
             Même à un stade avancé, avant la dialyse, on continue à uriner
             normalement. <em>L'absence d'urines n'est donc pas un critère.</em>{" "}
             Si plusieurs de ces signes vous concernent, parlez-en à votre
-            médecin — ce n'est pas forcément les reins, mais ça vaut la peine de
+            médecin, ce n'est pas forcément les reins, mais ça vaut la peine de
             vérifier.
           </Callout>
         </div>
@@ -448,7 +448,7 @@ export default function ComprendreIrcPage() {
               quote={
                 <>
                   « 10 % des insuffisances rénales peuvent être évitées, et 30 %
-                  peuvent être retardées de plusieurs années — parfois plus
+                  peuvent être retardées de plusieurs années, parfois plus
                   d'une décennie. »
                 </>
               }

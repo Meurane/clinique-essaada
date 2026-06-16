@@ -65,7 +65,7 @@ export default function EquipePage() {
         variant="white"
         eyebrow="Consultation"
         title="Rencontrer l'équipe en consultation ?"
-        subtitle="Une consultation néphrologie, un premier contact pour la dialyse, ou une question — nous répondons sous 24-48h ouvrées."
+        subtitle="Une consultation néphrologie, un premier contact pour la dialyse, ou une question, nous répondons sous 24-48h ouvrées."
         waMessage="Bonjour, je souhaite rencontrer l'équipe médicale de la Clinique ESSAADA en consultation."
       />
     </>

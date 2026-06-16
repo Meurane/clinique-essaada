@@ -54,7 +54,7 @@ const etapes = [
 ];
 
 const docsRequis = [
-  "Dernier bilan biologique — FNS + Biochimie (moins d'1 mois)",
+  "Dernier bilan biologique : FNS + Biochimie (moins d'1 mois)",
   "Sérologies à jour : hépatites B, C et VIH de moins de 6 mois",
   "Ordonnance de dialyse signée par votre néphrologue traitant",
   "Coordonnées de votre néphrologue traitant (pour liaison)",
@@ -138,7 +138,7 @@ export default function PatientsDePassagePage() {
                 </h3>
                 <p className="text-primary-100 leading-relaxed">
                   Accord préalable, formulaires SE 352-05, plafond 86,95 €/séance,
-                  factures acquittées — toutes les démarches, étape par étape.
+                  factures acquittées, toutes les démarches, étape par étape.
                 </p>
               </div>
               <ArrowRight
@@ -208,7 +208,7 @@ export default function PatientsDePassagePage() {
               <p className="text-neutral-700 text-base">
                 <strong>Délai conseillé :</strong> contactez-nous au minimum
                 1 mois avant votre séjour. Les réservations de dernière minute
-                restent possibles mais ne sont pas conseillées — elles dépendent
+                restent possibles mais ne sont pas conseillées, elles dépendent
                 de la disponibilité d'un poste.
               </p>
             </div>
@@ -218,19 +218,19 @@ export default function PatientsDePassagePage() {
             <SectionHeader eyebrow="Combien ça coûte" title="Prise en charge transparente" />
             <div className="space-y-4 text-neutral-700 leading-relaxed">
               <p>
-                <strong className="text-neutral-900">Si vous êtes affilié CNAS ou CASNOS</strong> —
+                <strong className="text-neutral-900">Si vous êtes affilié CNAS ou CASNOS</strong>,
                 vos séances sont prises en charge intégralement en tiers-payant.
                 Aucune avance de frais. Apportez simplement votre carte Chifa et
                 votre attestation.
               </p>
               <p>
-                <strong className="text-neutral-900">Si vous êtes de la diaspora avec une mutuelle européenne</strong> —
+                <strong className="text-neutral-900">Si vous êtes de la diaspora avec une mutuelle européenne</strong>,
                 nous vous communiquons un devis clair avant votre séjour. Beaucoup
                 de mutuelles françaises, belges ou canadiennes remboursent la
                 dialyse à l'étranger sur justificatif.
               </p>
               <p>
-                <strong className="text-neutral-900">Si vous êtes non affilié</strong> —
+                <strong className="text-neutral-900">Si vous êtes non affilié</strong>,
                 tarif transparent communiqué par écrit avant votre arrivée.
                 Pas de surprise à la sortie.
               </p>
@@ -251,7 +251,7 @@ export default function PatientsDePassagePage() {
           <SectionHeader
             eyebrow="Suivi médical pendant votre séjour"
             title="Le même standard de précision qu'en centre européen"
-            subtitle="Nous accueillons régulièrement la diaspora habituée aux protocoles français. Voici ce qui ne change pas — et ce qui peut s'ajouter à votre suivi pendant les 2 à 4 semaines de séjour."
+            subtitle="Nous accueillons régulièrement la diaspora habituée aux protocoles français. Voici ce qui ne change pas, et ce qui peut s'ajouter à votre suivi pendant les 2 à 4 semaines de séjour."
           />
           <div className="max-w-3xl mx-auto bg-gradient-to-br from-primary-50 via-white to-sand-50 rounded-2xl p-6 md:p-8 border border-primary-100">
             <div className="flex items-start gap-4">
@@ -286,7 +286,7 @@ export default function PatientsDePassagePage() {
           <SectionHeader
             eyebrow="Sur place"
             title="Tout ce qu'il faut savoir pour votre séjour"
-            subtitle="Logistique, accès, hébergement, pharmacies — nous vous communiquons la liste détaillée à la confirmation."
+            subtitle="Logistique, accès, hébergement, pharmacies : nous vous communiquons la liste détaillée à la confirmation."
           />
           <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {logistique.map((l) => (

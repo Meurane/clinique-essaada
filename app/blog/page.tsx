@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
       <PageHero
         eyebrow="Blog"
         title="Conseils & ressources pour les patients dialysés"
-        subtitle="Guides pratiques, explications médicales et vie quotidienne — rédigés et relus par l'équipe médicale de la Clinique ESSAADA."
+        subtitle="Guides pratiques, explications médicales et vie quotidienne, rédigés et relus par l'équipe médicale de la Clinique ESSAADA."
       />
       <div className="container-custom py-5">
         <Breadcrumb items={crumbs} />

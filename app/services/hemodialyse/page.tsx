@@ -46,7 +46,7 @@ const seanceIncludes = [
   "Café servi en cours de séance",
   "Couverture, fauteuil inclinable, télévision",
   "Accompagnant autorisé en salle d'attente dédiée",
-  "Prise en charge CNAS / CASNOS intégrale — zéro avance de frais",
+  "Prise en charge CNAS / CASNOS intégrale, zéro avance de frais",
   "Compte-rendu transmis à votre néphrologue traitant",
   "WhatsApp du secrétariat pour vos questions entre séances",
 ];
@@ -150,7 +150,7 @@ export default function HemodialysePage() {
           <SectionHeader
             eyebrow="Votre séance, en détail"
             title="Ce que comprend une séance à ESSAADA"
-            subtitle="Concrètement, voici ce que vous recevez à chaque venue — pas en option, pas en supplément."
+            subtitle="Concrètement, voici ce que vous recevez à chaque venue, pas en option, pas en supplément."
           />
           <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3 max-w-4xl mx-auto">
             {seanceIncludes.map((item) => (
@@ -164,7 +164,7 @@ export default function HemodialysePage() {
             ))}
           </ul>
           <p className="mt-8 text-center text-neutral-700 text-base max-w-2xl mx-auto">
-            Séances conventionnées CNAS et CASNOS — <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous.
+            Séances conventionnées CNAS et CASNOS, <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous.
           </p>
         </div>
       </section>

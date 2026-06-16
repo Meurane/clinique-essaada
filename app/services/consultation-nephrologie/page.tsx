@@ -33,7 +33,7 @@ const etpPiliers = [
   {
     icon: Users,
     title: "Conseils adaptés",
-    text: "Hygiène de vie, alimentation, activité physique — calés sur votre quotidien.",
+    text: "Hygiène de vie, alimentation, activité physique, calés sur votre quotidien.",
   },
   {
     icon: GraduationCap,
