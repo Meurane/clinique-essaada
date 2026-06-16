@@ -148,14 +148,14 @@
       "badge": "Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais",
       "titleLine1": "Votre vie continue,",
       "titleLine2": "on en prend soin.",
-      "intro": "Hémodialyse à Sidi Bel Abbès — {lits} lits, néphrologue présent, équipe formée à l'accompagnement des patients dialysés et de leurs proches.",
+      "intro": "Hémodialyse à Sidi Bel Abbès : {lits} lits, néphrologue présent, équipe formée à l'accompagnement des patients dialysés et de leurs proches.",
       "proof": {
-        "0": "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
+        "0": "Médecin néphrologue présent à chaque séance, pas d'astreinte téléphonique",
         "1": "Dossier CNAS / CASNOS : on s'occupe de la paperasse, vous venez avec votre carte Chifa",
         "2": "Accompagnant bienvenu · salle d'attente dédiée · café et thé servis"
       },
       "visitCenter": "Visiter le centre",
-      "callDirectly": "ou appelez directement —",
+      "callDirectly": "ou appelez directement :",
       "imageAlt": "Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
     },
     "stats": {
@@ -173,7 +173,7 @@
       "items": {
         "0": {
           "title": "Je viens d'apprendre que j'ai une maladie rénale",
-          "description": "Consultation néphrologie, diagnostic, suivi. Vous êtes au début — on vous explique chaque étape.",
+          "description": "Consultation néphrologie, diagnostic, suivi. Vous êtes au début, on vous explique chaque étape.",
           "cta": "Consulter un néphrologue"
         },
         "1": {
@@ -232,7 +232,7 @@
     },
     "testimonialsEmpty": {
       "title": "Témoignages en cours de collecte",
-      "text": "Nous recueillons les retours de nos patients — résidents comme de passage — dans le respect du secret médical et avec leur consentement écrit. Les premières voix seront publiées ici prochainement."
+      "text": "Nous recueillons les retours de nos patients, résidents comme de passage, dans le respect du secret médical et avec leur consentement écrit. Les premières voix seront publiées ici prochainement."
     },
     "testimonialsAria": "Témoignages de patients",
     "cta": {
@@ -328,7 +328,7 @@
       "eyebrow": "Votre séance, en détail",
       "title": "Ce que comprend une séance à ESSAADA",
       "subtitle": "Concrètement, voici ce que vous recevez à chaque venue — pas en option, pas en supplément.",
-      "note": "Séances conventionnées CNAS et CASNOS — <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous."
+      "note": "Séances conventionnées CNAS et CASNOS : <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous."
     },
     "seanceIncludes": [
       "Accueil par médecin dialyseur",
@@ -340,7 +340,7 @@
       "Café servi en cours de séance",
       "Couverture, fauteuil inclinable, télévision",
       "Accompagnant autorisé en salle d'attente dédiée",
-      "Prise en charge CNAS / CASNOS intégrale — zéro avance de frais",
+      "Prise en charge CNAS / CASNOS intégrale : zéro avance de frais",
       "Compte-rendu transmis à votre néphrologue traitant",
       "WhatsApp du secrétariat pour vos questions entre séances"
     ],
@@ -426,7 +426,7 @@
         },
         {
           "title": "Conseils adaptés",
-          "text": "Hygiène de vie, alimentation, activité physique — calés sur votre quotidien."
+          "text": "Hygiène de vie, alimentation, activité physique : calés sur votre quotidien."
         },
         {
           "title": "Suivi régulier",
@@ -472,7 +472,7 @@
     },
     "bodyComposition": {
       "title": "Bilan composition corporelle",
-      "text": "Le jour de votre 1ʳᵉ séance, mesure objective de votre poids sec et de votre hydratation par bio-impédance — pour personnaliser dès le départ votre prescription.",
+      "text": "Le jour de votre 1ʳᵉ séance, mesure objective de votre poids sec et de votre hydratation par bio-impédance, pour personnaliser dès le départ votre prescription.",
       "cta": "En savoir plus"
     },
     "timeline": {
@@ -484,7 +484,7 @@
         "arrivee": {
           "time": "T − 1h",
           "title": "Vous arrivez à la clinique",
-          "text": "Accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé."
+          "text": "Accès PMR. Prenez votre temps, nos créneaux sont pensés pour que vous ne soyez jamais pressé."
         },
         "accueil": {
           "time": "T − 45 min",
@@ -499,7 +499,7 @@
         "installation": {
           "time": "T − 15 min",
           "title": "Installation et pose des aiguilles",
-          "text": "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter) — 2 à 3 minutes. L'infirmière vous explique chaque geste."
+          "text": "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter) : 2 à 3 minutes. L'infirmière vous explique chaque geste."
         },
         "debut": {
           "time": "T + 0",
@@ -695,57 +695,57 @@
     "vie": {
       "sport": {
         "title": "Sport et activité physique",
-        "lead": "Bouger fait du bien au corps, au moral, et au traitement lui-même — c'est vivement encouragé.",
+        "lead": "Bouger fait du bien au corps, au moral, et au traitement lui-même, c'est vivement encouragé.",
         "body": {
           "0": "La marche, la natation, le vélo, le jardinage, les étirements : toute activité physique régulière est bénéfique pendant le parcours en dialyse. Elle aide à garder du tonus musculaire, protège le cœur, améliore le sommeil et l'humeur les jours sans séance. Il n'y a aucune raison de se mettre entre parenthèses.",
-          "1": "Pour une reprise du sport plus soutenue — course, musculation, sports collectifs, randonnée en altitude — un mot avec le néphrologue permet d'ajuster en fonction de votre fistule, de votre tension et de votre forme générale. L'objectif n'est jamais d'interdire, mais d'adapter."
+          "1": "Pour une reprise du sport plus soutenue (course, musculation, sports collectifs, randonnée en altitude), un mot avec le néphrologue permet d'ajuster en fonction de votre fistule, de votre tension et de votre forme générale. L'objectif n'est jamais d'interdire, mais d'adapter."
         },
-        "tip": "Protégez votre bras de fistule des chocs et des charges lourdes — le reste du corps reste libre."
+        "tip": "Protégez votre bras de fistule des chocs et des charges lourdes, le reste du corps reste libre."
       },
       "voyages": {
         "title": "Voyages et déplacements",
         "lead": "Partir en vacances, rendre visite à la famille en France ou au bled, faire la omra : tout cela reste possible.",
         "body": {
-          "0": "Un séjour se prépare avec l'équipe quelques semaines à l'avance. Nous aidons à trouver un centre d'accueil à destination — en Algérie comme à l'étranger — et à transmettre votre dossier médical pour que vos séances continuent sans interruption. Les centres d'hémodialyse existent partout : Alger, Oran, Marseille, Lyon, Paris, La Mecque, Istanbul.",
+          "0": "Un séjour se prépare avec l'équipe quelques semaines à l'avance. Nous aidons à trouver un centre d'accueil à destination (en Algérie comme à l'étranger) et à transmettre votre dossier médical pour que vos séances continuent sans interruption. Les centres d'hémodialyse existent partout : Alger, Oran, Marseille, Lyon, Paris, La Mecque, Istanbul.",
           "1": "Pensez à anticiper les démarches administratives (accord de prise en charge, assurance voyage, ordonnances traduites si besoin). Pour les patients de la diaspora qui reviennent passer l'été à Sidi Bel Abbès, l'organisation se fait dans les deux sens avec le même soin."
         },
         "tip": "Prévenez-nous idéalement 4 à 6 semaines avant le départ pour caler tranquillement les séances sur place."
       },
       "travail": {
         "title": "Vie professionnelle",
-        "lead": "Continuer à travailler est souvent possible, et c'est un vrai appui — financier, social, personnel.",
+        "lead": "Continuer à travailler est souvent possible, et c'est un vrai appui : financier, social, personnel.",
         "body": {
           "0": "Les séances de dialyse rythment la semaine, mais beaucoup de patients conservent une activité professionnelle. Les créneaux du matin tôt ou de fin de journée permettent de libérer une grande partie de la journée de travail. Nous essayons, dans la mesure du possible, de caler vos séances sur vos contraintes d'emploi du temps.",
           "1": "En Algérie, une reconnaissance de travailleur handicapé peut être demandée auprès des services sociaux : elle ouvre parfois à des aménagements (horaires, poste) ou à une pension selon la situation. Le médecin traitant et l'assistante sociale peuvent vous orienter dans les démarches, sans garantie de résultat mais cela vaut la peine d'en parler."
         },
-        "tip": "Parlez-nous de vos horaires de travail dès le premier rendez-vous — on construit le planning ensemble."
+        "tip": "Parlez-nous de vos horaires de travail dès le premier rendez-vous, on construit le planning ensemble."
       },
       "intimite": {
         "title": "Intimité et vie de couple",
-        "lead": "La maladie rénale touche aussi la vie intime — c'est fréquent, et cela se parle sans gêne en consultation.",
+        "lead": "La maladie rénale touche aussi la vie intime : c'est fréquent, et cela se parle sans gêne en consultation.",
         "body": {
           "0": "Baisse du désir, fatigue, difficultés d'érection chez l'homme, sécheresse ou irrégularités du cycle chez la femme : ces changements concernent plus d'un patient sur deux. Ils mêlent le poids psychologique de la maladie, les traitements, et des modifications hormonales bien réelles. Ce n'est ni dans la tête, ni une fatalité.",
-          "1": "Le néphrologue est là pour en parler, sans jugement et en toute confidentialité — au même titre que la tension ou le sommeil. Des solutions existent, parfois simples : ajustement de traitements, avis d'un confrère spécialisé, soutien psychologique pour le couple. En parler, c'est déjà soulager une part du poids."
+          "1": "Le néphrologue est là pour en parler, sans jugement et en toute confidentialité, au même titre que la tension ou le sommeil. Des solutions existent, parfois simples : ajustement de traitements, avis d'un confrère spécialisé, soutien psychologique pour le couple. En parler, c'est déjà soulager une part du poids."
         },
         "tip": "Aucune question n'est déplacée en consultation. L'intimité fait partie de la santé globale."
       },
       "grossesse": {
         "title": "Grossesse et parentalité",
-        "lead": "La fertilité est réduite en insuffisance rénale, mais une grossesse reste possible — cela se prépare de près.",
+        "lead": "La fertilité est réduite en insuffisance rénale, mais une grossesse reste possible, cela se prépare de près.",
         "body": {
           "0": "Pour une femme en dialyse, mener une grossesse comporte des risques réels pour la mère et l'enfant : retard de croissance du fœtus, accouchement prématuré, complications maternelles. Ce n'est pas interdit, mais cela demande un suivi rapproché entre néphrologue, gynécologue et maternité, avec des séances de dialyse souvent renforcées pendant les neuf mois.",
-          "1": "Quand un projet d'enfant est en tête, le plus souvent on recommande une contraception fiable le temps d'en discuter sereinement, et si possible de reporter la grossesse après une greffe de rein : la transplantation améliore nettement la fertilité et diminue les risques. Parlez-en tôt avec votre néphrologue — c'est une conversation importante, à aborder comme telle."
+          "1": "Quand un projet d'enfant est en tête, le plus souvent on recommande une contraception fiable le temps d'en discuter sereinement, et si possible de reporter la grossesse après une greffe de rein : la transplantation améliore nettement la fertilité et diminue les risques. Parlez-en tôt avec votre néphrologue : c'est une conversation importante, à aborder comme telle."
         },
         "tip": "Un projet de bébé, une contraception à revoir : notre accompagnement inclut ces questions."
       },
       "alimentation": {
         "title": "Alimentation",
-        "lead": "Bien manger en dialyse, c'est surtout bien s'adapter — il n'existe pas un régime unique qui convient à tous.",
+        "lead": "Bien manger en dialyse, c'est surtout bien s'adapter : il n'existe pas un régime unique qui convient à tous.",
         "body": {
-          "0": "Les besoins évoluent tout au long du parcours : avant la dialyse, il s'agit souvent de ralentir l'aggravation de la maladie rénale. Une fois les séances commencées, les priorités changent — corriger les excès d'eau, de potassium ou de phosphore, mais aussi prévenir la dénutrition, car manger suffisamment reste essentiel. Un diabète, une hypertension ou d'autres soucis associés modifient encore les équilibres.",
-          "1": "Le néphrologue fait le lien avec vos bilans sanguins et ajuste les recommandations à votre situation réelle — vos habitudes, votre cuisine, ce que vous aimez — plutôt qu'à une liste théorique d'aliments interdits. L'objectif est un équilibre tenable dans le temps, pas un régime impossible à suivre."
+          "0": "Les besoins évoluent tout au long du parcours : avant la dialyse, il s'agit souvent de ralentir l'aggravation de la maladie rénale. Une fois les séances commencées, les priorités changent : corriger les excès d'eau, de potassium ou de phosphore, mais aussi prévenir la dénutrition, car manger suffisamment reste essentiel. Un diabète, une hypertension ou d'autres soucis associés modifient encore les équilibres.",
+          "1": "Le néphrologue fait le lien avec vos bilans sanguins et ajuste les recommandations à votre situation réelle (vos habitudes, votre cuisine, ce que vous aimez) plutôt qu'à une liste théorique d'aliments interdits. L'objectif est un équilibre tenable dans le temps, pas un régime impossible à suivre."
         },
-        "tip": "Parlez de votre alimentation en consultation dès que vous en ressentez le besoin — c'est pensé pour vous, pas contre vous."
+        "tip": "Parlez de votre alimentation en consultation dès que vous en ressentez le besoin, c'est pensé pour vous, pas contre vous."
       }
     }
   },
@@ -773,7 +773,7 @@
     },
     "cost": {
       "question": "Combien coûte une séance ? Ai-je quelque chose à payer ?",
-      "answer": "Rien si vous êtes affilié à la CNAS ou à la CASNOS. La clinique est conventionnée : vos séances d'hémodialyse sont prises en charge intégralement en tiers-payant — vous n'avancez aucun frais. Notre service administratif monte votre dossier avec vous (carte Chifa + attestation CNAS ou CASNOS). Si un point bloque, nous vous le disons tout de suite et nous vous accompagnons dans la démarche."
+      "answer": "Rien si vous êtes affilié à la CNAS ou à la CASNOS. La clinique est conventionnée : vos séances d'hémodialyse sont prises en charge intégralement en tiers-payant, vous n'avancez aucun frais. Notre service administratif monte votre dossier avec vous (carte Chifa + attestation CNAS ou CASNOS). Si un point bloque, nous vous le disons tout de suite et nous vous accompagnons dans la démarche."
     },
     "companion": {
       "question": "Mon accompagnant peut-il rester avec moi ?",
@@ -793,7 +793,7 @@
     },
     "emergency": {
       "question": "Que se passe-t-il si je fais un malaise pendant la séance ?",
-      "answer": "Un médecin néphrologue est présent sur le site pendant toute la durée des séances — ce n'est pas une astreinte téléphonique, c'est une présence effective. Notre équipe infirmière est formée aux protocoles d'urgence et intervient immédiatement en cas de baisse de tension ou de malaise."
+      "answer": "Un médecin néphrologue est présent sur le site pendant toute la durée des séances : ce n'est pas une astreinte téléphonique, c'est une présence effective. Notre équipe infirmière est formée aux protocoles d'urgence et intervient immédiatement en cas de baisse de tension ou de malaise."
     },
     "work": {
       "question": "Puis-je continuer à travailler avec la dialyse ?",
@@ -808,7 +808,7 @@
       "answer": "Appelez-nous ou envoyez un message WhatsApp. Notre équipe vous propose un rendez-vous avec un néphrologue sous 24 à 48 h (jours ouvrables). Nous pouvons aussi organiser une visite découverte du centre, sans engagement."
     },
     "transfer": {
-      "question": "Je dialyse déjà ailleurs — comment transférer mon suivi ?",
+      "question": "Je dialyse déjà ailleurs, comment transférer mon suivi ?",
       "answer": "Contactez-nous avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Notre néphrologue prend contact avec votre médecin traitant pour assurer la continuité du suivi, sans rupture."
     },
     "cnasCasnos": {
@@ -833,11 +833,11 @@
     },
     "needlesPain": {
       "question": "Est-ce que les aiguilles font mal ?",
-      "answer": "Nous préférons la franchise : la piqûre est désagréable, mais elle dure à peine 10 secondes. Ce n'est pas une douleur vive, plutôt une sensation forte qui passe vite. Si vous avez une fistule (FAV), une crème anesthésiante peut être appliquée une heure avant la séance pour rendre la piqûre quasi indolore. Si vous avez un cathéter central, il n'y a pas de piqûre du tout, juste une connexion. La plupart de nos patients nous disent qu'après 3 ou 4 séances, l'appréhension disparaît et le geste devient une routine. Nos infirmières sont formées à la ponction douce — si une aiguille vous fait mal, dites-le immédiatement, on adapte."
+      "answer": "Nous préférons la franchise : la piqûre est désagréable, mais elle dure à peine 10 secondes. Ce n'est pas une douleur vive, plutôt une sensation forte qui passe vite. Si vous avez une fistule (FAV), une crème anesthésiante peut être appliquée une heure avant la séance pour rendre la piqûre quasi indolore. Si vous avez un cathéter central, il n'y a pas de piqûre du tout, juste une connexion. La plupart de nos patients nous disent qu'après 3 ou 4 séances, l'appréhension disparaît et le geste devient une routine. Nos infirmières sont formées à la ponction douce : si une aiguille vous fait mal, dites-le immédiatement, on adapte."
     },
     "emergencyVacation": {
       "question": "Je suis en vacances en Algérie mais je n'ai pas prévenu. Pouvez-vous me prendre en urgence ?",
-      "answer": "Oui, c'est possible selon nos disponibilités, et nous faisons tout pour ne laisser personne sans séance. Contactez-nous immédiatement par WhatsApp au numéro du centre, même le soir ou le week-end. Préparez si possible : votre dernier compte-rendu de dialyse (poids sec, temps de séance, traitement), vos sérologies récentes (hépatites B/C, VIH), votre ordonnance en cours, et une pièce d'identité. Si nous sommes complets à l'horaire souhaité, nous vous proposons un autre créneau dans la semaine ou nous vous orientons vers un centre partenaire. Ne sautez jamais une séance — appelez-nous, on trouvera une solution."
+      "answer": "Oui, c'est possible selon nos disponibilités, et nous faisons tout pour ne laisser personne sans séance. Contactez-nous immédiatement par WhatsApp au numéro du centre, même le soir ou le week-end. Préparez si possible : votre dernier compte-rendu de dialyse (poids sec, temps de séance, traitement), vos sérologies récentes (hépatites B/C, VIH), votre ordonnance en cours, et une pièce d'identité. Si nous sommes complets à l'horaire souhaité, nous vous proposons un autre créneau dans la semaine ou nous vous orientons vers un centre partenaire. Ne sautez jamais une séance, appelez-nous, on trouvera une solution."
     },
     "serologyAge": {
       "question": "Mes sérologies datent de 4 mois, c'est toujours bon ?",
@@ -882,7 +882,7 @@
     "relatedTerms": "Termes liés",
     "ctaBlock": {
       "title": "Un terme vous intrigue encore ?",
-      "body": "Ce glossaire ne remplace pas l'échange avec votre néphrologue. En consultation, posez toutes vos questions — aucune n'est déplacée, aucune n'est trop simple."
+      "body": "Ce glossaire ne remplace pas l'échange avec votre néphrologue. En consultation, posez toutes vos questions : aucune n'est déplacée, aucune n'est trop simple."
     },
     "term": {
       "eyebrow": "Glossaire · Définition",
@@ -1162,7 +1162,7 @@
       "intro": "Créée pour accueillir les patients atteints d'insuffisance rénale à tous les stades de la maladie, la Clinique ESSAADA place l'écoute et la rigueur au cœur de chaque séance.",
       "q1": "Nous vous souhaitons la bienvenue et vous remercions de la confiance que vous nous accordez.",
       "q2": "Notre équipe médicale et l'ensemble du personnel mettent tout en œuvre pour vous apporter les meilleurs soins et rendre chacune de vos venues aussi confortable que possible.",
-      "q3": "Sur ce site, vous trouverez les renseignements qui vous permettront de vous familiariser avec la vie de la clinique. Et si vous avez la moindre question, un avis à partager, un conseil à demander — n'hésitez pas. Vos suggestions nous aident à mieux vous accompagner.",
+      "q3": "Sur ce site, vous trouverez les renseignements qui vous permettront de vous familiariser avec la vie de la clinique. Et si vous avez la moindre question, un avis à partager, un conseil à demander, n'hésitez pas. Vos suggestions nous aident à mieux vous accompagner.",
       "signature": "La Direction et les équipes de la Clinique ESSAADA"
     },
     "commitments": {
@@ -1172,7 +1172,7 @@
       "items": {
         "professionals": {
           "title": "Des professionnels de santé à votre service",
-          "text": "Néphrologue, infirmiers spécialisés, personnel d'accompagnement — une équipe pluridisciplinaire formée à la prise en charge des patients dialysés."
+          "text": "Néphrologue, infirmiers spécialisés, personnel d'accompagnement : une équipe pluridisciplinaire formée à la prise en charge des patients dialysés."
         },
         "equipmentManaged": {
           "title": "Matériel géré selon normes qualité & sécurité",
@@ -1191,10 +1191,10 @@
     "visit": {
       "eyebrow": "Sans engagement",
       "title": "Venez visiter le centre avant votre première séance",
-      "p1": "Avant d'engager votre parcours chez nous, nous vous invitons — vous et un proche — à découvrir le centre. Rencontre avec un néphrologue, visite de la salle de dialyse, explication du déroulé d'une séance, questions libres.",
-      "p2": "<strong>Sans engagement, sans frais.</strong> Une trentaine de minutes qui changent beaucoup — surtout si c'est votre proche qui s'inquiète.",
+      "p1": "Avant d'engager votre parcours chez nous, nous vous invitons, vous et un proche, à découvrir le centre. Rencontre avec un néphrologue, visite de la salle de dialyse, explication du déroulé d'une séance, questions libres.",
+      "p2": "<strong>Sans engagement, sans frais.</strong> Une trentaine de minutes qui changent beaucoup, surtout si c'est votre proche qui s'inquiète.",
       "cardTitle": "Organiser votre visite",
-      "cardText": "Appelez-nous ou envoyez un message WhatsApp — nous vous proposons un créneau sous 48h ouvrées.",
+      "cardText": "Appelez-nous ou envoyez un message WhatsApp, nous vous proposons un créneau sous 48h ouvrées.",
       "requestCta": "Demander une visite",
       "whatsappMessage": "Bonjour, je souhaite visiter la Clinique ESSAADA."
     }
@@ -1222,12 +1222,12 @@
       "eyebrow": "Pourquoi cette mesure",
       "title": "Aller au-delà du simple pèse-personne",
       "p1": "En hémodialyse, le poids n'est qu'une partie de l'histoire. Ce qui compte vraiment, c'est la <strong>répartition</strong> entre l'eau, la masse maigre et la masse grasse. Une balance ordinaire ne fait pas cette différence.",
-      "p2": "La <strong>bio-impédance multi-fréquence (BIS)</strong> envoie un courant électrique imperceptible à plusieurs fréquences à travers votre corps. Selon la fréquence, ce courant traverse plus ou moins les membranes cellulaires — ce qui permet de séparer l'eau totale, l'eau intracellulaire, l'eau extracellulaire, la masse maigre et la masse grasse.",
-      "p3": "C'est un outil <strong>complémentaire</strong> de l'évaluation clinique du néphrologue. Il ne remplace pas son jugement — il l'enrichit avec des données objectives, suivies dans le temps."
+      "p2": "La <strong>bio-impédance multi-fréquence (BIS)</strong> envoie un courant électrique imperceptible à plusieurs fréquences à travers votre corps. Selon la fréquence, ce courant traverse plus ou moins les membranes cellulaires, ce qui permet de séparer l'eau totale, l'eau intracellulaire, l'eau extracellulaire, la masse maigre et la masse grasse.",
+      "p3": "C'est un outil <strong>complémentaire</strong> de l'évaluation clinique du néphrologue. Il ne remplace pas son jugement : il l'enrichit avec des données objectives, suivies dans le temps."
     },
     "device": {
       "title": "L'appareil utilisé",
-      "item1": "<strong>Bodystat Multiscan 5000</strong> — dispositif médical CE",
+      "item1": "<strong>Bodystat Multiscan 5000</strong>, dispositif médical CE",
       "item2": "Bio-impédance à 6 fréquences (5 à 1000 kHz)",
       "item3": "Mesure non invasive, indolore, deux minutes",
       "item4": "Lecture par votre néphrologue",
@@ -1243,7 +1243,7 @@
       },
       "bodyComposition": {
         "title": "Suivre la composition corporelle",
-        "text": "Masse maigre, masse musculaire squelettique, masse grasse — suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale."
+        "text": "Masse maigre, masse musculaire squelettique, masse grasse : suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale."
       },
       "phaseAngle": {
         "title": "Lire l'angle de phase",
@@ -1279,7 +1279,7 @@
       "caption1": "Page 1 — Hydratation & composition corporelle",
       "alt2": "Rapport Bodystat — santé cellulaire (angle de phase, capacitance membranaire), métabolisme de base, mesures d'impédance multi-fréquence et conclusion synthétique du rapport.",
       "caption2": "Page 2 — Santé cellulaire & conclusion",
-      "disclaimer": "Exemple de rapport — données anonymisées. Votre rapport est toujours commenté par votre néphrologue, jamais remis brut sans interprétation."
+      "disclaimer": "Exemple de rapport : données anonymisées. Votre rapport est toujours commenté par votre néphrologue, jamais remis brut sans interprétation."
     },
     "when": {
       "eyebrow": "Pour qui, et quand",
@@ -1294,7 +1294,7 @@
       },
       "visitingPatients": {
         "title": "Patients de passage",
-        "text": "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge — sans surcoût pour les affiliés CNAS / CASNOS."
+        "text": "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge, sans surcoût pour les affiliés CNAS / CASNOS."
       }
     },
     "honesty": {
@@ -1306,10 +1306,10 @@
       "does3": "Repère précocement une <strong>fonte musculaire</strong> ou une dénutrition",
       "does4": "Fournit l'<strong>angle de phase</strong>, marqueur d'intégrité cellulaire",
       "doesNotTitle": "Ce qu'il ne fait pas",
-      "doesNot1": "Il ne <strong>détermine pas</strong> seul votre poids sec — il aide votre médecin à le faire",
+      "doesNot1": "Il ne <strong>détermine pas</strong> seul votre poids sec : il aide votre médecin à le faire",
       "doesNot2": "Il ne <strong>diagnostique pas</strong> à lui seul une dénutrition",
       "doesNot3": "Il ne <strong>remplace pas</strong> les bilans biologiques ni l'examen clinique",
-      "doesNot4": "Il ne mesure ni cancer, ni maladie cardiaque — il n'est pas un dépistage",
+      "doesNot4": "Il ne mesure ni cancer, ni maladie cardiaque : il n'est pas un dépistage",
       "note": "La bio-impédance est un outil d'aide à la décision médicale. L'interprétation relève du néphrologue, qui l'intègre à votre dossier clinique."
     },
     "partOf": {
@@ -1359,7 +1359,7 @@
       },
       "traceability": {
         "title": "Traçabilité",
-        "text": "Paramètres de chaque séance enregistrés — pression, débits, conductivité, durée effective de dialyse."
+        "text": "Paramètres de chaque séance enregistrés : pression, débits, conductivité, durée effective de dialyse."
       }
     },
     "water": {
@@ -1390,7 +1390,7 @@
       },
       "controls": {
         "label": "Contrôles réguliers :",
-        "text": "prélèvements trimestriels — bactériologiques et biochimiques. Résultats disponibles sur demande au secrétariat médical."
+        "text": "prélèvements trimestriels, bactériologiques et biochimiques. Résultats disponibles sur demande au secrétariat médical."
       }
     },
     "gallery": {
@@ -1451,7 +1451,7 @@
       },
       "nephrologist": {
         "title": "Néphrologue",
-        "text": "Présence continue pendant toute la durée des séances — pas une astreinte téléphonique."
+        "text": "Présence continue pendant toute la durée des séances, pas une astreinte téléphonique."
       },
       "biomedical": {
         "title": "Technicien biomédical",
@@ -1468,7 +1468,7 @@
       "items": {
         "water": {
           "title": "Analyses d'eau",
-          "text": "Prélèvements trimestriels — bactériologiques et biochimiques."
+          "text": "Prélèvements trimestriels, bactériologiques et biochimiques."
         },
         "ktv": {
           "title": "Efficacité de dialyse (Kt/V)",
@@ -1476,7 +1476,7 @@
         },
         "morbidity": {
           "title": "Revue de morbidité",
-          "text": "Staff médical hebdomadaire — revue des incidents, des paramètres, des cas délicats."
+          "text": "Staff médical hebdomadaire : revue des incidents, des paramètres, des cas délicats."
         },
         "accreditation": {
           "title": "Agrément Ministère de la Santé",
@@ -1520,7 +1520,7 @@
     "franceCard": {
       "eyebrow": "Diaspora France",
       "title": "Vous rentrez de France ? Guide CPAM complet",
-      "text": "Accord préalable, formulaires SE 352-05, plafond 86,95 €/séance, factures acquittées — toutes les démarches, étape par étape."
+      "text": "Accord préalable, formulaires SE 352-05, plafond 86,95 €/séance, factures acquittées : toutes les démarches, étape par étape."
     },
     "steps": {
       "eyebrow": "Comment ça marche",
@@ -1545,7 +1545,7 @@
       "eyebrow": "Documents à préparer",
       "title": "Ce dont nous avons besoin pour valider votre créneau",
       "items": {
-        "doc1": "Dernier bilan biologique — FNS + Biochimie (moins d'1 mois)",
+        "doc1": "Dernier bilan biologique : FNS + Biochimie (moins d'1 mois)",
         "doc2": "Sérologies à jour : hépatites B, C et VIH de moins de 6 mois",
         "doc3": "Ordonnance de dialyse signée par votre néphrologue traitant",
         "doc4": "Coordonnées de votre néphrologue traitant (pour liaison)",
@@ -1553,17 +1553,17 @@
         "doc6": "Attestation CNAS, CASNOS ou mutuelle complémentaire"
       },
       "deadlineLabel": "Délai conseillé :",
-      "deadlineText": "contactez-nous au minimum 1 mois avant votre séjour. Les réservations de dernière minute restent possibles mais ne sont pas conseillées — elles dépendent de la disponibilité d'un poste."
+      "deadlineText": "contactez-nous au minimum 1 mois avant votre séjour. Les réservations de dernière minute restent possibles mais ne sont pas conseillées, elles dépendent de la disponibilité d'un poste."
     },
     "cost": {
       "eyebrow": "Combien ça coûte",
       "title": "Prise en charge transparente",
       "affiliatedLabel": "Si vous êtes affilié CNAS ou CASNOS",
-      "affiliatedText": "— vos séances sont prises en charge intégralement en tiers-payant. Aucune avance de frais. Apportez simplement votre carte Chifa et votre attestation.",
+      "affiliatedText": ": vos séances sont prises en charge intégralement en tiers-payant. Aucune avance de frais. Apportez simplement votre carte Chifa et votre attestation.",
       "diasporaLabel": "Si vous êtes de la diaspora avec une mutuelle européenne",
-      "diasporaText": "— nous vous communiquons un devis clair avant votre séjour. Beaucoup de mutuelles françaises, belges ou canadiennes remboursent la dialyse à l'étranger sur justificatif.",
+      "diasporaText": ": nous vous communiquons un devis clair avant votre séjour. Beaucoup de mutuelles françaises, belges ou canadiennes remboursent la dialyse à l'étranger sur justificatif.",
       "unaffiliatedLabel": "Si vous êtes non affilié",
-      "unaffiliatedText": "— tarif transparent communiqué par écrit avant votre arrivée. Pas de surprise à la sortie.",
+      "unaffiliatedText": ": tarif transparent communiqué par écrit avant votre arrivée. Pas de surprise à la sortie.",
       "quoteCta": "Demander un devis personnalisé"
     },
     "medical": {
@@ -1672,7 +1672,7 @@
       "item2": "Preuve de paiement (reçu, relevé bancaire)",
       "item3": "Médicaments et transport : non remboursés par la CPAM",
       "item4": "Dépôt sur ameli.fr : Démarches → Frais de santé → Soins à l'étranger",
-      "mutuelle": "Votre mutuelle peut compléter le forfait — vérifiez avec elle avant le départ, avec notre devis nominatif."
+      "mutuelle": "Votre mutuelle peut compléter le forfait : vérifiez avec elle avant le départ, avec notre devis nominatif."
     },
     "arrival": {
       "eyebrow": "Arrivée en Algérie",
@@ -1700,7 +1700,7 @@
       },
       "q2": {
         "question": "Ma mutuelle prend-elle en charge le dépassement de 86,95 € ?",
-        "answer": "Cela dépend de votre contrat. Beaucoup de mutuelles complètent le forfait CPAM pour les soins à l'étranger. Contactez-les avant le départ avec votre devis — nous en fournissons un nominatif après étude du dossier."
+        "answer": "Cela dépend de votre contrat. Beaucoup de mutuelles complètent le forfait CPAM pour les soins à l'étranger. Contactez-les avant le départ avec votre devis, nous en fournissons un nominatif après étude du dossier."
       },
       "q3": {
         "question": "Les sérologies et documents doivent-ils être traduits ?",
@@ -1760,7 +1760,7 @@
       "items": {
         "decision": {
           "title": "Décision médicale individualisée",
-          "text": "Le jeûne pendant le Ramadan est une décision qui appartient à vous — en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi."
+          "text": "Le jeûne pendant le Ramadan est une décision qui appartient à vous, en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi."
         },
         "premiere-seance": {
           "title": "Première séance à 4h du matin",
@@ -1776,8 +1776,8 @@
       "eyebrow": "Planning type",
       "title": "Créneaux pendant le Ramadan",
       "intro": "Le planning précis est communiqué environ 3 semaines avant le début du Ramadan.",
-      "point1": "<strong>Première séance à 4h du matin</strong> — avant s'hour, pour l'ensemble des patients (jeûneurs ou non).",
-      "point2": "<strong>Pas de séance après f'tour</strong> — ni de créneau nocturne. Les créneaux suivants de la journée restent alignés sur la cadence habituelle.",
+      "point1": "<strong>Première séance à 4h du matin</strong>, avant s'hour, pour l'ensemble des patients (jeûneurs ou non).",
+      "point2": "<strong>Pas de séance après f'tour</strong>, ni de créneau nocturne. Les créneaux suivants de la journée restent alignés sur la cadence habituelle.",
       "ctaTitle": "Prendre rendez-vous avant le Ramadan",
       "ctaBody": "Nous recommandons de consulter votre néphrologue <strong>au moins 2 semaines avant</strong> le début du Ramadan pour évaluer votre aptitude au jeûne, ajuster vos médicaments et programmer vos créneaux adaptés.",
       "contact": "Ou contactez-nous directement au <phone></phone> ou sur <whatsapp></whatsapp>.",
@@ -1829,7 +1829,7 @@
         },
         "malaise": {
           "q": "Que faire en cas de malaise ou de baisse de tension ?",
-          "a": "Rompez le jeûne immédiatement — la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche."
+          "a": "Rompez le jeûne immédiatement : la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche."
         },
         "cafe": {
           "q": "Le café en séance est-il servi pendant le Ramadan ?",
@@ -1870,13 +1870,13 @@
     "anatomie": {
       "eyebrow": "Anatomie",
       "title": "Le rôle de vos reins",
-      "p1": "Vous avez deux reins, situés dans le bas du dos, de chaque côté de la colonne vertébrale. Chacun pèse à peine <strong>160 grammes</strong> — à peu près la taille d'un gros haricot.",
+      "p1": "Vous avez deux reins, situés dans le bas du dos, de chaque côté de la colonne vertébrale. Chacun pèse à peine <strong>160 grammes</strong>, à peu près la taille d'un gros haricot.",
       "p2": "Imaginez-les comme <strong>deux filtres très fins</strong>. Jour et nuit, tout votre sang passe à travers eux pour y être nettoyé : ils retiennent ce qui est utile (protéines, globules), et laissent partir dans les urines ce dont le corps n'a plus besoin (eau en excès, sel, déchets comme l'urée et la créatinine).",
-      "p3": "Les reins font aussi autre chose : ils aident à <strong>réguler la tension</strong>, à <strong>garder des os solides</strong> et à <strong>fabriquer les globules rouges</strong>. Quand ils fonctionnent bien, on ne les sent pas — et c'est justement pour ça qu'il faut parfois penser à vérifier qu'ils vont bien."
+      "p3": "Les reins font aussi autre chose : ils aident à <strong>réguler la tension</strong>, à <strong>garder des os solides</strong> et à <strong>fabriquer les globules rouges</strong>. Quand ils fonctionnent bien, on ne les sent pas, et c'est justement pour ça qu'il faut parfois penser à vérifier qu'ils vont bien."
     },
     "definition": {
       "title": "L'insuffisance rénale chronique, qu'est-ce que c'est ?",
-      "p1": "Les reins sont composés de petits filtres microscopiques appelés <strong>néphrons</strong>. Quand certains sont abîmés durablement — par le diabète, l'hypertension, ou d'autres causes — ils ne se régénèrent pas. Le rein continue de fonctionner, mais un peu moins bien.",
+      "p1": "Les reins sont composés de petits filtres microscopiques appelés <strong>néphrons</strong>. Quand certains sont abîmés durablement (par le diabète, l'hypertension, ou d'autres causes), ils ne se régénèrent pas. Le rein continue de fonctionner, mais un peu moins bien.",
       "p2": "On parle d'insuffisance rénale chronique lorsque cette perte de fonction s'installe dans la durée (plus de trois mois). Elle est souvent <strong>indolore et progressive</strong>, ce qui explique qu'on la découvre fréquemment à l'occasion d'un bilan de routine. <strong>Plus elle est repérée tôt, plus on peut agir.</strong>"
     },
     "nephron": {
@@ -1884,9 +1884,9 @@
       "caption": "Le néphron — l'unité microscopique de filtration. Chaque rein en contient environ un million.",
       "eyebrow": "Zoom sur le néphron",
       "title": "Un million de filtres microscopiques par rein",
-      "p1": "Chaque rein contient environ <strong>un million de néphrons</strong>, ces unités microscopiques qui filtrent votre sang en continu. Sur le schéma, on voit le <strong>glomérule</strong> — le filtre proprement dit, où le sang passe à travers une fine membrane — puis tout le système de tubules qui ajuste la composition de l'urine en récupérant ce qui doit l'être (eau, sels, glucose) et en laissant filer les déchets vers le canal collecteur.",
-      "p2": "Cette mécanique miniaturisée se répète <strong>un million de fois par rein</strong>. Tant qu'un nombre suffisant de néphrons fonctionne, le rein <strong>compense</strong> — c'est pour cela qu'on peut perdre une partie de sa fonction rénale sans rien sentir. Le piège : quand les premiers symptômes apparaissent, il reste souvent moins de 30 % de néphrons fonctionnels.",
-      "p3": "Comprendre le néphron, c'est comprendre pourquoi un <strong>simple bilan sanguin</strong> est si précieux : il mesure la créatinine, un déchet que les néphrons sains éliminent. Sa montée silencieuse dans le sang est le premier signal — bien avant que le corps ne se manifeste."
+      "p1": "Chaque rein contient environ <strong>un million de néphrons</strong>, ces unités microscopiques qui filtrent votre sang en continu. Sur le schéma, on voit le <strong>glomérule</strong> (le filtre proprement dit, où le sang passe à travers une fine membrane) puis tout le système de tubules qui ajuste la composition de l'urine en récupérant ce qui doit l'être (eau, sels, glucose) et en laissant filer les déchets vers le canal collecteur.",
+      "p2": "Cette mécanique miniaturisée se répète <strong>un million de fois par rein</strong>. Tant qu'un nombre suffisant de néphrons fonctionne, le rein <strong>compense</strong> : c'est pour cela qu'on peut perdre une partie de sa fonction rénale sans rien sentir. Le piège : quand les premiers symptômes apparaissent, il reste souvent moins de 30 % de néphrons fonctionnels.",
+      "p3": "Comprendre le néphron, c'est comprendre pourquoi un <strong>simple bilan sanguin</strong> est si précieux : il mesure la créatinine, un déchet que les néphrons sains éliminent. Sa montée silencieuse dans le sang est le premier signal, bien avant que le corps ne se manifeste."
     },
     "signes": {
       "eyebrow": "Les signes à repérer",
@@ -1895,7 +1895,7 @@
       "debutTitle": "Au début, on peut remarquer",
       "evolutionTitle": "Plus tard, peuvent s'ajouter",
       "calloutTitle": "Bon à savoir",
-      "calloutBody": "Même à un stade avancé, avant la dialyse, on continue à uriner normalement. <em>L'absence d'urines n'est donc pas un critère.</em> Si plusieurs de ces signes vous concernent, parlez-en à votre médecin — ce n'est pas forcément les reins, mais ça vaut la peine de vérifier."
+      "calloutBody": "Même à un stade avancé, avant la dialyse, on continue à uriner normalement. <em>L'absence d'urines n'est donc pas un critère.</em> Si plusieurs de ces signes vous concernent, parlez-en à votre médecin : ce n'est pas forcément les reins, mais ça vaut la peine de vérifier."
     },
     "signesDebut": [
       "Une fatigue inhabituelle, qui apparaît dès un effort léger",
@@ -1948,7 +1948,7 @@
     ],
     "piliers": {
       "quoteEyebrow": "Le message le plus important",
-      "quote": "« 10 % des insuffisances rénales peuvent être évitées, et 30 % peuvent être retardées de plusieurs années — parfois plus d'une décennie. »",
+      "quote": "« 10 % des insuffisances rénales peuvent être évitées, et 30 % peuvent être retardées de plusieurs années, parfois plus d'une décennie. »",
       "quoteCaption": "Agir tôt change la trajectoire. Les recommandations reposent sur quatre piliers.",
       "label": "Pilier {num}"
     },
