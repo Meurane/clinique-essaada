@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { HeartPulse } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -8,28 +10,41 @@ import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Services · Hémodialyse & néphrologie",
-  description:
-    "Hémodialyse, consultation néphrologie, préparation à la 1ʳᵉ séance. Découvrez l'offre de soins de la Clinique ESSAADA.",
-  alternates: { canonical: `${site.url}/services` },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "servicesIndex" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/services` },
+  };
+}
 
 export default function ServicesPage() {
+  const t = useTranslations("servicesIndex");
   return (
     <>
       <PhotoHero
-        eyebrow="Services"
-        title="Nos services de néphrologie et de dialyse"
-        subtitle="Une offre complète pour les patients insuffisants rénaux, à tous les stades de leur parcours."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={HeartPulse}
         photoSrc="/images/clinique-hall-accueil.webp"
-        photoAlt="Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
-        photoLabel="Parcours de soins"
-        photoTag="Consultation & dialyse"
+        photoAlt={t("hero.photoAlt")}
+        photoLabel={t("hero.photoLabel")}
+        photoTag={t("hero.photoTag")}
       />
       <div className="container-custom py-5">
-        <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Services", url: "/services" }]} />
+        <Breadcrumb
+          items={[
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.services"), url: "/services" },
+          ]}
+        />
       </div>
 
       <script
@@ -46,8 +61,8 @@ export default function ServicesPage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            title="Un parcours clair, du premier rendez-vous au suivi long terme"
-            subtitle="Chaque service est conçu autour du patient : rigueur médicale, information accessible, respect du temps."
+            title={t("section.title")}
+            subtitle={t("section.subtitle")}
           />
           <ServicesGrid />
         </div>
@@ -55,9 +70,9 @@ export default function ServicesPage() {
 
       <ConversionFooterCTA
         variant="sand"
-        title="Un parcours adapté à votre situation ?"
-        subtitle="Consultation, première dialyse, séjour de passage — notre équipe vous oriente vers le bon service."
-        waMessage="Bonjour, je cherche à comprendre quel service de la Clinique ESSAADA correspond à ma situation."
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        waMessage={t("cta.waMessage")}
       />
     </>
   );

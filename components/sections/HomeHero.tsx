@@ -1,15 +1,17 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import { site } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 
-const proofPoints = [
-  "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
-  "Dossier CNAS / CASNOS : on s'occupe de la paperasse, vous venez avec votre carte Chifa",
-  "Accompagnant bienvenu · salle d'attente dédiée · café et thé servis",
-];
-
 export function HomeHero() {
+  const t = useTranslations("home");
+  const tc = useTranslations("common");
+  const proofPoints = [
+    t("hero.proof.0"),
+    t("hero.proof.1"),
+    t("hero.proof.2"),
+  ];
   return (
     <section className="relative bg-primary-700 text-white overflow-hidden">
       <div className="container-custom relative pt-16 pb-16 md:pt-24 md:pb-24 grid md:grid-cols-5 gap-10 md:gap-14 items-center">
@@ -17,16 +19,14 @@ export function HomeHero() {
         <div className="md:col-span-3 space-y-7">
           <div className="inline-flex items-center gap-2 bg-primary-600/40 border border-primary-400/40 px-3 py-1.5 rounded-full text-sm text-primary-100">
             <span className="w-2 h-2 rounded-full bg-accent-500" aria-hidden="true" />
-            Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais
+            {t("hero.badge")}
           </div>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] text-white">
-            <span className="block">Votre vie continue,</span>
-            <span className="block text-sand-100">on en prend soin.</span>
+            <span className="block">{t("hero.titleLine1")}</span>
+            <span className="block text-sand-100">{t("hero.titleLine2")}</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
-            Hémodialyse à Sidi Bel Abbès — {site.stats.lits} lits,
-            néphrologue présent, équipe formée à l'accompagnement des
-            patients dialysés et de leurs proches.
+            {t("hero.intro", { lits: site.stats.lits })}
           </p>
           <ul className="space-y-2.5 text-primary-50">
             {proofPoints.map((p) => (
@@ -38,11 +38,11 @@ export function HomeHero() {
           </ul>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
             <Button href="/rendez-vous" variant="light">
-              Prendre rendez-vous
+              {tc("bookAppointment")}
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Button>
             <Button href="/la-clinique#visite-decouverte" variant="outline">
-              Visiter le centre
+              {t("hero.visitCenter")}
             </Button>
           </div>
           <a
@@ -51,7 +51,7 @@ export function HomeHero() {
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             <span>
-              ou appelez directement —{" "}
+              {t("hero.callDirectly")}{" "}
               <span className="font-medium">{site.contact.phone}</span>
             </span>
           </a>
@@ -62,7 +62,7 @@ export function HomeHero() {
           <figure className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-sand-50 ring-1 ring-white/10 shadow-2xl">
             <Image
               src="/images/clinique-hall-accueil.webp"
-              alt="Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
+              alt={t("hero.imageAlt")}
               fill
               priority
               sizes="(max-width: 768px) 100vw, 40vw"

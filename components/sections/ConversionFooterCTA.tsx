@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { waUrl } from "@/lib/site";
 
@@ -14,14 +15,18 @@ type Props = {
 };
 
 export function ConversionFooterCTA({
-  eyebrow = "Rendez-vous",
+  eyebrow,
   title,
   subtitle,
   waMessage,
   variant = "primary",
-  primaryCtaLabel = "Prendre rendez-vous",
+  primaryCtaLabel,
   primaryCtaHref = "/rendez-vous",
 }: Props) {
+  const t = useTranslations("cta");
+  const tc = useTranslations("common");
+  const eyebrowLabel = eyebrow ?? t("eyebrow");
+  const primaryLabel = primaryCtaLabel ?? tc("bookAppointment");
   const isPrimary = variant === "primary";
   const sectionClass =
     variant === "primary"
@@ -40,7 +45,7 @@ export function ConversionFooterCTA({
     <section className={sectionClass}>
       <div className="container-custom text-center max-w-2xl mx-auto">
         <Eyebrow className="justify-center" tone={isPrimary ? "light" : "primary"}>
-          {eyebrow}
+          {eyebrowLabel}
         </Eyebrow>
         <h2 className={`font-display text-3xl md:text-4xl font-bold mb-4 ${titleColor}`}>
           {title}
@@ -55,7 +60,7 @@ export function ConversionFooterCTA({
             href={primaryCtaHref}
             className={`inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors ${primaryBtnClass}`}
           >
-            {primaryCtaLabel}
+            {primaryLabel}
             <ArrowRight className="w-5 h-5" aria-hidden="true" />
           </Link>
           <a
@@ -65,7 +70,7 @@ export function ConversionFooterCTA({
             className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
           >
             <MessageCircle className="w-5 h-5" aria-hidden="true" />
-            Écrire sur WhatsApp
+            {t("whatsappWrite")}
           </a>
         </div>
       </div>

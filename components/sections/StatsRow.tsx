@@ -1,18 +1,31 @@
 import { BedDouble, CalendarDays, Stethoscope, Sparkles } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { site } from "@/lib/site";
 
-const stats = [
-  { icon: BedDouble, value: `${site.stats.lits}`, label: "Lits d'hémodialyse" },
-  { icon: CalendarDays, value: "Sam–Jeu", label: "Service continu" },
-  { icon: Stethoscope, value: "05h–19h", label: "Médecin présent" },
-  {
-    icon: Sparkles,
-    value: "Neufs",
-    label: "Équipements",
-  },
-];
-
 export function StatsRow() {
+  const t = useTranslations("home");
+  const stats = [
+    {
+      icon: BedDouble,
+      value: `${site.stats.lits}`,
+      label: t("stats.beds"),
+    },
+    {
+      icon: CalendarDays,
+      value: t("stats.daysValue"),
+      label: t("stats.continuousService"),
+    },
+    {
+      icon: Stethoscope,
+      value: "05h–19h",
+      label: t("stats.doctorPresent"),
+    },
+    {
+      icon: Sparkles,
+      value: t("stats.equipmentValue"),
+      label: t("stats.equipment"),
+    },
+  ];
   return (
     <section className="bg-white border-y border-neutral-150">
       <div className="container-custom py-14 md:py-20">

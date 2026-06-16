@@ -1,57 +1,74 @@
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { site, waUrl } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Contact — téléphone, WhatsApp, adresse",
-  description:
-    "Contactez la Clinique ESSAADA à Sidi Bel Abbès : téléphone, WhatsApp, email, adresse, horaires.",
-  alternates: { canonical: `${site.url}/contact` },
-};
-
-const channels = [
-  {
-    icon: Phone,
-    title: "Téléphone",
-    value: site.contact.phone,
-    href: site.contact.phoneHref,
-    external: false,
-  },
-  {
-    icon: MessageCircle,
-    title: "WhatsApp",
-    value: "Écrivez-nous sur WhatsApp",
-    href: waUrl("Bonjour, j'aimerais des informations sur la Clinique ESSAADA."),
-    external: true,
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    value: site.contact.email,
-    href: site.contact.emailHref,
-    external: false,
-  },
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contactPage" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/contact` },
+  };
+}
 
 export default function ContactPage() {
+  const t = useTranslations("contactPage");
+  const tc = useTranslations("common");
+
+  const channels = [
+    {
+      icon: Phone,
+      title: t("channels.phone.title"),
+      value: site.contact.phone,
+      href: site.contact.phoneHref,
+      external: false,
+    },
+    {
+      icon: MessageCircle,
+      title: t("channels.whatsapp.title"),
+      value: t("channels.whatsapp.value"),
+      href: waUrl(tc("whatsappInfoMessage")),
+      external: true,
+    },
+    {
+      icon: Mail,
+      title: t("channels.email.title"),
+      value: site.contact.email,
+      href: site.contact.emailHref,
+      external: false,
+    },
+  ];
+
   return (
     <>
       <PhotoHero
-        eyebrow="Contact"
-        title="Nous joindre"
-        subtitle="Pour nous joindre rapidement : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={MapPin}
         photoSrc="/images/clinique-entree.webp"
-        photoAlt="Entrée principale de la Clinique ESSAADA, auvent bleu avec inscription en arabe « عيادة السعادة »"
-        photoLabel="Façade & accès"
+        photoAlt={t("hero.photoAlt")}
+        photoLabel={t("hero.photoLabel")}
         photoTag="Sidi Bel Abbès"
       />
       <div className="container-custom py-5">
-        <Breadcrumb items={[{ name: "Accueil", url: "/" }, { name: "Contact", url: "/contact" }]} />
+        <Breadcrumb
+          items={[
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.contact"), url: "/contact" },
+          ]}
+        />
       </div>
 
       <script
@@ -69,7 +86,7 @@ export default function ContactPage() {
       <section className="section-padding">
         <div className="container-custom grid md:grid-cols-2 gap-10 md:gap-16">
           <div>
-            <SectionHeader eyebrow="Coordonnées" title="Plusieurs moyens de nous joindre" />
+            <SectionHeader eyebrow={t("coordinates.eyebrow")} title={t("coordinates.title")} />
             <ul className="space-y-3">
               {channels.map((c) => (
                 <li key={c.title}>
@@ -102,7 +119,7 @@ export default function ContactPage() {
                 <MapPin className="w-5 h-5 text-primary-700 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <div className="font-display font-semibold text-neutral-900">
-                    Adresse
+                    {t("address.title")}
                   </div>
                   <p className="text-neutral-700 leading-relaxed">
                     {site.address.street}
@@ -118,7 +135,7 @@ export default function ContactPage() {
                 <Clock className="w-5 h-5 text-primary-700 mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <div className="font-display font-semibold text-neutral-900">
-                    Horaires
+                    {t("hours.title")}
                   </div>
                   <p className="text-neutral-700">{site.hours.opening}</p>
                   <ul className="mt-2 space-y-1 text-base">
@@ -136,7 +153,7 @@ export default function ContactPage() {
             <div className="rounded-2xl overflow-hidden border border-neutral-200 bg-white">
               <div className="relative aspect-[16/10] bg-sand-50">
                 <iframe
-                  title={`Emplacement de ${site.name} sur OpenStreetMap`}
+                  title={t("map.iframeTitle", { name: site.name })}
                   src="https://www.openstreetmap.org/export/embed.html?bbox=-0.6506%2C35.1728%2C-0.6106%2C35.2128&layer=mapnik&marker=35.1928%2C-0.6306"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -150,12 +167,12 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between gap-3 px-5 py-4 bg-white border-t border-neutral-150 hover:bg-neutral-50 transition-colors group"
-                aria-label={`Ouvrir l'emplacement de ${site.name} dans Google Maps`}
+                aria-label={t("map.openAria", { name: site.name })}
               >
                 <span className="flex items-center gap-2.5">
                   <MapPin className="w-5 h-5 text-primary-700" aria-hidden="true" />
                   <span className="font-medium text-neutral-900">
-                    Ouvrir dans Google Maps
+                    {t("map.openLabel")}
                   </span>
                 </span>
                 <ExternalLink

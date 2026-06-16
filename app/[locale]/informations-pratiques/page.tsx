@@ -1,38 +1,54 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, BookOpenCheck } from "lucide-react";
 import { PhotoHero } from "@/components/ui/PhotoHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card, CardIcon } from "@/components/ui/Card";
-import { infosBlocks, viequotidienneBlocks } from "@/content/infos-pratiques";
+import { getInfosBlocks, getViequotidienneBlocks } from "@/content/infos-pratiques";
 import { ConversionFooterCTA } from "@/components/sections/ConversionFooterCTA";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Vivre avec la dialyse · Horaires, accès, repas",
-  description:
-    "Horaires, accès, café, accessibilité PMR, sécurité. Tout ce qu'il faut savoir avant de venir à la Clinique ESSAADA.",
-  alternates: { canonical: `${site.url}/informations-pratiques` },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "practical" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/informations-pratiques` },
+  };
+}
 
 export default function InfosPratiquesPage() {
+  const t = useTranslations("practical");
+  const infosBlocks = getInfosBlocks(t);
+  const viequotidienneBlocks = getViequotidienneBlocks(t);
+
   return (
     <>
       <PhotoHero
-        eyebrow="Vivre avec la dialyse"
-        title="Tout ce qu'il faut savoir avant de venir"
-        subtitle="Horaires, accès, services sur place : nous avons pensé aux détails qui comptent."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
         photoIcon={BookOpenCheck}
         photoSrc="/images/clinique-hall-orientation.webp"
-        photoAlt="Hall principal de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès, escalier en marbre et panneau d'orientation des services"
-        photoLabel="Vie pratique"
-        photoTag="Accès & services"
+        photoAlt={t("hero.photoAlt")}
+        photoLabel={t("hero.photoLabel")}
+        photoTag={t("hero.photoTag")}
       />
       <div className="container-custom py-5">
         <Breadcrumb
-          items={[{ name: "Accueil", url: "/" }, { name: "Vivre avec la dialyse", url: "/informations-pratiques" }]}
+          items={[
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.current"), url: "/informations-pratiques" },
+          ]}
         />
       </div>
 
@@ -50,9 +66,9 @@ export default function InfosPratiquesPage() {
       <section className="section-padding">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="À la clinique"
-            title="Votre confort, nos priorités"
-            subtitle="Horaires, accès, accompagnants, sécurité — les détails concrets de votre venue."
+            eyebrow={t("infosSection.eyebrow")}
+            title={t("infosSection.title")}
+            subtitle={t("infosSection.subtitle")}
           />
           <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {infosBlocks.map((b) => (
@@ -82,9 +98,9 @@ export default function InfosPratiquesPage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Vie quotidienne"
-            title="La dialyse, et la vie qui continue"
-            subtitle="Sport, voyages, travail, intimité, parentalité, alimentation — la maladie rénale bouscule, mais elle n'efface pas. Voici ce qu'on peut en dire, sans tabou."
+            eyebrow={t("vieSection.eyebrow")}
+            title={t("vieSection.title")}
+            subtitle={t("vieSection.subtitle")}
           />
           <ul className="space-y-5">
             {viequotidienneBlocks.map((b) => (
@@ -130,7 +146,7 @@ export default function InfosPratiquesPage() {
               href="/comprendre-l-insuffisance-renale"
               className="inline-flex items-center gap-2 bg-white border-2 border-primary-600 text-primary-700 hover:bg-primary-50 px-6 py-3.5 rounded-full font-semibold min-h-[52px] transition-colors"
             >
-              Comprendre l'insuffisance rénale
+              {t("understandLink")}
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
@@ -139,10 +155,10 @@ export default function InfosPratiquesPage() {
 
       <ConversionFooterCTA
         variant="white"
-        eyebrow="Préparer votre venue"
-        title="Des questions avant votre première visite ?"
-        subtitle="Horaires, accompagnants, documents à prévoir, repas — notre équipe vous explique tout à l'avance."
-        waMessage="Bonjour, j'ai une question pratique pour préparer ma venue à la Clinique ESSAADA."
+        eyebrow={t("cta.eyebrow")}
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        waMessage={t("cta.waMessage")}
       />
     </>
   );

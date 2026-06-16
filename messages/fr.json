@@ -63,31 +63,690 @@
   "nav": {
     "clinic": {
       "label": "La clinique",
-      "center": { "label": "Le centre", "desc": "37 lits, équipements récents, équipe pluridisciplinaire" },
-      "equipment": { "label": "Équipement & hygiène", "desc": "Générateurs, eau ultra-pure, protocoles stricts" },
-      "bodyComposition": { "label": "Mesure poids sec & hydratation", "desc": "Bio-impédance multi-fréquence, ajustement personnalisé" },
-      "team": { "label": "Équipe médicale", "desc": "Néphrologue et infirmiers spécialisés" },
-      "practical": { "label": "Infos pratiques", "desc": "Horaires, accès, accompagnants, repas" }
+      "center": {
+        "label": "Le centre",
+        "desc": "37 lits, équipements récents, équipe pluridisciplinaire"
+      },
+      "equipment": {
+        "label": "Équipement & hygiène",
+        "desc": "Générateurs, eau ultra-pure, protocoles stricts"
+      },
+      "bodyComposition": {
+        "label": "Mesure poids sec & hydratation",
+        "desc": "Bio-impédance multi-fréquence, ajustement personnalisé"
+      },
+      "team": {
+        "label": "Équipe médicale",
+        "desc": "Néphrologue et infirmiers spécialisés"
+      },
+      "practical": {
+        "label": "Infos pratiques",
+        "desc": "Horaires, accès, accompagnants, repas"
+      }
     },
     "treatment": {
       "label": "Votre traitement",
-      "hemodialysis": { "label": "Hémodialyse", "desc": "Séances, déroulé, engagements qualité" },
-      "consultation": { "label": "Consultation néphrologie", "desc": "Diagnostic, suivi, prévention" },
-      "firstSession": { "label": "Votre 1ʳᵉ séance", "desc": "Documents, étapes, ce qu'il faut savoir" },
-      "ramadan": { "label": "Ramadan & dialyse", "desc": "Créneaux adaptés pendant le jeûne" }
+      "hemodialysis": {
+        "label": "Hémodialyse",
+        "desc": "Séances, déroulé, engagements qualité"
+      },
+      "consultation": {
+        "label": "Consultation néphrologie",
+        "desc": "Diagnostic, suivi, prévention"
+      },
+      "firstSession": {
+        "label": "Votre 1ʳᵉ séance",
+        "desc": "Documents, étapes, ce qu'il faut savoir"
+      },
+      "ramadan": {
+        "label": "Ramadan & dialyse",
+        "desc": "Créneaux adaptés pendant le jeûne"
+      }
     },
     "visiting": {
       "label": "Patients de passage",
-      "organize": { "label": "Organiser mon séjour", "desc": "Confirmation sous 72h, 3 étapes simples" },
-      "fromFrance": { "label": "Je viens de France (CPAM)", "desc": "Accord préalable, formulaires SE 352-05, remboursement" }
+      "organize": {
+        "label": "Organiser mon séjour",
+        "desc": "Confirmation sous 72h, 3 étapes simples"
+      },
+      "fromFrance": {
+        "label": "Je viens de France (CPAM)",
+        "desc": "Accord préalable, formulaires SE 352-05, remboursement"
+      }
     },
     "resources": {
       "label": "Ressources",
-      "blog": { "label": "Blog", "desc": "Articles, guides et conseils pratiques" },
-      "understanding": { "label": "L'insuffisance rénale", "desc": "Guide pédagogique complet" },
-      "glossary": { "label": "Glossaire", "desc": "29 termes clés de la dialyse" },
-      "faq": { "label": "FAQ", "desc": "Questions fréquentes des patients" }
+      "blog": {
+        "label": "Blog",
+        "desc": "Articles, guides et conseils pratiques"
+      },
+      "understanding": {
+        "label": "L'insuffisance rénale",
+        "desc": "Guide pédagogique complet"
+      },
+      "glossary": {
+        "label": "Glossaire",
+        "desc": "29 termes clés de la dialyse"
+      },
+      "faq": {
+        "label": "FAQ",
+        "desc": "Questions fréquentes des patients"
+      }
     },
-    "contact": { "label": "Contact" }
+    "contact": {
+      "label": "Contact"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
+      "description": "Centre d'hémodialyse à Sidi Bel Abbès : 37 lits, équipements récents, équipe néphrologue présente. Conventionné CNAS et CASNOS — tiers-payant intégral. Patients résidents et de passage (diaspora France / CPAM).",
+      "ogTitle": "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
+      "ogDescription": "37 lits, conventionné CNAS/CASNOS, patients de passage accueillis. L'hémodialyse pensée pour continuer à vivre."
+    },
+    "hero": {
+      "badge": "Conventionnée CNAS · CASNOS — tiers-payant intégral, zéro avance de frais",
+      "titleLine1": "Votre vie continue,",
+      "titleLine2": "on en prend soin.",
+      "intro": "Hémodialyse à Sidi Bel Abbès — {lits} lits, néphrologue présent, équipe formée à l'accompagnement des patients dialysés et de leurs proches.",
+      "proof": {
+        "0": "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
+        "1": "Dossier CNAS / CASNOS : on s'occupe de la paperasse, vous venez avec votre carte Chifa",
+        "2": "Accompagnant bienvenu · salle d'attente dédiée · café et thé servis"
+      },
+      "visitCenter": "Visiter le centre",
+      "callDirectly": "ou appelez directement —",
+      "imageAlt": "Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental"
+    },
+    "stats": {
+      "beds": "Lits d'hémodialyse",
+      "daysValue": "Sam–Jeu",
+      "continuousService": "Service continu",
+      "doctorPresent": "Médecin présent",
+      "equipmentValue": "Neufs",
+      "equipment": "Équipements"
+    },
+    "journey": {
+      "eyebrow": "Par où commencer",
+      "title": "À quelle étape de votre parcours êtes-vous ?",
+      "subtitle": "Chaque patient arrive à un moment différent. Dites-nous le vôtre — nous adaptons.",
+      "items": {
+        "0": {
+          "title": "Je viens d'apprendre que j'ai une maladie rénale",
+          "description": "Consultation néphrologie, diagnostic, suivi. Vous êtes au début — on vous explique chaque étape.",
+          "cta": "Consulter un néphrologue"
+        },
+        "1": {
+          "title": "Je me prépare à la dialyse",
+          "description": "Votre première séance, étape par étape. Documents à apporter, déroulé, ce qu'il faut savoir.",
+          "cta": "Préparer ma 1ʳᵉ séance"
+        },
+        "2": {
+          "title": "Je dialyse déjà et je cherche un centre",
+          "description": "Transfert, vacances, séjour en Algérie. Confirmation de votre créneau sous 72h ouvrées.",
+          "cta": "Patients de passage"
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "Nos services",
+      "title": "Une prise en charge complète de l'insuffisance rénale",
+      "subtitle": "De la consultation à la séance de dialyse, notre équipe vous accompagne avec rigueur et attention."
+    },
+    "why": {
+      "eyebrow": "Pourquoi ESSAADA",
+      "title": "Confiance, rigueur médicale, chaleur humaine",
+      "subtitle": "Une clinique pensée pour les patients dialysés, leurs proches et les médecins prescripteurs.",
+      "items": {
+        "0": {
+          "title": "Accompagnement personnalisé",
+          "text": "Chaque patient bénéficie d'un suivi dédié : éducation thérapeutique, conseils diététiques, soutien psychologique."
+        },
+        "1": {
+          "title": "Qualité & sécurité",
+          "text": "Eau de dialyse ultra-pure, protocoles d'hygiène stricts, équipements contrôlés, médecin présent en permanence."
+        },
+        "2": {
+          "title": "Équipe pluridisciplinaire",
+          "text": "Néphrologue, infirmiers spécialisés, personnel d'accueil. Formés à la prise en charge des patients dialysés."
+        }
+      }
+    },
+    "diaspora": {
+      "title": "Diaspora & patients de passage",
+      "text": "Vous rentrez en vacances à Sidi Bel Abbès ou dans la région de l'Ouest algérien ? Nous accueillons les patients dialysés de passage. Confirmation de votre créneau sous 72h ouvrées.",
+      "cta": "Organiser mon séjour dialyse"
+    },
+    "hours": {
+      "eyebrow": "Horaires",
+      "title": "Trois créneaux par jour, du samedi au jeudi",
+      "note": "Les horaires peuvent être ajustés pour optimiser la prise en charge."
+    },
+    "testimonials": {
+      "eyebrow": "Paroles de patients",
+      "title": "Ce que nous disent celles et ceux que nous accompagnons",
+      "subtitle": "Résidents et patients de passage — nous recueillons leurs retours dans le respect du secret médical et avec leur consentement."
+    },
+    "testimonialCard": {
+      "duration": "{years, plural, one {# an de prise en charge} other {# ans de prise en charge}}"
+    },
+    "testimonialsEmpty": {
+      "title": "Témoignages en cours de collecte",
+      "text": "Nous recueillons les retours de nos patients — résidents comme de passage — dans le respect du secret médical et avec leur consentement écrit. Les premières voix seront publiées ici prochainement."
+    },
+    "testimonialsAria": "Témoignages de patients",
+    "cta": {
+      "eyebrow": "Rendez-vous",
+      "title": "Une question, un rendez-vous ?",
+      "subtitle": "Notre équipe est joignable par WhatsApp et téléphone, du samedi au jeudi.",
+      "whatsappMessage": "Bonjour, j'aimerais prendre rendez-vous à la Clinique ESSAADA.",
+      "whatsappLabel": "Écrire sur WhatsApp"
+    }
+  },
+  "servicesGrid": {
+    "hemodialysis": {
+      "title": "Hémodialyse",
+      "description": "Traitement de suppléance rénale. 37 lits, générateurs dernière génération, eau de dialyse ultra-pure, lits 3 positions."
+    },
+    "nephrologyConsultation": {
+      "title": "Consultation néphrologie",
+      "description": "Diagnostic, suivi et prévention des maladies rénales à tous les stades. Préparation à la dialyse."
+    },
+    "firstSession": {
+      "title": "Votre 1ʳᵉ séance",
+      "description": "Un parcours balisé pour votre première dialyse. Accompagnement, repères et réassurance à chaque étape."
+    },
+    "learnMore": "En savoir plus"
+  },
+  "cta": {
+    "eyebrow": "Rendez-vous",
+    "whatsappWrite": "Écrire sur WhatsApp"
+  },
+  "servicesIndex": {
+    "meta": {
+      "title": "Services · Hémodialyse & néphrologie",
+      "description": "Hémodialyse, consultation néphrologie, préparation à la 1ʳᵉ séance. Découvrez l'offre de soins de la Clinique ESSAADA."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Nos services de néphrologie et de dialyse",
+      "subtitle": "Une offre complète pour les patients insuffisants rénaux, à tous les stades de leur parcours.",
+      "photoAlt": "Hall d'accueil de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — piliers en marbre, comptoir de réception et escalier monumental",
+      "photoLabel": "Parcours de soins",
+      "photoTag": "Consultation & dialyse"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services"
+    },
+    "section": {
+      "title": "Un parcours clair, du premier rendez-vous au suivi long terme",
+      "subtitle": "Chaque service est conçu autour du patient : rigueur médicale, information accessible, respect du temps."
+    },
+    "cta": {
+      "title": "Un parcours adapté à votre situation ?",
+      "subtitle": "Consultation, première dialyse, séjour de passage — notre équipe vous oriente vers le bon service.",
+      "waMessage": "Bonjour, je cherche à comprendre quel service de la Clinique ESSAADA correspond à ma situation."
+    }
+  },
+  "hemodialysis": {
+    "meta": {
+      "title": "Hémodialyse",
+      "description": "Séances d'hémodialyse à Sidi Bel Abbès : 37 lits, générateurs dernière génération, eau ultra-pure, suivi médical permanent. Conventionné CNAS/CASNOS.",
+      "ogTitle": "Hémodialyse — Clinique ESSAADA",
+      "ogDescription": "Centre d'hémodialyse à Sidi Bel Abbès. Équipements récents, lits 3 positions, équipe pluridisciplinaire."
+    },
+    "hero": {
+      "eyebrow": "Service · Hémodialyse",
+      "title": "Hémodialyse à Sidi Bel Abbès",
+      "subtitle": "{lits} lits. 3 créneaux par jour. Conventionnée CNAS et CASNOS.",
+      "photoAlt": "Salle d'hémodialyse de la Clinique ESSAADA, vue d'ensemble des postes équipés de générateurs et lits inclinables",
+      "photoLabel": "Salle d'hémodialyse",
+      "photoTag": "Sidi Bel Abbès"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "hemodialysis": "Hémodialyse"
+    },
+    "treatment": {
+      "eyebrow": "Le traitement",
+      "title": "L'hémodialyse : traiter le sang quand les reins ne le font plus",
+      "p1": "Lorsque les reins ne parviennent plus à filtrer les déchets et l'eau en excès, l'hémodialyse prend le relais. Le sang est conduit vers le générateur (la machine de dialyse) par une fistule (accès vasculaire créé au bras), filtré dans un dialyseur (filtre artificiel), puis restitué.",
+      "p2": "Chaque séance dure environ 4 heures. La plupart des patients viennent 3 fois par semaine selon la prescription du néphrologue. Pendant la séance, vous êtes installé·e confortablement sur un lit 3 positions, sous surveillance continue par nos infirmiers et un médecin présent sur site."
+    },
+    "qualiteTitle": "Nos engagements qualité",
+    "qualite": [
+      "Générateurs dernière génération",
+      "Eau de dialyse ultra-pure",
+      "Suivi médical permanent",
+      "Lits 3 positions confortables",
+      "Protocoles d'hygiène stricts",
+      "Matériel à usage unique quand indiqué"
+    ],
+    "seance": {
+      "eyebrow": "Votre séance, en détail",
+      "title": "Ce que comprend une séance à ESSAADA",
+      "subtitle": "Concrètement, voici ce que vous recevez à chaque venue — pas en option, pas en supplément.",
+      "note": "Séances conventionnées CNAS et CASNOS — <strong>zéro avance de frais</strong> si vous êtes affilié. Notre service administratif monte votre dossier avec vous."
+    },
+    "seanceIncludes": [
+      "Accueil par médecin dialyseur",
+      "Pesée, contrôle tensionnel et évaluation pré-séance",
+      "Séance de 4h sur générateur neuf",
+      "Surveillance continue par personnel infirmier dédié",
+      "Médecin néphrologue présent sur site pendant toutes les séances",
+      "Traçabilité informatisée de vos paramètres à chaque séance",
+      "Café servi en cours de séance",
+      "Couverture, fauteuil inclinable, télévision",
+      "Accompagnant autorisé en salle d'attente dédiée",
+      "Prise en charge CNAS / CASNOS intégrale — zéro avance de frais",
+      "Compte-rendu transmis à votre néphrologue traitant",
+      "WhatsApp du secrétariat pour vos questions entre séances"
+    ],
+    "steps": {
+      "eyebrow": "Déroulé",
+      "title": "Une séance en 4 étapes",
+      "subtitle": "Un cadre clair pour que chaque séance soit aussi simple que possible."
+    },
+    "process": [
+      {
+        "title": "Accueil",
+        "text": "Vérification du dossier, contrôle des constantes (poids, tension)."
+      },
+      {
+        "title": "Installation",
+        "text": "Poste attribué, ponction de la fistule, branchement au générateur."
+      },
+      {
+        "title": "Séance",
+        "text": "Environ 4 heures de dialyse sous surveillance continue. Lecture, télé, repos autorisés."
+      },
+      {
+        "title": "Sortie",
+        "text": "Contrôle poids et tension, programmation du prochain rendez-vous, café."
+      }
+    ],
+    "bioimpedance": {
+      "eyebrow": "Suivi médical de précision",
+      "title": "Mesurer plutôt qu'estimer votre poids sec",
+      "subtitle": "La clinique dispose d'un dispositif de bio-impédance multi-fréquence pour objectiver votre hydratation et votre composition corporelle. Un outil de précision intégré au protocole de dialyse, pas un examen séparé.",
+      "cardTitle": "Bio-impédance multi-fréquence",
+      "cardText": "Aide votre néphrologue à ajuster votre poids sec, suivre votre masse maigre et masse grasse, détecter précocement une fonte musculaire. Mesure non invasive, deux minutes, indolore.",
+      "cardLink": "Comprendre cette mesure"
+    },
+    "firstTime": {
+      "title": "Vous n'avez jamais dialysé ?",
+      "text": "Nous avons conçu un parcours dédié pour votre première séance, avec des repères clairs à chaque étape. Nous accompagnons aussi les patients de passage, sur réservation.",
+      "cta": "Préparer ma 1ʳᵉ séance"
+    }
+  },
+  "consultation": {
+    "meta": {
+      "title": "Consultation néphrologie — diagnostic, prévention, suivi",
+      "description": "Consultation avec un néphrologue à Sidi Bel Abbès : diagnostic précoce, ralentissement de la maladie rénale, éducation thérapeutique. 10% des insuffisances rénales sont évitables, 30% peuvent être retardées."
+    },
+    "hero": {
+      "eyebrow": "Service · Consultation",
+      "title": "Consultation néphrologie",
+      "subtitle": "Pour le diagnostic, le suivi et la prévention des maladies rénales à tous les stades."
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "consultation": "Consultation néphrologie"
+    },
+    "intro": {
+      "p1": "Une consultation avec un néphrologue est recommandée lorsqu'un médecin traitant identifie des anomalies rénales, ou en cas de pathologie à risque (diabète, hypertension, antécédents familiaux).",
+      "p2": "Le néphrologue vous écoute, examine votre dossier, prescrit éventuellement des bilans complémentaires, puis construit avec vous un plan de suivi clair. L'objectif : ralentir l'évolution de la maladie, anticiper l'éventuel recours à la dialyse, et préserver votre qualité de vie."
+    },
+    "bulletsTitle": "Ce que nous prenons en charge",
+    "bullets": [
+      "Diagnostic précoce des maladies rénales",
+      "Suivi de l'insuffisance rénale chronique",
+      "Préparation à la dialyse le moment venu",
+      "Conseils nutritionnels adaptés",
+      "Coordination avec votre médecin traitant"
+    ],
+    "pullQuote": {
+      "eyebrow": "Le diagnostic précoce change la trajectoire",
+      "quoteLine1": "« 10 % des insuffisances rénales peuvent être évitées,",
+      "quoteLine2": "et 30 % peuvent être retardées de plusieurs années. »",
+      "caption": "C'est pourquoi nous développons la consultation néphrologique au plus près des patients : pour porter un diagnostic précoce, ralentir la progression de la maladie, et vous maintenir en bonne santé le plus longtemps possible avant qu'un traitement de suppléance ne devienne nécessaire.",
+      "cta": "Comprendre l'insuffisance rénale"
+    },
+    "etp": {
+      "eyebrow": "Éducation thérapeutique (ETP)",
+      "title": "Apprendre à vivre avec la maladie, pas contre elle",
+      "subtitle": "En complément des traitements, l'éducation thérapeutique renforce votre autonomie : vous devenez acteur de votre suivi, pas spectateur.",
+      "piliers": [
+        {
+          "title": "Sensibilisation",
+          "text": "Comprendre sa maladie, ses traitements, les signaux à surveiller."
+        },
+        {
+          "title": "Conseils adaptés",
+          "text": "Hygiène de vie, alimentation, activité physique — calés sur votre quotidien."
+        },
+        {
+          "title": "Suivi régulier",
+          "text": "Autonomie progressive pour mieux vivre avec la maladie, sans la subir."
+        }
+      ]
+    }
+  },
+  "firstSession": {
+    "meta": {
+      "title": "Votre 1ʳᵉ séance",
+      "description": "Préparer votre première séance d'hémodialyse : documents à apporter, déroulé minute par minute, ce qu'il faut savoir avant de venir."
+    },
+    "hero": {
+      "eyebrow": "Votre 1ʳᵉ séance",
+      "title": "Un parcours balisé pour préparer votre première séance",
+      "subtitle": "Nous savons que la première fois peut générer de l'inquiétude. Voici tout ce que vous devez savoir avant de venir.",
+      "photoAlt": "Comptoir de réception de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès — logo (rein stylisé) et signalétique bilingue français-arabe pour l'accueil des patients",
+      "photoLabel": "Préparation séance",
+      "photoTag": "Dossier & accueil"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "services": "Services",
+      "current": "Votre 1ʳᵉ séance"
+    },
+    "documents": {
+      "eyebrow": "Avant de venir",
+      "title": "Les documents à apporter",
+      "items": {
+        "bilan": "Votre dernier bilan biologique (analyses de sang récentes, moins de 1 mois)",
+        "serologies": "Vos sérologies à jour (hépatites B, C et VIH)",
+        "ordonnance": "Votre ordonnance de dialyse signée par votre néphrologue",
+        "chifa": "Votre carte Chifa (CNAS ou CASNOS)",
+        "identite": "Une pièce d'identité"
+      },
+      "tip": "Astuce : prenez un repas léger 2 heures avant la séance. Apportez de quoi vous occuper (livre, écouteurs). Un accompagnant peut rester avec vous pour les premières séances."
+    },
+    "passage": {
+      "title": "Patients de passage",
+      "text": "Vous venez en vacances à {city} ou sur la côte oranaise ? Contactez-nous au moins 1 mois à l'avance avec les mêmes documents. Nous confirmons la disponibilité d'un poste.",
+      "cta": "Nous contacter"
+    },
+    "bodyComposition": {
+      "title": "Bilan composition corporelle",
+      "text": "Le jour de votre 1ʳᵉ séance, mesure objective de votre poids sec et de votre hydratation par bio-impédance — pour personnaliser dès le départ votre prescription.",
+      "cta": "En savoir plus"
+    },
+    "timeline": {
+      "eyebrow": "Déroulé heure par heure",
+      "title": "Votre première séance, minute par minute",
+      "subtitle": "Parce que l'inconnu angoisse plus que le connu, voici exactement ce qui se passe — dans l'ordre, sans surprise.",
+      "note": "Vous n'êtes jamais seul, à aucun moment. C'est la règle chez nous.",
+      "steps": {
+        "arrivee": {
+          "time": "T − 1h",
+          "title": "Vous arrivez à la clinique",
+          "text": "Accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé."
+        },
+        "accueil": {
+          "time": "T − 45 min",
+          "title": "Accueil et constantes",
+          "text": "Pesée, tension artérielle, température. L'infirmière note votre état du moment. Un proche peut rester avec vous à cette étape."
+        },
+        "consultation": {
+          "time": "T − 30 min",
+          "title": "Consultation rapide avec le néphrologue",
+          "text": "Le médecin vérifie votre dossier, ajuste si besoin les paramètres de séance, répond à vos questions. Vous décidez ensemble."
+        },
+        "installation": {
+          "time": "T − 15 min",
+          "title": "Installation et pose des aiguilles",
+          "text": "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter) — 2 à 3 minutes. L'infirmière vous explique chaque geste."
+        },
+        "debut": {
+          "time": "T + 0",
+          "title": "Début de la séance",
+          "text": "Le générateur se met en route. Vous pouvez lire, dormir, regarder votre téléphone, écouter de la musique."
+        },
+        "surveillance": {
+          "time": "T + 1h à T + 3h",
+          "title": "Surveillance continue",
+          "text": "La machine mesure votre tension automatiquement. Une infirmière passe vous voir toutes les 15 minutes. Un néphrologue est dans le service. Café servi en milieu de séance."
+        },
+        "fin": {
+          "time": "T + 4h",
+          "title": "Fin de séance",
+          "text": "Retrait des aiguilles, compression, pansement. Pesée de sortie, dernière tension, dernier échange avec l'infirmière. Remise du prochain rendez-vous."
+        },
+        "depart": {
+          "time": "T + 4h15",
+          "title": "Vous repartez",
+          "text": "Un peu de repos si besoin dans la salle d'attente. Votre proche peut vous raccompagner."
+        }
+      }
+    },
+    "summary": {
+      "eyebrow": "Résumé rapide",
+      "title": "Le jour J, en 3 temps",
+      "steps": {
+        "arrivee": {
+          "title": "À votre arrivée",
+          "items": {
+            "accueil": "L'accueil vous guide vers votre poste",
+            "constantes": "Contrôle des constantes (poids, tension)",
+            "examen": "Le médecin néphrologue vous examine",
+            "bio": "Bilan initial de composition corporelle (bio-impédance, à votre 1ʳᵉ séance)",
+            "installation": "Installation confortable sur votre lit"
+          }
+        },
+        "pendant": {
+          "title": "Pendant la séance",
+          "items": {
+            "duree": "Durée : 4 heures en moyenne",
+            "occupations": "Vous pouvez lire, regarder la TV, dormir",
+            "surveillance": "Surveillance continue par l'équipe",
+            "cafe": "Café disponible pendant la séance"
+          }
+        },
+        "apres": {
+          "title": "Après la séance",
+          "items": {
+            "repos": "Repos de quelques minutes avant de vous lever",
+            "controle": "Contrôle du poids et de la tension",
+            "rdv": "Prochain rendez-vous confirmé"
+          }
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact — téléphone, WhatsApp, adresse",
+      "description": "Contactez la Clinique ESSAADA à Sidi Bel Abbès : téléphone, WhatsApp, email, adresse, horaires."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Nous joindre",
+      "subtitle": "Pour nous joindre rapidement : WhatsApp ou téléphone. Notre équipe répond du samedi au jeudi.",
+      "photoAlt": "Entrée principale de la Clinique ESSAADA, auvent bleu avec inscription en arabe « عيادة السعادة »",
+      "photoLabel": "Façade & accès"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "contact": "Contact"
+    },
+    "channels": {
+      "phone": {
+        "title": "Téléphone"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "value": "Écrivez-nous sur WhatsApp"
+      },
+      "email": {
+        "title": "Email"
+      }
+    },
+    "coordinates": {
+      "eyebrow": "Coordonnées",
+      "title": "Plusieurs moyens de nous joindre"
+    },
+    "address": {
+      "title": "Adresse"
+    },
+    "hours": {
+      "title": "Horaires"
+    },
+    "map": {
+      "iframeTitle": "Emplacement de {name} sur OpenStreetMap",
+      "openAria": "Ouvrir l'emplacement de {name} dans Google Maps",
+      "openLabel": "Ouvrir dans Google Maps"
+    }
+  },
+  "practical": {
+    "meta": {
+      "title": "Vivre avec la dialyse · Horaires, accès, repas",
+      "description": "Horaires, accès, café, accessibilité PMR, sécurité. Tout ce qu'il faut savoir avant de venir à la Clinique ESSAADA."
+    },
+    "hero": {
+      "eyebrow": "Vivre avec la dialyse",
+      "title": "Tout ce qu'il faut savoir avant de venir",
+      "subtitle": "Horaires, accès, services sur place : nous avons pensé aux détails qui comptent.",
+      "photoAlt": "Hall principal de la Clinique d'Hémodialyse ESSAADA à Sidi Bel Abbès, escalier en marbre et panneau d'orientation des services",
+      "photoLabel": "Vie pratique",
+      "photoTag": "Accès & services"
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "current": "Vivre avec la dialyse"
+    },
+    "infosSection": {
+      "eyebrow": "À la clinique",
+      "title": "Votre confort, nos priorités",
+      "subtitle": "Horaires, accès, accompagnants, sécurité — les détails concrets de votre venue."
+    },
+    "vieSection": {
+      "eyebrow": "Vie quotidienne",
+      "title": "La dialyse, et la vie qui continue",
+      "subtitle": "Sport, voyages, travail, intimité, parentalité, alimentation — la maladie rénale bouscule, mais elle n'efface pas. Voici ce qu'on peut en dire, sans tabou."
+    },
+    "understandLink": "Comprendre l'insuffisance rénale",
+    "cta": {
+      "eyebrow": "Préparer votre venue",
+      "title": "Des questions avant votre première visite ?",
+      "subtitle": "Horaires, accompagnants, documents à prévoir, repas — notre équipe vous explique tout à l'avance.",
+      "waMessage": "Bonjour, j'ai une question pratique pour préparer ma venue à la Clinique ESSAADA."
+    },
+    "infos": {
+      "horaires": {
+        "title": "Horaires des séances",
+        "items": {
+          "0": "3 séances par semaine selon prescription"
+        }
+      },
+      "ramadan": {
+        "title": "Horaires Ramadan",
+        "items": {
+          "0": "Première séance à 4h du matin",
+          "1": "Pas de séance après f'tour, pas de créneau nocturne",
+          "2": "Reprogrammation en concertation avec votre néphrologue",
+          "3": "Prise en charge adaptée pour les patients qui jeûnent"
+        }
+      },
+      "acces": {
+        "title": "Accès & stationnement",
+        "items": {
+          "0": "Places réservées près de l'entrée",
+          "1": "Accès direct pour ambulance"
+        }
+      },
+      "pmr": {
+        "title": "Accessibilité PMR",
+        "items": {
+          "0": "Deux rampes d'accès pour fauteuils roulants",
+          "1": "Places de stationnement PMR signalées",
+          "2": "Fauteuil roulant disponible à l'accueil",
+          "3": "Toilettes adaptées",
+          "4": "Aide au brancardage sur demande"
+        }
+      },
+      "cafe": {
+        "title": "Café",
+        "items": {
+          "0": "Café offert pendant la séance",
+          "1": "Eau et boissons à disposition"
+        }
+      },
+      "accompagnants": {
+        "title": "Accompagnants",
+        "items": {
+          "0": "Un accompagnant peut être présent lors des premières séances",
+          "1": "Salle d'attente confortable",
+          "2": "Café et thé à disposition"
+        }
+      },
+      "securite": {
+        "title": "Sécurité & qualité",
+        "items": {
+          "0": "Équipements certifiés et contrôlés",
+          "1": "Protocoles d'hygiène stricts",
+          "2": "Médecin présent en permanence"
+        }
+      }
+    },
+    "vie": {
+      "sport": {
+        "title": "Sport et activité physique",
+        "lead": "Bouger fait du bien au corps, au moral, et au traitement lui-même — c'est vivement encouragé.",
+        "body": {
+          "0": "La marche, la natation, le vélo, le jardinage, les étirements : toute activité physique régulière est bénéfique pendant le parcours en dialyse. Elle aide à garder du tonus musculaire, protège le cœur, améliore le sommeil et l'humeur les jours sans séance. Il n'y a aucune raison de se mettre entre parenthèses.",
+          "1": "Pour une reprise du sport plus soutenue — course, musculation, sports collectifs, randonnée en altitude — un mot avec le néphrologue permet d'ajuster en fonction de votre fistule, de votre tension et de votre forme générale. L'objectif n'est jamais d'interdire, mais d'adapter."
+        },
+        "tip": "Protégez votre bras de fistule des chocs et des charges lourdes — le reste du corps reste libre."
+      },
+      "voyages": {
+        "title": "Voyages et déplacements",
+        "lead": "Partir en vacances, rendre visite à la famille en France ou au bled, faire la omra : tout cela reste possible.",
+        "body": {
+          "0": "Un séjour se prépare avec l'équipe quelques semaines à l'avance. Nous aidons à trouver un centre d'accueil à destination — en Algérie comme à l'étranger — et à transmettre votre dossier médical pour que vos séances continuent sans interruption. Les centres d'hémodialyse existent partout : Alger, Oran, Marseille, Lyon, Paris, La Mecque, Istanbul.",
+          "1": "Pensez à anticiper les démarches administratives (accord de prise en charge, assurance voyage, ordonnances traduites si besoin). Pour les patients de la diaspora qui reviennent passer l'été à Sidi Bel Abbès, l'organisation se fait dans les deux sens avec le même soin."
+        },
+        "tip": "Prévenez-nous idéalement 4 à 6 semaines avant le départ pour caler tranquillement les séances sur place."
+      },
+      "travail": {
+        "title": "Vie professionnelle",
+        "lead": "Continuer à travailler est souvent possible, et c'est un vrai appui — financier, social, personnel.",
+        "body": {
+          "0": "Les séances de dialyse rythment la semaine, mais beaucoup de patients conservent une activité professionnelle. Les créneaux du matin tôt ou de fin de journée permettent de libérer une grande partie de la journée de travail. Nous essayons, dans la mesure du possible, de caler vos séances sur vos contraintes d'emploi du temps.",
+          "1": "En Algérie, une reconnaissance de travailleur handicapé peut être demandée auprès des services sociaux : elle ouvre parfois à des aménagements (horaires, poste) ou à une pension selon la situation. Le médecin traitant et l'assistante sociale peuvent vous orienter dans les démarches, sans garantie de résultat mais cela vaut la peine d'en parler."
+        },
+        "tip": "Parlez-nous de vos horaires de travail dès le premier rendez-vous — on construit le planning ensemble."
+      },
+      "intimite": {
+        "title": "Intimité et vie de couple",
+        "lead": "La maladie rénale touche aussi la vie intime — c'est fréquent, et cela se parle sans gêne en consultation.",
+        "body": {
+          "0": "Baisse du désir, fatigue, difficultés d'érection chez l'homme, sécheresse ou irrégularités du cycle chez la femme : ces changements concernent plus d'un patient sur deux. Ils mêlent le poids psychologique de la maladie, les traitements, et des modifications hormonales bien réelles. Ce n'est ni dans la tête, ni une fatalité.",
+          "1": "Le néphrologue est là pour en parler, sans jugement et en toute confidentialité — au même titre que la tension ou le sommeil. Des solutions existent, parfois simples : ajustement de traitements, avis d'un confrère spécialisé, soutien psychologique pour le couple. En parler, c'est déjà soulager une part du poids."
+        },
+        "tip": "Aucune question n'est déplacée en consultation. L'intimité fait partie de la santé globale."
+      },
+      "grossesse": {
+        "title": "Grossesse et parentalité",
+        "lead": "La fertilité est réduite en insuffisance rénale, mais une grossesse reste possible — cela se prépare de près.",
+        "body": {
+          "0": "Pour une femme en dialyse, mener une grossesse comporte des risques réels pour la mère et l'enfant : retard de croissance du fœtus, accouchement prématuré, complications maternelles. Ce n'est pas interdit, mais cela demande un suivi rapproché entre néphrologue, gynécologue et maternité, avec des séances de dialyse souvent renforcées pendant les neuf mois.",
+          "1": "Quand un projet d'enfant est en tête, le plus souvent on recommande une contraception fiable le temps d'en discuter sereinement, et si possible de reporter la grossesse après une greffe de rein : la transplantation améliore nettement la fertilité et diminue les risques. Parlez-en tôt avec votre néphrologue — c'est une conversation importante, à aborder comme telle."
+        },
+        "tip": "Un projet de bébé, une contraception à revoir : notre accompagnement inclut ces questions."
+      },
+      "alimentation": {
+        "title": "Alimentation",
+        "lead": "Bien manger en dialyse, c'est surtout bien s'adapter — il n'existe pas un régime unique qui convient à tous.",
+        "body": {
+          "0": "Les besoins évoluent tout au long du parcours : avant la dialyse, il s'agit souvent de ralentir l'aggravation de la maladie rénale. Une fois les séances commencées, les priorités changent — corriger les excès d'eau, de potassium ou de phosphore, mais aussi prévenir la dénutrition, car manger suffisamment reste essentiel. Un diabète, une hypertension ou d'autres soucis associés modifient encore les équilibres.",
+          "1": "Le néphrologue fait le lien avec vos bilans sanguins et ajuste les recommandations à votre situation réelle — vos habitudes, votre cuisine, ce que vous aimez — plutôt qu'à une liste théorique d'aliments interdits. L'objectif est un équilibre tenable dans le temps, pas un régime impossible à suivre."
+        },
+        "tip": "Parlez de votre alimentation en consultation dès que vous en ressentez le besoin — c'est pensé pour vous, pas contre vous."
+      }
+    }
   }
 }

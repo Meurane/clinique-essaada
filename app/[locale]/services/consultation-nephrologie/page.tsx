@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, CheckCircle2, GraduationCap, Users, BookOpen } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -9,53 +11,51 @@ import { Card, CardIcon } from "@/components/ui/Card";
 import { site } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Consultation néphrologie — diagnostic, prévention, suivi",
-  description:
-    "Consultation avec un néphrologue à Sidi Bel Abbès : diagnostic précoce, ralentissement de la maladie rénale, éducation thérapeutique. 10% des insuffisances rénales sont évitables, 30% peuvent être retardées.",
-  alternates: { canonical: `${site.url}/services/consultation-nephrologie` },
-};
-
-const bullets = [
-  "Diagnostic précoce des maladies rénales",
-  "Suivi de l'insuffisance rénale chronique",
-  "Préparation à la dialyse le moment venu",
-  "Conseils nutritionnels adaptés",
-  "Coordination avec votre médecin traitant",
-];
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "consultation" });
+  return {
+    title: t("meta.title"),
+    description: t("meta.description"),
+    alternates: { canonical: `${site.url}/services/consultation-nephrologie` },
+  };
+}
 
 const etpPiliers = [
-  {
-    icon: BookOpen,
-    title: "Sensibilisation",
-    text: "Comprendre sa maladie, ses traitements, les signaux à surveiller.",
-  },
-  {
-    icon: Users,
-    title: "Conseils adaptés",
-    text: "Hygiène de vie, alimentation, activité physique — calés sur votre quotidien.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Suivi régulier",
-    text: "Autonomie progressive pour mieux vivre avec la maladie, sans la subir.",
-  },
+  { icon: BookOpen },
+  { icon: Users },
+  { icon: GraduationCap },
 ];
 
 export default function ConsultationPage() {
+  const t = useTranslations("consultation");
+  const tc = useTranslations("common");
+
+  const bullets = [
+    t("bullets.0"),
+    t("bullets.1"),
+    t("bullets.2"),
+    t("bullets.3"),
+    t("bullets.4"),
+  ];
+
   return (
     <>
       <PageHero
-        eyebrow="Service · Consultation"
-        title="Consultation néphrologie"
-        subtitle="Pour le diagnostic, le suivi et la prévention des maladies rénales à tous les stades."
+        eyebrow={t("hero.eyebrow")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <div className="container-custom py-5">
         <Breadcrumb
           items={[
-            { name: "Accueil", url: "/" },
-            { name: "Services", url: "/services" },
-            { name: "Consultation néphrologie", url: "/services/consultation-nephrologie" },
+            { name: t("breadcrumb.home"), url: "/" },
+            { name: t("breadcrumb.services"), url: "/services" },
+            { name: t("breadcrumb.consultation"), url: "/services/consultation-nephrologie" },
           ]}
         />
       </div>
@@ -75,23 +75,12 @@ export default function ConsultationPage() {
       <section className="section-padding">
         <div className="container-custom grid md:grid-cols-5 gap-10">
           <div className="md:col-span-3 space-y-4 text-neutral-700 leading-relaxed">
-            <p>
-              Une consultation avec un néphrologue est recommandée lorsqu'un
-              médecin traitant identifie des anomalies rénales, ou en cas de
-              pathologie à risque (diabète, hypertension, antécédents
-              familiaux).
-            </p>
-            <p>
-              Le néphrologue vous écoute, examine votre dossier, prescrit
-              éventuellement des bilans complémentaires, puis construit avec
-              vous un plan de suivi clair. L'objectif : ralentir l'évolution
-              de la maladie, anticiper l'éventuel recours à la dialyse, et
-              préserver votre qualité de vie.
-            </p>
+            <p>{t("intro.p1")}</p>
+            <p>{t("intro.p2")}</p>
           </div>
           <div className="md:col-span-2 bg-sand-50 rounded-2xl p-6">
             <h3 className="font-display text-lg font-semibold text-neutral-900 mb-4">
-              Ce que nous prenons en charge
+              {t("bulletsTitle")}
             </h3>
             <ul className="space-y-2.5">
               {bullets.map((b) => (
@@ -108,7 +97,7 @@ export default function ConsultationPage() {
               href="/rendez-vous"
               className="mt-6 inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-3 rounded-full font-semibold min-h-[48px]"
             >
-              Prendre rendez-vous
+              {tc("bookAppointment")}
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </Link>
           </div>
@@ -118,22 +107,22 @@ export default function ConsultationPage() {
       <section className="section-padding bg-primary-700 text-white">
         <div className="container-custom">
           <PullQuote
-            eyebrow="Le diagnostic précoce change la trajectoire"
+            eyebrow={t("pullQuote.eyebrow")}
             quote={
               <>
-                « 10 % des insuffisances rénales peuvent être évitées,
+                {t("pullQuote.quoteLine1")}
                 <br className="hidden md:inline" />
-                et 30 % peuvent être retardées de plusieurs années. »
+                {t("pullQuote.quoteLine2")}
               </>
             }
-            caption="C'est pourquoi nous développons la consultation néphrologique au plus près des patients : pour porter un diagnostic précoce, ralentir la progression de la maladie, et vous maintenir en bonne santé le plus longtemps possible avant qu'un traitement de suppléance ne devienne nécessaire."
+            caption={t("pullQuote.caption")}
           />
           <div className="mt-8 flex justify-center">
             <Link
               href="/comprendre-l-insuffisance-renale"
               className="inline-flex items-center gap-2 bg-white text-primary-700 hover:bg-primary-50 px-6 py-3.5 rounded-full font-semibold min-h-[52px] transition-colors"
             >
-              Comprendre l'insuffisance rénale
+              {t("pullQuote.cta")}
               <ArrowRight className="w-5 h-5" aria-hidden="true" />
             </Link>
           </div>
@@ -143,21 +132,21 @@ export default function ConsultationPage() {
       <section className="section-padding bg-sand-50">
         <div className="container-custom">
           <SectionHeader
-            eyebrow="Éducation thérapeutique (ETP)"
-            title="Apprendre à vivre avec la maladie, pas contre elle"
-            subtitle="En complément des traitements, l'éducation thérapeutique renforce votre autonomie : vous devenez acteur de votre suivi, pas spectateur."
+            eyebrow={t("etp.eyebrow")}
+            title={t("etp.title")}
+            subtitle={t("etp.subtitle")}
           />
           <ul className="grid md:grid-cols-3 gap-5">
-            {etpPiliers.map((e) => (
-              <li key={e.title}>
+            {etpPiliers.map((e, i) => (
+              <li key={i}>
                 <Card className="h-full">
                   <CardIcon>
                     <e.icon className="w-6 h-6" aria-hidden="true" />
                   </CardIcon>
                   <h3 className="font-display text-lg font-semibold text-neutral-900 mb-2">
-                    {e.title}
+                    {t(`etp.piliers.${i}.title`)}
                   </h3>
-                  <p className="text-neutral-700">{e.text}</p>
+                  <p className="text-neutral-700">{t(`etp.piliers.${i}.text`)}</p>
                 </Card>
               </li>
             ))}
