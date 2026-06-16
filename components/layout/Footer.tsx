@@ -1,48 +1,51 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Phone, MapPin, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { site } from "@/lib/site";
 
 const navGroup = [
   {
-    title: "Le centre",
+    titleKey: "groups.center",
     links: [
-      { href: "/la-clinique", label: "Notre centre" },
-      { href: "/la-clinique/equipement-hygiene", label: "Équipement & hygiène" },
-      { href: "/la-clinique/composition-corporelle", label: "Mesure poids sec & hydratation" },
-      { href: "/equipe", label: "Notre équipe" },
-      { href: "/informations-pratiques", label: "Vivre avec la dialyse" },
+      { href: "/la-clinique", labelKey: "links.ourCenter" },
+      { href: "/la-clinique/equipement-hygiene", labelKey: "links.equipment" },
+      { href: "/la-clinique/composition-corporelle", labelKey: "links.bodyComposition" },
+      { href: "/equipe", labelKey: "links.ourTeam" },
+      { href: "/informations-pratiques", labelKey: "links.livingWith" },
     ],
   },
   {
-    title: "Votre traitement",
+    titleKey: "groups.treatment",
     links: [
-      { href: "/services/hemodialyse", label: "Hémodialyse" },
-      { href: "/services/consultation-nephrologie", label: "Consultation néphrologie" },
-      { href: "/services/premiere-seance", label: "Votre 1ʳᵉ séance" },
-      { href: "/patients-de-passage", label: "Patients de passage" },
-      { href: "/patients-de-passage/depuis-la-france", label: "Je viens de France (CPAM)" },
-      { href: "/ramadan-et-dialyse", label: "Ramadan & dialyse" },
+      { href: "/services/hemodialyse", labelKey: "links.hemodialysis" },
+      { href: "/services/consultation-nephrologie", labelKey: "links.consultation" },
+      { href: "/services/premiere-seance", labelKey: "links.firstSession" },
+      { href: "/patients-de-passage", labelKey: "links.visiting" },
+      { href: "/patients-de-passage/depuis-la-france", labelKey: "links.fromFrance" },
+      { href: "/ramadan-et-dialyse", labelKey: "links.ramadan" },
     ],
   },
   {
-    title: "Comprendre",
+    titleKey: "groups.understand",
     links: [
-      { href: "/comprendre-l-insuffisance-renale", label: "L'insuffisance rénale" },
-      { href: "/glossaire", label: "Glossaire" },
-      { href: "/faq", label: "FAQ" },
+      { href: "/comprendre-l-insuffisance-renale", labelKey: "links.understanding" },
+      { href: "/glossaire", labelKey: "links.glossary" },
+      { href: "/faq", labelKey: "links.faq" },
     ],
   },
   {
-    title: "Aide & Contact",
+    titleKey: "groups.help",
     links: [
-      { href: "/contact", label: "Contact" },
-      { href: "/rendez-vous", label: "Prendre rendez-vous" },
+      { href: "/contact", labelKey: "links.contact" },
+      { href: "/rendez-vous", labelKey: "links.appointment" },
     ],
   },
-];
+] as const;
 
 export function Footer() {
+  const t = useTranslations();
+  const tf = useTranslations("footer");
   return (
     <footer className="bg-primary-700 text-primary-100 border-t border-white/5">
       <div className="container-custom pt-10 pb-6">
@@ -72,25 +75,25 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4 shrink-0 text-primary-400" aria-hidden="true" />
-                <span>{site.hours.opening}</span>
+                <span>{t("hours.openDaysLong")}</span>
               </li>
               <li>
                 <a
                   href={site.contact.phoneHref}
-                  aria-label={`Appeler la clinique au ${site.contact.phone}`}
+                  aria-label={t("common.callAria", { phone: site.contact.phone })}
                   className="inline-flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <Phone className="w-4 h-4 text-primary-400" aria-hidden="true" />
-                  <span>{site.contact.phone}</span>
+                  <span dir="ltr">{site.contact.phone}</span>
                 </a>
               </li>
             </ul>
           </div>
 
           {navGroup.map((group) => (
-            <div key={group.title}>
+            <div key={group.titleKey}>
               <h2 className="font-display font-semibold text-white mb-3 text-sm">
-                {group.title}
+                {tf(group.titleKey)}
               </h2>
               <ul className="space-y-1.5 text-sm">
                 {group.links.map((l) => (
@@ -99,7 +102,7 @@ export function Footer() {
                       href={l.href}
                       className="underline decoration-white/20 underline-offset-2 hover:text-white hover:decoration-white transition-colors"
                     >
-                      {l.label}
+                      {tf(l.labelKey)}
                     </Link>
                   </li>
                 ))}
@@ -110,18 +113,18 @@ export function Footer() {
 
         <div className="mt-8 pt-5 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-sm text-primary-100">
           <p>
-            © {new Date().getFullYear()} {site.name} · Agrément Ministère de la Santé {site.legal.agrement} ·{" "}
+            © {new Date().getFullYear()} {site.name} · {tf("accreditation")} {site.legal.agrement} ·{" "}
             {site.legal.conventions.join(" · ")}
           </p>
           <ul className="flex flex-wrap gap-x-5 gap-y-1 shrink-0">
             <li>
               <Link href="/mentions-legales" className="underline hover:text-white">
-                Mentions légales
+                {tf("legalNotice")}
               </Link>
             </li>
             <li>
               <Link href="/confidentialite" className="underline hover:text-white">
-                Confidentialité
+                {tf("privacy")}
               </Link>
             </li>
           </ul>

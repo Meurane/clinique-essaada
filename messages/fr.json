@@ -11,7 +11,12 @@
     "mainNav": "Navigation principale",
     "mainMenu": "Menu principal",
     "overview": "Vue d'ensemble",
-    "homeAria": "Clinique ESSAADA — Accueil"
+    "homeAria": "Clinique ESSAADA — Accueil",
+    "whatsappAria": "Nous contacter sur WhatsApp",
+    "whatsappContact": "Contact WhatsApp",
+    "whatsappInfoMessage": "Bonjour, j'aimerais des informations sur la Clinique ESSAADA.",
+    "contactBarLabel": "Bandeau de contact rapide",
+    "quickActions": "Actions rapides"
   },
   "languageSwitcher": {
     "label": "Changer de langue",
@@ -22,6 +27,38 @@
   "meta": {
     "siteDescription": "Centre d'hémodialyse à Sidi Bel Abbès. 37 lits, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage. Conventionnée CNAS et CASNOS.",
     "tagline": "Centre d'hémodialyse — Sidi Bel Abbès"
+  },
+  "hours": {
+    "openDaysLong": "Du samedi au jeudi"
+  },
+  "footer": {
+    "groups": {
+      "center": "Le centre",
+      "treatment": "Votre traitement",
+      "understand": "Comprendre",
+      "help": "Aide & Contact"
+    },
+    "links": {
+      "ourCenter": "Notre centre",
+      "equipment": "Équipement & hygiène",
+      "bodyComposition": "Mesure poids sec & hydratation",
+      "ourTeam": "Notre équipe",
+      "livingWith": "Vivre avec la dialyse",
+      "hemodialysis": "Hémodialyse",
+      "consultation": "Consultation néphrologie",
+      "firstSession": "Votre 1ʳᵉ séance",
+      "visiting": "Patients de passage",
+      "fromFrance": "Je viens de France (CPAM)",
+      "ramadan": "Ramadan & dialyse",
+      "understanding": "L'insuffisance rénale",
+      "glossary": "Glossaire",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "appointment": "Prendre rendez-vous"
+    },
+    "accreditation": "Agrément Ministère de la Santé",
+    "legalNotice": "Mentions légales",
+    "privacy": "Confidentialité"
   },
   "nav": {
     "clinic": {

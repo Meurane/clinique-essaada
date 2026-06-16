@@ -11,7 +11,12 @@
     "mainNav": "Main navigation",
     "mainMenu": "Main menu",
     "overview": "Overview",
-    "homeAria": "Clinique ESSAADA — Home"
+    "homeAria": "Clinique ESSAADA — Home",
+    "whatsappAria": "Contact us on WhatsApp",
+    "whatsappContact": "WhatsApp contact",
+    "whatsappInfoMessage": "Hello, I would like some information about Clinique ESSAADA.",
+    "contactBarLabel": "Quick contact bar",
+    "quickActions": "Quick actions"
   },
   "languageSwitcher": {
     "label": "Change language",
@@ -22,6 +27,38 @@
   "meta": {
     "siteDescription": "Haemodialysis centre in Sidi Bel Abbès, Algeria. 37 beds, recent equipment, a multidisciplinary team. Resident and visiting patients. CNAS and CASNOS accredited.",
     "tagline": "Haemodialysis centre — Sidi Bel Abbès"
+  },
+  "hours": {
+    "openDaysLong": "Saturday to Thursday"
+  },
+  "footer": {
+    "groups": {
+      "center": "The centre",
+      "treatment": "Your treatment",
+      "understand": "Understand",
+      "help": "Help & Contact"
+    },
+    "links": {
+      "ourCenter": "Our centre",
+      "equipment": "Equipment & hygiene",
+      "bodyComposition": "Dry weight & hydration measurement",
+      "ourTeam": "Our team",
+      "livingWith": "Living with dialysis",
+      "hemodialysis": "Haemodialysis",
+      "consultation": "Nephrology consultation",
+      "firstSession": "Your 1st session",
+      "visiting": "Visiting patients",
+      "fromFrance": "I'm coming from France (CPAM)",
+      "ramadan": "Ramadan & dialysis",
+      "understanding": "Kidney failure",
+      "glossary": "Glossary",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "appointment": "Book an appointment"
+    },
+    "accreditation": "Ministry of Health accreditation",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy"
   },
   "nav": {
     "clinic": {

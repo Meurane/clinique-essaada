@@ -11,7 +11,12 @@
     "mainNav": "التنقّل الرئيسي",
     "mainMenu": "القائمة الرئيسية",
     "overview": "نظرة عامة",
-    "homeAria": "عيادة السعادة — الرئيسية"
+    "homeAria": "عيادة السعادة — الرئيسية",
+    "whatsappAria": "تواصل معنا عبر واتساب",
+    "whatsappContact": "اتصال واتساب",
+    "whatsappInfoMessage": "مرحبًا، أودّ الحصول على معلومات حول عيادة السعادة.",
+    "contactBarLabel": "شريط الاتصال السريع",
+    "quickActions": "إجراءات سريعة"
   },
   "languageSwitcher": {
     "label": "تغيير اللغة",
@@ -22,6 +27,38 @@
   "meta": {
     "siteDescription": "مركز لتصفية الدم في سيدي بلعباس، الجزائر. 37 سريرًا، تجهيزات حديثة، فريق متعدّد التخصّصات. مرضى مقيمون وزائرون. مُعتمَد لدى CNAS وCASNOS.",
     "tagline": "مركز تصفية الدم — سيدي بلعباس"
+  },
+  "hours": {
+    "openDaysLong": "من السبت إلى الخميس"
+  },
+  "footer": {
+    "groups": {
+      "center": "المركز",
+      "treatment": "علاجك",
+      "understand": "للفهم",
+      "help": "المساعدة والاتصال"
+    },
+    "links": {
+      "ourCenter": "مركزنا",
+      "equipment": "التجهيزات والنظافة",
+      "bodyComposition": "قياس الوزن الجاف والترطيب",
+      "ourTeam": "فريقنا",
+      "livingWith": "العيش مع تصفية الدم",
+      "hemodialysis": "تصفية الدم",
+      "consultation": "استشارة أمراض الكلى",
+      "firstSession": "جلستك الأولى",
+      "visiting": "المرضى الزائرون",
+      "fromFrance": "قادم من فرنسا (CPAM)",
+      "ramadan": "رمضان وتصفية الدم",
+      "understanding": "القصور الكلوي",
+      "glossary": "المعجم",
+      "faq": "الأسئلة الشائعة",
+      "contact": "اتصال",
+      "appointment": "حجز موعد"
+    },
+    "accreditation": "اعتماد وزارة الصحة",
+    "legalNotice": "الإشعارات القانونية",
+    "privacy": "الخصوصية"
   },
   "nav": {
     "clinic": {
@@ -51,6 +88,6 @@
       "glossary": { "label": "المعجم", "desc": "29 مصطلحًا أساسيًا في تصفية الدم" },
       "faq": { "label": "الأسئلة الشائعة", "desc": "أسئلة المرضى المتكرّرة" }
     },
-    "contact": { "label": "اتصل بنا" }
+    "contact": { "label": "اتصال" }
   }
 }
