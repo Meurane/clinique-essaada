@@ -64,7 +64,7 @@ Ce geste, qu'on peut appeler « pomme de terre travaillée », réduit une bonne
 
 **À limiter :**
 
-- **Les pois chiches** sont riches en potassium et en phosphore (encore plus avant trempage). Plutôt qu'une grosse poignée, on en met **une petite quantité « pour le visuel »** sur l'assiette, et c'est tout, toujours après trempage long et cuisson dans une eau qu'on jette.
+- **Les pois chiches** sont riches en potassium et en phosphore (encore plus avant trempage). Plutôt qu'une grosse poignée, on en met **une petite quantité « pour le visuel »** sur l'assiette, et c'est tout. Toujours après trempage long et cuisson dans une eau qu'on jette.
 - **Le concentré de tomate** est très concentré en K+ (c'est la logique du concentré). Préférez **une seule cuillère à café** dans le bouillon, et ajoutez plutôt un petit morceau de **tomate fraîche** pour la couleur.
 
 ## La viande : ce que l'on choisit le vendredi
