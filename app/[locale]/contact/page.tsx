@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { Phone, Mail, MapPin, MessageCircle, Clock, ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
@@ -18,7 +19,7 @@ export async function generateMetadata({
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: { canonical: `${site.url}/contact` },
+    alternates: localizedAlternates(locale, "/contact"),
   };
 }
 
