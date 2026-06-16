@@ -1,28 +1,31 @@
 "use client";
 
 import { useActionState, useEffect, useId, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { AlertCircle } from "lucide-react";
-import { submitRdv, type RdvFormState } from "@/app/rendez-vous/actions";
+import { submitRdv, type RdvFormState } from "@/app/[locale]/rendez-vous/actions";
 
 const initialState: RdvFormState = { status: "idle" };
 
+// `value` reste en français : il est inséré tel quel dans l'e-mail (FR) envoyé à la clinique (actions.ts).
 const motifs = [
-  "1ère consultation néphrologie",
-  "Dialyse de passage (vacances)",
-  "Suivi / renouvellement",
-  "Autre",
+  { value: "1ère consultation néphrologie", key: "consultationNephrologie" },
+  { value: "Dialyse de passage (vacances)", key: "dialysePassage" },
+  { value: "Suivi / renouvellement", key: "suiviRenouvellement" },
+  { value: "Autre", key: "autre" },
 ];
 
 const creneaux = [
-  { value: "matin", label: "Matin (05h — 09h)" },
-  { value: "journee", label: "Journée (09h30 — 13h30)" },
-  { value: "soir", label: "Soir (14h — 19h)" },
+  { value: "matin", labelKey: "matin" },
+  { value: "journee", labelKey: "journee" },
+  { value: "soir", labelKey: "soir" },
 ];
 
 const fieldInputClass =
   "w-full h-12 px-4 rounded-xl border-2 border-neutral-200 bg-white text-neutral-900 focus-visible:border-primary-600 focus-visible:ring-4 focus-visible:ring-primary-200 focus-visible:outline-none";
 
 export function RdvForm() {
+  const t = useTranslations("rendezVous");
   const [state, action, pending] = useActionState(submitRdv, initialState);
   const errorId = useId();
   const phoneHelpId = useId();
@@ -39,11 +42,11 @@ export function RdvForm() {
   return (
     <form action={action} className="space-y-5" noValidate>
       <p className="text-sm text-neutral-600">
-        Les champs marqués d'un{" "}
+        {t("form.requiredIntro.before")}{" "}
         <span className="text-danger-700 font-semibold" aria-hidden="true">
           *
         </span>{" "}
-        sont obligatoires.
+        {t("form.requiredIntro.after")}
       </p>
       {/* Honeypot — hors-écran, invisible sans display:none */}
       <div
@@ -56,7 +59,7 @@ export function RdvForm() {
           overflow: "hidden",
         }}
       >
-        <label htmlFor="rdv-website">Ne pas remplir</label>
+        <label htmlFor="rdv-website">{t("form.honeypotLabel")}</label>
         <input
           id="rdv-website"
           type="text"
@@ -69,7 +72,7 @@ export function RdvForm() {
       <div className="grid md:grid-cols-2 gap-5">
         <div>
           <label htmlFor="nom" className="block font-medium text-neutral-800 mb-2">
-            Nom complet <span className="text-danger-700" aria-hidden="true">*</span>
+            {t("form.nom.label")} <span className="text-danger-700" aria-hidden="true">*</span>
           </label>
           <input
             id="nom"
@@ -86,7 +89,7 @@ export function RdvForm() {
         </div>
         <div>
           <label htmlFor="telephone" className="block font-medium text-neutral-800 mb-2">
-            Téléphone <span className="text-danger-700" aria-hidden="true">*</span>
+            {t("form.telephone.label")} <span className="text-danger-700" aria-hidden="true">*</span>
           </label>
           <input
             id="telephone"
@@ -104,14 +107,14 @@ export function RdvForm() {
             className={fieldInputClass}
           />
           <p id={phoneHelpId} className="mt-2 text-sm text-neutral-600">
-            Ex. 048 72 25 70, +213 555 12 34 56 ou +33 6 12 34 56 78.
+            {t("form.telephone.help")}
           </p>
         </div>
       </div>
 
       <div>
         <label htmlFor="motif" className="block font-medium text-neutral-800 mb-2">
-          Motif
+          {t("form.motif.label")}
         </label>
         <select
           id="motif"
@@ -120,11 +123,11 @@ export function RdvForm() {
           className={fieldInputClass}
         >
           <option value="" disabled>
-            — Sélectionner —
+            {t("form.motif.placeholder")}
           </option>
           {motifs.map((m) => (
-            <option key={m} value={m}>
-              {m}
+            <option key={m.key} value={m.value}>
+              {t(`form.motif.options.${m.key}`)}
             </option>
           ))}
         </select>
@@ -132,7 +135,7 @@ export function RdvForm() {
 
       <fieldset>
         <legend className="font-medium text-neutral-800 mb-2">
-          Créneau souhaité <span className="text-neutral-500 font-normal">(facultatif)</span>
+          {t("form.creneau.legend")} <span className="text-neutral-500 font-normal">{t("form.optional")}</span>
         </legend>
         <div className="grid sm:grid-cols-3 gap-3">
           {creneaux.map((c) => (
@@ -153,7 +156,7 @@ export function RdvForm() {
               >
                 <span className="w-2 h-2 rounded-full bg-white opacity-0 peer-checked:opacity-100" />
               </span>
-              <span className="text-base">{c.label}</span>
+              <span className="text-base">{t(`form.creneau.options.${c.labelKey}`)}</span>
             </label>
           ))}
         </div>
@@ -161,7 +164,7 @@ export function RdvForm() {
 
       <div>
         <label htmlFor="message" className="block font-medium text-neutral-800 mb-2">
-          Message <span className="text-neutral-500 font-normal">(facultatif)</span>
+          {t("form.message.label")} <span className="text-neutral-500 font-normal">{t("form.optional")}</span>
         </label>
         <textarea
           id="message"
@@ -169,11 +172,10 @@ export function RdvForm() {
           rows={4}
           defaultValue={state.values?.message ?? ""}
           className="w-full px-4 py-3 rounded-xl border-2 border-neutral-200 bg-white text-neutral-900 focus-visible:border-primary-600 focus-visible:ring-4 focus-visible:ring-primary-200 focus-visible:outline-none"
-          placeholder="Toute information utile à votre demande."
+          placeholder={t("form.message.placeholder")}
         />
         <p className="mt-2 text-sm text-neutral-600">
-          Merci de ne pas transmettre d'informations médicales sensibles dans ce
-          formulaire. Elles seront recueillies en consultation.
+          {t("form.message.notice")}
         </p>
       </div>
 
@@ -188,9 +190,7 @@ export function RdvForm() {
           className="mt-1 w-5 h-5 rounded accent-primary-600"
         />
         <span>
-          J'autorise la Clinique ESSAADA à utiliser les informations
-          ci-dessus pour me recontacter au sujet de ma demande de rendez-vous
-          (loi 18-07 relative à la protection des données personnelles).
+          {t("form.consent")}
         </span>
       </label>
 
@@ -214,7 +214,7 @@ export function RdvForm() {
         aria-busy={pending}
         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 disabled:opacity-60 text-white px-8 py-4 rounded-full font-semibold transition-colors min-h-[56px] focus-visible:ring-4 focus-visible:ring-primary-200"
       >
-        {pending ? "Envoi en cours…" : "Envoyer ma demande"}
+        {pending ? t("form.submitting") : t("form.submit")}
       </button>
     </form>
   );

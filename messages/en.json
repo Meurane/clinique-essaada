@@ -1,0 +1,2191 @@
+{
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "common": {
+    "call": "Call",
+    "callAria": "Call the clinic on {phone}",
+    "bookAppointment": "Book an appointment",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "mainMenu": "Main menu",
+    "overview": "Overview",
+    "homeAria": "Clinique ESSAADA — Home",
+    "whatsappAria": "Contact us on WhatsApp",
+    "whatsappContact": "WhatsApp contact",
+    "whatsappInfoMessage": "Hello, I would like some information about Clinique ESSAADA.",
+    "contactBarLabel": "Quick contact bar",
+    "quickActions": "Quick actions"
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "meta": {
+    "siteDescription": "Haemodialysis centre in Sidi Bel Abbès, Algeria. 37 beds, recent equipment, a multidisciplinary team. Resident and visiting patients. Affiliated with CNAS and CASNOS.",
+    "tagline": "Haemodialysis centre — Sidi Bel Abbès"
+  },
+  "hours": {
+    "openDaysLong": "Saturday to Thursday"
+  },
+  "footer": {
+    "groups": {
+      "center": "The centre",
+      "treatment": "Your treatment",
+      "understand": "Understand",
+      "help": "Help & Contact"
+    },
+    "links": {
+      "ourCenter": "Our centre",
+      "equipment": "Equipment & hygiene",
+      "bodyComposition": "Dry weight & hydration measurement",
+      "ourTeam": "Our team",
+      "livingWith": "Living with dialysis",
+      "hemodialysis": "Haemodialysis",
+      "consultation": "Nephrology consultation",
+      "firstSession": "Your 1st session",
+      "visiting": "Visiting patients",
+      "fromFrance": "I'm coming from France (CPAM)",
+      "ramadan": "Ramadan & dialysis",
+      "understanding": "Kidney failure",
+      "glossary": "Glossary",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "appointment": "Book an appointment"
+    },
+    "accreditation": "Ministry of Health accreditation",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy"
+  },
+  "nav": {
+    "clinic": {
+      "label": "The clinic",
+      "center": {
+        "label": "The centre",
+        "desc": "37 beds, recent equipment, multidisciplinary team"
+      },
+      "equipment": {
+        "label": "Equipment & hygiene",
+        "desc": "Generators, ultrapure water, strict protocols"
+      },
+      "bodyComposition": {
+        "label": "Dry weight & hydration measurement",
+        "desc": "Multi-frequency bioimpedance, personalised adjustment"
+      },
+      "team": {
+        "label": "Medical team",
+        "desc": "Nephrologist and specialised nurses"
+      },
+      "practical": {
+        "label": "Practical info",
+        "desc": "Hours, access, companions, meals"
+      }
+    },
+    "treatment": {
+      "label": "Your treatment",
+      "hemodialysis": {
+        "label": "Haemodialysis",
+        "desc": "Sessions, what to expect, quality commitments"
+      },
+      "consultation": {
+        "label": "Nephrology consultation",
+        "desc": "Diagnosis, follow-up, prevention"
+      },
+      "firstSession": {
+        "label": "Your 1st session",
+        "desc": "Documents, steps, what to know"
+      },
+      "ramadan": {
+        "label": "Ramadan & dialysis",
+        "desc": "Adjusted time slots during fasting"
+      }
+    },
+    "visiting": {
+      "label": "Visiting patients",
+      "organize": {
+        "label": "Plan my stay",
+        "desc": "Confirmation within 72h, 3 simple steps"
+      },
+      "fromFrance": {
+        "label": "I'm coming from France (CPAM)",
+        "desc": "Prior agreement, SE 352-05 forms, reimbursement"
+      }
+    },
+    "resources": {
+      "label": "Resources",
+      "blog": {
+        "label": "Blog",
+        "desc": "Articles, guides and practical advice"
+      },
+      "understanding": {
+        "label": "Kidney failure",
+        "desc": "Complete educational guide"
+      },
+      "glossary": {
+        "label": "Glossary",
+        "desc": "29 key dialysis terms"
+      },
+      "faq": {
+        "label": "FAQ",
+        "desc": "Patients' frequently asked questions"
+      }
+    },
+    "contact": {
+      "label": "Contact"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Haemodialysis in Sidi Bel Abbès — ESSAADA Clinic",
+      "description": "Haemodialysis centre in Sidi Bel Abbès: 37 stations, recent equipment, nephrologist on site. Affiliated with CNAS and CASNOS — full direct billing, no upfront payment. Resident and visiting patients (France diaspora / CPAM).",
+      "ogTitle": "Haemodialysis in Sidi Bel Abbès — ESSAADA Clinic",
+      "ogDescription": "37 stations, affiliated with CNAS/CASNOS, visiting patients welcome. Haemodialysis designed so you can keep living."
+    },
+    "hero": {
+      "badge": "Affiliated with CNAS · CASNOS — full direct billing, no upfront payment",
+      "titleLine1": "Your life goes on,",
+      "titleLine2": "and we take care of it.",
+      "intro": "Haemodialysis in Sidi Bel Abbès — {lits} stations, nephrologist on site, a team trained to support dialysis patients and their families.",
+      "proof": {
+        "0": "A nephrologist present at every session — no on-call-only phone cover",
+        "1": "CNAS / CASNOS file: we handle the paperwork, you simply come with your Chifa card",
+        "2": "Companion welcome · dedicated waiting room · coffee and tea served"
+      },
+      "visitCenter": "Visit the centre",
+      "callDirectly": "or call us directly —",
+      "imageAlt": "Reception hall of the ESSAADA Haemodialysis Clinic in Sidi Bel Abbès — marble pillars, reception desk and grand staircase"
+    },
+    "stats": {
+      "beds": "Haemodialysis stations",
+      "daysValue": "Sat–Thu",
+      "continuousService": "Continuous service",
+      "doctorPresent": "Doctor on site",
+      "equipmentValue": "New",
+      "equipment": "Equipment"
+    },
+    "journey": {
+      "eyebrow": "Where to begin",
+      "title": "Where are you on your journey?",
+      "subtitle": "Every patient arrives at a different moment. Tell us yours — we adapt.",
+      "items": {
+        "0": {
+          "title": "I have just learned I have kidney disease",
+          "description": "Nephrology consultation, diagnosis, follow-up. You are at the start — we explain every step.",
+          "cta": "See a nephrologist"
+        },
+        "1": {
+          "title": "I am preparing for dialysis",
+          "description": "Your first session, step by step. Documents to bring, how it unfolds, what you need to know.",
+          "cta": "Prepare for my first session"
+        },
+        "2": {
+          "title": "I am already on dialysis and looking for a centre",
+          "description": "Transfer, holidays, a stay in Algeria. Your slot confirmed within 72 working hours.",
+          "cta": "Visiting patients"
+        }
+      }
+    },
+    "services": {
+      "eyebrow": "Our services",
+      "title": "Comprehensive care for kidney failure",
+      "subtitle": "From the consultation to the dialysis session, our team supports you with rigour and attention."
+    },
+    "why": {
+      "eyebrow": "Why ESSAADA",
+      "title": "Trust, medical rigour, human warmth",
+      "subtitle": "A clinic designed for dialysis patients, their loved ones and referring doctors.",
+      "items": {
+        "0": {
+          "title": "Personalised support",
+          "text": "Every patient receives dedicated follow-up: therapeutic education, dietary advice, psychological support."
+        },
+        "1": {
+          "title": "Quality & safety",
+          "text": "Ultrapure dialysis water, strict hygiene protocols, monitored equipment, a doctor present at all times."
+        },
+        "2": {
+          "title": "Multidisciplinary team",
+          "text": "Nephrologist, specialist nurses, reception staff — trained in the care of dialysis patients."
+        }
+      }
+    },
+    "diaspora": {
+      "title": "Diaspora & visiting patients",
+      "text": "Coming home on holiday to Sidi Bel Abbès or the wider region of western Algeria? We welcome visiting dialysis patients. Your slot confirmed within 72 working hours.",
+      "cta": "Arrange my dialysis stay"
+    },
+    "hours": {
+      "eyebrow": "Opening hours",
+      "title": "Three sessions a day, Saturday to Thursday",
+      "note": "Hours may be adjusted to optimise patient care."
+    },
+    "testimonials": {
+      "eyebrow": "Patients' voices",
+      "title": "What the people we care for tell us",
+      "subtitle": "Residents and visiting patients — we gather their feedback in keeping with medical confidentiality and with their consent."
+    },
+    "testimonialCard": {
+      "duration": "{years, plural, one {# year of care} other {# years of care}}"
+    },
+    "testimonialsEmpty": {
+      "title": "Testimonials being collected",
+      "text": "We are gathering feedback from our patients — both residents and visitors — in keeping with medical confidentiality and with their written consent. The first voices will be published here soon."
+    },
+    "testimonialsAria": "Patient testimonials",
+    "cta": {
+      "eyebrow": "Appointment",
+      "title": "A question, an appointment?",
+      "subtitle": "Our team is reachable by WhatsApp and phone, Saturday to Thursday.",
+      "whatsappMessage": "Hello, I would like to book an appointment at the ESSAADA Clinic.",
+      "whatsappLabel": "Message us on WhatsApp"
+    }
+  },
+  "servicesGrid": {
+    "hemodialysis": {
+      "title": "Haemodialysis",
+      "description": "Renal replacement therapy. 37 stations, latest-generation dialysis machines, ultrapure dialysis water, 3-position beds."
+    },
+    "nephrologyConsultation": {
+      "title": "Nephrology consultation",
+      "description": "Diagnosis, follow-up and prevention of kidney disease at every stage. Preparation for dialysis."
+    },
+    "firstSession": {
+      "title": "Your 1st session",
+      "description": "A clearly mapped pathway for your first dialysis. Support, guidance and reassurance at every step."
+    },
+    "learnMore": "Learn more"
+  },
+  "cta": {
+    "eyebrow": "Appointment",
+    "whatsappWrite": "Message us on WhatsApp"
+  },
+  "servicesIndex": {
+    "meta": {
+      "title": "Services · Haemodialysis & nephrology",
+      "description": "Haemodialysis, nephrology consultation, preparation for your first session. Discover the care services offered by Clinique ESSAADA."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Our nephrology and dialysis services",
+      "subtitle": "A complete range of care for patients with kidney failure, at every stage of their journey.",
+      "photoAlt": "Reception hall of Clinique d'Hémodialyse ESSAADA in Sidi Bel Abbès — marble pillars, reception desk and grand staircase",
+      "photoLabel": "Care pathway",
+      "photoTag": "Consultation & dialysis"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services"
+    },
+    "section": {
+      "title": "A clear pathway, from the first appointment to long-term follow-up",
+      "subtitle": "Every service is built around the patient: clinical rigour, accessible information, respect for your time."
+    },
+    "cta": {
+      "title": "A pathway tailored to your situation?",
+      "subtitle": "Consultation, first dialysis, visiting stay — our team will guide you to the right service.",
+      "waMessage": "Hello, I would like to understand which Clinique ESSAADA service matches my situation."
+    }
+  },
+  "hemodialysis": {
+    "meta": {
+      "title": "Haemodialysis",
+      "description": "Haemodialysis sessions in Sidi Bel Abbès: 37 stations, latest-generation machines, ultra-pure water, permanent medical supervision. CNAS/CASNOS contracted.",
+      "ogTitle": "Haemodialysis — Clinique ESSAADA",
+      "ogDescription": "Haemodialysis centre in Sidi Bel Abbès. Recent equipment, 3-position beds, multidisciplinary team."
+    },
+    "hero": {
+      "eyebrow": "Service · Haemodialysis",
+      "title": "Haemodialysis in Sidi Bel Abbès",
+      "subtitle": "{lits} stations. 3 daily slots. CNAS and CASNOS contracted.",
+      "photoAlt": "Haemodialysis room at Clinique ESSAADA, overview of the stations equipped with dialysis machines and reclining beds",
+      "photoLabel": "Haemodialysis room",
+      "photoTag": "Sidi Bel Abbès"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "hemodialysis": "Haemodialysis"
+    },
+    "treatment": {
+      "eyebrow": "The treatment",
+      "title": "Haemodialysis: cleaning the blood when the kidneys no longer can",
+      "p1": "When the kidneys can no longer filter waste and excess water, haemodialysis takes over. Blood is carried to the dialysis machine through a fistula (a vascular access created in the arm), filtered in a dialyser (an artificial filter), then returned to the body.",
+      "p2": "Each session lasts about 4 hours. Most patients come 3 times a week, as prescribed by the nephrologist. During the session, you are settled comfortably on a 3-position bed, under continuous monitoring by our nurses and a doctor present on site."
+    },
+    "qualiteTitle": "Our quality commitments",
+    "qualite": [
+      "Latest-generation dialysis machines",
+      "Ultra-pure dialysis water",
+      "Permanent medical supervision",
+      "Comfortable 3-position beds",
+      "Strict hygiene protocols",
+      "Single-use equipment where indicated"
+    ],
+    "seance": {
+      "eyebrow": "Your session, in detail",
+      "title": "What a session at ESSAADA includes",
+      "subtitle": "Concretely, here is what you receive at every visit — not as an option, not as an extra.",
+      "note": "Sessions are contracted with CNAS and CASNOS — <strong>no out-of-pocket payment</strong> if you are affiliated. Our administrative team prepares your file with you."
+    },
+    "seanceIncludes": [
+      "Welcome by the dialysis physician",
+      "Weigh-in, blood pressure check and pre-session assessment",
+      "A 4-hour session on a new dialysis machine",
+      "Continuous monitoring by dedicated nursing staff",
+      "A nephrologist present on site throughout every session",
+      "Computerised traceability of your parameters at each session",
+      "Coffee served during the session",
+      "Blanket, reclining chair, television",
+      "A companion allowed in the dedicated waiting room",
+      "Full CNAS / CASNOS coverage — no out-of-pocket payment",
+      "A report sent to your treating nephrologist",
+      "The front-desk WhatsApp for your questions between sessions"
+    ],
+    "steps": {
+      "eyebrow": "How it unfolds",
+      "title": "A session in 4 steps",
+      "subtitle": "A clear framework to make every session as simple as possible."
+    },
+    "process": [
+      {
+        "title": "Welcome",
+        "text": "File check, recording of your vitals (weight, blood pressure)."
+      },
+      {
+        "title": "Set-up",
+        "text": "Station assigned, fistula puncture, connection to the dialysis machine."
+      },
+      {
+        "title": "Session",
+        "text": "About 4 hours of dialysis under continuous monitoring. Reading, television and rest allowed."
+      },
+      {
+        "title": "Discharge",
+        "text": "Weight and blood pressure check, scheduling of your next appointment, coffee."
+      }
+    ],
+    "bioimpedance": {
+      "eyebrow": "Precision medical monitoring",
+      "title": "Measuring rather than estimating your dry weight",
+      "subtitle": "The clinic has a multi-frequency bioimpedance device to objectively assess your hydration and body composition. A precision tool built into the dialysis protocol, not a separate examination.",
+      "cardTitle": "Multi-frequency bioimpedance",
+      "cardText": "Helps your nephrologist adjust your dry weight, track your lean and fat mass, and detect muscle wasting early. A non-invasive measurement, two minutes, painless.",
+      "cardLink": "Understand this measurement"
+    },
+    "firstTime": {
+      "title": "Have you never had dialysis before?",
+      "text": "We have designed a dedicated pathway for your first session, with clear guidance at every step. We also care for visiting patients, by appointment.",
+      "cta": "Prepare my first session"
+    }
+  },
+  "consultation": {
+    "meta": {
+      "title": "Nephrology consultation — diagnosis, prevention, follow-up",
+      "description": "Consultation with a nephrologist in Sidi Bel Abbès: early diagnosis, slowing kidney disease, therapeutic patient education. 10% of kidney failures are preventable, 30% can be delayed."
+    },
+    "hero": {
+      "eyebrow": "Service · Consultation",
+      "title": "Nephrology consultation",
+      "subtitle": "For the diagnosis, follow-up and prevention of kidney disease at every stage."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "consultation": "Nephrology consultation"
+    },
+    "intro": {
+      "p1": "A consultation with a nephrologist is recommended when your GP identifies kidney abnormalities, or in the case of an at-risk condition (diabetes, high blood pressure, family history).",
+      "p2": "The nephrologist listens to you, reviews your records, may prescribe further tests, then works with you to build a clear follow-up plan. The aim: to slow the progression of the disease, anticipate any future need for dialysis, and preserve your quality of life."
+    },
+    "bulletsTitle": "What we take care of",
+    "bullets": [
+      "Early diagnosis of kidney disease",
+      "Monitoring of chronic kidney failure",
+      "Preparation for dialysis when the time comes",
+      "Tailored nutritional advice",
+      "Coordination with your GP"
+    ],
+    "pullQuote": {
+      "eyebrow": "Early diagnosis changes the trajectory",
+      "quoteLine1": "“10% of kidney failures can be prevented,",
+      "quoteLine2": "and 30% can be delayed by several years.”",
+      "caption": "This is why we are developing nephrology consultations as close as possible to patients: to make an early diagnosis, slow the progression of the disease, and keep you in good health for as long as possible before renal replacement therapy becomes necessary.",
+      "cta": "Understanding kidney failure"
+    },
+    "etp": {
+      "eyebrow": "Therapeutic patient education (TPE)",
+      "title": "Learning to live with the disease, not against it",
+      "subtitle": "Alongside treatment, therapeutic patient education strengthens your independence: you become an active participant in your own care, not a bystander.",
+      "piliers": [
+        {
+          "title": "Awareness",
+          "text": "Understanding your disease, your treatments, and the warning signs to watch for."
+        },
+        {
+          "title": "Tailored advice",
+          "text": "Lifestyle, diet, physical activity — adapted to your daily life."
+        },
+        {
+          "title": "Regular follow-up",
+          "text": "Gradual independence to live better with the disease, rather than enduring it."
+        }
+      ]
+    }
+  },
+  "firstSession": {
+    "meta": {
+      "title": "Your first session",
+      "description": "Preparing for your first haemodialysis session: documents to bring, a minute-by-minute walkthrough, and what to know before you come."
+    },
+    "hero": {
+      "eyebrow": "Your first session",
+      "title": "A clearly mapped path to prepare for your first session",
+      "subtitle": "We know the first time can be a source of worry. Here is everything you need to know before you come.",
+      "photoAlt": "Reception desk of the ESSAADA Haemodialysis Clinic in Sidi Bel Abbès — logo (a stylised kidney) and bilingual French–Arabic signage welcoming patients",
+      "photoLabel": "Session preparation",
+      "photoTag": "Records & welcome"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "services": "Services",
+      "current": "Your first session"
+    },
+    "documents": {
+      "eyebrow": "Before you come",
+      "title": "Documents to bring",
+      "items": {
+        "bilan": "Your most recent blood test results (recent, less than 1 month old)",
+        "serologies": "Your up-to-date serology results (hepatitis B, C and HIV)",
+        "ordonnance": "Your dialysis prescription signed by your nephrologist",
+        "chifa": "Your Chifa card (CNAS or CASNOS)",
+        "identite": "A form of identification"
+      },
+      "tip": "Tip: have a light meal 2 hours before the session. Bring something to keep you occupied (a book, headphones). A companion may stay with you for the first few sessions."
+    },
+    "passage": {
+      "title": "Visiting patients",
+      "text": "Coming on holiday to {city} or to the Oran coast? Contact us at least 1 month in advance with the same documents. We will confirm that a station is available.",
+      "cta": "Get in touch"
+    },
+    "bodyComposition": {
+      "title": "Body composition assessment",
+      "text": "On the day of your first session, an objective measurement of your dry weight and hydration using bioimpedance — to tailor your prescription from the very start.",
+      "cta": "Find out more"
+    },
+    "timeline": {
+      "eyebrow": "Hour-by-hour walkthrough",
+      "title": "Your first session, minute by minute",
+      "subtitle": "Because the unknown is more unsettling than the known, here is exactly what happens — in order, with no surprises.",
+      "note": "You are never alone, at any point. That is the rule here.",
+      "steps": {
+        "arrivee": {
+          "time": "T − 1h",
+          "title": "You arrive at the clinic",
+          "text": "Wheelchair access. Take your time — our time slots are designed so that you are never rushed."
+        },
+        "accueil": {
+          "time": "T − 45 min",
+          "title": "Welcome and observations",
+          "text": "Weight, blood pressure, temperature. The nurse notes how you are feeling at that moment. A relative may stay with you at this stage."
+        },
+        "consultation": {
+          "time": "T − 30 min",
+          "title": "Brief consultation with the nephrologist",
+          "text": "The doctor reviews your file, adjusts your session settings if needed and answers your questions. You decide together."
+        },
+        "installation": {
+          "time": "T − 15 min",
+          "title": "Settling in and needle insertion",
+          "text": "Reclining chair, blanket, pillow. Insertion of the fistula needles (or connection of the catheter) — 2 to 3 minutes. The nurse explains each step to you."
+        },
+        "debut": {
+          "time": "T + 0",
+          "title": "Start of the session",
+          "text": "The machine starts up. You can read, sleep, look at your phone or listen to music."
+        },
+        "surveillance": {
+          "time": "T + 1h to T + 3h",
+          "title": "Continuous monitoring",
+          "text": "The machine measures your blood pressure automatically. A nurse checks on you every 15 minutes. A nephrologist is on the unit. Coffee is served midway through the session."
+        },
+        "fin": {
+          "time": "T + 4h",
+          "title": "End of the session",
+          "text": "Needle removal, compression, dressing. Discharge weight, a final blood pressure reading, a final word with the nurse. Your next appointment is given to you."
+        },
+        "depart": {
+          "time": "T + 4h15",
+          "title": "You head home",
+          "text": "A little rest if needed in the waiting room. Your relative can accompany you home."
+        }
+      }
+    },
+    "summary": {
+      "eyebrow": "Quick recap",
+      "title": "The day itself, in 3 stages",
+      "steps": {
+        "arrivee": {
+          "title": "On your arrival",
+          "items": {
+            "accueil": "Reception guides you to your station",
+            "constantes": "Observations check (weight, blood pressure)",
+            "examen": "The nephrologist examines you",
+            "bio": "Initial body composition assessment (bioimpedance, at your first session)",
+            "installation": "Comfortable settling onto your bed"
+          }
+        },
+        "pendant": {
+          "title": "During the session",
+          "items": {
+            "duree": "Duration: 4 hours on average",
+            "occupations": "You can read, watch TV or sleep",
+            "surveillance": "Continuous monitoring by the team",
+            "cafe": "Coffee available during the session"
+          }
+        },
+        "apres": {
+          "title": "After the session",
+          "items": {
+            "repos": "A few minutes' rest before you stand up",
+            "controle": "Weight and blood pressure check",
+            "rdv": "Next appointment confirmed"
+          }
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact — phone, WhatsApp, address",
+      "description": "Contact ESSAADA Clinic in Sidi Bel Abbès: phone, WhatsApp, email, address, opening hours."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Get in touch",
+      "subtitle": "To reach us quickly: WhatsApp or phone. Our team is available from Saturday to Thursday.",
+      "photoAlt": "Main entrance of ESSAADA Clinic, blue canopy bearing the Arabic sign « عيادة السعادة »",
+      "photoLabel": "Frontage & access"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "channels": {
+      "phone": {
+        "title": "Phone"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "value": "Message us on WhatsApp"
+      },
+      "email": {
+        "title": "Email"
+      }
+    },
+    "coordinates": {
+      "eyebrow": "Contact details",
+      "title": "Several ways to reach us"
+    },
+    "address": {
+      "title": "Address"
+    },
+    "hours": {
+      "title": "Opening hours"
+    },
+    "map": {
+      "iframeTitle": "Location of {name} on OpenStreetMap",
+      "openAria": "Open the location of {name} in Google Maps",
+      "openLabel": "Open in Google Maps"
+    }
+  },
+  "practical": {
+    "meta": {
+      "title": "Living with dialysis · Hours, access, meals",
+      "description": "Opening hours, access, refreshments, wheelchair accessibility, safety. Everything you need to know before coming to ESSAADA Clinic."
+    },
+    "hero": {
+      "eyebrow": "Living with dialysis",
+      "title": "Everything you need to know before you come",
+      "subtitle": "Opening hours, access, on-site services: we have thought of the details that matter.",
+      "photoAlt": "Main hall of the ESSAADA Haemodialysis Clinic in Sidi Bel Abbès, with a marble staircase and a directory of services",
+      "photoLabel": "Practical life",
+      "photoTag": "Access & services"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Living with dialysis"
+    },
+    "infosSection": {
+      "eyebrow": "At the clinic",
+      "title": "Your comfort, our priority",
+      "subtitle": "Hours, access, companions, safety — the practical details of your visit."
+    },
+    "vieSection": {
+      "eyebrow": "Daily life",
+      "title": "Dialysis, and life going on",
+      "subtitle": "Sport, travel, work, intimacy, parenthood, diet — kidney disease disrupts, but it does not erase. Here is what can be said about it, openly."
+    },
+    "understandLink": "Understanding kidney failure",
+    "cta": {
+      "eyebrow": "Preparing your visit",
+      "title": "Questions before your first visit?",
+      "subtitle": "Opening hours, companions, documents to bring, meals — our team explains everything in advance.",
+      "waMessage": "Hello, I have a practical question to prepare for my visit to ESSAADA Clinic."
+    },
+    "infos": {
+      "horaires": {
+        "title": "Session times",
+        "items": {
+          "0": "3 sessions per week as prescribed"
+        }
+      },
+      "ramadan": {
+        "title": "Ramadan hours",
+        "items": {
+          "0": "First session at 4 a.m.",
+          "1": "No session after f'tour, no night-time slot",
+          "2": "Rescheduling in consultation with your nephrologist",
+          "3": "Care adapted for fasting patients"
+        }
+      },
+      "acces": {
+        "title": "Access & parking",
+        "items": {
+          "0": "Reserved spaces near the entrance",
+          "1": "Direct access for ambulances"
+        }
+      },
+      "pmr": {
+        "title": "Wheelchair accessibility",
+        "items": {
+          "0": "Two access ramps for wheelchairs",
+          "1": "Signposted accessible parking spaces",
+          "2": "Wheelchair available at reception",
+          "3": "Accessible toilets",
+          "4": "Stretcher assistance on request"
+        }
+      },
+      "cafe": {
+        "title": "Refreshments",
+        "items": {
+          "0": "Complimentary coffee during the session",
+          "1": "Water and drinks available"
+        }
+      },
+      "accompagnants": {
+        "title": "Companions",
+        "items": {
+          "0": "A companion may be present during the first sessions",
+          "1": "Comfortable waiting room",
+          "2": "Coffee and tea available"
+        }
+      },
+      "securite": {
+        "title": "Safety & quality",
+        "items": {
+          "0": "Certified and inspected equipment",
+          "1": "Strict hygiene protocols",
+          "2": "A doctor on site at all times"
+        }
+      }
+    },
+    "vie": {
+      "sport": {
+        "title": "Sport and physical activity",
+        "lead": "Staying active is good for the body, the spirits and the treatment itself — it is strongly encouraged.",
+        "body": {
+          "0": "Walking, swimming, cycling, gardening, stretching: any regular physical activity is beneficial during the dialysis journey. It helps to maintain muscle tone, protects the heart, and improves sleep and mood on non-session days. There is no reason to put your life on hold.",
+          "1": "For a more demanding return to sport — running, weight training, team sports, high-altitude hiking — a word with the nephrologist helps to adjust things according to your fistula, your blood pressure and your general fitness. The aim is never to forbid, but to adapt."
+        },
+        "tip": "Protect your fistula arm from knocks and heavy loads — the rest of your body remains free."
+      },
+      "voyages": {
+        "title": "Travel and journeys",
+        "lead": "Going away on holiday, visiting family in France or back home, performing the Umrah: all of this remains possible.",
+        "body": {
+          "0": "A trip is prepared with the team a few weeks in advance. We help to find a host centre at your destination — in Algeria as well as abroad — and to forward your medical file so that your sessions continue without interruption. Haemodialysis centres exist everywhere: Algiers, Oran, Marseille, Lyon, Paris, Mecca, Istanbul.",
+          "1": "Remember to plan ahead for the administrative formalities (agreement of cover, travel insurance, prescriptions translated if needed). For patients from the diaspora returning to spend the summer in Sidi Bel Abbès, the arrangements are made in both directions with the same care."
+        },
+        "tip": "Ideally let us know 4 to 6 weeks before departure so we can calmly arrange the sessions at your destination."
+      },
+      "travail": {
+        "title": "Working life",
+        "lead": "Continuing to work is often possible, and it is a real support — financial, social and personal.",
+        "body": {
+          "0": "Dialysis sessions set the rhythm of the week, but many patients keep up a working life. Early-morning or end-of-day slots free up much of the working day. As far as possible, we try to fit your sessions around your schedule constraints.",
+          "1": "In Algeria, recognition as a disabled worker can be applied for through the social services: it sometimes opens the way to adjustments (working hours, role) or to a pension depending on the situation. Your treating doctor and the social worker can guide you through the process; there is no guarantee of success, but it is worth raising."
+        },
+        "tip": "Tell us about your working hours from the very first appointment — we build the schedule together."
+      },
+      "intimite": {
+        "title": "Intimacy and couple life",
+        "lead": "Kidney disease also affects intimate life — it is common, and it can be discussed without embarrassment during consultations.",
+        "body": {
+          "0": "Reduced desire, fatigue, erectile difficulties in men, dryness or cycle irregularities in women: these changes affect more than one patient in two. They combine the psychological burden of the illness, the treatments, and very real hormonal changes. It is neither all in the mind nor inevitable.",
+          "1": "The nephrologist is there to talk about it, without judgement and in complete confidence — just like blood pressure or sleep. Solutions exist, sometimes simple ones: adjusting treatments, the opinion of a specialist colleague, psychological support for the couple. Talking about it already lifts part of the burden."
+        },
+        "tip": "No question is out of place during a consultation. Intimacy is part of overall health."
+      },
+      "grossesse": {
+        "title": "Pregnancy and parenthood",
+        "lead": "Fertility is reduced in kidney failure, but a pregnancy remains possible — it must be carefully prepared.",
+        "body": {
+          "0": "For a woman on dialysis, carrying a pregnancy involves real risks for both mother and child: foetal growth restriction, premature birth, maternal complications. It is not forbidden, but it requires close monitoring between nephrologist, gynaecologist and maternity unit, with dialysis sessions often intensified during the nine months.",
+          "1": "When a plan to have a child is in mind, reliable contraception is most often recommended while it is discussed calmly, and where possible postponing pregnancy until after a kidney transplant: transplantation markedly improves fertility and lowers the risks. Raise it early with your nephrologist — it is an important conversation, to be approached as such."
+        },
+        "tip": "A plan for a baby, contraception to review: our support includes these questions."
+      },
+      "alimentation": {
+        "title": "Diet",
+        "lead": "Eating well on dialysis is above all about adapting well — there is no single diet that suits everyone.",
+        "body": {
+          "0": "Needs evolve throughout the journey: before dialysis, the aim is often to slow the worsening of kidney disease. Once sessions have begun, the priorities change — correcting excess water, potassium or phosphorus, but also preventing malnutrition, because eating enough remains essential. Diabetes, high blood pressure or other associated conditions further alter the balance.",
+          "1": "The nephrologist links your blood test results and adjusts the recommendations to your real situation — your habits, your cooking, what you enjoy — rather than to a theoretical list of forbidden foods. The aim is a balance that is sustainable over time, not an impossible diet to follow."
+        },
+        "tip": "Talk about your diet during a consultation whenever you feel the need — it is designed for you, not against you."
+      }
+    }
+  },
+  "faq": {
+    "meta": {
+      "title": "FAQ · Dialysis & cover",
+      "description": "All the answers to your questions about haemodialysis, sessions, insurance cover and practical arrangements at Clinique ESSAADA.",
+      "ogTitle": "FAQ · Dialysis & cover",
+      "ogDescription": "All the answers to your questions about haemodialysis, sessions, insurance cover and practical arrangements at Clinique ESSAADA."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Your questions, our answers",
+      "subtitle": "The essential information to understand haemodialysis and your care journey."
+    },
+    "cta": {
+      "eyebrow": "Going further",
+      "title": "Can't find the answer to your question here?",
+      "subtitle": "Our team answers your questions by WhatsApp, telephone or during a consultation.",
+      "waMessage": "Hello, I have a question about dialysis that isn't in the FAQ."
+    },
+    "cost": {
+      "question": "How much does a session cost? Do I have to pay anything?",
+      "answer": "Nothing if you are affiliated with CNAS or CASNOS. The clinic is approved (conventionnée): your haemodialysis sessions are fully covered through direct billing (tiers-payant) — you pay nothing upfront. Our administrative team prepares your file with you (Chifa card + CNAS or CASNOS certificate). If anything is holding it up, we tell you straight away and guide you through the process."
+    },
+    "companion": {
+      "question": "Can my companion stay with me?",
+      "answer": "Yes. We are happy to welcome a companion, especially for the first sessions. A dedicated waiting room is available to them (coffee and tea served)."
+    },
+    "sessionDuration": {
+      "question": "How long does a dialysis session last?",
+      "answer": "A haemodialysis session lasts about 4 hours. The exact duration is determined by your nephrologist according to your needs. You can read, watch television or rest during the session."
+    },
+    "frequency": {
+      "question": "How often will I come in?",
+      "answer": "Most patients come 3 times a week. Your doctor adjusts the frequency to your clinical situation."
+    },
+    "painGeneral": {
+      "question": "Does dialysis hurt?",
+      "answer": "Needling the fistula (the vascular access created in the arm) may cause discomfort comparable to a blood test. Our nurses are trained to keep it to a minimum. Once the session has started, it is painless."
+    },
+    "emergency": {
+      "question": "What happens if I feel faint during the session?",
+      "answer": "A nephrologist is present on site for the entire duration of the sessions — this is not a telephone on-call arrangement, it is an actual physical presence. Our nursing team is trained in emergency protocols and intervenes immediately in the event of a drop in blood pressure or faintness."
+    },
+    "work": {
+      "question": "Can I keep working while on dialysis?",
+      "answer": "Yes, in most cases. We arrange your time slots (morning, daytime or evening) so they fit around your schedule. Many of our patients continue their working or family life."
+    },
+    "eating": {
+      "question": "Can I eat during dialysis?",
+      "answer": "Yes. We recommend a light meal 2 hours before coming in, and coffee is served during the session."
+    },
+    "firstAppointment": {
+      "question": "How do I book a first appointment?",
+      "answer": "Call us or send a WhatsApp message. Our team offers you an appointment with a nephrologist within 24 to 48 hours (working days). We can also arrange a no-obligation introductory visit to the centre."
+    },
+    "transfer": {
+      "question": "I already dialyse elsewhere — how do I transfer my care?",
+      "answer": "Contact us with your most recent laboratory results (full blood count + biochemistry), your serology (HBV, HCV, HIV) and your dialysis prescription. Our nephrologist gets in touch with your treating doctor to ensure continuity of care, without any interruption."
+    },
+    "cnasCasnos": {
+      "question": "Are you approved by CNAS and CASNOS?",
+      "answer": "Yes. The clinic is approved with CNAS (Caisse Nationale des Assurances Sociales des travailleurs salariés) and CASNOS (Caisse Nationale de Sécurité Sociale des Non-Salariés). Bring your Chifa card and your medical file to your first appointment."
+    },
+    "visiting": {
+      "question": "I'm on holiday in the area — can I have dialysis with you?",
+      "answer": "Yes. We welcome visiting patients (both residents in Algeria and members of the diaspora). Your slot is confirmed within 72 working hours. Contact us as soon as possible with your most recent laboratory results (full blood count + biochemistry), your serology (HBV, HCV, HIV) and your dialysis prescription. See the dedicated \"Visiting patients\" page."
+    },
+    "ramadan": {
+      "question": "Are the hours adapted during Ramadan?",
+      "answer": "Yes. During Ramadan, we open a single series of slots with a first session at 4 a.m. No session after f'tour, no night-time slot. Rescheduling is agreed together with your nephrologist. See the \"Ramadan & dialysis\" page."
+    },
+    "accessibility": {
+      "question": "Is the clinic accessible to people with reduced mobility?",
+      "answer": "Yes. The clinic has access ramps for wheelchairs, reserved parking spaces near the entrance, and direct access for ambulances. Our staff can assist you if needed."
+    },
+    "firstSessionFear": {
+      "question": "My very first session here, and I'm really frightened. What actually happens?",
+      "answer": "It is completely normal to feel apprehensive; almost all our patients feel this way the first time. Here is what to expect: on arrival, the nurse welcomes you, checks your weight and blood pressure, then settles you comfortably into a reclining chair with a blanket. Inserting the needles takes 2 to 3 minutes, and we explain each step. You are then connected to the machine for about 4 hours. Throughout the session, a nurse comes by every 15 minutes, and a nephrologist is present in the unit. You can read, sleep or look at your phone. Coffee is served to you. At the end of the session, the needles are removed, we check that all is well, and you leave. You are never alone."
+    },
+    "needlesPain": {
+      "question": "Do the needles hurt?",
+      "answer": "We prefer to be honest: the needling is unpleasant, but it lasts barely 10 seconds. It is not a sharp pain, more a strong sensation that quickly passes. If you have a fistula (AVF), an anaesthetic cream can be applied an hour before the session to make the needling almost painless. If you have a central catheter, there is no needling at all, just a connection. Most of our patients tell us that after 3 or 4 sessions the apprehension fades and the procedure becomes routine. Our nurses are trained in gentle needling — if a needle hurts you, say so immediately and we adjust."
+    },
+    "emergencyVacation": {
+      "question": "I'm on holiday in Algeria but I didn't give notice. Can you take me on urgently?",
+      "answer": "Yes, this is possible subject to availability, and we do everything we can to leave no one without a session. Contact us immediately by WhatsApp on the centre's number, even in the evening or at the weekend. If possible, have ready: your most recent dialysis report (dry weight, session time, treatment), your recent serology (hepatitis B/C, HIV), your current prescription, and a piece of identification. If we are full at the time you want, we offer you another slot during the week or refer you to a partner centre. Never skip a session — call us and we will find a solution."
+    },
+    "serologyAge": {
+      "question": "My serology is 4 months old — is it still valid?",
+      "answer": "The standard is that serology (hepatitis B, C and HIV) must be less than 3 months old to be dialysed at a centre. At 4 months it is no longer accepted; this is a strict health rule to protect every patient in the unit. Don't worry: we work with a partner laboratory in Sidi Bel Abbès that can repeat the tests quickly. The blood draw takes 10 minutes and the results come back within 24 to 48 hours. We advise you to have the blood test as soon as you arrive in Algeria, even before your first scheduled session."
+    },
+    "companionDuringSession": {
+      "question": "Can a loved one stay with me during the 4-hour session?",
+      "answer": "We understand how reassuring the presence of a loved one is, especially the first few times. They cannot stay continuously in the dialysis room for reasons of hygiene and the privacy of other patients, but they have a dedicated waiting room with comfortable seating and a water point. They can come to see you briefly during the session, generally 2 to 3 times, subject to the nurse's agreement. You keep your phone within reach, so you can message them at any time. For your very first session, we are more flexible and allow a slightly longer visit while you are being settled in."
+    },
+    "dataProtection": {
+      "question": "Is my medical data protected?",
+      "answer": "Yes. We strictly apply Algerian Law 18-07 on the protection of personal data. Your medical file is kept securely, accessible only to the care team looking after you: nephrologist, nurses and authorised administrative staff. No data is passed on to a third party (employer, private insurer, extended family) without your written consent. At any time you can request a copy of your file, correct any erroneous information, or ask for the deletion of data that is not medically necessary. For diaspora patients, we send your stay report to your nephrologist in France by secure email, solely at your request."
+    }
+  },
+  "glossary": {
+    "meta": {
+      "title": "Glossary — Understanding dialysis terms",
+      "description": "29 key terms in nephrology and dialysis explained simply: vascular access, creatinine, GFR, fistula, haemodialysis, transplant, urea. By Clinique ESSAADA.",
+      "ogTitle": "Nephrology glossary — Clinique ESSAADA",
+      "ogDescription": "The vocabulary of dialysis and kidney failure, defined simply. 29 entries, from the most technical to the most everyday.",
+      "ogTitleTerm": "{title} — ESSAADA Glossary"
+    },
+    "hero": {
+      "eyebrow": "Understand",
+      "title": "Glossary — the words of dialysis, explained simply",
+      "subtitle": "29 terms you will come across in consultation, on your dialysis record, or in conversations with the team. No jargon: accessible, verifiable definitions, with no scaremongering."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "glossary": "Glossary"
+    },
+    "index": {
+      "navAria": "Alphabetical index",
+      "goTo": "Jump to:",
+      "letterAria": "Terms beginning with {letter}",
+      "entriesCount": "{count} entries"
+    },
+    "card": {
+      "dedicatedPage": "View the dedicated page",
+      "dedicatedPageAria": "View the dedicated page: {term}"
+    },
+    "relatedTerms": "Related terms",
+    "ctaBlock": {
+      "title": "Still puzzled by a term?",
+      "body": "This glossary does not replace a conversation with your nephrologist. During consultation, ask all your questions — none is out of place, and none is too simple."
+    },
+    "term": {
+      "eyebrow": "Glossary · Definition",
+      "subtitle": "A clear, jargon-free definition, verified by the medical team at Clinique ESSAADA.",
+      "backToGlossary": "Back to the full glossary",
+      "furtherEyebrow": "Going further",
+      "furtherTitle": "A question about your care pathway&nbsp;?",
+      "furtherSubtitle": "Our nephrology team answers your questions during consultation.",
+      "viewConsultation": "View the nephrology consultation"
+    },
+    "terms": {
+      "acces-vasculaire": {
+        "term": "Vascular access",
+        "question": "What is vascular access?",
+        "definition": "A surgical or medical entry route that connects the bloodstream to the dialysis machine. In haemodialysis, the two main forms are the arteriovenous fistula (a long-lasting solution) and the catheter (used in emergencies or while awaiting a fistula). The quality of vascular access directly determines the effectiveness of sessions and the patient's long-term safety."
+      },
+      "ase": {
+        "term": "ESA",
+        "question": "What is an ESA in dialysis?",
+        "definition": "Short for \"erythropoiesis-stimulating agent\". These are injectable medicines that mimic the action of erythropoietin, the hormone normally produced by the kidneys. They are prescribed to patients with kidney failure whose kidneys no longer make enough of this hormone, in order to correct renal anaemia and reduce the tiredness caused by a lack of red blood cells."
+      },
+      "catheter": {
+        "term": "Catheter",
+        "question": "What is a dialysis catheter?",
+        "definition": "A soft, thin plastic tube inserted into a blood vessel (often in the neck or groin) to gain access to the circulation. In haemodialysis it serves as temporary vascular access, particularly in emergencies or while a fistula is maturing. It can also be placed in the abdomen for peritoneal dialysis. Handling it requires strict hygiene."
+      },
+      "centre-hemodialyse": {
+        "term": "Haemodialysis Centre",
+        "question": "What is a haemodialysis centre?",
+        "definition": "A care facility dedicated to patients with severe kidney failure who require comprehensive management. A nephrologist is present at all times during sessions, supported by a nursing team. This setting suits patients whose medical condition calls for close monitoring, as opposed to self-care dialysis or home dialysis."
+      },
+      "creatinine": {
+        "term": "Creatinine",
+        "question": "What is creatinine?",
+        "definition": "A waste product continuously produced by the normal functioning of the muscles, from creatine. It is eliminated by the kidneys in the urine. Measuring it in the blood and calculating its clearance make it possible to assess kidney function: the more creatinine builds up in the blood, the less effectively the kidneys are filtering. It is one of the reference markers in nephrology follow-up."
+      },
+      "diabete": {
+        "term": "Diabetes",
+        "question": "What is diabetes?",
+        "definition": "A chronic disease marked by an excessively high level of glucose (sugar) in the blood, linked to a defect in the production or action of insulin. Poorly controlled over the long term, it damages the small blood vessels, particularly those of the kidneys. About one in five diabetic patients develops kidney failure; it is one of the leading causes of dialysis worldwide."
+      },
+      "dialyse": {
+        "term": "Dialysis",
+        "question": "What is dialysis?",
+        "definition": "A treatment that partially replaces the work of failing kidneys by clearing the blood of its waste products and excess water. Two techniques exist: haemodialysis, which filters the blood through an artificial kidney, and peritoneal dialysis, which uses the natural membrane of the abdomen. The choice depends on the patient's medical condition, lifestyle and preferences."
+      },
+      "dialyse-a-domicile": {
+        "term": "Home dialysis",
+        "question": "What is home dialysis?",
+        "definition": "A treatment option in which the patient carries out their own dialysis at home, after supervised training. It offers great independence, better respect for personal routines, and regular but less frequent medical follow-up. It mainly concerns peritoneal dialysis, and more rarely home haemodialysis. It requires a suitable environment and a relative available to provide support."
+      },
+      "dialyse-peritoneale": {
+        "term": "Peritoneal dialysis",
+        "question": "What is peritoneal dialysis?",
+        "definition": "A technique that uses the peritoneum, the thin membrane lining the abdominal cavity, as a natural filter. A dialysis solution is introduced into the abdomen through a catheter, left in place for a few hours, then drained and replaced. The treatment works continuously, 24 hours a day, more closely imitating the natural kidney. It is performed almost exclusively at home, after the patient has been trained."
+      },
+      "dialyseur": {
+        "term": "Dialyser",
+        "question": "What is a dialyser?",
+        "definition": "The central filter of the haemodialysis machine, sometimes called an \"artificial kidney\". It is made up of thousands of semi-permeable hollow fibres through which the blood flows. Waste products and excess water pass from the blood into the dialysis solution, while the blood cells and proteins remain in the circulation. It is the dialyser that actually carries out the purification."
+      },
+      "dpa": {
+        "term": "APD",
+        "question": "What is APD?",
+        "definition": "Short for \"automated peritoneal dialysis\". The patient connects to a small device, the cycler, which automatically carries out the exchanges of dialysis solution in the abdomen during the night, over roughly 8 to 10 hours. The daytime is thus free of handling. This technique suits people who are active or find the manual exchanges of CAPD inconvenient."
+      },
+      "dpca": {
+        "term": "CAPD",
+        "question": "What is CAPD?",
+        "definition": "Short for \"continuous ambulatory peritoneal dialysis\". The patient carries out four to five exchanges of dialysis solution in the abdomen by hand during the day, at regular intervals. Each exchange lasts about 30 minutes. Between two exchanges, they can lead a normal life. This method requires no electrical device and can be carried out anywhere, provided hygiene is respected."
+      },
+      "epo": {
+        "term": "EPO",
+        "question": "What is EPO?",
+        "definition": "A common abbreviation for \"erythropoietin\", a hormone produced by healthy kidneys that stimulates the bone marrow to make red blood cells. In patients with kidney failure, EPO production falls, which causes anaemia. Synthetic forms are then prescribed by injection to restore a satisfactory haemoglobin level and reduce tiredness."
+      },
+      "erythropoietine": {
+        "term": "Erythropoietin",
+        "question": "What is erythropoietin?",
+        "definition": "A hormone naturally produced by healthy kidneys. It acts on the bone marrow, stimulating it to produce red blood cells, which carry oxygen. When the kidneys are diseased, this production decreases and renal anaemia sets in, causing tiredness and breathlessness. Synthetic versions (EPO, ESA) help to make up for this deficiency."
+      },
+      "fistule-arterio-veineuse": {
+        "term": "Arteriovenous fistula (AVF)",
+        "question": "What is an arteriovenous fistula?",
+        "definition": "The reference vascular access for haemodialysis, created surgically, most often in the forearm. The surgeon connects an artery to a nearby vein: the vein gradually thickens under the arterial pressure and becomes easy to needle. It provides the high blood flow required for sessions. Its maturation takes several weeks before the first use."
+      },
+      "greffe-de-rein": {
+        "term": "Kidney transplant",
+        "question": "What is a kidney transplant?",
+        "definition": "A surgical procedure that replaces the function of diseased kidneys with a healthy kidney from a donor. The donor may be living, often a compatible relative, or deceased. When it is possible, a transplant offers a quality of life close to normal and frees the patient from dialysis sessions. It requires lifelong immunosuppressive treatment."
+      },
+      "hemodialyse": {
+        "term": "Haemodialysis",
+        "question": "What is haemodialysis?",
+        "definition": "A dialysis technique in which the patient's blood circulates outside the body through an artificial kidney, the dialyser. Waste products and excess water pass into the dialysis solution through a semi-permeable membrane, then the cleansed blood returns to the patient. Sessions usually take place three times a week and last four to six hours."
+      },
+      "hemoglobine": {
+        "term": "Haemoglobin",
+        "question": "What is haemoglobin?",
+        "definition": "A protein contained in the red blood cells, responsible for carrying oxygen from the lungs to the tissues. It owes its red colour to the iron it contains. When it falls below a certain threshold, this is called anaemia, which shows up as tiredness, breathlessness and pallor. Anaemia is common in dialysis patients and is corrected with treatment."
+      },
+      "insuffisance-renale-aigue": {
+        "term": "Acute kidney injury",
+        "question": "What is acute kidney injury?",
+        "definition": "A sudden loss, within a few hours or days, of the kidneys' ability to filter the blood. It is often temporary and reversible if managed quickly. Common causes are a drop in blood supply to the kidneys, an obstruction of the urinary tract, or damage following an operation, an accident or a serious infection. Treatment is often given in intensive care."
+      },
+      "insuffisance-renale-chronique-terminale": {
+        "term": "End-stage chronic kidney failure",
+        "question": "What is end-stage kidney failure?",
+        "definition": "The most advanced stage of chronic kidney disease, where kidney function is below roughly 10% of normal (assessed by the GFR, or glomerular filtration rate). At this stage, the kidneys can no longer cleanse the blood on their own. Replacement therapy then becomes necessary: dialysis or a kidney transplant."
+      },
+      "maladie-renale-chronique": {
+        "term": "Chronic kidney disease",
+        "question": "What is chronic kidney disease?",
+        "definition": "A slow and progressive decline in kidney function, developing over several years. It is often silent at first and discovered through blood or urine tests. Without management, it can progress to end-stage kidney failure, then requiring dialysis or a transplant. Its main causes are diabetes, high blood pressure and certain inherited diseases."
+      },
+      "medicaments-immunosuppresseurs": {
+        "term": "Immunosuppressant medicines",
+        "question": "What is an immunosuppressant medicine?",
+        "definition": "Medicines that dampen the activity of the immune system. They are prescribed for life after a kidney transplant to prevent the body from recognising the graft as foreign and rejecting it. Their balance is delicate: too little and rejection threatens, too much and the patient becomes vulnerable to infections. They require close and regular medical follow-up."
+      },
+      "pression-arterielle": {
+        "term": "Blood pressure",
+        "question": "What is blood pressure?",
+        "definition": "The pressure exerted by the blood on the walls of the arteries with each heartbeat. When it remains too high over time, this is called hypertension, which strains the heart, the blood vessels and the kidneys. It increases the risk of heart attack and stroke, and is among the main causes of chronic kidney disease. It is treated through lifestyle measures and medication."
+      },
+      "solution-de-dialyse": {
+        "term": "Dialysis solution",
+        "question": "What is dialysis solution?",
+        "definition": "A sterile fluid made up of ultra-purified water, glucose and electrolytes (sodium, potassium, calcium, magnesium, chlorides). In the dialyser it flows on the opposite side of the membrane from the blood: waste products and excess water cross over through the difference in concentration, while the useful elements are preserved. Its composition is adjusted to each patient."
+      },
+      "temps-de-stase": {
+        "term": "Dwell time",
+        "question": "What is dwell time?",
+        "definition": "In peritoneal dialysis, the period during which the fresh dialysis solution remains in the abdomen to carry out the purification. Its length varies according to the technique, from a few hours during the day to a full night. At the end of this time, the dialysate laden with waste is drained and replaced with fresh solution, either by hand by the patient or automatically by a cycler."
+      },
+      "ultrafiltration": {
+        "term": "Ultrafiltration",
+        "question": "What is ultrafiltration?",
+        "definition": "The mechanism by which the excess water built up in the blood is removed during dialysis. The amount to be removed is calculated before each session from the patient's weight and their target \"dry weight\". Well-judged ultrafiltration relieves breathlessness and oedema; if too fast, it can lead to cramps or a drop in blood pressure. The team adjusts the settings accordingly."
+      },
+      "unite-auto-dialyse": {
+        "term": "Self-care Dialysis Unit (SDU)",
+        "question": "What is a self-care dialysis unit (SDU)?",
+        "definition": "A facility where patients, trained and fully or partly independent, carry out their own haemodialysis session under the light supervision of a nurse. Sessions take place in small groups, often around five patients to one carer, in a friendly setting. This arrangement suits medically stable people who wish to retain their independence and social life."
+      },
+      "unite-dialyse-medicalisee": {
+        "term": "Medicalised Dialysis Unit (MDU)",
+        "question": "What is a medicalised dialysis unit?",
+        "definition": "A facility intermediate between the full haemodialysis centre and self-care dialysis. It takes in patients whose sessions usually run without incident, but who cannot manage their own care. A nursing team is present at all times, and a nephrologist attends on occasion, without continuous medical supervision during the session itself."
+      },
+      "uree": {
+        "term": "Urea",
+        "question": "What is urea?",
+        "definition": "A waste product arising from the normal breakdown of proteins by the liver, carried by the blood and eliminated by the kidneys in the urine. In patients with kidney failure, it builds up in the blood and its level serves as an indicator of the remaining kidney function. Too high a level can cause tiredness, loss of appetite and nausea; one aim of dialysis is to bring it back down."
+      }
+    }
+  },
+  "team": {
+    "meta": {
+      "title": "Medical team — nephrology in Sidi Bel Abbès",
+      "description": "Nephrologist, specialist nurses, support staff. Meet the team at Clinique ESSAADA in Sidi Bel Abbès."
+    },
+    "hero": {
+      "eyebrow": "Our team",
+      "title": "A multidisciplinary team by your side",
+      "subtitle": "Nephrologist, specialist nurses, support staff. Trained in the care of patients on dialysis."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "team": "Team"
+    },
+    "section": {
+      "eyebrow": "The roles",
+      "title": "The professionals who support you",
+      "subtitle": "Four departments, one shared commitment: making every session as safe and comfortable as possible."
+    },
+    "departments": {
+      "0": {
+        "title": "Nephrology",
+        "description": "A nephrologist for consultation, diagnosis and follow-up of kidney disease at every stage."
+      },
+      "1": {
+        "title": "Haemodialysis",
+        "description": "Nurses specialised in haemodialysis, biomedical technicians and a doctor present at all times during sessions."
+      },
+      "2": {
+        "title": "Paramedical & support",
+        "description": "Healthcare assistants and support staff for therapeutic education and support for families."
+      },
+      "3": {
+        "title": "Administration & reception",
+        "description": "Appointment booking, assistance with CNAS / CASNOS paperwork, and liaison with patient transport providers."
+      }
+    },
+    "cta": {
+      "eyebrow": "Consultation",
+      "title": "Meet the team in consultation?",
+      "subtitle": "A nephrology consultation, a first contact for dialysis, or a question — we respond within 24-48 working hours.",
+      "waMessage": "Hello, I would like to meet the medical team at Clinique ESSAADA for a consultation."
+    }
+  },
+  "laClinique": {
+    "meta": {
+      "title": "Our centre · 37 beds in Sidi Bel Abbès",
+      "description": "Discover Clinique ESSAADA: 37 beds, recent equipment, ultra-pure water and a multidisciplinary team in Sidi Bel Abbès."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "The centre"
+    },
+    "hero": {
+      "eyebrow": "The clinic",
+      "title": "A centre dedicated to dialysis, designed with you in mind",
+      "subtitle": "{lits} beds, a multidisciplinary team and recent technical facilities. In {city}, {country}.",
+      "photoAlt": "Exterior façade of Clinique ESSAADA, a two-storey building with an access ramp, in Sidi Bel Abbès",
+      "photoLabel": "Façade & reception"
+    },
+    "mission": {
+      "eyebrow": "Our mission",
+      "title": "To treat, reassure and support",
+      "p1": "Clinique ESSAADA is a private haemodialysis centre in {city}. It welcomes both resident patients and visiting patients with the same high standard: rigorous medical care in a calm environment.",
+      "p2": "Our teams combine nephrology expertise, nursing skill and patient support. Every person receives personalised follow-up: therapeutic education (learning to live with the illness), dietary advice, psychological support and support for relatives."
+    },
+    "stats": {
+      "capacity": "Capacity",
+      "capacityValue": "{lits} beds",
+      "slotsPerDay": "Sessions per day",
+      "equipment": "Equipment",
+      "equipmentValue": "New",
+      "conventions": "Insurance agreements"
+    },
+    "equipment": {
+      "eyebrow": "Equipment",
+      "title": "Technical facilities designed for quality of care",
+      "subtitle": "Double-pass reverse-osmosis water treatment, recent dialysis machines and strictly single-use dialysers.",
+      "detailLink": "See equipment & hygiene in detail",
+      "items": {
+        "generators": {
+          "title": "Latest-generation dialysis machines",
+          "text": "Traceability of parameters and continuous monitoring of session quality."
+        },
+        "ultraPureWater": {
+          "title": "Ultra-pure dialysis water",
+          "text": "Water treatment compliant with international standards, with regular checks."
+        },
+        "beds": {
+          "title": "3-position beds",
+          "text": "Tailored positioning throughout the 4-hour session."
+        },
+        "qualityProtocols": {
+          "title": "Quality protocols",
+          "text": "Strict hygiene, certified equipment and a doctor present at all times."
+        }
+      }
+    },
+    "gallery": {
+      "eyebrow": "In pictures",
+      "title": "The centre, in a few views",
+      "subtitle": "A few glimpses of the centre. A full on-site photo report is coming soon.",
+      "dialysisRoom": {
+        "alt": "Haemodialysis room at Clinique ESSAADA, with aligned stations fitted with dialysis machines and reclining beds",
+        "label": "Haemodialysis room",
+        "caption": "Wide view of the dialysis stations, 3-position beds and dialysis machines.",
+        "tag": "Interior view"
+      },
+      "reception": {
+        "alt": "Reception hall of Clinique ESSAADA with a reception desk, marble staircase and chandelier",
+        "label": "Reception & welcome desk",
+        "caption": "Reception area, admission flow and signage.",
+        "tag": "Entrance"
+      }
+    },
+    "welcome": {
+      "eyebrow": "A word of welcome",
+      "title": "A local, close-to-home facility",
+      "intro": "Created to welcome patients with kidney failure at every stage of the illness, Clinique ESSAADA places attentive listening and rigour at the heart of every session.",
+      "q1": "We welcome you warmly and thank you for the trust you place in us.",
+      "q2": "Our medical team and all our staff do everything possible to provide you with the best care and to make each of your visits as comfortable as possible.",
+      "q3": "On this website you will find the information that will help you become familiar with life at the clinic. And if you have any question, an opinion to share or advice to seek — please do not hesitate. Your suggestions help us support you better.",
+      "signature": "The Management and teams of Clinique ESSAADA"
+    },
+    "commitments": {
+      "eyebrow": "Our commitments",
+      "title": "Four promises, kept at every session",
+      "subtitle": "These are not slogans — they are the four areas on which we are assessed and to which we commit.",
+      "items": {
+        "professionals": {
+          "title": "Healthcare professionals at your service",
+          "text": "A nephrologist, specialised nurses and support staff — a multidisciplinary team trained in the care of dialysis patients."
+        },
+        "equipmentManaged": {
+          "title": "Equipment managed to quality & safety standards",
+          "text": "Installation, maintenance and full traceability. Recovery of equipment and clinical care waste (DASRI) in line with protocols."
+        },
+        "globalApproach": {
+          "title": "A holistic, personalised approach",
+          "text": "Training, a personalised care record and handling of administrative formalities. Each patient is followed as a unique case, not as a number."
+        },
+        "prescribers": {
+          "title": "A commitment to referring physicians",
+          "text": "Regular feedback to the treating physician and ongoing collaboration with the referring healthcare professionals. Continuity of care is a commitment."
+        }
+      }
+    },
+    "visit": {
+      "eyebrow": "No obligation",
+      "title": "Come and visit the centre before your first session",
+      "p1": "Before beginning your journey with us, we invite you — and a relative — to discover the centre. A meeting with a nephrologist, a tour of the dialysis room, an explanation of how a session unfolds, and open questions.",
+      "p2": "<strong>No obligation, no charge.</strong> About thirty minutes that make a real difference — especially if it is your relative who is worried.",
+      "cardTitle": "Arrange your visit",
+      "cardText": "Call us or send a WhatsApp message — we will offer you a slot within 48 working hours.",
+      "requestCta": "Request a visit",
+      "whatsappMessage": "Hello, I would like to visit Clinique ESSAADA."
+    }
+  },
+  "compositionCorporelle": {
+    "meta": {
+      "title": "Dry weight & hydration measurement · Bioimpedance",
+      "description": "Multi-frequency bioimpedance (BIS): objective measurement of dry weight, hydration and body composition. A precision tool to personalise every haemodialysis session at Clinique ESSAADA, Sidi Bel Abbès.",
+      "ogTitle": "Precise dry weight & hydration measurement — Clinique ESSAADA",
+      "ogDescription": "Multi-frequency bioimpedance: a precision tool to adjust your dry weight and track your body composition, integrated into the dialysis protocol."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "The centre",
+      "current": "Dry weight & hydration measurement"
+    },
+    "hero": {
+      "eyebrow": "Technical facilities",
+      "title": "Measuring your dry weight and hydration precisely",
+      "subtitle": "Multi-frequency bioimpedance — the same measurement technology used in European nephrology centres, integrated into your dialysis follow-up.",
+      "photoAlt": "Bodystat Multiscan 5000 — medical body composition analyser using multi-frequency bioimpedance, touchscreen showing the New Test / Recall Data / Options / Information menu",
+      "photoTag": "Multi-frequency bioimpedance"
+    },
+    "why": {
+      "eyebrow": "Why this measurement",
+      "title": "Going beyond the ordinary bathroom scales",
+      "p1": "In haemodialysis, weight is only part of the story. What really matters is the <strong>distribution</strong> between water, lean mass and fat mass. Ordinary scales cannot tell these apart.",
+      "p2": "<strong>Multi-frequency bioimpedance (BIS)</strong> sends an imperceptible electrical current at several frequencies through your body. Depending on the frequency, this current crosses cell membranes to a greater or lesser extent — which makes it possible to separate total body water, intracellular water, extracellular water, lean mass and fat mass.",
+      "p3": "It is a tool that <strong>complements</strong> the nephrologist's clinical assessment. It does not replace their judgement — it enriches it with objective data, tracked over time."
+    },
+    "device": {
+      "title": "The device used",
+      "item1": "<strong>Bodystat Multiscan 5000</strong> — CE-marked medical device",
+      "item2": "Bioimpedance at 6 frequencies (5 to 1000 kHz)",
+      "item3": "Non-invasive, painless measurement, two minutes",
+      "item4": "Interpreted by your nephrologist",
+      "note": "Multi-frequency bioimpedance is used routinely in certain European nephrology centres. It remains higher-end equipment, still uncommon in Algeria."
+    },
+    "pillars": {
+      "eyebrow": "What it does for you",
+      "title": "Three concrete contributions to your follow-up",
+      "subtitle": "What this tool helps your nephrologist do better — and what it does not claim to do.",
+      "drySetting": {
+        "title": "Adjusting the dry weight",
+        "text": "The objective measurement of body water (total, intracellular, extracellular) helps your nephrologist fine-tune your dry weight, beyond clinical assessment alone. The aim: to limit intradialytic hypotension and fluid overload between sessions."
+      },
+      "bodyComposition": {
+        "title": "Tracking body composition",
+        "text": "Lean mass, skeletal muscle mass, fat mass — tracked over time to detect muscle wasting (sarcopenia) or malnutrition, both common in end-stage kidney failure."
+      },
+      "phaseAngle": {
+        "title": "Reading the phase angle",
+        "text": "The phase angle reflects the integrity of your cells. A marker recognised in the nephrology literature, it enriches the nutritional assessment and the general condition of the dialysis patient."
+      }
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "A measurement built into your visit, in four steps",
+      "subtitle": "No separate appointment: the measurement is taken before or after a session, within the unit.",
+      "setup": {
+        "title": "Setting up",
+        "text": "You lie down comfortably, fully clothed. No fasting, no injection required."
+      },
+      "electrodes": {
+        "title": "Placing the electrodes",
+        "text": "Four adhesive electrodes (two on the hand, two on the foot), like an ECG. Painless."
+      },
+      "measurement": {
+        "title": "Measurement",
+        "text": "The device sends an imperceptible current at several frequencies (5 to 1000 kHz). Duration: about two minutes."
+      },
+      "reading": {
+        "title": "Reading & decision",
+        "text": "The nephrologist interprets the results with you and adjusts your dialysis prescription if needed."
+      }
+    },
+    "report": {
+      "eyebrow": "A sample report",
+      "title": "What the report handed to your nephrologist looks like",
+      "subtitle": "Each indicator is placed on a visual scale (red / orange / green) showing where you stand relative to the reference ranges. The nephrologist discusses each zone with you.",
+      "alt1": "Bodystat report — results of the body water analysis (TBW, ICW, ECW, OHY) and composition (weight, fat mass, lean mass, muscle mass), with red / orange / green coloured bars placing each value relative to the reference ranges.",
+      "caption1": "Page 1 — Hydration & body composition",
+      "alt2": "Bodystat report — cellular health (phase angle, membrane capacitance), basal metabolic rate, multi-frequency impedance measurements and the report's summary conclusion.",
+      "caption2": "Page 2 — Cellular health & conclusion",
+      "disclaimer": "Sample report — anonymised data. Your report is always discussed by your nephrologist, never handed over raw without interpretation."
+    },
+    "when": {
+      "eyebrow": "For whom, and when",
+      "title": "Three moments where this measurement makes the most sense",
+      "firstSession": {
+        "title": "At your first session",
+        "text": "To establish a clear starting point: initial dry weight, hydration status, baseline body composition."
+      },
+      "regularFollowUp": {
+        "title": "During regular follow-up",
+        "text": "Periodic measurements to readjust your dry weight and detect malnutrition or muscle wasting early."
+      },
+      "visitingPatients": {
+        "title": "Visiting patients",
+        "text": "For an extended stay (two weeks or more), a measurement may be offered to personalise your care — at no extra cost for CNAS / CASNOS members."
+      }
+    },
+    "honesty": {
+      "eyebrow": "Medical honesty",
+      "title": "What this tool does — and does not do",
+      "doesTitle": "What it does",
+      "does1": "Helps <strong>adjust</strong> the dry weight, alongside clinical judgement",
+      "does2": "Tracks <strong>body composition</strong> over time",
+      "does3": "Detects <strong>muscle wasting</strong> or malnutrition early",
+      "does4": "Provides the <strong>phase angle</strong>, a marker of cellular integrity",
+      "doesNotTitle": "What it does not do",
+      "doesNot1": "It does <strong>not determine</strong> your dry weight on its own — it helps your doctor do so",
+      "doesNot2": "It does <strong>not diagnose</strong> malnutrition on its own",
+      "doesNot3": "It does <strong>not replace</strong> blood tests or the clinical examination",
+      "doesNot4": "It measures neither cancer nor heart disease — it is not a screening test",
+      "note": "Bioimpedance is a tool to support medical decision-making. Interpretation is the nephrologist's responsibility, who integrates it into your clinical file."
+    },
+    "partOf": {
+      "title": "Is this measurement part of my follow-up?",
+      "text": "If you are a patient at Clinique ESSAADA or are preparing for a dialysis stay, speak to your nephrologist at your next consultation. We will explain when and how to use it in your case.",
+      "cta": "View the haemodialysis service"
+    },
+    "footerCta": {
+      "eyebrow": "A medical question",
+      "title": "A question about your follow-up or this measurement?",
+      "subtitle": "Our nephrology team answers in consultation, by phone or via WhatsApp — Saturday to Thursday.",
+      "waMessage": "Hello, I would like to know more about the body composition measurement at Clinique ESSAADA."
+    }
+  },
+  "equipementHygiene": {
+    "meta": {
+      "title": "Equipment & hygiene · Technical transparency",
+      "description": "Dialysis machines, 5-stage water treatment, double-pass reverse osmosis, single-use dialysers, hygiene protocols. The technical proof behind your dialysis session in Sidi Bel Abbès.",
+      "ogTitle": "Equipment & hygiene — Clinique ESSAADA",
+      "ogDescription": "The quality of your dialysis begins with the water and the equipment. Water treatment diagram, dialysis machine make, hygiene protocols — full technical transparency."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "center": "The centre",
+      "equipment": "Equipment & hygiene"
+    },
+    "hero": {
+      "eyebrow": "Technical transparency",
+      "title": "The quality of your dialysis begins with the water and the equipment",
+      "subtitle": "A haemodialysis session brings your blood into contact with around 120 litres of treated water. At that volume, every detail matters. Here is what we put in place, with no simplification.",
+      "photoAlt": "SWS-4000A dialysis machine running at Clinique ESSAADA, screen displaying the session parameters",
+      "photoLabel": "Technical facility",
+      "photoTag": "Machine in session"
+    },
+    "generators": {
+      "eyebrow": "Dialysis machines",
+      "title": "{lits} beds, one machine per station",
+      "subtitle": "Each dialysis station has its own machine, with traceability of session parameters.",
+      "brand": {
+        "title": "Make and model",
+        "text": "Brand-new dialysis machines.",
+        "note": "[Make and model: detailed technical information provided on request.]"
+      },
+      "maintenance": {
+        "title": "Maintenance",
+        "text": "Regular preventive technical inspection by an approved provider, with traceability of interventions station by station. A biomedical technician is present during sessions."
+      },
+      "traceability": {
+        "title": "Traceability",
+        "text": "Parameters of every session recorded — pressure, flow rates, conductivity, effective dialysis duration."
+      }
+    },
+    "water": {
+      "eyebrow": "Water treatment",
+      "title": "Five stages, one ultrapure water",
+      "subtitle": "Mains water passes through a treatment chain before entering the machine. A looped, sterilisable distribution network with no dead legs.",
+      "steps": {
+        "step1": {
+          "title": "Sand filter",
+          "text": "Retains suspended particles (sand, sludge, residues)."
+        },
+        "step2": {
+          "title": "Water softener",
+          "text": "Removes the calcium and magnesium that would scale the membranes."
+        },
+        "step3": {
+          "title": "Activated carbon filter",
+          "text": "Captures chlorine and its by-products, which are toxic to the blood."
+        },
+        "step4": {
+          "title": "0.2 μm microfiltration",
+          "text": "A physical barrier against residual bacteria."
+        },
+        "step5": {
+          "title": "Double-pass reverse osmosis",
+          "text": "The final stage, producing ultrapure water that meets dialysis standards."
+        }
+      },
+      "controls": {
+        "label": "Regular checks:",
+        "text": "quarterly sampling — bacteriological and biochemical. Results available on request from the medical secretariat."
+      }
+    },
+    "gallery": {
+      "eyebrow": "Technical gallery",
+      "title": "What our biomedical team sees",
+      "subtitle": "A few views of the technical facility. A full photo report is on the way.",
+      "generator": {
+        "alt": "SWS-4000A dialysis machine in session — screen displaying the parameters in real time",
+        "label": "Machine — panel",
+        "caption": "Control interface — session parameters displayed in real time.",
+        "tag": "Detail"
+      },
+      "osmosis": {
+        "alt": "Molecular Σ-H₂O double-pass osmosis system at Clinique ESSAADA — stainless-steel tanks, filters and Siemens control for ultrapure dialysis water",
+        "label": "Double-pass osmosis",
+        "caption": "Stainless-steel tanks, controlled pressure, ultrapure water production.",
+        "tag": "Water treatment"
+      },
+      "station": {
+        "alt": "Clean dialysis stations ready for patients — beds prepared and machines on standby",
+        "label": "Dialysis stations",
+        "caption": "Bio-cleaning between each patient, single-use equipment as standard.",
+        "tag": "Hygiene"
+      }
+    },
+    "singleUse": {
+      "eyebrow": "Dialysers & circuits",
+      "title": "Strict single use",
+      "subtitle": "No reuse of equipment, in line with current international standards.",
+      "items": {
+        "dialyzer": {
+          "title": "Dialyser (the filter)",
+          "text": "Biocompatible, high-permeability synthetic membrane, strictly single use."
+        },
+        "bloodLines": {
+          "title": "Blood lines & needles",
+          "text": "Single-use tubing and fistula needles. No reuse, in accordance with international standards."
+        }
+      },
+      "diasporaNote": "This is an important point for our diaspora patients, used to this standard in Europe and North America."
+    },
+    "safety": {
+      "eyebrow": "Safety protocols",
+      "title": "Protecting every patient at every session",
+      "items": {
+        "screening": "Screening on admission: routine HBV, HCV and HIV serologies",
+        "isolation": "Strict isolation of carrier patients (dedicated room or station, closed care circuit)",
+        "revaccination": "HBV revaccination offered if protective serology is insufficient",
+        "traceability": "Full traceability: every session, every dialyser, every parameter recorded per patient"
+      }
+    },
+    "staff": {
+      "eyebrow": "Care-staff ratio",
+      "title": "A strong team present throughout the whole session",
+      "nurses": {
+        "title": "Nurses",
+        "text": "Present continuously, trained in dialysis and emergency protocols."
+      },
+      "nephrologist": {
+        "title": "Nephrologist",
+        "text": "Continuous presence for the whole duration of sessions — not an on-call phone arrangement."
+      },
+      "biomedical": {
+        "title": "Biomedical technician",
+        "text": "On site for immediate intervention in the event of a machine alarm."
+      },
+      "hygiene": {
+        "title": "Hygiene",
+        "text": "Healthcare assistants and a hygiene officer dedicated to each room, bio-cleaning between each patient."
+      }
+    },
+    "quality": {
+      "eyebrow": "Quality control",
+      "title": "Check, measure, improve — continuously",
+      "items": {
+        "water": {
+          "title": "Water analyses",
+          "text": "Quarterly sampling — bacteriological and biochemical."
+        },
+        "ktv": {
+          "title": "Dialysis adequacy (Kt/V)",
+          "text": "Measured regularly and discussed with you at your follow-up consultation."
+        },
+        "morbidity": {
+          "title": "Morbidity review",
+          "text": "Weekly medical staff meeting — review of incidents, parameters and difficult cases."
+        },
+        "accreditation": {
+          "title": "Ministry of Health accreditation",
+          "text": "Ministry of Health accreditation, CNAS and CASNOS agreements."
+        }
+      }
+    },
+    "bioimpedance": {
+      "eyebrow": "Going further",
+      "title": "Precise measurement of dry weight and hydration",
+      "subtitle": "Beyond the dialyser and the machine, we have a multi-frequency bioimpedance device to objectively assess your body composition — a higher-level tool, common in some European centres.",
+      "deviceText": "Medical bioimpedance at 6 frequencies. Helps adjust dry weight, monitor lean mass / fat mass and measure the phase angle. A non-invasive, two-minute measurement, integrated into your follow-up.",
+      "cta": "Discover this measurement"
+    },
+    "footerCta": {
+      "eyebrow": "Technical questions",
+      "title": "A specific technical question?",
+      "subtitle": "Water quality, type of dialyser, the results of your latest analyses — our medical team answers in consultation or by phone.",
+      "waMessage": "Hello, I would like more information about your equipment and hygiene protocols."
+    }
+  },
+  "patientsDePassage": {
+    "meta": {
+      "title": "Visiting patients · Holiday dialysis in Sidi Bel Abbès",
+      "description": "Algerian diaspora or resident travelling: dialyse with complete peace of mind during your stay in Sidi Bel Abbès. Confirmation within 72 working hours, CNAS/CASNOS direct billing, personalised support.",
+      "ogTitle": "Visiting patients — ESSAADA Clinic",
+      "ogDescription": "Holiday dialysis in Sidi Bel Abbès. Confirmation within 72 working hours. Approved by CNAS and CASNOS."
+    },
+    "hero": {
+      "eyebrow": "Visiting patients",
+      "title": "Dialyse with complete peace of mind during your stay in Sidi Bel Abbès",
+      "subtitle": "Algerian diaspora on holiday, residents travelling, patients in transfer: we welcome visiting dialysis patients. Your slot confirmed within 72 working hours.",
+      "photoAlt": "Exterior façade of the ESSAADA Clinic in Sidi Bel Abbès — “CLINIQUE ESSAADA” sign, patient access ramp and main entrance",
+      "photoLabel": "Visiting patient reception",
+      "photoTag": "Diaspora & travellers"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Visiting patients"
+    },
+    "franceCard": {
+      "eyebrow": "France diaspora",
+      "title": "Coming back from France? Complete CPAM guide",
+      "text": "Prior agreement, SE 352-05 forms, €86.95/session cap, paid invoices — every step of the process, one stage at a time."
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "Three steps, confirmation within 72 hours",
+      "subtitle": "We have designed a friction-free journey so your stay begins relaxed.",
+      "step1": {
+        "title": "Contact us",
+        "text": "Send us a WhatsApp message or an email with your stay dates, your destination in Algeria and the contact details of your treating nephrologist."
+      },
+      "step2": {
+        "title": "Medical handover",
+        "text": "You send us your file (latest blood work, serologies, prescription). Our nephrologist reviews it and prepares your dialysis stay."
+      },
+      "step3": {
+        "title": "Confirmation within 72 hours",
+        "text": "A reply within 72 working hours with your confirmed slot, practical arrival information and the team's direct WhatsApp contact."
+      },
+      "whatsappCta": "Start on WhatsApp",
+      "whatsappMessage": "Hello, I am a dialysis patient and I would like to come for a stay in Sidi Bel Abbès. Here are my approximate dates: "
+    },
+    "docs": {
+      "eyebrow": "Documents to prepare",
+      "title": "What we need to confirm your slot",
+      "items": {
+        "doc1": "Latest blood work — FBC + Biochemistry (less than 1 month old)",
+        "doc2": "Up-to-date serologies: hepatitis B, C and HIV less than 6 months old",
+        "doc3": "Dialysis prescription signed by your treating nephrologist",
+        "doc4": "Contact details of your treating nephrologist (for liaison)",
+        "doc5": "Proof of identity (passport or national ID card)",
+        "doc6": "CNAS, CASNOS or complementary insurance certificate"
+      },
+      "deadlineLabel": "Recommended lead time:",
+      "deadlineText": "contact us at least 1 month before your stay. Last-minute bookings remain possible but are not advised — they depend on the availability of a station."
+    },
+    "cost": {
+      "eyebrow": "How much it costs",
+      "title": "Transparent coverage",
+      "affiliatedLabel": "If you are affiliated with CNAS or CASNOS",
+      "affiliatedText": "— your sessions are fully covered through direct billing. No upfront payment. Simply bring your Chifa card and your certificate.",
+      "diasporaLabel": "If you are from the diaspora with European complementary insurance",
+      "diasporaText": "— we provide you with a clear quote before your stay. Many French, Belgian or Canadian insurers reimburse dialysis abroad on production of supporting documents.",
+      "unaffiliatedLabel": "If you are not affiliated",
+      "unaffiliatedText": "— a transparent rate provided in writing before your arrival. No surprises on departure.",
+      "quoteCta": "Request a personalised quote"
+    },
+    "medical": {
+      "eyebrow": "Medical follow-up during your stay",
+      "title": "The same standard of precision as in a European centre",
+      "subtitle": "We regularly welcome diaspora patients accustomed to French protocols. Here is what stays the same — and what can be added to your follow-up during the 2 to 4 weeks of your stay.",
+      "cardTitle": "Dry weight & hydration measurement by bioimpedance",
+      "cardText": "For stays of two weeks or more, a multi-frequency bioimpedance measurement may be offered to tailor your prescription during your stay. A non-invasive measurement, two minutes, integrated into your visit.",
+      "cardCta": "Understand this measurement"
+    },
+    "onsite": {
+      "eyebrow": "On site",
+      "title": "Everything you need to know for your stay",
+      "subtitle": "Logistics, access, accommodation, pharmacies — we provide you with the detailed list upon confirmation.",
+      "airport": {
+        "title": "From the airport",
+        "text": "Oran Es-Senia Airport is about 1 hour from the clinic. Taxi service or car hire available locally. We can recommend partners to you."
+      },
+      "lodging": {
+        "title": "Accommodation",
+        "text": "Sidi Bel Abbès has hotels a short distance from the clinic. List provided upon confirmation of your slot."
+      },
+      "pharmacy": {
+        "title": "Pharmacies",
+        "text": "Several on-call pharmacies in the immediate vicinity. Bring your medication for the duration of the stay, with a legible prescription."
+      },
+      "access": {
+        "title": "Clinic access",
+        "text": "Disabled parking near the entrance, direct ambulance access. Taxi drivers are permitted to wait for you."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to organise your dialysis stay?",
+      "text": "Our secretariat team is reachable from Saturday to Thursday, in French and Arabic. WhatsApp preferred for the diaspora.",
+      "whatsapp": "WhatsApp",
+      "whatsappMessage": "Hello, I am a dialysis patient and I would like to organise a stay in Sidi Bel Abbès."
+    }
+  },
+  "depuisLaFrance": {
+    "meta": {
+      "title": "Coming from France — CPAM cover",
+      "description": "Dialyse on holiday in Sidi Bel Abbès with guaranteed CPAM reimbursement. Prior agreement steps, SE 352-05 I and II forms, €86.95/session cap. Full support for the diaspora.",
+      "ogTitle": "Diaspora: holiday dialysis in Sidi Bel Abbès, CPAM included",
+      "ogDescription": "The 3 steps to have your dialysis reimbursed by the CPAM: prior agreement, SE 352-05 forms, paid invoices. Clinique ESSAADA supports you."
+    },
+    "hero": {
+      "eyebrow": "France Diaspora",
+      "title": "Dialyse on holiday in Sidi Bel Abbès, with complete peace of mind",
+      "subtitle": "You are coming back to see family, enjoy the sun, reconnect with your roots. Your treatment should not stand in the way. Every year we care for diaspora patients — with the same rigour as in France, and full support through every CPAM formality.",
+      "photoAlt": "Main entrance of Clinique ESSAADA — marble staircase, potted palm trees, glass doors and wrought-iron railings",
+      "photoLabel": "Diaspora — holiday dialysis",
+      "photoTag": "France → Sidi Bel Abbès"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "parent": "Visiting patients",
+      "current": "Coming from France"
+    },
+    "anticipate": "<strong>Allow 6 to 8 weeks</strong> between starting your formalities and your departure. The CPAM does not process applications at short notice, and no session outside the EU is reimbursed without prior agreement obtained before departure.",
+    "steps": {
+      "eyebrow": "Before you leave",
+      "title": "The 3 CPAM steps",
+      "subtitle": "A clear timeline, familiar points of contact. We support you through each one.",
+      "step1": {
+        "semaine": "Weeks 1 to 2",
+        "title": "CPAM prior agreement",
+        "text": "Log in to your ameli account or make an appointment with your fund. Request an administrative agreement to cover dialysis outside the EU. Without this agreement obtained before departure, no reimbursement will be possible."
+      },
+      "step2": {
+        "semaine": "Weeks 2 to 4",
+        "title": "SE 352-05 I and II forms",
+        "text": "Provided for under the bilateral France–Algeria convention, to be completed with your treating nephrologist (medical section) and your CPAM (administrative section). Form I certifies your entitlements, form II formalises the request for scheduled care."
+      },
+      "step3": {
+        "semaine": "Weeks 4 to 6",
+        "title": "Send us your file",
+        "text": "By email or WhatsApp, at the latest 3 weeks before your arrival. Our medical team validates your file within 48 working hours and confirms your slots."
+      }
+    },
+    "docs": {
+      "eyebrow": "Step 3 in detail",
+      "title": "What we need from your treating nephrologist",
+      "doc1": "Up-to-date dialysis prescription (frequency, duration, dialyser, anticoagulation)",
+      "doc2": "HBV, HCV, HIV serologies dated less than 3 months ago",
+      "doc3": "Most recent full blood panel",
+      "doc4": "Dialysis logbook for the last 3 months",
+      "doc5": "Latest Kt/V and reference dry weight",
+      "doc6": "Copy of your CPAM agreement and of the SE 352-05 forms"
+    },
+    "onsite": {
+      "eyebrow": "On site in Sidi Bel Abbès",
+      "title": "Our support, session after session",
+      "item1": "Bilingual welcome in French / Arabic / Kabyle at every session",
+      "item2": "Slots reserved for visiting patients, adapted to your family schedule",
+      "item3": "Individual dialysis station, ultrapure water compliant with international standards",
+      "item4": "Report sent to your nephrologist in France on your return",
+      "item5": "Original paid invoice handed to you in person, CPAM-compliant",
+      "item6": "Telephone follow-up available between sessions if needed",
+      "disclaimer": "Any adjustment to the protocol remains subject to validation by your referring nephrologist."
+    },
+    "reimbursement": {
+      "eyebrow": "Back in France",
+      "title": "CPAM reimbursement, step by step",
+      "capLabel": "CPAM cap 2026",
+      "item1": "Original paid invoices (no copies)",
+      "item2": "Proof of payment (receipt, bank statement)",
+      "item3": "Medication and transport: not reimbursed by the CPAM",
+      "item4": "Submission on ameli.fr: Démarches → Frais de santé → Soins à l'étranger",
+      "mutuelle": "Your top-up insurer may cover the balance — check with them before departure, using our personalised quote."
+    },
+    "arrival": {
+      "eyebrow": "Arriving in Algeria",
+      "title": "From Oran to Sidi Bel Abbès — 80 km, about 1 hour",
+      "subtitle": "The main arrival airport is Oran Es-Senia (code ORN). The A1 motorway takes you straight to Sidi Bel Abbès.",
+      "taxi": {
+        "title": "Airport taxi",
+        "text": "Roughly 4,000 — 5,000 DZD. To be negotiated as a flat fare before departure."
+      },
+      "shuttle": {
+        "title": "Shuttle on request",
+        "text": "Can be arranged if you let us know at least 48h in advance. Fare provided with the quote."
+      },
+      "car": {
+        "title": "Car hire",
+        "text": "Available at Oran airport if you prefer to be independent during your stay."
+      }
+    },
+    "faq": {
+      "eyebrow": "Diaspora FAQ",
+      "title": "The practical questions you ask yourself before coming",
+      "q1": {
+        "question": "Can I dialyse with you if I do not yet have the CPAM agreement?",
+        "answer": "Yes, you can be treated, but no reimbursement will be possible on your return without the prior agreement obtained before departure. We strongly recommend waiting for the CPAM's response before finalising your trip."
+      },
+      "q2": {
+        "question": "Will my top-up insurer cover the amount above €86.95?",
+        "answer": "That depends on your policy. Many top-up insurers complete the CPAM allowance for care abroad. Contact them before departure with your quote — we provide a personalised one after reviewing your file."
+      },
+      "q3": {
+        "question": "Do the serologies and documents need to be translated?",
+        "answer": "No. Documents in French are accepted without translation. Reports in English are also accepted."
+      },
+      "q4": {
+        "question": "Are your slots flexible if my flight is delayed?",
+        "answer": "Yes. Let us know as soon as possible via WhatsApp: we move your session to the nearest available slot, with no additional charge."
+      },
+      "q5": {
+        "question": "How do I settle the invoice on site?",
+        "answer": "An original paid invoice is always handed to you, in the format required by the CPAM (itemised, stamped, in French). The accepted methods of payment are stated in your personalised quote."
+      },
+      "q6": {
+        "question": "Can I come in an emergency without notice?",
+        "answer": "We give priority to files prepared in advance, for your safety and for the running of the unit. In a life-threatening emergency during your stay, call 14 (SAMU Algeria). We do everything we can to welcome you as soon as your condition is stable."
+      },
+      "q7": {
+        "question": "Can I dialyse at home during my stay?",
+        "answer": "Home dialysis is not offered. We provide in-centre haemodialysis, in safe and supervised conditions, subject to validation by your referring nephrologist."
+      }
+    },
+    "cta": {
+      "eyebrow": "Arrange your visit",
+      "title": "Ready to organise your dialysis stay?",
+      "subtitle": "Our team replies in French, from France as well as from Algeria. WhatsApp preferred for the diaspora — no international call at your expense.",
+      "primaryCtaLabel": "Book my visit",
+      "waMessage": "Hello, I dialyse in France and would like to organise a dialysis stay with CPAM cover."
+    }
+  },
+  "ramadan": {
+    "meta": {
+      "title": "Ramadan & dialysis · Adapted sessions",
+      "description": "Haemodialysis sessions adapted for Ramadan in Sidi Bel Abbès: first session at 4 a.m. (no session after iftar, no night-time slot), in consultation with your nephrologist.",
+      "ogTitle": "Ramadan & dialysis — Clinique ESSAADA",
+      "ogDescription": "During Ramadan, our sessions are adapted in consultation with your nephrologist."
+    },
+    "hero": {
+      "eyebrow": "Ramadan & dialysis",
+      "title": "Living through Ramadan on dialysis, with peace of mind",
+      "subtitle": "During Ramadan, our sessions are adapted in consultation with your nephrologist. Whether you fast or not, we organise your care to respect your choice and your health.",
+      "photoAlt": "Haemodialysis room at Clinique ESSAADA in Sidi Bel Abbès — wide view of the aligned stations fitted with dialysis machines and reclining beds, ready for adapted Ramadan sessions",
+      "photoLabel": "Ramadan sessions",
+      "photoTag": "Adapted sessions"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Ramadan & dialysis"
+    },
+    "warning": {
+      "title": "Important — individualised medical decision",
+      "body": "Fasting during Ramadan while on dialysis <strong>is not recommended for all patients</strong>. Book an appointment with your nephrologist <strong>before</strong> Ramadan begins for a personalised assessment. No information on this page is a substitute for medical advice."
+    },
+    "principles": {
+      "eyebrow": "Our principles",
+      "title": "Three commitments during Ramadan",
+      "items": {
+        "decision": {
+          "title": "Individualised medical decision",
+          "text": "Fasting during Ramadan is a decision that belongs to you — in consultation with your nephrologist. Some patients can fast, others cannot. We respect your choice and adapt your care accordingly."
+        },
+        "premiere-seance": {
+          "title": "First session at 4 a.m.",
+          "text": "During Ramadan, we open a single set of slots with a first session at 4 a.m., before suhoor. No session after iftar, no night-time slot. The schedule is adjusted in consultation with your nephrologist."
+        },
+        "vigilance": {
+          "title": "Heightened vigilance",
+          "text": "Our staff are briefed: closer monitoring of blood pressure, hydration and fluid balance. Any warning sign = breaking the fast as recommended by the doctor."
+        }
+      }
+    },
+    "schedule": {
+      "eyebrow": "Typical schedule",
+      "title": "Sessions during Ramadan",
+      "intro": "The exact schedule is communicated about 3 weeks before Ramadan begins.",
+      "point1": "<strong>First session at 4 a.m.</strong> — before suhoor, for all patients (fasting or not).",
+      "point2": "<strong>No session after iftar</strong> — and no night-time slot. The remaining slots of the day stay aligned with the usual pace.",
+      "ctaTitle": "Book an appointment before Ramadan",
+      "ctaBody": "We recommend seeing your nephrologist <strong>at least 2 weeks before</strong> Ramadan begins to assess your fitness to fast, adjust your medication and arrange your adapted sessions.",
+      "contact": "Or contact us directly on <phone></phone> or via <whatsapp></whatsapp>.",
+      "whatsappMessage": "Hello, I would like to adapt my sessions during Ramadan."
+    },
+    "nutrition": {
+      "eyebrow": "Nutrition",
+      "title": "Eating well during Ramadan",
+      "intro": "If your nephrologist allows you to fast, the way you organise your meals becomes decisive. The golden rule: three structured meals rather than continuous snacking, particular vigilance over hydration and salt, and measured choices when it comes to oriental sweets.",
+      "items": {
+        "repas": {
+          "title": "Three structured meals",
+          "text": "Iftar, a light dinner in the evening, a substantial suhoor. Avoid continuous snacking: that is what protects your blood sugar and your interdialytic weight gain."
+        },
+        "hydratation": {
+          "title": "Controlled hydration",
+          "text": "Your fluid allowance stays the same as outside Ramadan. Spread it between iftar and suhoor. No fizzy drinks, little very salty food."
+        },
+        "dattes": {
+          "title": "Measured dates and sweets",
+          "text": "Two dates at iftar, a balanced chorba, half a portion of pastry rather than a parade of them. Mind the potassium in dates and the phosphorus in sweets."
+        },
+        "rompre": {
+          "title": "Break the fast without hesitation",
+          "text": "Unusual fatigue, faintness, signs of hypo- or hyperglycaemia: break the fast immediately. Religious law permits it for medical reasons."
+        }
+      }
+    },
+    "guide": {
+      "title": "The complete guide",
+      "body": "Iftar, suhoor, dates, chorba, pastries, hydration, blood sugar monitoring: find all the practical advice in our dedicated guide.",
+      "cta": "Read the complete guide"
+    },
+    "faq": {
+      "eyebrow": "Ramadan FAQ",
+      "title": "Frequently asked questions",
+      "items": {
+        "jeuner": {
+          "q": "Can I fast while on dialysis?",
+          "a": "This decision belongs to your nephrologist. For many dialysis patients, fasting remains possible provided there is close monitoring. Others cannot fast for medical reasons. Come for a consultation before Ramadan to take stock."
+        },
+        "medicaments": {
+          "q": "What should I do about my medication?",
+          "a": "Your nephrologist adjusts when you take it (before iftar, between iftar and suhoor, or after suhoor depending on the medication). Never change a prescription on your own initiative. List all your treatments and let's discuss them together."
+        },
+        "hydratation": {
+          "q": "How do I manage hydration and weight gain?",
+          "a": "This is the critical point. Between iftar and suhoor, strictly respect your permitted fluid volume (usually 500 ml + residual urine output). Avoid very salty food when breaking the fast. Interdialytic weight gain remains the limit not to be exceeded."
+        },
+        "malaise": {
+          "q": "What should I do if I feel faint or my blood pressure drops?",
+          "a": "Break the fast immediately — religious law permits breaking it for medical reasons. Call us as soon as possible. In an emergency, go to the nearest emergency department."
+        },
+        "cafe": {
+          "q": "Is coffee served during sessions in Ramadan?",
+          "a": "The single 4 a.m. session takes place before suhoor, therefore before the fast. Coffee can be served at suhoor at the end of the session, depending on your wishes and your clinical condition."
+        }
+      }
+    },
+    "footerCta": {
+      "eyebrow": "Let's talk",
+      "title": "Your questions deserve a personal answer",
+      "subtitle": "Every patient is unique. Let's talk it through together — before, during and after Ramadan.",
+      "waMessage": "Hello, I have a question about dialysis during Ramadan."
+    }
+  },
+  "comprendre": {
+    "meta": {
+      "title": "Understanding kidney failure — an educational guide",
+      "description": "The role of the kidneys, the warning signs, the 5 stages, who should be screened, and how to slow progression. 10% of cases of kidney failure can be prevented, and 30% delayed by several years.",
+      "ogTitle": "Understanding kidney failure — Clinique ESSAADA",
+      "ogDescription": "An educational guide to chronic kidney disease: the role of the kidneys, signs, stages, screening, prevention."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Understanding kidney failure"
+    },
+    "hero": {
+      "eyebrow": "Educational guide",
+      "title": "Understanding kidney failure",
+      "subtitle": "Chronic kidney disease is a silent illness. Caught early, it can be slowed, sometimes considerably. Here, in plain terms, is what you need to know.",
+      "photoAlt": "Anatomical cross-section of a human kidney showing the cortex around the outside, the medulla with the renal pyramids, the calyces and renal pelvis that collect urine, as well as the renal artery and vein entering at the hilum and the ureter."
+    },
+    "intro": {
+      "disclaimer": "This page is for information purposes only. It does not replace the advice of your GP or your nephrologist, who remains the best person to assess your situation.",
+      "eyebrow": "In a nutshell",
+      "title": "Why this page",
+      "lead": "Chronic kidney disease sets in slowly, often quietly, and many people are unaware of it for years. The good news is that a <strong>simple blood test</strong> can pick it up early, and there are now real ways to protect your kidneys, slow the disease and carry on living a full life."
+    },
+    "anatomie": {
+      "eyebrow": "Anatomy",
+      "title": "What your kidneys do",
+      "p1": "You have two kidneys, located in the lower back, on either side of the spine. Each one weighs barely <strong>160 grams</strong> — about the size of a large bean.",
+      "p2": "Think of them as <strong>two very fine filters</strong>. Day and night, all of your blood passes through them to be cleaned: they keep what is useful (proteins, blood cells) and let what the body no longer needs (excess water, salt, waste products such as urea and creatinine) pass out into the urine.",
+      "p3": "The kidneys do other things too: they help to <strong>regulate blood pressure</strong>, to <strong>keep bones strong</strong> and to <strong>make red blood cells</strong>. When they are working well, you don't feel them — and that is precisely why it is sometimes worth checking that they are in good order."
+    },
+    "definition": {
+      "title": "What is chronic kidney disease?",
+      "p1": "The kidneys are made up of tiny microscopic filters called <strong>nephrons</strong>. When some of them are permanently damaged — by diabetes, high blood pressure or other causes — they do not regenerate. The kidney keeps working, but a little less well.",
+      "p2": "We talk about chronic kidney disease when this loss of function persists over time (more than three months). It is often <strong>painless and gradual</strong>, which is why it is frequently discovered during a routine check-up. <strong>The earlier it is detected, the more can be done.</strong>"
+    },
+    "nephron": {
+      "imageAlt": "Detailed diagram of a nephron: on the left the glomerulus with its afferent and efferent arterioles surrounded by Bowman's capsule; in the centre the tubules — proximal convoluted tubule, descending then ascending loop of Henle, distal convoluted tubule; on the right the cortical and medullary collecting ducts.",
+      "caption": "The nephron — the microscopic filtering unit. Each kidney contains around one million of them.",
+      "eyebrow": "A closer look at the nephron",
+      "title": "One million microscopic filters per kidney",
+      "p1": "Each kidney contains around <strong>one million nephrons</strong>, the microscopic units that filter your blood continuously. In the diagram you can see the <strong>glomerulus</strong> — the filter itself, where blood passes through a fine membrane — and then the whole system of tubules that fine-tunes the composition of the urine by reclaiming what should be kept (water, salts, glucose) and letting the waste products flow on towards the collecting duct.",
+      "p2": "This miniaturised mechanism is repeated <strong>one million times per kidney</strong>. As long as enough nephrons are working, the kidney <strong>compensates</strong> — which is why you can lose part of your kidney function without feeling anything. The catch: by the time the first symptoms appear, often fewer than 30% of nephrons are still working.",
+      "p3": "Understanding the nephron means understanding why a <strong>simple blood test</strong> is so valuable: it measures creatinine, a waste product that healthy nephrons clear away. Its silent rise in the blood is the first signal — well before the body shows any sign."
+    },
+    "signes": {
+      "eyebrow": "The warning signs",
+      "title": "Which symptoms should raise the alarm?",
+      "subtitle": "Kidney failure advances quietly. But certain signals can put you on alert.",
+      "debutTitle": "At first, you may notice",
+      "evolutionTitle": "Later on, these may be added",
+      "calloutTitle": "Good to know",
+      "calloutBody": "Even at an advanced stage, before dialysis, you continue to pass urine normally. <em>The absence of urine is therefore not a criterion.</em> If several of these signs apply to you, talk to your doctor — it isn't necessarily the kidneys, but it is worth checking."
+    },
+    "signesDebut": [
+      "Unusual tiredness that appears even after light exertion",
+      "A loss of appetite",
+      "The need to get up several times during the night to pass urine",
+      "Rising blood pressure, or swelling (ankles, face)"
+    ],
+    "signesEvolution": [
+      "Digestive problems: aversion to meat, nausea, vomiting",
+      "Weight loss and more marked tiredness",
+      "Cramps or restless legs, especially at night",
+      "Itching, sometimes intense",
+      "Disturbed sleep"
+    ],
+    "stades": {
+      "eyebrow": "The 5 stages",
+      "title": "Where do you stand on the map?",
+      "subtitle": "Doctors assess how well the kidneys are working using the glomerular filtration rate (GFR), calculated from a simple blood test.",
+      "colStage": "Stage",
+      "colDescription": "Description",
+      "colDfg": "GFR (ml/min/1.73 m²)",
+      "stade1": "Normal kidney function",
+      "stade2": "Mild kidney failure",
+      "stade3": "Moderate kidney failure",
+      "stade4": "Severe kidney failure",
+      "stade5": "End-stage kidney failure",
+      "note": "At <strong>stage 5</strong>, renal replacement therapy becomes necessary: dialysis or a transplant. This table is not a foregone conclusion: above all it is a <strong>map to find your bearings</strong>. Detecting the disease at stages 1, 2 or 3 means giving yourself years to slow its progression, sometimes very effectively. That is the whole point of screening."
+    },
+    "depistage": {
+      "whoEyebrow": "Who should be screened?",
+      "whoTitle": "Should you be screened?",
+      "whoSubtitle": "A check at least once a year is a good habit if you are in one of these situations.",
+      "howEyebrow": "How screening works",
+      "howTitle": "Simple, quick, nothing invasive",
+      "step1Title": "Blood test",
+      "step1Body": "Measurement of creatinine (a waste product that the kidneys normally clear away).",
+      "step2Title": "A small calculation",
+      "step2Body": "Based on creatinine, your age and your weight (Cockcroft-Gault, MDRD, CKD-EPI formulas). The laboratory or the doctor takes care of it.",
+      "step3Title": "Sometimes, a urine test",
+      "step3Body": "To check for the presence of albumin, another useful marker.",
+      "note": "If there is any doubt or an abnormal result, your doctor will refer you to a nephrologist for specialist advice."
+    },
+    "facteursRisque": [
+      "You have high blood pressure or diabetes",
+      "You have a history of cardiovascular disease (arteries, heart)",
+      "You are over 60 years old",
+      "You have a family history of kidney disease or a genetic condition",
+      "You have had several upper urinary tract infections or recurrent kidney stones",
+      "You regularly take certain medicines that are hard on the kidneys (long-term anti-inflammatories, lithium, some chemotherapies…)"
+    ],
+    "piliers": {
+      "quoteEyebrow": "The most important message",
+      "quote": "“10% of cases of kidney failure can be prevented, and 30% can be delayed by several years — sometimes more than a decade.”",
+      "quoteCaption": "Acting early changes the trajectory. The recommendations rest on four pillars.",
+      "label": "Pillar {num}"
+    },
+    "pilier1": {
+      "title": "Adopt a few good habits",
+      "items": [
+        "Stop smoking",
+        "Cut down on alcohol",
+        "Stay active (30 minutes of walking a day)",
+        "Keep your vaccinations up to date",
+        "Avoid self-medication",
+        "See your nephrologist at least once a year if you are at risk"
+      ]
+    },
+    "pilier2": {
+      "title": "Keep your blood pressure well controlled",
+      "items": [
+        "Measure your blood pressure at home when possible",
+        "Cut down on salt",
+        "Keep an eye on your weight",
+        "Take your treatment regularly, without skipping doses"
+      ]
+    },
+    "pilier3": {
+      "title": "Protect your kidneys",
+      "items": [
+        "Avoid medicines that tire the kidneys (NSAIDs without advice)",
+        "Moderate your intake of animal protein as advised by the nephrologist",
+        "Keep cholesterol, triglycerides and diabetes well balanced"
+      ]
+    },
+    "pilier4": {
+      "title": "Understand your treatment and take part in it",
+      "items": [
+        "Know your medicines and what they are for",
+        "Follow how your test results change over time",
+        "Speak openly during consultations, without holding back",
+        "An informed patient is a better-cared-for patient"
+      ]
+    },
+    "cta": {
+      "eyebrow": "Nephrology consultation",
+      "title": "A doubt? A question? Let's talk it over.",
+      "subtitle": "Clinique ESSAADA offers nephrology consultations in {city}, to review your kidney function, interpret your test results, and build a plan with you to protect your kidneys over the long term.",
+      "consultationLink": "Nephrology consultation",
+      "glossaireLink": "View the glossary"
+    }
+  },
+  "rendezVous": {
+    "meta": {
+      "title": "Book a dialysis appointment — Sidi Bel Abbès",
+      "description": "Request an appointment at Clinique ESSAADA: nephrology consultation, first dialysis session, visiting patient. Form compliant with Law 18-07."
+    },
+    "hero": {
+      "eyebrow": "Appointment",
+      "title": "Request an appointment",
+      "subtitle": "Fill in this short form. We will call you back {delai} to confirm your slot."
+    },
+    "breadcrumb": {
+      "accueil": "Home",
+      "rendezVous": "Appointment"
+    },
+    "reassurance": {
+      "rappel": {
+        "title": "Callback {delai}",
+        "text": "Our team will get back to you promptly."
+      },
+      "donneesProtegees": {
+        "title": "Data protected",
+        "text": "Compliant with Law 18-07. No sharing with third parties."
+      },
+      "sansEngagement": {
+        "title": "No commitment",
+        "text": "A simple request for information or a first contact."
+      }
+    },
+    "success": {
+      "title": "Request received",
+      "body": "Thank you. Our team will call you back {delai}. For any emergency or to speed up your request, please contact us directly.",
+      "whatsappMessage": "Bonjour, je viens de soumettre une demande de rendez-vous sur le site et je souhaite accélérer son traitement.",
+      "whatsappCta": "Speed up on WhatsApp",
+      "callCta": "Call now"
+    },
+    "form": {
+      "requiredIntro": {
+        "before": "Fields marked with a",
+        "after": "are required."
+      },
+      "optional": "(optional)",
+      "honeypotLabel": "Do not fill in",
+      "nom": {
+        "label": "Full name"
+      },
+      "telephone": {
+        "label": "Phone",
+        "help": "E.g. 048 72 25 70, +213 555 12 34 56 or +33 6 12 34 56 78."
+      },
+      "motif": {
+        "label": "Reason",
+        "placeholder": "— Select —",
+        "options": {
+          "consultationNephrologie": "First nephrology consultation",
+          "dialysePassage": "Holiday dialysis (visiting patient)",
+          "suiviRenouvellement": "Follow-up / renewal",
+          "autre": "Other"
+        }
+      },
+      "creneau": {
+        "legend": "Preferred time slot",
+        "options": {
+          "matin": "Morning (05h — 09h)",
+          "journee": "Daytime (09h30 — 13h30)",
+          "soir": "Evening (14h — 19h)"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Any information helpful to your request.",
+        "notice": "Please do not include sensitive medical information in this form. It will be collected during your consultation."
+      },
+      "consent": "I authorise Clinique ESSAADA to use the information above to contact me regarding my appointment request (Law 18-07 on the protection of personal data).",
+      "submit": "Send my request",
+      "submitting": "Sending…"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog · Dialysis advice & resources",
+      "description": "Articles, guides and advice on dialysis, nephrology and patients' daily life. By the team at Clinique ESSAADA in Sidi Bel Abbès.",
+      "ogTitle": "Blog — Clinique ESSAADA",
+      "ogDescription": "Medical advice, daily life and practical guides for dialysis patients and their families.",
+      "notFound": "Article not found"
+    },
+    "hero": {
+      "eyebrow": "Blog",
+      "title": "Advice & resources for dialysis patients",
+      "subtitle": "Practical guides, medical explanations and daily life — written and reviewed by the medical team at Clinique ESSAADA."
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "empty": {
+      "title": "The first articles are coming soon.",
+      "body": "In the meantime, take a look at our <faq>FAQ</faq> and our <glossary>glossary</glossary>."
+    },
+    "readingTime": "{minutes} min",
+    "readingTimeLong": "{minutes} min read",
+    "read": "Read",
+    "alsoRead": "Further reading",
+    "backToArticles": "Back to articles",
+    "cta": {
+      "eyebrow": "Go further",
+      "title": "A question after this read?",
+      "subtitle": "Our medical team answers your questions in consultation or via WhatsApp.",
+      "waMessage": "Hello, I read the article “{title}” and I have a question."
+    }
+  },
+  "legal": {
+    "eyebrow": "Information",
+    "breadcrumb": {
+      "home": "Home"
+    },
+    "meta": {
+      "mentions": {
+        "title": "Legal notice",
+        "description": "Legal notice for the Clinique ESSAADA website."
+      },
+      "privacy": {
+        "title": "Privacy policy",
+        "description": "Privacy policy of Clinique ESSAADA, in compliance with Law 18-07 on the protection of personal data."
+      }
+    },
+    "mentions": {
+      "heroTitle": "Legal notice",
+      "breadcrumb": "Legal notice",
+      "editor": {
+        "title": "Site publisher",
+        "publishedByPrefix": "Site published and operated by LumAI Consulting",
+        "publishedBySuffix": "on behalf of {name}.",
+        "phoneLabel": "Telephone",
+        "emailLabel": "Email",
+        "editorialResponsible": "Editorial manager of the content: {name}."
+      },
+      "agrement": {
+        "title": "Accreditation",
+        "text": "Issued by the Ministry of Health"
+      },
+      "host": {
+        "title": "Host",
+        "label": "Host",
+        "text": "Site hosted on a dedicated server."
+      },
+      "ip": {
+        "title": "Intellectual property",
+        "text": "All the content on this site (text, images, logos, structure) is the exclusive property of {name}, unless otherwise stated. Any reproduction, representation or distribution, in whole or in part, without prior written authorisation, is prohibited."
+      },
+      "liability": {
+        "title": "Liability",
+        "text": "The information published on this site is provided for informational purposes only and does not in any way constitute medical advice. It does not replace a consultation with a healthcare professional."
+      }
+    },
+    "privacy": {
+      "heroTitle": "Privacy policy",
+      "breadcrumb": "Privacy",
+      "collected": {
+        "title": "Data collected",
+        "intro": "The appointment request form collects only the information needed to contact you back:",
+        "items": {
+          "name": "Name",
+          "phone": "Telephone number",
+          "reason": "Reason for the request (optional)",
+          "slot": "Preferred time slot (optional)",
+          "message": "Free message (optional)"
+        },
+        "note": "No sensitive medical data is collected via this site."
+      },
+      "purpose": {
+        "title": "Purpose of processing",
+        "text": "The data is used solely to contact you back regarding your appointment request. It is neither sold, rented, nor passed on to third parties for commercial purposes."
+      },
+      "legalBasis": {
+        "title": "Legal basis",
+        "text": "Your explicit consent, obtained via the form's checkbox, within the meaning of Law No. 18-07 of 10 June 2018 on the protection of natural persons in the processing of personal data."
+      },
+      "retention": {
+        "title": "Retention period",
+        "text": "Requests received by email are kept for a maximum period of 6 months after the last interaction with you, then deleted."
+      },
+      "rights": {
+        "title": "Your rights",
+        "text": "In accordance with Law 18-07, you have the right to access, rectify and delete the data concerning you. To exercise these rights, contact us at:"
+      },
+      "cookies": {
+        "title": "Cookies and trackers",
+        "text": "This site does not place any advertising tracking cookies. Aggregated and anonymous usage statistics may be collected to improve the service. No identifying data is passed on to third parties."
+      }
+    }
+  }
+}

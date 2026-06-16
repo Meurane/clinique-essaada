@@ -28,10 +28,29 @@ export type Article = ArticleFrontmatter & {
 };
 
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
+const DEFAULT_LOCALE = "fr";
 
-function readArticleFile(filename: string): Article {
-  const slug = filename.replace(/\.md$/, "");
-  const filePath = path.join(ARTICLES_DIR, filename);
+/** Slugs de base (FR), hors variantes de langue `*.en.md` / `*.ar.md`. */
+function listBaseSlugs(): string[] {
+  if (!fs.existsSync(ARTICLES_DIR)) return [];
+  return fs
+    .readdirSync(ARTICLES_DIR)
+    .filter((f) => f.endsWith(".md") && !f.startsWith("_"))
+    .filter((f) => !/\.(en|ar)\.md$/.test(f))
+    .map((f) => f.replace(/\.md$/, ""));
+}
+
+/** Fichier à lire pour un slug + une langue : variante traduite si elle existe, sinon le FR. */
+function resolveFile(slug: string, locale: string): string {
+  if (locale !== DEFAULT_LOCALE) {
+    const localized = `${slug}.${locale}.md`;
+    if (fs.existsSync(path.join(ARTICLES_DIR, localized))) return localized;
+  }
+  return `${slug}.md`;
+}
+
+function readArticle(slug: string, locale: string): Article {
+  const filePath = path.join(ARTICLES_DIR, resolveFile(slug, locale));
   const source = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(source);
 
@@ -52,20 +71,12 @@ function readArticleFile(filename: string): Article {
     ADD_ATTR: ["target", "rel"],
   });
 
-  return {
-    ...fm,
-    slug,
-    html,
-  };
+  return { ...fm, slug, html };
 }
 
-export const getAllArticles = cache((): Article[] => {
-  if (!fs.existsSync(ARTICLES_DIR)) return [];
-  const files = fs
-    .readdirSync(ARTICLES_DIR)
-    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
-  return files
-    .map(readArticleFile)
+export const getAllArticles = cache((locale: string = DEFAULT_LOCALE): Article[] => {
+  return listBaseSlugs()
+    .map((slug) => readArticle(slug, locale))
     .sort((a, b) => {
       const da = new Date(a.date).getTime();
       const db = new Date(b.date).getTime();
@@ -73,18 +84,27 @@ export const getAllArticles = cache((): Article[] => {
     });
 });
 
-export const getArticleBySlug = cache((slug: string): Article | undefined => {
-  return getAllArticles().find((a) => a.slug === slug);
-});
+export const getArticleBySlug = cache(
+  (slug: string, locale: string = DEFAULT_LOCALE): Article | undefined => {
+    if (!listBaseSlugs().includes(slug)) return undefined;
+    return readArticle(slug, locale);
+  },
+);
 
 export function getArticleSlugs(): string[] {
-  return getAllArticles().map((a) => a.slug);
+  return listBaseSlugs();
 }
 
-export function formatArticleDate(iso: string): string {
+const DATE_LOCALES: Record<string, string> = {
+  fr: "fr-FR",
+  en: "en-GB",
+  ar: "ar-DZ",
+};
+
+export function formatArticleDate(iso: string, locale: string = DEFAULT_LOCALE): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
-  return d.toLocaleDateString("fr-FR", {
+  return d.toLocaleDateString(DATE_LOCALES[locale] ?? "fr-FR", {
     day: "numeric",
     month: "long",
     year: "numeric",

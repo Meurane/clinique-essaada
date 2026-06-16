@@ -13,17 +13,17 @@ tags:
   - prévention
 ---
 
-Votre fistule artério-veineuse, c'est votre **ligne de vie**. Sans elle, pas de séance d'[hémodialyse](/glossaire/hemodialyse) efficace, pas d'épuration possible du sang. Cette [fistule artério-veineuse](/glossaire/fistule-arterio-veineuse) — souvent appelée FAV — a demandé une chirurgie, puis plusieurs semaines de maturation pour devenir cet [accès vasculaire](/glossaire/acces-vasculaire) solide qui vous accompagne séance après séance. Elle mérite donc toute votre attention.
+Votre fistule artério-veineuse, c'est votre **ligne de vie**. Sans elle, pas de séance d'[hémodialyse](/glossaire/hemodialyse) efficace, pas d'épuration possible du sang. Cette [fistule artério-veineuse](/glossaire/fistule-arterio-veineuse) (souvent appelée FAV) a demandé une chirurgie, puis plusieurs semaines de maturation pour devenir cet [accès vasculaire](/glossaire/acces-vasculaire) solide qui vous accompagne séance après séance. Elle mérite donc toute votre attention.
 
-La bonne nouvelle ? La surveiller ne demande ni matériel, ni compétence médicale. Trente secondes chaque matin, vos doigts, votre oreille — et le réflexe d'alerter quand quelque chose change. C'est le geste, simple et quotidien, qui peut littéralement sauver votre fistule.
+La bonne nouvelle ? La surveiller ne demande ni matériel, ni compétence médicale. Trente secondes chaque matin, vos doigts, votre oreille, et le réflexe d'alerter quand quelque chose change. C'est le geste, simple et quotidien, qui peut littéralement sauver votre fistule.
 
-Dans cet article, on vous explique ce que vos doigts doivent **sentir**, ce que votre oreille doit **entendre**, ce que vos yeux doivent **regarder**, et surtout : à quel moment décrocher votre téléphone pour appeler votre équipe — sans paniquer, mais sans tarder.
+Dans cet article, on vous explique ce que vos doigts doivent **sentir**, ce que votre oreille doit **entendre**, ce que vos yeux doivent **regarder**, et surtout : à quel moment décrocher votre téléphone pour appeler votre équipe, sans paniquer, mais sans tarder.
 
 ## Votre fistule, ce vaisseau particulier
 
-La fistule, ce n'est pas une veine ordinaire. C'est un **raccordement chirurgical** entre une artère et une veine, le plus souvent à l'avant-bras. Ce branchement direct fait que le sang artériel, sous forte pression, se déverse dans la veine — qui se renforce, se dilate et acquiert un débit suffisant pour permettre les séances de dialyse.
+La fistule, ce n'est pas une veine ordinaire. C'est un **raccordement chirurgical** entre une artère et une veine, le plus souvent à l'avant-bras. Ce branchement direct fait que le sang artériel, sous forte pression, se déverse dans la veine, qui se renforce, se dilate et acquiert un débit suffisant pour permettre les séances de dialyse.
 
-C'est ce **débit élevé** qui rend la fistule unique : il vous permet d'être dialysé dans de bonnes conditions, mais il rend aussi la fistule sensible à certaines complications. Comparée à un [cathéter](/glossaire/catheter) — utilisé en attendant la maturation ou quand la fistule n'est pas possible — la FAV reste la voie d'abord la plus durable et la mieux tolérée. Raison de plus pour la chouchouter.
+C'est ce **débit élevé** qui rend la fistule unique : il vous permet d'être dialysé dans de bonnes conditions, mais il rend aussi la fistule sensible à certaines complications. Comparée à un [cathéter](/glossaire/catheter) (utilisé en attendant la maturation ou quand la fistule n'est pas possible), la FAV reste la voie d'abord la plus durable et la mieux tolérée. Raison de plus pour la chouchouter.
 
 ## Le thrill : ce frémissement que doivent palper vos doigts
 
@@ -35,7 +35,7 @@ Pour bien le sentir, prenez le temps de palper en **au moins deux endroits** le 
 
 ## Le souffle : ce bruit que doit entendre votre oreille
 
-Maintenant, l'oreille. Posez-la directement sur la peau, au-dessus de votre fistule — ou demandez à un proche de le faire. Si vous disposez d'un stéthoscope à la maison, c'est encore plus net.
+Maintenant, l'oreille. Posez-la directement sur la peau, au-dessus de votre fistule, ou demandez à un proche de le faire. Si vous disposez d'un stéthoscope à la maison, c'est encore plus net.
 
 Ce que vous devez entendre, c'est un **souffle continu**, comparable à une **soufflerie douce**, un courant d'air constant, ou ce que certains patients décrivent comme un « **vroum-vroum** » régulier. Le souffle est continu, jamais saccadé, jamais coupé.
 
@@ -43,7 +43,7 @@ En règle générale, ce bruit est plus marqué près de l'anastomose et s'atté
 
 ## Votre rituel de 30 secondes — chaque matin, à jeun
 
-Pour que cette surveillance soit efficace, elle doit devenir un **automatisme**, comme se brosser les dents. Faites-la **au même moment chaque jour** — idéalement le matin, à jeun, avant le café. Pourquoi ? Parce que comparer ce qu'on ressent dans les mêmes conditions, c'est ce qui permet de repérer un changement.
+Pour que cette surveillance soit efficace, elle doit devenir un **automatisme**, comme se brosser les dents. Faites-la **au même moment chaque jour**, idéalement le matin, à jeun, avant le café. Pourquoi ? Parce que comparer ce qu'on ressent dans les mêmes conditions, c'est ce qui permet de repérer un changement.
 
 Voici votre checklist en cinq étapes :
 
@@ -57,12 +57,12 @@ Trente secondes. Pas plus. Mais trente secondes qui font toute la différence.
 
 ## Les signes qui doivent vous alerter sans paniquer
 
-Voici les signaux à connaître. Si l'un d'eux apparaît, l'idée n'est **pas de paniquer** — votre équipe sait gérer ces situations — mais d'agir **sans tarder**.
+Voici les signaux à connaître. Si l'un d'eux apparaît, l'idée n'est **pas de paniquer** (votre équipe sait gérer ces situations) mais d'agir **sans tarder**.
 
 - **Plus de thrill ressenti, plus de souffle entendu** : c'est le signe le plus important. Cela peut évoquer une **thrombose** (un caillot qui obstrue le débit). Contactez **sans attendre** votre néphrologue ou votre centre. Chaque heure compte pour donner toutes les chances de sauver la fistule.
 - **Souffle modifié** : devenu plus aigu, saccadé, ou un **sifflement très fort** qui n'était pas là avant. Cela peut traduire un rétrécissement (sténose) qui mérite une [consultation néphrologie](/services/consultation-nephrologie).
 - **Rougeur, chaleur, douleur, gonflement ou écoulement** au niveau de la fistule : possible infection. Consultation rapide nécessaire.
-- **Bras du côté de la FAV froid, pâle, douloureux** : signe d'ischémie, plus rare mais à prendre au sérieux — consultation **en urgence**.
+- **Bras du côté de la FAV froid, pâle, douloureux** : signe d'ischémie, plus rare mais à prendre au sérieux : consultation **en urgence**.
 - **Hématome qui grossit** après une séance, au lieu de régresser : à signaler à votre équipe.
 
 Au moindre doute, **appelez**. Il vaut toujours mieux signaler pour rien que rater le moment où agir.
@@ -72,7 +72,7 @@ Au moindre doute, **appelez**. Il vaut toujours mieux signaler pour rien que rat
 Tout n'est pas alerte. Certaines variations sont normales :
 
 - De **légères variations du bruit** selon la position du bras (bras levé, bras le long du corps).
-- Un **petit hématome localisé** après une ponction, qui change de couleur (bleu, jaune, vert) et régresse en quelques jours — c'est le cours normal de la cicatrisation.
+- Un **petit hématome localisé** après une ponction, qui change de couleur (bleu, jaune, vert) et régresse en quelques jours, c'est le cours normal de la cicatrisation.
 - Une **légère sensibilité** juste après la séance, qui s'estompe dans les heures qui suivent.
 
 Cela dit, si quelque chose **vous étonne**, si vous sentez que « ce n'est pas comme d'habitude », mieux vaut appeler que ruminer. Votre néphrologue confirmera.
@@ -93,7 +93,7 @@ Ces gestes, ajoutés à votre rituel matinal, forment une vraie barrière protec
 
 Lors de votre première séance dans notre [parcours d'hémodialyse](/services/hemodialyse), notre équipe prend le temps de vous montrer concrètement où poser vos doigts, où poser votre oreille, ce que vous devez ressentir. On vous explique aussi les signes qui doivent vous faire appeler.
 
-Et à **chaque séance**, l'infirmier·ère vérifie également votre fistule — palpation, auscultation, observation de la peau. Cette **double surveillance** (vous le matin chez vous, l'équipe pendant la séance) est la meilleure protection que votre fistule puisse avoir.
+Et à **chaque séance**, l'infirmier·ère vérifie également votre fistule : palpation, auscultation, observation de la peau. Cette **double surveillance** (vous le matin chez vous, l'équipe pendant la séance) est la meilleure protection que votre fistule puisse avoir.
 
 ---
 

@@ -1,0 +1,41 @@
+# Rapport de cohérence des traductions EN/AR
+
+## Phase 3 — 7 articles de blog (markdown long)
+Vérification des 7 articles (FR↔EN et FR↔AR) — **0 problème MAJEUR**, 3 mineurs, 14 infos.
+Tous les chiffres/doses/portions/durées/débits préservés (100 % prise en charge, 3×/sem, 150 & 300-400 ml/min, 200-300 ml, 1,5-2 g sel, 50/25/15/10 %, quantités recette, créneaux horaires…). Sigles intacts (CNAS, CASNOS, CPAM, Chifa, FAV, K+, ALD…), terminologie correcte, liens internes bien préfixés /en/ et /ar/. Notes mineures à valider : AR `deroule-seance-hemodialyse` « dialyseur » rendu de façon redondante (الكلية الاصطناعية (الكلية الصناعية…) → préférer « المُرشِّح » comme le glossaire) ; EN `fistule…` « souffle » → « bruit » (exact mais peu familier au grand public) ; AR onomatopée « vroum-vroum » → « فروم-فروم » (translittération assumée).
+
+---
+
+# Rapport de cohérence des traductions EN/AR
+
+## Phase 2 (FAQ, glossaire 29 défs, équipe, la-clinique, patients de passage, ramadan, comprendre, RDV, blog, légal)
+Vérification automatisée des 13 namespaces de la phase 2 — **0 problème MAJEUR**, 8 mineurs, 12 infos.
+Tous les chiffres/durées/seuils médicaux préservés (160 g/rein, ~1 M néphrons, 30 % seuil symptômes, DPA 8–10 h, DPCA 4–5 échanges, 86,95 €, &lt;3 mois sérologies, 4h du matin Ramadan…). Terminologie EN (haemodialysis, AVF, CKD…) et AR (تصفية الدم, الناسور الشرياني الوريدي, القصور الكلوي…) correctes. Notes mineures à valider par un relecteur : en arabe « aine » rendu « haut de la cuisse » (catheter), double désignation تصفية الدم / الديلزة pour « dialyse », « Sidi Bel Abbès » non translittéré sur la-clinique, accord de genre « القهوة » (ramadan), verbe EN « dialyse » dans un titre patients-de-passage. Aucune n'altère le sens médical.
+
+---
+
+# Rapport de cohérence des traductions EN/AR — Phase 1
+
+Vérification automatisée (12 namespaces, comparaison EN/AR ↔ FR source) le 2026-06-16.
+Les traductions sont **« à valider »** par un locuteur natif / médecin avant mise en production, surtout l'arabe.
+
+## Verdict global
+- **0 problème MAJEUR** — aucun glissement de sens médical, aucun chiffre/durée/fréquence modifié (37 lits, 4 h, 3×/sem, 72 h, 10 s, 05h–19h tous préservés), aucun sigle altéré (CNAS, CASNOS, CPAM, Chifa, ESSAADA), aucune formulation dangereuse ou promesse de résultat.
+- 13 mineurs (style/terminologie), 22 infos (choix de localisation acceptables).
+- EN « ok » sur 11/12 namespaces ; AR « ok » sur 7/12.
+
+## Corrections déjà appliquées (auto)
+- AR `home.meta.title`/`ogTitle` : « عيادة الـ ESSAADA » → « عيادة ESSAADA » (article parasite retiré).
+- AR `firstSession.hero.photoAlt` : nom altéré « عيادة الصعدة » → « عيادة ESSAADA » (faux nom propre corrigé).
+- EN + AR `meta.siteDescription` : « conventionné » rendu « accredited / مُعتمَد لدى » → « Affiliated with / متعاقد مع » (évite la confusion avec l'agrément Ministère).
+- AR `hemodialysis.seanceIncludes` : « تتبّع معلوماتي » → « تتبّع رقمي » (terme « informatisée » plus juste).
+
+## Notes restantes à valider par un relecteur (mineures, non bloquantes)
+- AR `firstSession.documents.ordonnance` : ajoute « المعالج » (traitant) absent du FR — à confirmer.
+- AR `hemodialysis.hero.subtitle` : « 3 créneaux » → « 3 حصص » (séances) ; nuance créneau/séance aplatie.
+- AR `hemodialysis.qualite` : « quand indiqué » → « عند الحاجة » (au besoin) ; préférer « عند الاستطباب ».
+- AR `footer.groups.understand` : « Comprendre » → « للفهم » (nominal) ; acceptable comme titre de rubrique.
+- EN `consultation` : sigle ETP → TPE, « médecin traitant » → « GP » (registre UK) ; acceptable.
+- EN `nav.treatment.hemodialysis.desc` : « déroulé » → « what to expect » ; « how it unfolds » serait plus exact.
+- EN/AR `practical.vie.voyages` : « au bled » → « back home / في البلد » ; connotation diaspora atténuée, sens préservé.
+- EN `home.stats.beds` : « lits » → « stations » (parti pris de localisation EN cohérent ; l'AR garde « أسرّة »). À trancher si harmonisation souhaitée.
