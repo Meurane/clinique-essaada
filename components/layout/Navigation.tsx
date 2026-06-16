@@ -1,19 +1,24 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   primaryNav,
   isNavGroup,
+  type NavEntry,
   type NavGroup,
+  type NavLink,
 } from "@/lib/routes";
 import { site } from "@/lib/site";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Navigation() {
   const pathname = usePathname();
+  const t = useTranslations("nav");
+  const tc = useTranslations("common");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
@@ -21,6 +26,10 @@ export function Navigation() {
   const drawerRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Libellés traduits (repli sur le libellé FR codé en dur si pas de clé).
+  const navLabel = (e: NavEntry) => (e.key ? t(e.key) : e.label);
+  const navDesc = (i: NavLink) => (i.descKey ? t(i.descKey) : i.description);
 
   const openMenu = (i: number) => {
     if (closeTimerRef.current) {
@@ -129,12 +138,12 @@ export function Navigation() {
       <nav
         ref={navRef}
         className="container-custom flex items-center justify-between h-16 md:h-20"
-        aria-label="Navigation principale"
+        aria-label={tc("mainNav")}
       >
         <Link
           href="/"
           className="flex items-center gap-2.5 font-display font-bold text-lg xl:text-xl text-primary-700 shrink-0"
-          aria-label="Clinique ESSAADA — Accueil"
+          aria-label={tc("homeAria")}
         >
           <Image
             src="/logo.svg"
@@ -161,7 +170,7 @@ export function Navigation() {
                         : "text-neutral-700 hover:text-primary-700 hover:bg-neutral-50"
                     }`}
                   >
-                    {entry.label}
+                    {navLabel(entry)}
                   </Link>
                 </li>
               );
@@ -188,7 +197,7 @@ export function Navigation() {
                       : "text-neutral-700 hover:text-primary-700 hover:bg-neutral-50 group-hover:text-primary-700 group-hover:bg-neutral-50"
                   }`}
                 >
-                  {entry.label}
+                  {navLabel(entry)}
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-200 group-hover:rotate-180 ${isOpen ? "rotate-180" : ""}`}
                     aria-hidden="true"
@@ -201,7 +210,7 @@ export function Navigation() {
                 >
                     <div
                       role="menu"
-                      aria-label={entry.label}
+                      aria-label={navLabel(entry)}
                       className="bg-white rounded-xl shadow-xl ring-1 ring-neutral-150 p-2"
                     >
                       {entry.href && (
@@ -212,7 +221,7 @@ export function Navigation() {
                           aria-current={pathname === entry.href ? "page" : undefined}
                         >
                           <div className="text-sm font-semibold text-primary-700 inline-flex items-center gap-1.5">
-                            Vue d'ensemble
+                            {tc("overview")}
                             <span aria-hidden="true">→</span>
                           </div>
                         </Link>
@@ -235,11 +244,11 @@ export function Navigation() {
                                 }`}
                               >
                                 <div className="font-medium text-neutral-900 text-sm leading-snug">
-                                  {item.label}
+                                  {navLabel(item)}
                                 </div>
                                 {item.description && (
                                   <div className="text-xs text-neutral-500 mt-0.5 leading-snug">
-                                    {item.description}
+                                    {navDesc(item)}
                                   </div>
                                 )}
                               </Link>
@@ -254,14 +263,15 @@ export function Navigation() {
           })}
         </ul>
 
-        <div className="hidden min-[1080px]:flex items-center gap-3">
+        <div className="hidden min-[1080px]:flex items-center gap-2">
+          <LanguageSwitcher />
           <a
             href={site.contact.phoneHref}
-            aria-label={`Appeler la clinique au ${site.contact.phone}`}
+            aria-label={tc("callAria", { phone: site.contact.phone })}
             className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-full font-semibold transition-colors min-h-[48px]"
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
-            <span>Appeler</span>
+            <span>{tc("call")}</span>
           </a>
         </div>
 
@@ -273,7 +283,7 @@ export function Navigation() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-haspopup="menu"
-          aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={open ? tc("closeMenu") : tc("openMenu")}
         >
           {open ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
@@ -286,7 +296,7 @@ export function Navigation() {
           ref={drawerRef}
           role="dialog"
           aria-modal="true"
-          aria-label="Menu principal"
+          aria-label={tc("mainMenu")}
           className="min-[1080px]:hidden fixed inset-x-0 top-16 md:top-20 bottom-0 bg-white z-50 overflow-y-auto"
         >
           <ul className="flex flex-col p-4 gap-1">
@@ -303,7 +313,7 @@ export function Navigation() {
                           : "text-neutral-800 hover:bg-neutral-50"
                       }`}
                     >
-                      {entry.label}
+                      {navLabel(entry)}
                     </Link>
                   </li>
                 );
@@ -320,7 +330,7 @@ export function Navigation() {
                           : "text-neutral-800 hover:bg-neutral-50"
                       }`}
                     >
-                      <span>{entry.label}</span>
+                      <span>{navLabel(entry)}</span>
                       <ChevronDown
                         className="w-5 h-5 transition-transform group-open:rotate-180 shrink-0"
                         aria-hidden="true"
@@ -334,7 +344,7 @@ export function Navigation() {
                             className="block px-4 py-3 rounded-lg text-base font-semibold text-primary-700 hover:bg-primary-50"
                             aria-current={pathname === entry.href ? "page" : undefined}
                           >
-                            Vue d'ensemble →
+                            {tc("overview")} →
                           </Link>
                         </li>
                       )}
@@ -353,7 +363,7 @@ export function Navigation() {
                                   : "text-neutral-700 hover:bg-neutral-50"
                               }`}
                             >
-                              {item.label}
+                              {navLabel(item)}
                             </Link>
                           </li>
                         );
@@ -368,8 +378,11 @@ export function Navigation() {
                 href="/rendez-vous"
                 className="block w-full text-center bg-primary-600 text-white px-4 py-4 rounded-xl text-lg font-semibold"
               >
-                Prendre rendez-vous
+                {tc("bookAppointment")}
               </Link>
+            </li>
+            <li className="pt-4 mt-2 border-t border-neutral-200">
+              <LanguageSwitcher variant="drawer" />
             </li>
           </ul>
         </div>

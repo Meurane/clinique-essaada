@@ -1,0 +1,56 @@
+{
+  "a11y": {
+    "skipToContent": "Aller au contenu principal"
+  },
+  "common": {
+    "call": "Appeler",
+    "callAria": "Appeler la clinique au {phone}",
+    "bookAppointment": "Prendre rendez-vous",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "mainMenu": "Menu principal",
+    "overview": "Vue d'ensemble",
+    "homeAria": "Clinique ESSAADA — Accueil"
+  },
+  "languageSwitcher": {
+    "label": "Changer de langue",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "meta": {
+    "siteDescription": "Centre d'hémodialyse à Sidi Bel Abbès. 37 lits, équipements récents, équipe pluridisciplinaire. Patients résidents et de passage. Conventionnée CNAS et CASNOS.",
+    "tagline": "Centre d'hémodialyse — Sidi Bel Abbès"
+  },
+  "nav": {
+    "clinic": {
+      "label": "La clinique",
+      "center": { "label": "Le centre", "desc": "37 lits, équipements récents, équipe pluridisciplinaire" },
+      "equipment": { "label": "Équipement & hygiène", "desc": "Générateurs, eau ultra-pure, protocoles stricts" },
+      "bodyComposition": { "label": "Mesure poids sec & hydratation", "desc": "Bio-impédance multi-fréquence, ajustement personnalisé" },
+      "team": { "label": "Équipe médicale", "desc": "Néphrologue et infirmiers spécialisés" },
+      "practical": { "label": "Infos pratiques", "desc": "Horaires, accès, accompagnants, repas" }
+    },
+    "treatment": {
+      "label": "Votre traitement",
+      "hemodialysis": { "label": "Hémodialyse", "desc": "Séances, déroulé, engagements qualité" },
+      "consultation": { "label": "Consultation néphrologie", "desc": "Diagnostic, suivi, prévention" },
+      "firstSession": { "label": "Votre 1ʳᵉ séance", "desc": "Documents, étapes, ce qu'il faut savoir" },
+      "ramadan": { "label": "Ramadan & dialyse", "desc": "Créneaux adaptés pendant le jeûne" }
+    },
+    "visiting": {
+      "label": "Patients de passage",
+      "organize": { "label": "Organiser mon séjour", "desc": "Confirmation sous 72h, 3 étapes simples" },
+      "fromFrance": { "label": "Je viens de France (CPAM)", "desc": "Accord préalable, formulaires SE 352-05, remboursement" }
+    },
+    "resources": {
+      "label": "Ressources",
+      "blog": { "label": "Blog", "desc": "Articles, guides et conseils pratiques" },
+      "understanding": { "label": "L'insuffisance rénale", "desc": "Guide pédagogique complet" },
+      "glossary": { "label": "Glossaire", "desc": "29 termes clés de la dialyse" },
+      "faq": { "label": "FAQ", "desc": "Questions fréquentes des patients" }
+    },
+    "contact": { "label": "Contact" }
+  }
+}

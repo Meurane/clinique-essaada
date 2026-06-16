@@ -1,0 +1,56 @@
+{
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "common": {
+    "call": "Call",
+    "callAria": "Call the clinic on {phone}",
+    "bookAppointment": "Book an appointment",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "mainMenu": "Main menu",
+    "overview": "Overview",
+    "homeAria": "Clinique ESSAADA — Home"
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "fr": "Français",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "meta": {
+    "siteDescription": "Haemodialysis centre in Sidi Bel Abbès, Algeria. 37 beds, recent equipment, a multidisciplinary team. Resident and visiting patients. CNAS and CASNOS accredited.",
+    "tagline": "Haemodialysis centre — Sidi Bel Abbès"
+  },
+  "nav": {
+    "clinic": {
+      "label": "The clinic",
+      "center": { "label": "The centre", "desc": "37 beds, recent equipment, multidisciplinary team" },
+      "equipment": { "label": "Equipment & hygiene", "desc": "Generators, ultrapure water, strict protocols" },
+      "bodyComposition": { "label": "Dry weight & hydration measurement", "desc": "Multi-frequency bioimpedance, personalised adjustment" },
+      "team": { "label": "Medical team", "desc": "Nephrologist and specialised nurses" },
+      "practical": { "label": "Practical info", "desc": "Hours, access, companions, meals" }
+    },
+    "treatment": {
+      "label": "Your treatment",
+      "hemodialysis": { "label": "Haemodialysis", "desc": "Sessions, what to expect, quality commitments" },
+      "consultation": { "label": "Nephrology consultation", "desc": "Diagnosis, follow-up, prevention" },
+      "firstSession": { "label": "Your 1st session", "desc": "Documents, steps, what to know" },
+      "ramadan": { "label": "Ramadan & dialysis", "desc": "Adjusted time slots during fasting" }
+    },
+    "visiting": {
+      "label": "Visiting patients",
+      "organize": { "label": "Plan my stay", "desc": "Confirmation within 72h, 3 simple steps" },
+      "fromFrance": { "label": "I'm coming from France (CPAM)", "desc": "Prior agreement, SE 352-05 forms, reimbursement" }
+    },
+    "resources": {
+      "label": "Resources",
+      "blog": { "label": "Blog", "desc": "Articles, guides and practical advice" },
+      "understanding": { "label": "Kidney failure", "desc": "Complete educational guide" },
+      "glossary": { "label": "Glossary", "desc": "29 key dialysis terms" },
+      "faq": { "label": "FAQ", "desc": "Patients' frequently asked questions" }
+    },
+    "contact": { "label": "Contact" }
+  }
+}

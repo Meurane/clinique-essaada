@@ -2,7 +2,7 @@
 
 import { useActionState, useEffect, useId, useRef } from "react";
 import { AlertCircle } from "lucide-react";
-import { submitRdv, type RdvFormState } from "@/app/rendez-vous/actions";
+import { submitRdv, type RdvFormState } from "@/app/[locale]/rendez-vous/actions";
 
 const initialState: RdvFormState = { status: "idle" };
 
