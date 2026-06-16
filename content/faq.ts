@@ -4,7 +4,7 @@ export const faq: FaqItem[] = [
   {
     question: "Combien coûte une séance ? Ai-je quelque chose à payer ?",
     answer:
-      "Rien si vous êtes affilié à la CNAS ou à la CASNOS. La clinique est conventionnée : vos séances d'hémodialyse sont prises en charge intégralement en tiers-payant — vous n'avancez aucun frais. Notre service administratif monte votre dossier avec vous (carte Chifa + attestation CNAS ou CASNOS). Si un point bloque, nous vous le disons tout de suite et nous vous accompagnons dans la démarche.",
+      "Rien si vous êtes affilié à la CNAS ou à la CASNOS. La clinique est conventionnée : vos séances d'hémodialyse sont prises en charge intégralement en tiers-payant, vous n'avancez aucun frais. Notre service administratif monte votre dossier avec vous (carte Chifa + attestation CNAS ou CASNOS). Si un point bloque, nous vous le disons tout de suite et nous vous accompagnons dans la démarche.",
   },
   {
     question: "Mon accompagnant peut-il rester avec moi ?",
@@ -29,7 +29,7 @@ export const faq: FaqItem[] = [
   {
     question: "Que se passe-t-il si je fais un malaise pendant la séance ?",
     answer:
-      "Un médecin néphrologue est présent sur le site pendant toute la durée des séances — ce n'est pas une astreinte téléphonique, c'est une présence effective. Notre équipe infirmière est formée aux protocoles d'urgence et intervient immédiatement en cas de baisse de tension ou de malaise.",
+      "Un médecin néphrologue est présent sur le site pendant toute la durée des séances, ce n'est pas une astreinte téléphonique, c'est une présence effective. Notre équipe infirmière est formée aux protocoles d'urgence et intervient immédiatement en cas de baisse de tension ou de malaise.",
   },
   {
     question: "Puis-je continuer à travailler avec la dialyse ?",
@@ -47,7 +47,7 @@ export const faq: FaqItem[] = [
       "Appelez-nous ou envoyez un message WhatsApp. Notre équipe vous propose un rendez-vous avec un néphrologue sous 24 à 48 h (jours ouvrables). Nous pouvons aussi organiser une visite découverte du centre, sans engagement.",
   },
   {
-    question: "Je dialyse déjà ailleurs — comment transférer mon suivi ?",
+    question: "Je dialyse déjà ailleurs, comment transférer mon suivi ?",
     answer:
       "Contactez-nous avec votre dernier bilan biologique (FNS + Biochimie), vos sérologies (HVB, HVC, VIH) et votre ordonnance de dialyse. Notre néphrologue prend contact avec votre médecin traitant pour assurer la continuité du suivi, sans rupture.",
   },
@@ -79,12 +79,12 @@ export const faq: FaqItem[] = [
   {
     question: "Est-ce que les aiguilles font mal ?",
     answer:
-      "Nous préférons la franchise : la piqûre est désagréable, mais elle dure à peine 10 secondes. Ce n'est pas une douleur vive, plutôt une sensation forte qui passe vite. Si vous avez une fistule (FAV), une crème anesthésiante peut être appliquée une heure avant la séance pour rendre la piqûre quasi indolore. Si vous avez un cathéter central, il n'y a pas de piqûre du tout, juste une connexion. La plupart de nos patients nous disent qu'après 3 ou 4 séances, l'appréhension disparaît et le geste devient une routine. Nos infirmières sont formées à la ponction douce — si une aiguille vous fait mal, dites-le immédiatement, on adapte.",
+      "Nous préférons la franchise : la piqûre est désagréable, mais elle dure à peine 10 secondes. Ce n'est pas une douleur vive, plutôt une sensation forte qui passe vite. Si vous avez une fistule (FAV), une crème anesthésiante peut être appliquée une heure avant la séance pour rendre la piqûre quasi indolore. Si vous avez un cathéter central, il n'y a pas de piqûre du tout, juste une connexion. La plupart de nos patients nous disent qu'après 3 ou 4 séances, l'appréhension disparaît et le geste devient une routine. Nos infirmières sont formées à la ponction douce, si une aiguille vous fait mal, dites-le immédiatement, on adapte.",
   },
   {
     question: "Je suis en vacances en Algérie mais je n'ai pas prévenu. Pouvez-vous me prendre en urgence ?",
     answer:
-      "Oui, c'est possible selon nos disponibilités, et nous faisons tout pour ne laisser personne sans séance. Contactez-nous immédiatement par WhatsApp au numéro du centre, même le soir ou le week-end. Préparez si possible : votre dernier compte-rendu de dialyse (poids sec, temps de séance, traitement), vos sérologies récentes (hépatites B/C, VIH), votre ordonnance en cours, et une pièce d'identité. Si nous sommes complets à l'horaire souhaité, nous vous proposons un autre créneau dans la semaine ou nous vous orientons vers un centre partenaire. Ne sautez jamais une séance — appelez-nous, on trouvera une solution.",
+      "Oui, c'est possible selon nos disponibilités, et nous faisons tout pour ne laisser personne sans séance. Contactez-nous immédiatement par WhatsApp au numéro du centre, même le soir ou le week-end. Préparez si possible : votre dernier compte-rendu de dialyse (poids sec, temps de séance, traitement), vos sérologies récentes (hépatites B/C, VIH), votre ordonnance en cours, et une pièce d'identité. Si nous sommes complets à l'horaire souhaité, nous vous proposons un autre créneau dans la semaine ou nous vous orientons vers un centre partenaire. Ne sautez jamais une séance, appelez-nous, on trouvera une solution.",
   },
   {
     question: "Mes sérologies datent de 4 mois, c'est toujours bon ?",

@@ -61,7 +61,7 @@ Pour parfumer vos plats sans concentré, misez sur les tomates fraîches en peti
 
 ## Aliment 5 : les légumes secs (lentilles, pois chiches, haricots)
 
-Les légumineuses sont très présentes dans la cuisine algérienne. **Sèches**, elles affichent des teneurs en potassium très élevées — de l'ordre de 870 à 1500 mg pour 100 g selon la variété (haricots, lentilles, pois chiches). Une fois **trempées et cuites**, ces valeurs baissent : les légumineuses cuites se situent en règle générale entre 250 et 450 mg pour 100 g, parce qu'une partie du potassium se diffuse dans l'eau de trempage et de cuisson. C'est exactement pour cette raison que la **technique de préparation change tout**.
+Les légumineuses sont très présentes dans la cuisine algérienne. **Sèches**, elles affichent des teneurs en potassium très élevées, de l'ordre de 870 à 1500 mg pour 100 g selon la variété (haricots, lentilles, pois chiches). Une fois **trempées et cuites**, ces valeurs baissent : les légumineuses cuites se situent en règle générale entre 250 et 450 mg pour 100 g, parce qu'une partie du potassium se diffuse dans l'eau de trempage et de cuisson. C'est exactement pour cette raison que la **technique de préparation change tout**.
 
 Faites tremper vos légumes secs au moins 12 heures, jetez l'eau de trempage, puis cuisez-les à grande eau que vous jetez aussi avant de les ajouter au plat. Servez-vous ensuite de petites portions. Pour le couscous du vendredi, par exemple, comptez 5 ou 6 grains de pois chiches dans votre assiette plutôt qu'une grosse louche.
 
@@ -87,7 +87,7 @@ Côté légumes mieux tolérés, vous pouvez vous tourner vers la courgette, le 
 
 L'été à Sidi Bel Abbès et plus largement en Algérie, c'est la saison où les fruits gorgés d'eau s'invitent partout. Pastèque, melon, abricots, raisins frais, prunes : ils sont délicieux, mais cumulent deux contraintes pour vous. Une charge en potassium non négligeable, et beaucoup d'eau, ce qui pèse sur votre prise de poids entre deux séances.
 
-La règle : pas de dégustation libre en quartiers entiers. Une petite tranche de pastèque, quelques grains de raisin, un demi-abricot — toujours en lien avec ce que votre équipe vous a indiqué pour vos apports en eau et en potassium.
+La règle : pas de dégustation libre en quartiers entiers. Une petite tranche de pastèque, quelques grains de raisin, un demi-abricot, toujours en lien avec ce que votre équipe vous a indiqué pour vos apports en eau et en potassium.
 
 ## Reconnaître une hyperkaliémie
 
@@ -99,7 +99,7 @@ En cas de doute, ne restez pas seul à la maison à essayer de "voir si ça pass
 
 À la Clinique ESSAADA, votre néphrologue ajuste vos prescriptions de dialyse et vos recommandations alimentaires en fonction de vos bilans réguliers (kaliémie, phosphore, urée, créatinine). Aucun régime "type" ne convient à tous les patients dialysés : votre tolérance dépend de votre fonction rénale résiduelle, de votre dialyse et de votre état clinique.
 
-Une rencontre avec une diététicienne est particulièrement utile au moment de l'entrée en dialyse, et dès qu'un bilan se déséquilibre. C'est l'occasion de revoir vos habitudes, d'identifier les pièges de votre cuisine quotidienne et de construire une alimentation qui vous ressemble — Ramadan, fêtes, repas du vendredi compris.
+Une rencontre avec une diététicienne est particulièrement utile au moment de l'entrée en dialyse, et dès qu'un bilan se déséquilibre. C'est l'occasion de revoir vos habitudes, d'identifier les pièges de votre cuisine quotidienne et de construire une alimentation qui vous ressemble : Ramadan, fêtes, repas du vendredi compris.
 
 Pour toute question sur votre alimentation ou votre dialyse, vous pouvez prendre rendez-vous en [consultation néphrologie](/services/consultation-nephrologie), parcourir notre [FAQ](/faq) dédiée aux patients dialysés, ou en parler simplement à l'équipe lors de votre prochaine séance. Adapter, ce n'est pas renoncer : c'est garder le contrôle.
 

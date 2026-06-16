@@ -26,11 +26,11 @@ Ce guide concerne tout patient dialysé qui souhaite organiser une ou plusieurs 
 
 ### Documents médicaux à préparer
 
-1. **Dernier bilan biologique** — analyses de sang de moins d'un mois (NFS, ionogramme, urée, créatinine, phosphore, calcium, albumine, CRP)
-2. **Sérologies à jour** — hépatites B, C et VIH datées de moins de 6 mois
+1. **Dernier bilan biologique** : analyses de sang de moins d'un mois (NFS, ionogramme, urée, créatinine, phosphore, calcium, albumine, CRP)
+2. **Sérologies à jour** : hépatites B, C et VIH datées de moins de 6 mois
 3. **Ordonnance de dialyse** signée par votre néphrologue traitant (prescription hebdomadaire, durée de séance, anticoagulation, particularités)
 4. **Coordonnées de votre néphrologue traitant** (nom, téléphone, email) pour permettre la liaison médicale
-5. **Pièce d'identité valide** — passeport pour les patients de la diaspora, CIN ou passeport pour les résidents
+5. **Pièce d'identité valide** : passeport pour les patients de la diaspora, CIN ou passeport pour les résidents
 6. **Justificatif de couverture** :
    - Carte Chifa + attestation CNAS ou CASNOS si vous êtes affilié
    - Attestation de mutuelle européenne si applicable
@@ -38,7 +38,7 @@ Ce guide concerne tout patient dialysé qui souhaite organiser une ou plusieurs 
 
 ### Combien de temps à l'avance
 
-Nous recommandons de nous contacter **au minimum 1 mois avant votre voyage**. Les réservations de dernière minute restent possibles mais dépendent de la disponibilité d'un poste — il est toujours plus sûr de s'y prendre tôt.
+Nous recommandons de nous contacter **au minimum 1 mois avant votre voyage**. Les réservations de dernière minute restent possibles mais dépendent de la disponibilité d'un poste, il est toujours plus sûr de s'y prendre tôt.
 
 Pour les séjours de plus de 2 semaines, nous vous proposerons un planning complet de vos séances avant votre arrivée.
 
@@ -70,11 +70,11 @@ En copie `cliniqueessaada22@gmail.com` avec les documents scannés.
 
 ### Accès à la clinique
 
-**Depuis l'aéroport Oran Es-Senia** — environ 1h de trajet par la route. Services de taxi disponibles, location de voiture possible. Nous pouvons vous orienter vers des chauffeurs partenaires.
+**Depuis l'aéroport Oran Es-Senia** : environ 1h de trajet par la route. Services de taxi disponibles, location de voiture possible. Nous pouvons vous orienter vers des chauffeurs partenaires.
 
-**Depuis la gare ferroviaire de Sidi Bel Abbès** — environ 10 minutes en taxi.
+**Depuis la gare ferroviaire de Sidi Bel Abbès** : environ 10 minutes en taxi.
 
-**Accès** — places PMR signalées près de l'entrée, accès direct ambulance.
+**Accès** : places PMR signalées près de l'entrée, accès direct ambulance.
 
 ### Hébergement
 
@@ -86,7 +86,7 @@ Plusieurs pharmacies de garde à courte distance. Nous vous conseillons néanmoi
 
 ### Ramadan
 
-Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » — première séance à 4h du matin, pas de séance après f'tour ni de créneau nocturne, en concertation avec notre néphrologue.
+Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & dialyse » : première séance à 4h du matin, pas de séance après f'tour ni de créneau nocturne, en concertation avec notre néphrologue.
 
 ---
 
@@ -94,7 +94,7 @@ Si votre séjour tombe pendant le Ramadan, voir la page dédiée « Ramadan & di
 
 ### Vous êtes affilié CNAS ou CASNOS
 
-**Zéro avance de frais.** Vos séances sont prises en charge intégralement en tiers-payant. Présentez votre carte Chifa et votre attestation à l'arrivée — le reste est notre travail.
+**Zéro avance de frais.** Vos séances sont prises en charge intégralement en tiers-payant. Présentez votre carte Chifa et votre attestation à l'arrivée, le reste est notre travail.
 
 ### Vous êtes de la diaspora avec mutuelle européenne
 

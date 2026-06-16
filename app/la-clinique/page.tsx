@@ -35,7 +35,7 @@ const engagements = [
   {
     icon: Stethoscope,
     title: "Des professionnels de santé à votre service",
-    text: "Néphrologue, infirmiers spécialisés, personnel d'accompagnement — une équipe pluridisciplinaire formée à la prise en charge des patients dialysés.",
+    text: "Néphrologue, infirmiers spécialisés, personnel d'accompagnement, une équipe pluridisciplinaire formée à la prise en charge des patients dialysés.",
   },
   {
     icon: Shield,
@@ -246,7 +246,7 @@ export default function LaCliniquePage() {
                 Sur ce site, vous trouverez les renseignements qui vous
                 permettront de vous familiariser avec la vie de la clinique. Et
                 si vous avez la moindre question, un avis à partager, un
-                conseil à demander — n'hésitez pas. Vos suggestions nous aident
+                conseil à demander, n'hésitez pas. Vos suggestions nous aident
                 à mieux vous accompagner.
               </p>
             </div>
@@ -271,7 +271,7 @@ export default function LaCliniquePage() {
             tone="light"
             eyebrow="Nos engagements"
             title="Quatre promesses, tenues à chaque séance"
-            subtitle="Ce ne sont pas des slogans — ce sont les quatre axes sur lesquels nous sommes évalués et sur lesquels nous nous engageons."
+            subtitle="Ce ne sont pas des slogans, ce sont les quatre axes sur lesquels nous sommes évalués et sur lesquels nous nous engageons."
           />
           <ul className="grid md:grid-cols-2 gap-5">
             {engagements.map((e) => (
@@ -300,14 +300,14 @@ export default function LaCliniquePage() {
             />
             <div className="space-y-4 text-neutral-700 leading-relaxed">
               <p>
-                Avant d'engager votre parcours chez nous, nous vous invitons —
-                vous et un proche — à découvrir le centre. Rencontre avec un
+                Avant d'engager votre parcours chez nous, nous vous invitons,
+                vous et un proche, à découvrir le centre. Rencontre avec un
                 néphrologue, visite de la salle de dialyse, explication du
                 déroulé d'une séance, questions libres.
               </p>
               <p>
                 <strong className="text-neutral-900">Sans engagement, sans frais.</strong> Une
-                trentaine de minutes qui changent beaucoup — surtout si c'est
+                trentaine de minutes qui changent beaucoup, surtout si c'est
                 votre proche qui s'inquiète.
               </p>
             </div>
@@ -320,7 +320,7 @@ export default function LaCliniquePage() {
               Organiser votre visite
             </h3>
             <p className="text-neutral-700 mb-5">
-              Appelez-nous ou envoyez un message WhatsApp — nous vous proposons
+              Appelez-nous ou envoyez un message WhatsApp, nous vous proposons
               un créneau sous 48h ouvrées.
             </p>
             <div className="flex flex-col lg:flex-row gap-3">

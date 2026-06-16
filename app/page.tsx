@@ -25,7 +25,7 @@ import { site, waUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
   description:
-    "Centre d'hémodialyse à Sidi Bel Abbès : 37 lits, équipements récents, équipe néphrologue présente. Conventionné CNAS et CASNOS — tiers-payant intégral. Patients résidents et de passage (diaspora France / CPAM).",
+    "Centre d'hémodialyse à Sidi Bel Abbès : 37 lits, équipements récents, équipe néphrologue présente. Conventionné CNAS et CASNOS, tiers-payant intégral. Patients résidents et de passage (diaspora France / CPAM).",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Hémodialyse à Sidi Bel Abbès — Clinique ESSAADA",
@@ -42,7 +42,7 @@ const journeyStages = [
     icon: Compass,
     title: "Je viens d'apprendre que j'ai une maladie rénale",
     description:
-      "Consultation néphrologie, diagnostic, suivi. Vous êtes au début — on vous explique chaque étape.",
+      "Consultation néphrologie, diagnostic, suivi. Vous êtes au début, on vous explique chaque étape.",
     cta: "Consulter un néphrologue",
   },
   {
@@ -74,7 +74,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Par où commencer"
             title="À quelle étape de votre parcours êtes-vous ?"
-            subtitle="Chaque patient arrive à un moment différent. Dites-nous le vôtre — nous adaptons."
+            subtitle="Chaque patient arrive à un moment différent. Dites-nous le vôtre, nous adaptons."
           />
           <ul className="grid md:grid-cols-3 gap-5">
             {journeyStages.map((s, i) => (
@@ -215,7 +215,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Paroles de patients"
             title="Ce que nous disent celles et ceux que nous accompagnons"
-            subtitle="Résidents et patients de passage — nous recueillons leurs retours dans le respect du secret médical et avec leur consentement."
+            subtitle="Résidents et patients de passage, nous recueillons leurs retours dans le respect du secret médical et avec leur consentement."
             align="center"
           />
           <TestimonialCarousel />

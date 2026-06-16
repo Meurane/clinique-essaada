@@ -40,7 +40,7 @@ const piliers = [
   {
     icon: Activity,
     title: "Suivre la composition corporelle",
-    text: "Masse maigre, masse musculaire squelettique, masse grasse — suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale.",
+    text: "Masse maigre, masse musculaire squelettique, masse grasse, suivies dans le temps pour détecter une fonte musculaire (sarcopénie) ou une dénutrition, fréquentes en insuffisance rénale terminale.",
   },
   {
     icon: HeartPulse,
@@ -86,7 +86,7 @@ const quand = [
   {
     icon: ShieldCheck,
     title: "Patients de passage",
-    text: "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge — sans surcoût pour les affiliés CNAS / CASNOS.",
+    text: "Sur séjour prolongé (deux semaines ou plus), une mesure peut être proposée pour personnaliser votre prise en charge, sans surcoût pour les affiliés CNAS / CASNOS.",
   },
 ];
 
@@ -102,7 +102,7 @@ export default function CompositionCorporellePage() {
       <PhotoHero
         eyebrow="Plateau technique"
         title="Mesurer précisément votre poids sec et votre hydratation"
-        subtitle="Bio-impédance multi-fréquence — la même technologie de mesure qu'en centre néphrologique européen, intégrée à votre suivi de dialyse."
+        subtitle="Bio-impédance multi-fréquence, la même technologie de mesure qu'en centre néphrologique européen, intégrée à votre suivi de dialyse."
         photoIcon={Activity}
         photoSrc="/images/bodystat-multiscan-5000.webp"
         photoAlt="Bodystat Multiscan 5000 — analyseur médical de composition corporelle par bio-impédance multi-fréquence, écran tactile montrant le menu New Test / Recall Data / Options / Information"
@@ -137,13 +137,13 @@ export default function CompositionCorporellePage() {
                 La <strong>bio-impédance multi-fréquence (BIS)</strong> envoie un
                 courant électrique imperceptible à plusieurs fréquences à travers
                 votre corps. Selon la fréquence, ce courant traverse plus ou moins
-                les membranes cellulaires — ce qui permet de séparer l'eau totale,
+                les membranes cellulaires, ce qui permet de séparer l'eau totale,
                 l'eau intracellulaire, l'eau extracellulaire, la masse maigre et la
                 masse grasse.
               </p>
               <p>
                 C'est un outil <strong>complémentaire</strong> de l'évaluation
-                clinique du néphrologue. Il ne remplace pas son jugement — il
+                clinique du néphrologue. Il ne remplace pas son jugement, il
                 l'enrichit avec des données objectives, suivies dans le temps.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function CompositionCorporellePage() {
               <li className="flex items-start gap-2.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 shrink-0" aria-hidden="true" />
                 <span>
-                  <strong>Bodystat Multiscan 5000</strong> — dispositif médical CE
+                  <strong>Bodystat Multiscan 5000</strong>, dispositif médical CE
                 </span>
               </li>
               <li className="flex items-start gap-2.5">
@@ -190,7 +190,7 @@ export default function CompositionCorporellePage() {
           <SectionHeader
             eyebrow="À quoi ça sert pour vous"
             title="Trois apports concrets pour votre suivi"
-            subtitle="Ce que cet outil permet à votre néphrologue de faire mieux — et ce qu'il ne prétend pas faire."
+            subtitle="Ce que cet outil permet à votre néphrologue de faire mieux, et ce qu'il ne prétend pas faire."
           />
           <ul className="grid md:grid-cols-3 gap-5">
             {piliers.map((p) => (
@@ -324,10 +324,10 @@ export default function CompositionCorporellePage() {
                 Ce qu'il ne fait pas
               </h3>
               <ul className="space-y-2.5 text-neutral-700 text-base">
-                <li>Il ne <strong>détermine pas</strong> seul votre poids sec — il aide votre médecin à le faire</li>
+                <li>Il ne <strong>détermine pas</strong> seul votre poids sec, il aide votre médecin à le faire</li>
                 <li>Il ne <strong>diagnostique pas</strong> à lui seul une dénutrition</li>
                 <li>Il ne <strong>remplace pas</strong> les bilans biologiques ni l'examen clinique</li>
-                <li>Il ne mesure ni cancer, ni maladie cardiaque — il n'est pas un dépistage</li>
+                <li>Il ne mesure ni cancer, ni maladie cardiaque, il n'est pas un dépistage</li>
               </ul>
             </Card>
           </div>
@@ -367,7 +367,7 @@ export default function CompositionCorporellePage() {
         variant="sand"
         eyebrow="Une question médicale"
         title="Une question sur votre suivi ou cette mesure&nbsp;?"
-        subtitle="Notre équipe néphrologique répond en consultation, par téléphone ou via WhatsApp — du samedi au jeudi."
+        subtitle="Notre équipe néphrologique répond en consultation, par téléphone ou via WhatsApp, du samedi au jeudi."
         waMessage="Bonjour, j'aimerais en savoir plus sur la mesure de la composition corporelle à la Clinique ESSAADA."
       />
     </>

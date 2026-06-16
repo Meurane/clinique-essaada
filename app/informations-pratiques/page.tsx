@@ -52,7 +52,7 @@ export default function InfosPratiquesPage() {
           <SectionHeader
             eyebrow="À la clinique"
             title="Votre confort, nos priorités"
-            subtitle="Horaires, accès, accompagnants, sécurité — les détails concrets de votre venue."
+            subtitle="Horaires, accès, accompagnants, sécurité, les détails concrets de votre venue."
           />
           <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {infosBlocks.map((b) => (
@@ -84,7 +84,7 @@ export default function InfosPratiquesPage() {
           <SectionHeader
             eyebrow="Vie quotidienne"
             title="La dialyse, et la vie qui continue"
-            subtitle="Sport, voyages, travail, intimité, parentalité, alimentation — la maladie rénale bouscule, mais elle n'efface pas. Voici ce qu'on peut en dire, sans tabou."
+            subtitle="Sport, voyages, travail, intimité, parentalité, alimentation, la maladie rénale bouscule, mais elle n'efface pas. Voici ce qu'on peut en dire, sans tabou."
           />
           <ul className="space-y-5">
             {viequotidienneBlocks.map((b) => (
@@ -141,7 +141,7 @@ export default function InfosPratiquesPage() {
         variant="white"
         eyebrow="Préparer votre venue"
         title="Des questions avant votre première visite ?"
-        subtitle="Horaires, accompagnants, documents à prévoir, repas — notre équipe vous explique tout à l'avance."
+        subtitle="Horaires, accompagnants, documents à prévoir, repas, notre équipe vous explique tout à l'avance."
         waMessage="Bonjour, j'ai une question pratique pour préparer ma venue à la Clinique ESSAADA."
       />
     </>

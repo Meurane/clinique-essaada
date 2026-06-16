@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const principes = [
   {
     title: "Décision médicale individualisée",
-    text: "Le jeûne pendant le Ramadan est une décision qui appartient à vous — en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi.",
+    text: "Le jeûne pendant le Ramadan est une décision qui appartient à vous, en concertation avec votre néphrologue. Certains patients peuvent jeûner, d'autres non. Nous respectons votre choix et adaptons le suivi.",
   },
   {
     title: "Première séance à 4h du matin",
@@ -83,7 +83,7 @@ const faqRamadan = [
   },
   {
     q: "Que faire en cas de malaise ou de baisse de tension ?",
-    a: "Rompez le jeûne immédiatement — la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche.",
+    a: "Rompez le jeûne immédiatement, la loi religieuse autorise la rupture pour raisons médicales. Appelez-nous au plus tôt. En cas d'urgence, rendez-vous au service d'urgence le plus proche.",
   },
   {
     q: "Le café en séance est-il servi pendant le Ramadan ?",
@@ -179,14 +179,14 @@ export default function RamadanDialysePage() {
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
                   <span>
-                    <strong className="text-neutral-900">Première séance à 4h du matin</strong> —
+                    <strong className="text-neutral-900">Première séance à 4h du matin</strong>,
                     avant s'hour, pour l'ensemble des patients (jeûneurs ou non).
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-accent-600 shrink-0 mt-0.5" aria-hidden="true" />
                   <span>
-                    <strong className="text-neutral-900">Pas de séance après f'tour</strong> —
+                    <strong className="text-neutral-900">Pas de séance après f'tour</strong>,
                     ni de créneau nocturne. Les créneaux suivants de la journée restent alignés sur
                     la cadence habituelle.
                   </span>
@@ -303,7 +303,7 @@ export default function RamadanDialysePage() {
         variant="sand"
         eyebrow="Échangeons"
         title="Vos questions méritent une réponse personnelle"
-        subtitle="Chaque patient est unique. Parlons-en ensemble — avant, pendant et après le Ramadan."
+        subtitle="Chaque patient est unique. Parlons-en ensemble, avant, pendant et après le Ramadan."
         waMessage="Bonjour, j'ai une question sur la dialyse pendant le Ramadan."
       />
     </>

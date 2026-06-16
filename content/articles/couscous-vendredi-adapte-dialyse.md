@@ -13,17 +13,17 @@ tags:
   - vie-quotidienne
 ---
 
-Le vendredi en Algérie, ce n'est pas un jour comme les autres. C'est l'odeur du bouillon qui mijote depuis le matin, la vapeur de la semoule qui monte du couscoussier, les enfants qui tournent autour de la cuisine, et toute la famille qui s'attable ensemble vers 13h. Ce rituel, on ne le remplace pas. On ne le négocie pas. Quand on est patient dialysé, la tentation pourrait être de s'effacer de la table familiale, de manger « son plat à part », de transformer le vendredi en jour de privation. Ce serait une erreur — pour le moral, pour le lien familial, et même pour l'observance au long cours.
+Le vendredi en Algérie, ce n'est pas un jour comme les autres. C'est l'odeur du bouillon qui mijote depuis le matin, la vapeur de la semoule qui monte du couscoussier, les enfants qui tournent autour de la cuisine, et toute la famille qui s'attable ensemble vers 13h. Ce rituel, on ne le remplace pas. On ne le négocie pas. Quand on est patient dialysé, la tentation pourrait être de s'effacer de la table familiale, de manger « son plat à part », de transformer le vendredi en jour de privation. Ce serait une erreur, pour le moral, pour le lien familial, et même pour l'observance au long cours.
 
 Notre parti pris est clair : pas question de renoncer au couscous du vendredi. Quand on est en [hémodialyse](/glossaire/hemodialyse), on apprend à composer avec quelques contraintes nutritionnelles, mais le plaisir de manger en famille reste un pilier de la qualité de vie. La bonne nouvelle, c'est que le couscous algérien, bien pensé, peut tout à fait s'inscrire dans un régime adapté à la dialyse. La semoule elle-même est une alliée. Ce sont surtout les **à-côtés** qui demandent un peu d'attention : le sel, certains légumes, certaines viandes, le volume de bouillon servi.
 
-Dans cet article, on regarde concrètement comment garder le rituel intact, sans dégrader vos bilans. Pas de version « light triste », pas de remplacement miracle. Juste les bons gestes, les bonnes proportions, et quelques ajustements que celui ou celle qui cuisine pour vous adoptera vite — souvent sans que personne autour de la table ne remarque la différence.
+Dans cet article, on regarde concrètement comment garder le rituel intact, sans dégrader vos bilans. Pas de version « light triste », pas de remplacement miracle. Juste les bons gestes, les bonnes proportions, et quelques ajustements que celui ou celle qui cuisine pour vous adoptera vite, souvent sans que personne autour de la table ne remarque la différence.
 
 ## Pourquoi le couscous « classique » peut poser souci
 
 Le couscous tel qu'on le prépare traditionnellement n'est pas dangereux en soi. Il combine simplement plusieurs éléments qui, mis bout à bout, peuvent faire grimper certains paramètres surveillés en dialyse. Quatre pièges principaux à connaître.
 
-**Le sel.** C'est souvent le premier coupable. Bouillon salé à la louche pendant la cuisson, smen ajouté en fin de préparation, parfois un cube de bouillon industriel pour « rehausser », pain blanc trempé dans la sauce, harissa étalée. Mis bout à bout, l'addition est lourde — surtout pour quelqu'un qui doit limiter sa charge sodée et son volume hydrique entre deux séances.
+**Le sel.** C'est souvent le premier coupable. Bouillon salé à la louche pendant la cuisson, smen ajouté en fin de préparation, parfois un cube de bouillon industriel pour « rehausser », pain blanc trempé dans la sauce, harissa étalée. Mis bout à bout, l'addition est lourde, surtout pour quelqu'un qui doit limiter sa charge sodée et son volume hydrique entre deux séances.
 
 **Le potassium.** Le K+ se concentre dans plusieurs ingrédients piliers du couscous : la pomme de terre, le concentré de tomate (très concentré justement), les pois chiches, certaines herbes vertes en grande quantité, et certains légumes selon la portion. Pour quelqu'un dont les reins ne filtrent plus le potassium, l'accumulation peut poser un vrai problème cardiaque.
 
@@ -43,7 +43,7 @@ C'est probablement le point qui demande le plus de vigilance, et celui qui chang
 
 - **Pas de bouillon-cube industriel.** Un seul cube peut représenter l'équivalent d'1,5 à 2 g de sel. Inutile de s'en passer dans la vie de tous les jours pour le saler à fond le vendredi.
 - **Pas de smen ajouté en fin de cuisson.** Le smen traditionnel apporte du sel et du gras saturé. Si vous tenez à son parfum, une toute petite touche au début de la cuisson suffit, mais pas une cuillère pleine en service.
-- **On parfume autrement, et puissamment.** Coriandre fraîche, persil, oignon revenu doucement, ail, curcuma, ras-el-hanout (dosé), un peu de cumin, un soupçon de gingembre. Le bouillon a du goût — ce n'est pas le sel qui le porte, ce sont les épices et les herbes.
+- **On parfume autrement, et puissamment.** Coriandre fraîche, persil, oignon revenu doucement, ail, curcuma, ras-el-hanout (dosé), un peu de cumin, un soupçon de gingembre. Le bouillon a du goût, ce n'est pas le sel qui le porte, ce sont les épices et les herbes.
 - **On sert en demi-louche, pas en grande louche.** Ce simple geste limite la dose hydrique sans frustrer personne : la semoule est déjà parfumée, l'assiette reste gourmande.
 
 Ce travail sur le bouillon, c'est un peu comme [pendant le Ramadan](/ramadan-et-dialyse) : l'adaptation des plats traditionnels est tout un art, et elle se transmet vite à celui ou celle qui cuisine.
@@ -54,7 +54,7 @@ Tous les légumes ne se valent pas dans une assiette de couscous adaptée. Voici
 
 **Les bons (en portion modérée) :** courgette, carotte, navet, **courge butternut** (oui, contrairement à une idée reçue, elle reste consommable en portion raisonnable), chou-fleur (préférez-le rincé à l'eau après cuisson). Ces légumes, en quantités normales d'assiette, posent rarement souci.
 
-**Le cas pomme de terre — la technique qui change tout.** La pomme de terre n'est pas interdite, elle demande juste une **double-cuisson** qui fait baisser significativement son potassium :
+**Le cas pomme de terre : la technique qui change tout.** La pomme de terre n'est pas interdite, elle demande juste une **double-cuisson** qui fait baisser significativement son potassium :
 
 1. Pelez et coupez en petits dés.
 2. Faites-les **tremper 2 à 3 heures dans beaucoup d'eau** (on jette cette eau).
@@ -64,7 +64,7 @@ Ce geste, qu'on peut appeler « pomme de terre travaillée », réduit une bonne
 
 **À limiter :**
 
-- **Les pois chiches** sont riches en potassium et en phosphore (encore plus avant trempage). Plutôt qu'une grosse poignée, on en met **une petite quantité « pour le visuel »** sur l'assiette, et c'est tout — toujours après trempage long et cuisson dans une eau qu'on jette.
+- **Les pois chiches** sont riches en potassium et en phosphore (encore plus avant trempage). Plutôt qu'une grosse poignée, on en met **une petite quantité « pour le visuel »** sur l'assiette, et c'est tout, toujours après trempage long et cuisson dans une eau qu'on jette.
 - **Le concentré de tomate** est très concentré en K+ (c'est la logique du concentré). Préférez **une seule cuillère à café** dans le bouillon, et ajoutez plutôt un petit morceau de **tomate fraîche** pour la couleur.
 
 ## La viande : ce que l'on choisit le vendredi
@@ -103,7 +103,7 @@ Les rituels qui entourent le couscous comptent autant que le plat lui-même. On 
 
 Le vendredi, la table se prolonge souvent par un thé et une douceur. On ne supprime pas, on **dose**.
 
-Plutôt que d'enchaîner trois petites parts de pâtisseries différentes, choisissez **une demi-portion d'un seul dessert** que vous aimez vraiment — un kalbe louz, un makroudh, un morceau de baklawa. Le plaisir est entier, la charge en sucre, en phosphore et en calories reste raisonnable.
+Plutôt que d'enchaîner trois petites parts de pâtisseries différentes, choisissez **une demi-portion d'un seul dessert** que vous aimez vraiment : un kalbe louz, un makroudh, un morceau de baklawa. Le plaisir est entier, la charge en sucre, en phosphore et en calories reste raisonnable.
 
 Une autre option, parfaitement honorable un vendredi sur deux : un **fruit frais** comme une pomme ou une poire, qui sont parmi les fruits les mieux tolérés en dialyse en quantité modérée. Les agrumes en petite quantité peuvent aussi convenir selon vos bilans.
 
@@ -111,7 +111,7 @@ Une autre option, parfaitement honorable un vendredi sur deux : un **fruit frais
 
 Pas une recette gravée dans le marbre, mais un **plan-type** que celui ou celle qui cuisine peut adapter à votre tablée.
 
-- **Semoule moyenne :** 400 g pour 4 personnes — vapeur traditionnelle au couscoussier, beurre ou huile en quantité raisonnable.
+- **Semoule moyenne :** 400 g pour 4 personnes, vapeur traditionnelle au couscoussier, beurre ou huile en quantité raisonnable.
 - **Viande :** 600 g de poulet (cuisses ou blancs), **ou** 400 g de mouton bien dégraissé.
 - **Légumes :** 2 carottes, 2 courgettes, 1/4 de navet, 1/4 de courge butternut, 50 g de pois chiches (préalablement trempés et recuits dans une eau qu'on jette).
 - **Pomme de terre :** 2 petites, en **double-cuisson** (trempage long puis cuisson à grande eau, qu'on jette).
@@ -122,7 +122,7 @@ Adaptez les quantités selon votre prescription diététique et votre tolérance
 
 ## À la Clinique ESSAADA, on travaille avec vous
 
-Chaque patient en [parcours d'hémodialyse](/services/hemodialyse) a ses propres cibles : votre poids sec, vos bilans biologiques, votre fonction rénale résiduelle, vos comorbidités, votre âge, votre niveau d'activité physique — tout cela module ce que vous pouvez vous permettre. Lors de votre [consultation néphrologie](/services/consultation-nephrologie), votre médecin pose ces repères avec vous, et un suivi diététique peut être organisé selon vos besoins.
+Chaque patient en [parcours d'hémodialyse](/services/hemodialyse) a ses propres cibles : votre poids sec, vos bilans biologiques, votre fonction rénale résiduelle, vos comorbidités, votre âge, votre niveau d'activité physique, tout cela module ce que vous pouvez vous permettre. Lors de votre [consultation néphrologie](/services/consultation-nephrologie), votre médecin pose ces repères avec vous, et un suivi diététique peut être organisé selon vos besoins.
 
 Pour mieux comprendre l'arrière-plan de toutes ces adaptations alimentaires, vous pouvez relire notre dossier [Comprendre l'insuffisance rénale](/comprendre-l-insuffisance-renale). Garder le plaisir alimentaire, manger avec sa famille, profiter du couscous du vendredi : ce n'est pas un luxe, c'est une partie essentielle du « bien vivre » avec la dialyse au long cours. Un patient qui continue de partager les rituels familiaux est un patient qui suit mieux son traitement, et qui va globalement mieux.
 

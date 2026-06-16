@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 import { Button } from "@/components/ui/Button";
 
 const proofPoints = [
-  "Médecin néphrologue présent à chaque séance — pas d'astreinte téléphonique",
+  "Médecin néphrologue présent à chaque séance, pas d'astreinte téléphonique",
   "Dossier CNAS / CASNOS : on s'occupe de la paperasse, vous venez avec votre carte Chifa",
   "Accompagnant bienvenu · salle d'attente dédiée · café et thé servis",
 ];
@@ -24,7 +24,7 @@ export function HomeHero() {
             <span className="block text-sand-100">on en prend soin.</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100 max-w-xl leading-relaxed">
-            Hémodialyse à Sidi Bel Abbès — {site.stats.lits} lits,
+            Hémodialyse à Sidi Bel Abbès : {site.stats.lits} lits,
             néphrologue présent, équipe formée à l'accompagnement des
             patients dialysés et de leurs proches.
           </p>
@@ -51,7 +51,7 @@ export function HomeHero() {
           >
             <Phone className="w-4 h-4" aria-hidden="true" />
             <span>
-              ou appelez directement —{" "}
+              ou appelez directement,{" "}
               <span className="font-medium">{site.contact.phone}</span>
             </span>
           </a>

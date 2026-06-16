@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Équipement & hygiène — Clinique ESSAADA",
     description:
-      "La qualité de votre dialyse commence par l'eau et le matériel. Schéma traitement d'eau, marque des générateurs, protocoles d'hygiène — toute la transparence technique.",
+      "La qualité de votre dialyse commence par l'eau et le matériel. Schéma traitement d'eau, marque des générateurs, protocoles d'hygiène, toute la transparence technique.",
   },
 };
 
@@ -84,7 +84,7 @@ const controles = [
   {
     icon: Droplets,
     title: "Analyses d'eau",
-    text: "Prélèvements trimestriels — bactériologiques et biochimiques.",
+    text: "Prélèvements trimestriels, bactériologiques et biochimiques.",
   },
   {
     icon: Activity,
@@ -94,7 +94,7 @@ const controles = [
   {
     icon: Users,
     title: "Revue de morbidité",
-    text: "Staff médical hebdomadaire — revue des incidents, des paramètres, des cas délicats.",
+    text: "Staff médical hebdomadaire, revue des incidents, des paramètres, des cas délicats.",
   },
   {
     icon: BadgeCheck,
@@ -176,7 +176,7 @@ export default function EquipementHygienePage() {
                 Traçabilité
               </h3>
               <p className="text-neutral-700 text-base">
-                Paramètres de chaque séance enregistrés — pression, débits,
+                Paramètres de chaque séance enregistrés : pression, débits,
                 conductivité, durée effective de dialyse.
               </p>
             </Card>
@@ -211,7 +211,7 @@ export default function EquipementHygienePage() {
               <Droplets className="w-5 h-5 text-primary-700 shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-neutral-700">
                 <strong className="text-neutral-900">Contrôles réguliers :</strong>{" "}
-                prélèvements trimestriels — bactériologiques et biochimiques.
+                prélèvements trimestriels, bactériologiques et biochimiques.
                 Résultats disponibles sur demande au secrétariat médical.
               </p>
             </div>
@@ -339,7 +339,7 @@ export default function EquipementHygienePage() {
                 Néphrologue
               </h3>
               <p className="text-neutral-700 text-sm">
-                Présence continue pendant toute la durée des séances — pas une
+                Présence continue pendant toute la durée des séances, pas une
                 astreinte téléphonique.
               </p>
             </Card>
@@ -399,7 +399,7 @@ export default function EquipementHygienePage() {
           <SectionHeader
             eyebrow="Aller plus loin"
             title="Mesure de précision du poids sec et de l'hydratation"
-            subtitle="Au-delà du dialyseur et du générateur, nous disposons d'un dispositif de bio-impédance multi-fréquence pour objectiver votre composition corporelle — un outil de niveau supérieur, courant dans certains centres européens."
+            subtitle="Au-delà du dialyseur et du générateur, nous disposons d'un dispositif de bio-impédance multi-fréquence pour objectiver votre composition corporelle, un outil de niveau supérieur, courant dans certains centres européens."
           />
           <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 md:p-8 border border-sand-200">
             <div className="flex items-start gap-4">
@@ -432,7 +432,7 @@ export default function EquipementHygienePage() {
         variant="sand"
         eyebrow="Questions techniques"
         title="Une question technique précise ?"
-        subtitle="Qualité d'eau, type de dialyseur, résultats de vos dernières analyses — notre équipe médicale répond en consultation ou par téléphone."
+        subtitle="Qualité d'eau, type de dialyseur, résultats de vos dernières analyses, notre équipe médicale répond en consultation ou par téléphone."
         waMessage="Bonjour, j'aimerais plus d'informations sur vos équipements et protocoles d'hygiène."
       />
     </>

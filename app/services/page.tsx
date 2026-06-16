@@ -56,7 +56,7 @@ export default function ServicesPage() {
       <ConversionFooterCTA
         variant="sand"
         title="Un parcours adapté à votre situation ?"
-        subtitle="Consultation, première dialyse, séjour de passage — notre équipe vous oriente vers le bon service."
+        subtitle="Consultation, première dialyse, séjour de passage, notre équipe vous oriente vers le bon service."
         waMessage="Bonjour, je cherche à comprendre quel service de la Clinique ESSAADA correspond à ma situation."
       />
     </>

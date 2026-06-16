@@ -85,7 +85,7 @@ const diasporaFaq = [
   {
     question: "Ma mutuelle prend-elle en charge le dépassement de 86,95 € ?",
     answer:
-      "Cela dépend de votre contrat. Beaucoup de mutuelles complètent le forfait CPAM pour les soins à l'étranger. Contactez-les avant le départ avec votre devis — nous en fournissons un nominatif après étude du dossier.",
+      "Cela dépend de votre contrat. Beaucoup de mutuelles complètent le forfait CPAM pour les soins à l'étranger. Contactez-les avant le départ avec votre devis, nous en fournissons un nominatif après étude du dossier.",
   },
   {
     question: "Les sérologies et documents doivent-ils être traduits ?",
@@ -129,7 +129,7 @@ export default function DepuisLaFrancePage() {
       <PhotoHero
         eyebrow="Diaspora France"
         title="Dialyser en vacances à Sidi Bel Abbès, l'esprit tranquille"
-        subtitle="Vous rentrez revoir la famille, profiter du soleil, retrouver vos racines. Votre traitement ne doit pas vous en empêcher. Nous accompagnons chaque année des patients de la diaspora — avec le même sérieux qu'en France, et un accompagnement complet des démarches CPAM."
+        subtitle="Vous rentrez revoir la famille, profiter du soleil, retrouver vos racines. Votre traitement ne doit pas vous en empêcher. Nous accompagnons chaque année des patients de la diaspora, avec le même sérieux qu'en France, et un accompagnement complet des démarches CPAM."
         photoIcon={Plane}
         photoSrc="/images/clinique-entree-marbre.webp"
         photoAlt="Entrée principale de la Clinique ESSAADA — escalier en marbre, palmiers en pots, portes vitrées et garde-corps en fer forgé"
@@ -281,7 +281,7 @@ export default function DepuisLaFrancePage() {
                 </li>
               </ul>
               <p className="mt-5 text-sm text-neutral-600">
-                Votre mutuelle peut compléter le forfait — vérifiez avec elle avant le
+                Votre mutuelle peut compléter le forfait, vérifiez avec elle avant le
                 départ, avec notre devis nominatif.
               </p>
             </Card>
@@ -349,7 +349,7 @@ export default function DepuisLaFrancePage() {
         variant="sand"
         eyebrow="Organiser votre venue"
         title="Prêt à organiser votre séjour dialyse ?"
-        subtitle="Notre équipe répond en français, de la France comme d'Algérie. WhatsApp privilégié pour la diaspora — pas d'appel international à votre charge."
+        subtitle="Notre équipe répond en français, de la France comme d'Algérie. WhatsApp privilégié pour la diaspora, pas d'appel international à votre charge."
         primaryCtaLabel="Réserver mon passage"
         waMessage="Bonjour, je dialyse en France et je souhaite organiser un séjour dialyse avec prise en charge CPAM."
       />

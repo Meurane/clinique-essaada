@@ -11,7 +11,7 @@ const timeline = [
   {
     time: "T − 1h",
     title: "Vous arrivez à la clinique",
-    text: "Accès PMR. Prenez votre temps — nos créneaux sont pensés pour que vous ne soyez jamais pressé.",
+    text: "Accès PMR. Prenez votre temps, nos créneaux sont pensés pour que vous ne soyez jamais pressé.",
   },
   {
     time: "T − 45 min",
@@ -26,7 +26,7 @@ const timeline = [
   {
     time: "T − 15 min",
     title: "Installation et pose des aiguilles",
-    text: "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter) — 2 à 3 minutes. L'infirmière vous explique chaque geste.",
+    text: "Fauteuil inclinable, couverture, oreiller. Pose des aiguilles de fistule (ou connexion du cathéter), 2 à 3 minutes. L'infirmière vous explique chaque geste.",
   },
   {
     time: "T + 0",
@@ -186,7 +186,7 @@ export default function PremiereSeancePage() {
               </h3>
               <p className="text-neutral-700 text-sm leading-relaxed">
                 Le jour de votre 1ʳᵉ séance, mesure objective de votre poids sec et
-                de votre hydratation par bio-impédance — pour personnaliser dès le
+                de votre hydratation par bio-impédance, pour personnaliser dès le
                 départ votre prescription.
               </p>
               <Link
@@ -206,7 +206,7 @@ export default function PremiereSeancePage() {
           <SectionHeader
             eyebrow="Déroulé heure par heure"
             title="Votre première séance, minute par minute"
-            subtitle="Parce que l'inconnu angoisse plus que le connu, voici exactement ce qui se passe — dans l'ordre, sans surprise."
+            subtitle="Parce que l'inconnu angoisse plus que le connu, voici exactement ce qui se passe, dans l'ordre, sans surprise."
           />
           <ol className="relative max-w-3xl mx-auto border-l-2 border-primary-200 pl-6 md:pl-8 space-y-8">
             {timeline.map((t) => (

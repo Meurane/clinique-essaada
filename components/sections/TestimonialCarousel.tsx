@@ -38,7 +38,7 @@ function EmptyState() {
         Témoignages en cours de collecte
       </h3>
       <p className="text-neutral-700 leading-relaxed">
-        Nous recueillons les retours de nos patients — résidents comme de passage —
+        Nous recueillons les retours de nos patients, résidents comme de passage,
         dans le respect du secret médical et avec leur consentement écrit. Les
         premières voix seront publiées ici prochainement.
       </p>

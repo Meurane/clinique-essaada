@@ -158,7 +158,7 @@ export default function GlossairePage() {
             </h2>
             <p className="text-primary-100 mb-5 leading-relaxed">
               Ce glossaire ne remplace pas l'échange avec votre néphrologue. En
-              consultation, posez toutes vos questions — aucune n'est déplacée,
+              consultation, posez toutes vos questions, aucune n'est déplacée,
               aucune n'est trop simple.
             </p>
             <Link
