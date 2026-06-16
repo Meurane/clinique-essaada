@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: { params: PageParams }): Prom
   return {
     title,
     description,
-    alternates: { canonical },
+    alternates: localizedAlternates(locale, `/glossaire/${term.slug}`),
     openGraph: {
       type: "article",
       url: canonical,

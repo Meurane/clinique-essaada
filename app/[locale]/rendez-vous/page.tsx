@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
 import { CheckCircle2, Clock, Shield, Handshake, MessageCircle, Phone } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
@@ -17,7 +18,7 @@ export async function generateMetadata({
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: { canonical: `${site.url}/rendez-vous` },
+    alternates: localizedAlternates(locale, "/rendez-vous"),
   };
 }
 

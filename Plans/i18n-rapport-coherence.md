@@ -1,3 +1,11 @@
+# Rapport de cohérence des traductions EN/AR
+
+## Phase 2 (FAQ, glossaire 29 défs, équipe, la-clinique, patients de passage, ramadan, comprendre, RDV, blog, légal)
+Vérification automatisée des 13 namespaces de la phase 2 — **0 problème MAJEUR**, 8 mineurs, 12 infos.
+Tous les chiffres/durées/seuils médicaux préservés (160 g/rein, ~1 M néphrons, 30 % seuil symptômes, DPA 8–10 h, DPCA 4–5 échanges, 86,95 €, &lt;3 mois sérologies, 4h du matin Ramadan…). Terminologie EN (haemodialysis, AVF, CKD…) et AR (تصفية الدم, الناسور الشرياني الوريدي, القصور الكلوي…) correctes. Notes mineures à valider par un relecteur : en arabe « aine » rendu « haut de la cuisse » (catheter), double désignation تصفية الدم / الديلزة pour « dialyse », « Sidi Bel Abbès » non translittéré sur la-clinique, accord de genre « القهوة » (ramadan), verbe EN « dialyse » dans un titre patients-de-passage. Aucune n'altère le sens médical.
+
+---
+
 # Rapport de cohérence des traductions EN/AR — Phase 1
 
 Vérification automatisée (12 namespaces, comparaison EN/AR ↔ FR source) le 2026-06-16.

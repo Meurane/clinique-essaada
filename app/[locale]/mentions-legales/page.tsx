@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { PageHero } from "@/components/ui/PageHero";
@@ -16,7 +17,7 @@ export async function generateMetadata({
   return {
     title: t("meta.mentions.title"),
     description: t("meta.mentions.description"),
-    alternates: { canonical: `${site.url}/mentions-legales` },
+    alternates: localizedAlternates(locale, "/mentions-legales"),
   };
 }
 

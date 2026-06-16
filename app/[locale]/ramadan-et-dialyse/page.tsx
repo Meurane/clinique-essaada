@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { localizedAlternates } from "@/lib/i18n-meta";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -30,7 +31,7 @@ export async function generateMetadata({
   return {
     title: t("meta.title"),
     description: t("meta.description"),
-    alternates: { canonical: `${site.url}/ramadan-et-dialyse` },
+    alternates: localizedAlternates(locale, "/ramadan-et-dialyse"),
     openGraph: {
       title: t("meta.ogTitle"),
       description: t("meta.ogDescription"),
