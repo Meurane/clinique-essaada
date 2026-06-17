@@ -28,13 +28,36 @@ export type RdvFormValues = {
 };
 
 export type RdvFormState = {
-  status: "idle" | "success" | "error";
+  status: "idle" | "success" | "error" | "whatsapp";
   message?: string;
+  waMessage?: string;
   values?: RdvFormValues;
 };
 
 function norm(v: FormDataEntryValue | null) {
   return (v?.toString() ?? "").trim();
+}
+
+const CRENEAU_LABELS: Record<string, string> = {
+  matin: "Matin (05h00 — 09h00)",
+  journee: "Journée (09h30 — 13h30)",
+  soir: "Soir (14h00 — 19h00)",
+};
+
+// Compose le message WhatsApp pré-rempli (FR, comme l'e-mail) envoyé à la clinique
+// lorsqu'aucun transport e-mail n'est configuré.
+function buildRdvWhatsAppMessage(v: RdvFormValues): string {
+  const creneau =
+    (v.creneau && CRENEAU_LABELS[v.creneau]) || v.creneau || "(non précisé)";
+  return [
+    "Bonjour, je souhaite prendre rendez-vous à la Clinique ESSAADA.",
+    "",
+    `Nom : ${v.nom}`,
+    `Téléphone : ${v.telephone}`,
+    `Motif : ${v.motif || "(non précisé)"}`,
+    `Créneau souhaité : ${creneau}`,
+    `Message : ${v.message || "(aucun)"}`,
+  ].join("\n");
 }
 
 export async function submitRdv(
@@ -136,11 +159,12 @@ export async function submitRdv(
       };
     }
   } else {
-    console.error("[rdv] RESEND_API_KEY not set — submission cannot be processed");
+    if (process.env.NODE_ENV !== "production") {
+      console.info("[rdv] RESEND_API_KEY not set — handing off to WhatsApp");
+    }
     return {
-      status: "error",
-      message:
-        "Service indisponible actuellement. Merci de nous appeler ou d'écrire sur WhatsApp.",
+      status: "whatsapp",
+      waMessage: buildRdvWhatsAppMessage(values),
       values,
     };
   }

@@ -2,8 +2,9 @@
 
 import { useActionState, useEffect, useId, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, CheckCircle2, MessageCircle, Phone } from "lucide-react";
 import { submitRdv, type RdvFormState } from "@/app/[locale]/rendez-vous/actions";
+import { site, waUrl } from "@/lib/site";
 
 const initialState: RdvFormState = { status: "idle" };
 
@@ -30,7 +31,9 @@ export function RdvForm() {
   const errorId = useId();
   const phoneHelpId = useId();
   const hasError = state.status === "error";
+  const isWhatsapp = state.status === "whatsapp";
   const alertRef = useRef<HTMLDivElement>(null);
+  const confirmRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (hasError && alertRef.current) {
@@ -38,6 +41,47 @@ export function RdvForm() {
       alertRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }, [hasError, state.message]);
+
+  useEffect(() => {
+    if (isWhatsapp && confirmRef.current) {
+      confirmRef.current.focus();
+      confirmRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [isWhatsapp]);
+
+  if (isWhatsapp) {
+    return (
+      <div
+        ref={confirmRef}
+        tabIndex={-1}
+        className="rounded-2xl bg-accent-50 border border-accent-600/40 p-8 text-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent-600/30"
+      >
+        <CheckCircle2 className="w-12 h-12 text-accent-600 mx-auto mb-4" aria-hidden="true" />
+        <h2 className="font-display text-2xl font-bold text-neutral-900 mb-2">
+          {t("whatsappHandoff.title")}
+        </h2>
+        <p className="text-neutral-700 mb-6">{t("whatsappHandoff.body")}</p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href={waUrl(state.waMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1fb558] text-white px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
+          >
+            <MessageCircle className="w-5 h-5" aria-hidden="true" />
+            {t("whatsappHandoff.whatsappCta")}
+          </a>
+          <a
+            href={site.contact.phoneHref}
+            className="inline-flex items-center justify-center gap-2 bg-white text-primary-700 border border-primary-200 hover:bg-primary-50 px-6 py-4 rounded-full font-semibold min-h-[56px] transition-colors"
+          >
+            <Phone className="w-5 h-5" aria-hidden="true" />
+            {t("success.callCta")}
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <form action={action} className="space-y-5" noValidate>

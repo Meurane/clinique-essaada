@@ -2032,6 +2032,11 @@
       "whatsappCta": "Speed up on WhatsApp",
       "callCta": "Call now"
     },
+    "whatsappHandoff": {
+      "title": "Your request is ready to send",
+      "body": "Click the button below — your WhatsApp message is already pre-filled with your details, all that's left is to send it. Our team will get back to you shortly.",
+      "whatsappCta": "Send on WhatsApp"
+    },
     "form": {
       "requiredIntro": {
         "before": "Fields marked with a",
