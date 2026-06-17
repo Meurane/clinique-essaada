@@ -2032,6 +2032,11 @@
       "whatsappCta": "Accélérer sur WhatsApp",
       "callCta": "Appeler maintenant"
     },
+    "whatsappHandoff": {
+      "title": "Votre demande est prête à envoyer",
+      "body": "Cliquez sur le bouton ci-dessous : votre message WhatsApp est déjà pré-rempli avec vos informations, il ne reste qu'à l'envoyer. Notre équipe vous répond rapidement.",
+      "whatsappCta": "Envoyer sur WhatsApp"
+    },
     "form": {
       "requiredIntro": {
         "before": "Les champs marqués d'un",
